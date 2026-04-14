@@ -1,53 +1,174 @@
 # claude-mem 项目分析
 
+## 项目名称与地址
+
+**claude-mem - Persistent Memory Compression System for Claude Code**
+
+项目地址：https://github.com/thedotmack/claude-mem
+
+作者：Alex Newman (@thedotmack)
+
+许可证：AGPL-3.0
+
 ## 项目概述
 
-claude-mem 是一个为 Claude Code 构建的持久化记忆压缩系统插件。它能自动捕获 Claude 在编码会话中的所有工具使用行为，利用 AI（Claude Agent SDK）进行语义压缩，并将相关上下文注入到后续会话中。这使得 Claude 能够在会话结束或重连后依然保持对项目的知识连续性。项目同时支持 Gemini CLI 和 OpenClaw 网关。
+claude-mem 是一个为 Claude Code 构建的持久化记忆压缩系统插件。它能自动捕获 Claude 在编码会话中的所有工具使用行为（observations），利用 AI（Claude Agent SDK）进行语义压缩，并将相关上下文注入到后续会话中。这使得 Claude 能够在会话结束或重连后依然保持对项目的知识连续性。
+
+项目当前版本为 6.5.0，已被收录到 Awesome Claude Code 列表，并被 Trendshift 趋势榜单收录。它不仅支持 Claude Code，还扩展到了 Gemini CLI 和 OpenClaw 网关平台。项目采用 TypeScript 开发，基于 Claude Code 的插件生命周期钩子机制实现全自动运行，无需手动干预。
+
+claude-mem 解决了 AI 编码助手最根本的痛点：每次会话都从零开始，没有记忆。通过自动捕获、智能压缩和按需检索的机制，它让 Claude 拥有了跨会话的持久记忆能力。
 
 ## 核心功能
 
-- **持久化记忆**：跨会话保存上下文，Claude 不再每次从零开始
-- **渐进式上下文披露**：分层记忆检索，带 token 成本可见性，智能控制上下文注入量
-- **3 层搜索工作流**：search（获取索引）→ timeline（获取上下文）→ get_observations（获取详情），节省约 10 倍 token
-- **MCP 搜索工具**：提供 4 个 MCP 工具，支持全文搜索、时间线浏览和批量详情获取
-- **Web 查看器**：实时记忆流可视化界面（http://localhost:37777）
-- **隐私控制**：使用 `<private>` 标签排除敏感内容不进入存储
-- **多 IDE 支持**：Claude Code、Gemini CLI、OpenClaw 网关、Claude Desktop
-- **向量搜索**：集成 Chroma 向量数据库，支持混合语义 + 关键词搜索
+### 持久化记忆
+
+自动捕获每次编码会话中的工具使用记录，包括文件读写、搜索操作、代码编辑等行为，将它们以 observation 的形式存储到本地 SQLite 数据库中。即使会话结束，所有上下文都得以保存。
+
+### 渐进式上下文披露（Progressive Disclosure）
+
+分层记忆检索机制，带有 token 成本可见性。系统不会一次性注入所有记忆，而是根据当前会话的相关性智能选择需要注入的上下文，并展示 token 消耗信息，让用户对成本有清晰的掌控。
+
+### 3 层搜索工作流
+
+这是 claude-mem 最核心的设计理念，实现了约 10 倍的 token 节省：
+
+1. **search（搜索索引）**：快速检索，返回包含 ID 的紧凑索引，每条结果仅消耗约 50-100 tokens
+2. **timeline（时间线上下文）**：围绕特定 observation 获取时间线上下文，了解前后发生了什么
+3. **get_observations（获取详情）**：仅在确定相关 ID 后才获取完整详情，每条约 500-1,000 tokens
+
+```javascript
+// 步骤 1：搜索获取索引
+search(query="authentication bug", type="bugfix", limit=10)
+// 返回：[{id: 123, summary: "..."}, {id: 456, summary: "..."}]
+
+// 步骤 2：查看时间线上下文
+timeline(anchor=123, depth_before=3, depth_after=3)
+
+// 步骤 3：仅获取相关的完整详情
+get_observations(ids=[123, 456])
+```
+
+### MCP 搜索工具
+
+提供 4 个 MCP 工具，供 Claude 在会话中直接调用：
+
+1. **search**：搜索记忆索引，支持全文搜索，可按类型、日期、项目过滤
+2. **timeline**：获取特定 observation 周围的时间线上下文
+3. **get_observations**：通过 ID 批量获取完整的 observation 详情
+4. **smart_outline**：获取文件的结构大纲，展示所有符号（函数、类、方法）但折叠函数体
+
+### Web 查看器
+
+内置实时记忆流可视化界面，运行在 http://localhost:37777。可以查看所有记忆记录、搜索历史、管理设置，还支持查看单个 observation 的详情（http://localhost:37777/api/observation/{id}）。
+
+### 隐私控制
+
+使用 `<private>` 标签可以排除敏感内容不进入存储：
+
+```html
+<private>
+数据库密码: super_secret_123
+API Key: sk-xxxxxx
+</private>
+```
+
+标签内的内容不会被 claude-mem 捕获和存储。
+
+### 向量搜索
+
+集成 Chroma 向量数据库，支持混合语义搜索 + 关键词搜索。结合 SQLite 的 FTS5 全文搜索，实现精准的记忆检索。
 
 ## 技术栈
 
-- **语言**：TypeScript
-- **运行时**：Node.js 18+、Bun（进程管理）
-- **数据库**：SQLite（持久存储）+ Chroma（向量搜索）
-- **搜索**：FTS5 全文搜索 + 混合语义搜索
-- **AI SDK**：Claude Agent SDK（压缩和摘要）
-- **工作服务**：HTTP API（端口 37777）+ Web Viewer UI
-- **包管理**：uv（Python 依赖）、npm（Node.js 依赖）
-- **许可证**：AGPL-3.0
+- **核心语言**：TypeScript
+- **运行时环境**：Node.js >= 18.0.0、Bun（进程管理和 HTTP 服务）
+- **关系数据库**：SQLite 3（持久存储 sessions、observations、summaries）
+- **向量数据库**：Chroma（混合语义 + 关键词搜索）
+- **全文搜索**：SQLite FTS5
+- **AI SDK**：Claude Agent SDK（用于压缩和摘要生成）
+- **工作服务**：HTTP API 运行在端口 37777，附带 Web Viewer UI
+- **包管理**：uv（Python 包，用于向量搜索依赖）、npm/npx（Node.js 包）
+- **多平台支持**：Claude Code、Gemini CLI、OpenClaw Gateway、Claude Desktop
+- **许可证**：AGPL-3.0（主项目）、PolyForm Noncommercial License 1.0.0（ragtime/ 目录）
+
+## 安装与配置
+
+### 快速安装
+
+一条命令完成安装：
+
+```bash
+npx claude-mem install
+```
+
+安装完成后重启 Claude Code，之前会话的上下文会自动出现在新会话中。
+
+### 其他安装方式
+
+```bash
+# 通过插件市场安装（Claude Code 内）
+/plugin marketplace add thedotmack/claude-mem
+/plugin install claude-mem
+
+# Gemini CLI 安装
+npx claude-mem install --ide gemini-cli
+
+# OpenClaw 网关安装
+curl -fsSL https://install.cmem.ai/openclaw.sh | bash
+```
+
+### 系统要求
+
+- Node.js 18.0.0 或更高版本
+- Claude Code 最新版本（需支持插件功能）
+- Bun：JavaScript 运行时和进程管理器（缺失时自动安装）
+- uv：Python 包管理器（缺失时自动安装，用于向量搜索）
+- SQLite 3：持久存储（内置）
+
+### 配置文件
+
+设置存储在 `~/.claude-mem/settings.json`（首次运行自动创建），可配置 AI 模型、Worker 端口、数据目录、日志级别和上下文注入策略等。
+
+## 生命周期钩子
+
+claude-mem 通过 5 个生命周期钩子实现全自动运行，加上 1 个智能安装脚本：
+
+1. **SessionStart**：会话启动时触发，加载历史上下文，注入相关记忆
+2. **UserPromptSubmit**：用户提交提示词时触发，分析意图并预加载相关记忆
+3. **PostToolUse**：工具使用后触发，捕获工具调用记录并存储为 observation
+4. **Stop**：会话暂停时触发，执行中间状态的压缩和摘要
+5. **SessionEnd**：会话结束时触发，执行完整的会话压缩和摘要生成
+6. **Smart Install**（预钩子）：缓存依赖检查器，确保所有依赖就绪
 
 ## 项目亮点
 
-- **解决 AI 核心痛点**：攻克了 LLM 编码助手"每次会话从零开始"的根本问题
-- **极低侵入性**：通过 5 个生命周期钩子自动运行，无需手动干预
-- **高效 token 管理**：3 层搜索工作流设计精妙，先索引后详情，大幅节省 token 消耗
-- **丰富的集成生态**：支持 Claude Code、Gemini CLI、OpenClaw、Claude Desktop 等多个平台
-- **50K+ Star**：社区高度认可，是 Claude Code 生态中最受欢迎的记忆插件
+- **解决 AI 核心痛点**：攻克了 LLM 编码助手"每次会话从零开始"的根本问题，让 Claude 拥有持久记忆
+- **极低侵入性**：通过 5 个生命周期钩子完全自动运行，安装后无需任何手动操作
+- **高效 token 管理**：3 层搜索工作流设计精妙，先索引后详情，约 10 倍 token 节省，用户可清晰看到成本
+- **丰富的集成生态**：支持 Claude Code、Gemini CLI、OpenClaw Gateway、Claude Desktop 等多个平台
+- **Beta 通道**：提供实验性功能如 Endless Mode（仿生记忆架构，支持超长会话）
+- **50K+ Star**：社区高度认可，是 Claude Code 生态中最受欢迎的记忆插件，被 Awesome Claude Code 收录
+- **完整文档体系**：涵盖安装指南、架构设计、最佳实践、故障排查等全方位文档
 
 ## 应用场景
 
-- **长期项目开发**：Claude 能记住上次会话的架构决策、bug 修复历史和代码模式
-- **团队协作**：将个人编码上下文沉淀为团队可复用的记忆资产
-- **调试会话延续**：跨会话追踪调试进度，不丢失任何排查线索
-- **代码审查辅助**：记忆历史审查意见和代码质量模式
-- **多项目切换**：在不同项目间切换时自动加载对应的上下文记忆
+- **长期项目开发**：Claude 能记住上次会话的架构决策、bug 修复历史和代码模式，无需每次重新解释项目背景
+- **调试会话延续**：跨会话追踪调试进度，即使关闭终端重新开始，也不丢失任何排查线索
+- **代码审查辅助**：记忆历史审查意见和代码质量模式，在后续会话中自动应用相同的审查标准
+- **多项目切换**：在不同项目间切换时自动加载对应的上下文记忆，无需手动重新配置
+- **团队协作**：将个人编码上下文沉淀为团队可复用的记忆资产（通过共享数据库或 OpenClaw）
+- **学习和教学**：记录学习过程中的笔记和发现，形成个人知识库
 
 ## Star 数据
 
 - 总 Star 数：50,057
 - Fork 数：3,947
 - 今日增长：+753
+- 开源许可：AGPL-3.0
+- 当前版本：6.5.0
 
 ## 总结
 
-claude-mem 是 Claude Code 生态中一个极具价值的基础设施项目。它通过精巧的生命周期钩子和渐进式上下文披露机制，优雅地解决了 AI 编码助手的记忆持久化问题。3 层搜索工作流的设计体现了对 token 效率的深刻理解，而多平台支持则展现了项目的野心。对于任何长期使用 Claude Code 进行开发的团队，claude-mem 都是不可或缺的生产力倍增器。
+claude-mem 是 Claude Code 生态中一个极具价值的基础设施项目。它通过精巧的生命周期钩子和渐进式上下文披露机制，优雅地解决了 AI 编码助手的记忆持久化问题。3 层搜索工作流的设计体现了对 token 效率的深刻理解：先搜索索引、再查看时间线、最后获取详情，每一步都经过精心优化。
+
+项目在技术架构上同样出色：SQLite + Chroma 双数据库设计兼顾了结构化存储和语义搜索；Bun 管理的 Worker 服务提供了稳定的 HTTP API 和 Web 查看界面；多平台支持展现了项目的野心和可扩展性。对于任何长期使用 Claude Code 进行开发的个人或团队，claude-mem 都是不可或缺的生产力倍增器。50K+ 的 Star 数证明了社区对这一工具的高度认可。
