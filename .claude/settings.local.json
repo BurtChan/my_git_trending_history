@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(curl -s \"https://api.github.com/repos/jqlang/jq\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(f'Stars: {d[\\\\\"stargazers_count\\\\\"]}, Forks: {d[\\\\\"forks_count\\\\\"]}, Watchers: {d[\\\\\"subscribers_count\\\\\"]}, Open Issues: {d[\\\\\"open_issues_count\\\\\"]}, Language: {d[\\\\\"language\\\\\"]}, License: {d[\\\\\"license\\\\\"][\\\\\"spdx_id\\\\\"] if d.get\\(\\\\\"license\\\\\"\\) else \\\\\"N/A\\\\\"}, Created: {d[\\\\\"created_at\\\\\"]}, Updated: {d[\\\\\"updated_at\\\\\"]}'\\)\")",
+      "Bash(curl -s \"https://api.github.com/repos/thedotmack/claude-mem\")",
+      "Bash(curl -s \"https://api.github.com/repos/ahujasid/blender-mcp\")",
+      "Bash(curl -s \"https://api.github.com/search/repositories?q=rowboat+in:name&sort=stars&order=desc\")",
+      "Bash(python -c \"import json,sys; data=json.load\\(sys.stdin\\); [print\\(f\\\\\"{item['full_name']} - Stars: {item['stargazers_count']} - {item['description']}\\\\\"\\) for item in data.get\\('items',[]\\)]\")",
+      "Bash(curl -s \"https://api.github.com/repos/ollama/ollama\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(f'Stars: {d[\\\\\"stargazers_count\\\\\"]}\\\\nForks: {d[\\\\\"forks_count\\\\\"]}\\\\nOpen Issues: {d[\\\\\"open_issues_count\\\\\"]}\\\\nCreated: {d[\\\\\"created_at\\\\\"]}\\\\nLanguage: {d[\\\\\"language\\\\\"]}\\\\nLicense: {d[\\\\\"license\\\\\"][\\\\\"spdx_id\\\\\"]}\\\\nTopics: {d[\\\\\"topics\\\\\"]}\\\\nDescription: {d[\\\\\"description\\\\\"]}\\\\nDefault Branch: {d[\\\\\"default_branch\\\\\"]}\\\\nWatchers: {d[\\\\\"watchers_count\\\\\"]}'\\)\")",
+      "Bash(curl -s \"https://api.github.com/repos/aaif-goose/goose\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(f'Stars: {d.get\\(\\\\\"stargazers_count\\\\\",\\\\\"N/A\\\\\"\\)}'\\); print\\(f'Forks: {d.get\\(\\\\\"forks_count\\\\\",\\\\\"N/A\\\\\"\\)}'\\); print\\(f'Open Issues: {d.get\\(\\\\\"open_issues_count\\\\\",\\\\\"N/A\\\\\"\\)}'\\); print\\(f'Created: {d.get\\(\\\\\"created_at\\\\\",\\\\\"N/A\\\\\"\\)}'\\); print\\(f'Language: {d.get\\(\\\\\"language\\\\\",\\\\\"N/A\\\\\"\\)}'\\); print\\(f'License: {d.get\\(\\\\\"license\\\\\",{}\\).get\\(\\\\\"spdx_id\\\\\",\\\\\"N/A\\\\\"\\) if d.get\\(\\\\\"license\\\\\"\\) else \\\\\"N/A\\\\\"}'\\); print\\(f'Topics: {d.get\\(\\\\\"topics\\\\\",[]\\)}'\\); print\\(f'Description: {d.get\\(\\\\\"description\\\\\",\\\\\"N/A\\\\\"\\)}'\\)\")",
+      "Bash(curl -s \"https://api.github.com/repos/microsoft/markitdown\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(f'Stars: {d.get\\(\\\\\"stargazers_count\\\\\"\\)}\\\\nForks: {d.get\\(\\\\\"forks_count\\\\\"\\)}\\\\nWatchers: {d.get\\(\\\\\"subscribers_count\\\\\"\\)}\\\\nOpen Issues: {d.get\\(\\\\\"open_issues_count\\\\\"\\)}\\\\nLanguage: {d.get\\(\\\\\"language\\\\\"\\)}\\\\nLicense: {d.get\\(\\\\\"license\\\\\",{}\\).get\\(\\\\\"spdx_id\\\\\"\\)}\\\\nCreated: {d.get\\(\\\\\"created_at\\\\\"\\)}\\\\nUpdated: {d.get\\(\\\\\"updated_at\\\\\"\\)}'\\)\")",
+      "Bash(python3:*)",
+      "Bash(python:*)",
+      "Bash(where python3:*)",
+      "Bash(where python:*)",
+      "Bash(node:*)"
+    ]
+  }
+}
