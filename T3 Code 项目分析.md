@@ -1,0 +1,94 @@
+# T3 Code 项目分析
+
+## 项目名称
+
+**T3 Code** — 面向 AI 编程代理（Codex、Claude Code 等）的极简 Web/桌面端 GUI 管理工具
+
+- **GitHub**: [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
+- **许可证**: MIT License
+
+---
+
+## 项目概述
+
+T3 Code 是由 T3 Stack 生态（Theo 及 ping.gg 团队）打造的开源桌面/ Web 应用，定位为 AI 编程代理的前端控制中心。当前终端式 AI 编程代理（如 OpenAI Codex CLI、Anthropic Claude Code）虽然功能强大，但缺乏图形化管理界面，开发者在多项目、多线程、多代理并行工作时面临上下文切换困难、代码审查不便等痛点。T3 Code 通过提供统一的可视化界面，将多个 AI 编程代理整合到一个工作环境中，极大地简化了 AI 辅助开发的工作流。
+
+项目的核心理念是"BYOK"（Bring Your Own Key）——工具本身完全免费开源，用户使用自己的 Codex 或 Claude 账户即可接入，成本仅与模型调用费用挂钩。它深度集成了 Git Worktree 机制，允许代理在隔离的分支上独立工作而不影响主目录，并提供从代码差异审查到一键创建 PR 的完整工作流支持。当前项目处于极早期阶段（v0.0.20），迭代非常频繁（已发布 34 个版本），尚未开放社区贡献，但已经在开发者社区获得了高度关注。
+
+从技术架构上看，T3 Code 是一个基于 Bun + TypeScript 的 Monorepo 项目，采用 Turbo 进行构建管理，使用 Effect 生态构建响应式界面，支持 Web 版和桌面版（Electron），覆盖 Windows、macOS 和 Arch Linux（AUR）平台，并原生支持 Linux——这是其相比官方 Codex 桌面应用的一大差异化优势。
+
+---
+
+## 核心功能
+
+| 功能 | 说明 |
+|------|------|
+| 多代理统一界面 | 将 OpenAI Codex 和 Anthropic Claude Code 等 AI 编程代理整合至单一图形界面 |
+| 三栏布局工作台 | 左侧项目列表、中间线程管理、右侧交互面板，组织清晰高效 |
+| Git Worktree 隔离 | 支持在独立分支上运行代理任务，互不干扰主工作目录 |
+| Diff 可视化审查 | 内置代码差异查看器，直观展示代理所做的代码修改 |
+| 一键 Commit-to-PR | 自动化提交、推送并创建 Pull Request 的完整流程 |
+| 集成终端 | 在应用内直接运行 Shell 命令，无需切换窗口 |
+| 自定义快速操作 | 支持按需执行自定义 Shell 命令 |
+| 模型选择器 | 自由切换不同 AI 模型，控制代理的规划深度 |
+| 聊天模式 vs 规划模式 | 支持快速迭代问答或全步骤规划两种交互模式 |
+| 完全访问 vs 监督模式 | 可选择代理自主读写文件或需要人工审批 |
+| 跨平台桌面应用 | 支持 Windows（winget）、macOS（Homebrew）、Arch Linux（AUR） |
+| 无需安装运行 | 支持零安装直接启动使用 |
+
+---
+
+## 技术栈
+
+| 类别 | 技术 |
+|------|------|
+| 主要语言 | TypeScript |
+| 运行时 | Bun / Node.js |
+| 前端框架 | React（@effect/atom-react） |
+| 桌面框架 | Electron |
+| 构建工具 | Turbo（monorepo 管理）、tsdown |
+| 包管理 | Bun |
+| 函数式编程 | Effect 生态（@effect/platform-bun 等） |
+| 代码格式化 | oxfmt |
+| 代码检查 | oxlint |
+| 测试框架 | Vitest |
+| CI/CD | GitHub Actions |
+| 架构 | Monorepo（apps + packages 多包结构） |
+
+---
+
+## 项目亮点
+
+1. **BYOK 模式，真正免费开源**：工具本身不收费，用户只需拥有自己的 Codex/Claude 账户即可使用，成本完全透明可控。
+2. **原生 Linux 支持**：相比官方 Codex 桌面应用，T3 Code 从第一天起就支持 Linux（包括 AUR 包），覆盖更广泛的开发者群体。
+3. **Git Worktree 深度集成**：代理在隔离环境中工作，支持多代理并行而不互相冲突，内置 Diff 审查和一键 PR 工作流，极大提升团队协作效率。
+4. **极快的迭代速度**：项目从发布至今已产出 1,329 次提交和 34 个版本，开发节奏极为迅猛，社区反响热烈（短时间内获得 9.3k Stars）。
+
+---
+
+## 应用场景
+
+1. **多代理并行开发**：同时运行多个 AI 编程代理处理不同任务（Bug 修复、功能开发、重构等），通过 Worktree 隔离互不影响。
+2. **代码审查与 PR 管理**：利用内置 Diff 查看器审查 AI 代理生成的代码变更，一键完成从 Commit 到 Pull Request 的全流程。
+3. **AI 辅助个人项目开发**：个人开发者将 Codex 或 Claude Code 作为编程助手，通过图形界面高效管理对话和任务上下文。
+4. **团队 AI 辅助工作流**：团队统一采用 T3 Code 作为 AI 编程代理的入口，实现标准化的代码生成、审查和合并流程。
+
+---
+
+## Star 数据
+
+| 指标 | 数据 |
+|------|------|
+| 总 Stars | ⭐ 9,300 |
+| 总 Forks | 🍴 1,700 |
+| 主要语言 | TypeScript |
+| 许可证 | MIT |
+| 最新版本 | v0.0.20 |
+| 提交数 | 1,329 |
+| 发布版本 | 34 |
+
+---
+
+## 总结
+
+T3 Code 是由 ping.gg（T3 Stack 生态）团队开发的开源 AI 编程代理图形化管理工具，以 MIT 协议发布，目前已获得约 9,300 Stars 和 1,700 Forks。它将 OpenAI Codex 和 Anthropic Claude Code 等终端式 AI 编程代理整合到统一的桌面/Web 界面中，通过 Git Worktree 隔离、Diff 可视化审查、一键 PR 工作流等核心功能，有效解决了开发者在多代理并行工作时面临的上下文切换和代码管理难题。项目采用 TypeScript + Bun + Effect + Electron 等现代技术栈构建，支持 Windows、macOS 和 Linux 全平台，迭代速度极快，是当前 AI 辅助开发领域中极具潜力的开源工具之一。
