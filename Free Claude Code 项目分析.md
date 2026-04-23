@@ -1,0 +1,82 @@
+# Free Claude Code 项目分析
+
+## 项目名称
+
+**Free Claude Code** — 免费使用 Claude Code 的 API 代理服务器，将请求路由到免费或本地 LLM
+
+- **GitHub**: [Alishahryar1/free-claude-code](https://github.com/Alishahryar1/free-claude-code)
+- **许可证**: MIT License
+
+---
+
+## 项目概述
+
+free-claude-code 是一个轻量级的 API 代理服务器，它拦截 Claude Code 的 API 请求，并将其路由到免费的或本地的 LLM 提供商（如 NVIDIA NIM、OpenRouter、LM Studio、llama.cpp 等），使用户无需 Anthropic API Key 即可免费使用 Claude Code CLI 和 VSCode 扩展。
+
+该项目的核心理念是作为 Claude Code 的**即插即用替代品（Drop-in Replacement）**，只需设置 2 个环境变量即可使用，无需修改 Claude Code 本身的任何代码。此外，它还创新性地支持通过 Discord 或 Telegram 机器人远程控制 Claude Code 进行编程，甚至支持语音消息输入。
+
+---
+
+## 核心功能
+
+| 功能 | 说明 |
+|------|------|
+| **零成本使用** | 通过 NVIDIA NIM（40 请求/分钟）、OpenRouter 等免费额度实现免费使用 |
+| **即插即用** | 无需修改 Claude Code，直接作为代理替换，仅需 2 个环境变量 |
+| **多提供商支持** | 支持 NVIDIA NIM、OpenRouter、DeepSeek、LM Studio、llama.cpp 五大后端 |
+| **按模型映射** | 可将特定的 Claude 模型路由到不同的提供商 |
+| **思维链支持** | 解析 `<thinking>` 标签，支持 Claude 的思考块输出 |
+| **智能限流** | 智能节流机制防止 API 过度使用 |
+| **Discord/Telegram 机器人** | 通过消息平台远程编程，支持会话持久化和实时进度显示 |
+| **语音笔记** | 支持语音消息，自动转录并作为常规提示处理 |
+| **子代理控制** | 防止子代理失控 |
+| **高度可扩展** | 可轻松添加自定义提供商和消息平台 |
+
+---
+
+## 技术栈
+
+| 组件 | 技术 |
+|------|------|
+| **Web 框架** | FastAPI（uvicorn ASGI 服务器） |
+| **AI SDK** | OpenAI Python SDK |
+| **消息平台** | discord.py + python-telegram-bot |
+| **语音处理** | Whisper（语音转文字） |
+| **包管理** | uv（现代 Python 包管理工具） |
+| **主要语言** | Python（99.5%）+ Shell（0.5%） |
+
+---
+
+## 项目亮点
+
+1. **零门槛入门** — 仅需 2 个环境变量配置，极大降低了使用门槛
+2. **多后端冗余** — 支持多个免费 LLM 后端提供商，确保可用性和灵活性
+3. **本地运行能力** — 通过 LM Studio 和 llama.cpp 支持完全离线/本地运行
+4. **远程编程能力** — 通过 Discord/Telegram 可随时随地使用 Claude Code
+
+---
+
+## 应用场景
+
+1. **个人开发者免费使用 Claude Code**：无需 Anthropic API Key 即可体验 Claude Code 编程辅助
+2. **本地隐私开发**：通过 LM Studio/llama.cpp 本地部署，完全离线 AI 编程助手
+3. **远程编程协作**：通过 Discord/Telegram 机器人随时随地发起编程任务
+4. **多模型对比测试**：利用不同提供商的模型进行对比测试，选择最优方案
+
+---
+
+## Star 数据
+
+| 指标 | 数值 |
+|------|------|
+| **总 Stars** | ~3,900 |
+| **Forks** | ~740 |
+| **今日新增** | 持续保持增长态势，日均增长数十至上百 Star |
+| **许可证** | MIT License |
+| **主要语言** | Python |
+
+---
+
+## 总结
+
+free-claude-code 是一个巧妙的开源项目，通过代理机制让开发者无需 Anthropic API Key 即可免费使用 Claude Code。项目基于 FastAPI 构建轻量级代理服务，支持 NVIDIA NIM、OpenRouter、LM Studio 等多个后端，还集成了 Discord/Telegram 远程控制和语音输入等特色功能。凭借 MIT 协议、极低的使用门槛和丰富的功能，在短时间内吸引了近 4,000 Star，是 AI 编程工具领域值得关注的开源项目。
