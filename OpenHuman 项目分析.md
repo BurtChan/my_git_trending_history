@@ -1,0 +1,104 @@
+# OpenHuman 项目分析
+
+## 项目名称
+
+**OpenHuman** — 面向普通用户的隐私优先 AI 超级助手
+
+- **GitHub**: [tinyhumansai/openhuman](https://github.com/tinyhumansai/openhuman)
+- **许可证**: GPLv3
+
+---
+
+## 项目概述
+
+OpenHuman 是一个开源的智能 AI 助手，旨在将 AI Agent 的强大能力带给普通用户，而不仅仅是技术人员。项目的口号是"你的个人 AI 超级智能，私密、简单且极其强大"。目前处于早期 Beta 阶段，正在积极开发中。
+
+OpenHuman 的核心设计理念是**消除 AI Agent 的使用门槛**。当今最强大的 AI Agent 假设用户熟悉终端、能配置 API Key、愿意管理 GPU 账单，而 OpenHuman 面向的是那 99.99% 无法自行配置运行环境的用户。它提供简洁的 GUI 界面、两分钟即可完成设置、一键 OAuth 连接 Gmail/Slack/Telegram/Notion/GitHub 等 118+ 服务，无需任何配置文件或工程师协助。
+
+项目采用 Rust 作为核心引擎（`openhuman_core` crate），前端使用 React + Vite，桌面应用通过 Tauri 打包。这种技术选型确保了高性能、低资源占用和跨平台支持。OpenHuman 的核心特色是其"Memory Tree"（记忆树）和"Memory Graph"（记忆图）系统——本地优先的知识库使用 Markdown 分块存储，能跨会话记忆用户上下文，并自动摘要压缩文档、邮件和聊天记录。
+
+---
+
+## 核心功能
+
+| 功能 | 描述 |
+|------|------|
+| **极简桌面 UI** | 清洁的桌面体验，极短引导流程，两分钟完成设置 |
+| **118+ 服务集成** | 通过一键 OAuth 连接 Gmail、Notion、GitHub、Slack、Telegram 等 |
+| **Memory Tree** | 本地优先知识库，使用 Markdown 分块，跨会话记忆上下文 |
+| **Memory Graph** | 自动摘要和压缩文档、邮件、聊天记录 |
+| **TokenJuice** | 智能 Token 压缩，降低成本和延迟 |
+| **隐私加密** | 本地数据通过加密保险库存储，数据永不外售 |
+| **零训练期** | 设置后立即可用，无需训练即可学习用户上下文 |
+| **设备端工作流知识** | 用户工作流信息保留在本地设备，无厂商锁定 |
+| **持久记忆** | 全面的跨会话用户数据记忆 |
+| **内置能力** | 网页搜索、编码工具、语音功能开箱即用 |
+| **技能市场** | 内置技能市场扩展能力 |
+| **一键安装** | macOS/Linux（curl | bash）和 Windows（irm | iex）一行命令安装 |
+
+---
+
+## 技术栈
+
+| 组件 | 技术 |
+|------|------|
+| **核心引擎** | Rust（openhuman_core crate） |
+| **前端** | React + Vite |
+| **桌面框架** | Tauri（跨平台桌面应用） |
+| **通信层** | JSON-RPC 双向通信 |
+| **AI Agent 配置** | CLAUDE.md（仓库根目录，AI Agent 的唯一事实来源） |
+| **平台支持** | macOS、Linux、Windows |
+
+---
+
+## 项目亮点
+
+### 极致隐私设计
+所有数据本地运行并通过加密保险库存储，数据永不外售，真正实现用户数据主权。
+
+### 零配置体验
+无需 API Key 配置、无需 GPU 账单、无需配置文件，两分钟完成设置即可使用全部功能。
+
+### Rust 高性能核心
+核心引擎使用 Rust 编写，确保低资源占用和高性能，适合长期后台运行。
+
+### 本地优先记忆系统
+Memory Tree + Memory Graph 双记忆系统，在保护隐私的同时提供智能的上下文记忆和知识管理。
+
+---
+
+## 应用场景
+
+### 个人 AI 助手
+普通用户将 OpenHuman 作为日常 AI 助手，管理邮件、日程、笔记等多平台信息，享受隐私保护的 AI 体验。
+
+### 跨平台信息聚合
+将 Gmail、Slack、Notion 等多个服务的信息集中管理，通过 AI 实现智能检索和跨平台操作。
+
+### 隐私敏感场景
+医疗、法律、金融等领域的专业人士使用 OpenHuman 处理敏感信息，所有数据本地加密存储。
+
+### 离线/低网环境
+在网络受限的环境中使用 OpenHuman 的本地 AI 能力，无需依赖云端服务。
+
+---
+
+## Star 数据
+
+| 指标 | 数值 |
+|------|------|
+| **总 Stars** | ~357 |
+| **总 Forks** | ~30 |
+| **今日新增 Stars** | 154 |
+| **许可证** | GPLv3 |
+| **主要语言** | Rust |
+
+---
+
+## 总结
+
+OpenHuman 是一个面向普通用户的**隐私优先开源 AI 助手**，357 Stars。它用 Rust 构建核心引擎、React + Tauri 构建跨平台桌面 UI，通过一键 OAuth 连接 118+ 服务、Memory Tree/Graph 双记忆系统、TokenJuice 压缩等创新功能，将 AI Agent 的强大能力带给非技术用户。项目虽然处于早期 Beta，但其"零配置、全隐私"的设计理念在 AI Agent 领域独树一帜。
+
+---
+
+*数据来源：GitHub 仓库 (tinyhumansai/openhuman)、tinyhumans.gitbook.io（2026 年 5 月访问）*
