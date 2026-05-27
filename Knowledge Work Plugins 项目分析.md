@@ -2,34 +2,43 @@
 
 ## 项目名称
 
-**Knowledge Work Plugins** — Anthropic 官方开源的知识工作者插件集合
+**Knowledge Work Plugins** — Anthropic 官方开源的 Claude Cowork / Claude Code 插件集合，将通用 AI 助手转化为各职能岗位的领域专家
 
 - **GitHub**: [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins)
-- **许可证**: Apache-2.0
+- **许可证**: Apache License 2.0
 
 ---
 
 ## 项目概述
 
-Knowledge Work Plugins 是 Anthropic 官方推出的开源插件集合，专为知识工作者设计，主要用于 Claude Cowork（Anthropic 的桌面端 AI 协作应用），同时兼容 Claude Code。该项目一次性开源了 11 个面向不同职业角色的插件，覆盖了产品经理、销售、客户支持、市场营销、法务、财务、数据分析、生物研究等核心业务岗位。
+Knowledge Work Plugins 是 Anthropic 于 2026 年 1 月随 Claude Cowork 插件系统一同发布的开源插件仓库。它为知识工作者提供了一系列即装即用的领域插件，覆盖销售、产品管理、工程、财务、法务、市场营销、人力资源、设计、运营、数据、生物科研等十余个核心业务职能。
 
-每个插件本质上是一个结构化的技能包，包含插件清单（plugin.json）、工具连接配置（.mcp.json）、斜杠命令（commands/）和领域知识（skills/）。安装后，Claude 会自动加载该角色的专业技能、连接对应的外部工具（如 Slack、Notion、Asana、Jira），并根据预设的工作流完成任务。这些插件是通用起点，用户可以针对公司实际流程进行深度定制——替换连接器、添加企业上下文、调整审批流程。
+项目核心价值在于**角色专业化**：将 Claude 从通用助手变为特定职能专家，具备该领域的最佳实践、工作流和工具集成。插件采用纯 Markdown/JSON 文件结构（无代码），企业可轻松定制工作流、替换连接器、注入公司专属术语和流程。
 
-作为 Anthropic 官方维护的开源项目，Knowledge Work Plugins 代表了 AI 编码工具从"通用助手"向"专业岗位专家"演进的重要方向，也体现了 Anthropic 构建 AI Cowork 生态系统的战略布局。
+通过 MCP（Model Context Protocol）连接器，插件将 Claude 对接到企业已有的工具链（如 Slack、Notion、HubSpot、Jira、Salesforce、Snowflake、GitHub 等 40+ 外部工具），实现跨平台数据打通。项目同时兼容 Claude Cowork（面向非技术知识工作者）和 Claude Code（面向开发者）两种使用场景。
 
 ---
 
 ## 核心功能
 
-| 功能 | 描述 |
-|------|------|
-| **11 个角色插件** | 覆盖生产力、销售、客户支持、产品管理、市场营销、法务、财务、数据分析、企业搜索、生物研究等岗位 |
-| **自动技能加载** | 插件安装后，Claude 自动掌握对应领域的专业知识和最佳实践 |
-| **外部工具连接** | 通过 MCP 协议连接 Slack、Notion、Asana、Jira 等常用工具 |
-| **斜杠命令** | 每个插件提供专用命令（如法务插件的 /review-contract） |
-| **企业定制** | 支持自定义公司规范、谈判手册、风险容忍度等组织特定配置 |
-| **跨平台兼容** | 同时支持 Claude Cowork 和 Claude Code |
-| **插件市场** | 内置插件管理系统，方便安装、更新和卸载 |
+| 插件名称 | Skills 数 | Commands 数 | 关键连接器 |
+|---|---|---|---|
+| **Productivity（生产力）** | 2 | 2 | Slack, Notion, Asana, Linear, Jira |
+| **Sales（销售）** | 6 | 3 | HubSpot, Close |
+| **Customer Support（客户支持）** | 5 | 5 | Intercom, HubSpot |
+| **Product Management（产品管理）** | 6 | 7 | Linear, Figma |
+| **Marketing（市场营销）** | 5 | 7 | Canva, Figma |
+| **Engineering（工程）** | 6 | 6 | GitHub, PagerDuty |
+| **Design（设计）** | 6 | 6 | Figma, Intercom |
+| **Data（数据）** | 7 | 6 | Snowflake, Databricks |
+| **Finance（财务）** | 6 | 5 | Snowflake, Databricks |
+| **Legal（法务）** | 6 | 7 | Box, Egnyte |
+| **HR（人力资源）** | 6 | 6 | MS365, Notion |
+| **Operations（运营）** | 6 | 6 | ServiceNow, Asana |
+| **Enterprise Search（企业搜索）** | 3 | 2 | Slack, Notion |
+| **Bio-Research（生物科研）** | 5 | 1 | PubMed, Benchling |
+
+总计 **85+ Skills**、**69+ Commands**、**40+ MCP Connectors**。
 
 ---
 
@@ -37,44 +46,44 @@ Knowledge Work Plugins 是 Anthropic 官方推出的开源插件集合，专为�
 
 | 组件 | 技术 |
 |------|------|
-| **插件清单** | plugin.json（JSON Schema） |
-| **工具连接** | MCP（Model Context Protocol） |
-| **命令系统** | 自定义斜杠命令 |
-| **领域知识** | Markdown 技能文件 |
-| **主要语言** | Python / HTML |
-| **许可证** | Apache-2.0 |
+| **主要编程语言** | Python |
+| **插件内容格式** | Markdown（技能描述）、JSON（清单和配置） |
+| **外部工具协议** | MCP（Model Context Protocol） |
+| **兼容平台** | Claude Cowork、Claude Code |
+| **安装方式** | claude plugin marketplace add 或在线安装 |
+| **版本控制** | Git / GitHub |
 
 ---
 
 ## 项目亮点
 
-### 官方出品，质量保障
-由 Anthropic 官方团队直接维护，插件设计经过内部实际使用验证，代表了 Claude 在企业场景中的最佳实践。
+### 纯文件驱动、零代码门槛
+插件全部由 Markdown 和 JSON 文件构成，无需编写代码或搭建基础设施，降低了企业定制门槛。
 
-### 角色专业化
-每个插件针对特定岗位深度定制，不是泛泛的"AI 助手"，而是具备领域专业知识的"虚拟团队成员"。例如法务插件可以自动进行合同审查、NDA 分诊、合规检查。
+### 研究优先工作流
+插件遵循"研究 → 综合 → 起草 → 执行"的模式，确保输出质量。
 
-### 企业级定制能力
-插件的所有行为都可以根据企业实际需求定制——从标准合同条款、风险容忍度到审批流程，全部可配置。
+### 多源工具集成
+每个插件集成 5-10+ 外部工具，实现跨平台数据打通。
 
-### 开源生态
-Apache-2.0 许可证鼓励社区贡献，企业可以基于现有插件创建自己的内部版本，或贡献新的角色插件。
+### 官方背书
+由 Anthropic 官方团队直接维护，质量有保障，与 Claude 产品深度整合。
 
 ---
 
 ## 应用场景
 
-### 企业知识工作者赋能
-为产品经理、销售、法务、财务等非技术人员提供 AI 驱动的工作流自动化，降低重复性工作负担。
+### 销售团队
+潜在客户调研、通话准备、销售管道管理、竞品 Battle Card 制作。
 
-### 企业流程标准化
-通过定制化的插件将企业最佳实践和标准操作流程嵌入 AI 助手，确保团队遵循统一规范。
+### 产品管理
+需求文档撰写、路线图规划、用户研究、竞品分析。
 
-### AI 原生办公平台
-作为 Claude Cowork 的插件生态核心，帮助企业逐步过渡到 AI 原生的工作方式。
+### 工程团队
+代码审查辅助、On-call 管理、工单处理、技术文档。
 
-### 开发者参考模板
-为希望为 Claude 创建自定义插件的开发者提供高质量的参考实现和标准结构。
+### 财务与法务
+日记账、账户对账、合同审查、NDA 分诊、合规导航。
 
 ---
 
@@ -82,17 +91,18 @@ Apache-2.0 许可证鼓励社区贡献，企业可以基于现有插件创建自
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 15,964 |
-| **总 Forks** | 1,900 |
-| **今日新增 Stars** | 1,441 |
-| **许可证** | Apache-2.0 |
-| **主要语言** | Python / HTML |
+| **总 Stars** | 16,565+ |
+| **总 Forks** | 1,945+ |
+| **今日新增 Stars** | ~100+ |
+| **许可证** | Apache License 2.0 |
+| **创建时间** | 2026 年 1 月 |
+| **主要语言** | Python |
 
 ---
 
 ## 总结
 
-Knowledge Work Plugins 是 **Anthropic 官方推出的企业级 AI 插件集合**，15.9K+ Stars。它为 Claude Cowork 提供了 11 个面向知识工作者的角色插件，覆盖销售、法务、财务、产品、市场等核心岗位，每个插件包含专业技能、工具连接和工作流命令。项目采用 Apache-2.0 开源许可，支持深度企业定制，代表了 AI 编码工具从"通用助手"向"专业岗位专家"转变的重要里程碑。
+Knowledge Work Plugins 是 **Anthropic 在 AI 助手企业化方向上的核心布局**，16.5k+ Stars。它通过插件化架构将 Claude 从通用 AI 变为各职能领域的专家助手，采用零代码的 Markdown/JSON 文件格式极大降低企业定制门槛，通过 MCP 协议打通 40+ 企业工具。项目代表了 AI 助手从"对话工具"向"领域专家工作平台"演进的重要趋势。
 
 ---
 

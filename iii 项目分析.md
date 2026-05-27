@@ -2,71 +2,103 @@
 
 ## 项目名称
 
-**iii** — 下一代服务组合平台，通过三个原语（Worker、Trigger、Function）实现零集成成本，让你可以轻松地实时组合、扩展和观察技术栈中的每一个服务。
+**iii** — 实时组合、扩展和观察所有后端服务的下一代软件框架
 
-- **GitHub 链接**：https://github.com/iii-hq/iii
-- **许可证**：引擎：Elastic License 2.0；SDK/CLI/控制台/文档/网站：Apache License 2.0
-- **主要语言**：Rust（核心引擎），TypeScript/Node.js、Python（SDK）
+- **GitHub**: [iii-hq/iii](https://github.com/iii-hq/iii)
+- **许可证**: 双许可 — 引擎 Elastic License 2.0；SDK/CLI/Console/文档 Apache License 2.0
+
+---
 
 ## 项目概述
 
-iii 是由 iii-hq 组织开发的一个全新软件基础设施平台，其核心理念是将复杂的软件系统集成问题简化为仅三个基本原语：**Worker（工作者）**、**Trigger（触发器）** 和 **Function（函数）**。传统的微服务架构中，每新增一个服务就意味着与其他所有服务建立集成关系，复杂度呈二次方增长。iii 通过提供一个实时发现和通信的引擎，将这种复杂度降为线性——新增一个 Worker 就像安装一个 npm 包一样简单。每个 Worker 注册到 iii 引擎后，系统中的其他 Worker 可以立即发现并调用它的功能。
+iii 是由 Motia LLC 开发的开源后端服务编排框架，核心理念是**"三个原语，零集成成本"（Three primitives. Zero integration cost.）**。传统后端开发中，开发者需要将消息队列、HTTP 服务、定时任务、状态管理、可观测性、AI Agent 等能力逐一集成，每次都涉及大量配置和基础设施工作。
 
-iii 的设计哲学不仅面向人类开发者，还天然支持 AI Agent 的协作。当一个任务需要系统当前不具备的能力时，Agent 可以动态添加新的 Worker、发现其函数、调用它们并追踪执行过程。iii 引擎以 Rust 编写，提供高性能的运行时和协议实现，同时通过 SDK 支持 Node.js、Python 和 Rust 三种语言，使得不同语言编写的服务可以无缝协作。
+iii 将这些能力统一为一套运行时引擎和三个核心原语（Worker、Function、Trigger），使得任何语言编写的服务都可以作为 Worker 注册到 iii 引擎中，Worker 之间可以实时发现和调用彼此的 Function，无需预定义接口或部署配置。新 Worker 可以在运行时动态加入系统，已有 Worker 自动感知并立即调用新功能。
 
-项目包含完整的开发工具链：核心引擎（engine/）、多语言 SDK（sdk/）、开发者控制台（console/）、Agent 可读的技能文件（skills/）以及完善的文档和网站。iii 引擎使用 Elastic License 2.0 许可证，而 SDK、CLI、控制台、文档和网站则使用 Apache License 2.0。项目创建于 2025 年 1 月，目前处于快速迭代阶段（当前版本 v0.16.0-next.2）。
+iii 的核心引擎基于 Rust 构建，提供高性能的运行时支撑。支持 Node.js/TypeScript、Python、Rust 三种 SDK，AI Agent 可以自主发现系统能力、动态添加新 Worker、追踪执行链路。项目已迭代至 v0.16.x，正在快速成熟中。
+
+---
 
 ## 核心功能
 
-| 功能 | 描述 |
+| 功能 | 说明 |
 |------|------|
-| 实时服务发现 | 新 Worker 注册后，其函数和触发器立即可被系统中所有其他 Worker 发现和调用 |
-| 实时可扩展性 | 通过简单的 `iii worker add` 命令即可向运行中的系统添加新能力，无需重新设计架构 |
-| 实时可观测性 | 全栈实时可见性，包括操作追踪、行为监控和日志上下文 |
-| 多语言统一协议 | 支持 Node.js、Python、Rust，所有语言共享同一套 Worker/Trigger/Function 协议 |
-| AI Agent 原生支持 | Agent 可以在运行时动态注册新 Worker 并调用其功能，实现人机协作 |
-| 开发者控制台 | 提供可视化界面，用于检查和管理 Worker、函数、触发器及系统状态 |
-| 触发器机制 | 支持 HTTP 端点、Cron 定时任务、状态变更等多种触发方式 |
-| Agent Skills | 提供 Agent 可读的参考材料，帮助 AI 代理更好地理解和使用 iii 系统 |
+| **Workers（工作进程）** | 进程注册到 iii 引擎，支持运行时动态添加，跨语言互操作 |
+| **Functions（函数）** | 具有稳定标识符的工作单元（如 `content::classify`、`orders::validate`） |
+| **Triggers（触发器）** | 触发函数执行的事件源，包括 HTTP 端点、Cron 定时任务、Queue 队列等 |
+| **实时发现（Live Discovery）** | Worker 加入后立即被其他 Worker 发现和调用 |
+| **跨语言互操作** | 支持 TypeScript、Python、Rust 编写 Worker 并互相调用 |
+| **状态管理（State）** | 内置持久化状态，跨调用共享数据 |
+| **可观测性（Observability）** | 内置端到端追踪和日志，集成 OpenTelemetry |
+| **AI Agent 集成** | Agent 可发现函数、添加 Worker、追踪操作链路 |
+| **iii Console** | 开发者控制台，可视化检视 Workers、Functions、Triggers |
+| **iii Browser SDK** | 浏览器端 SDK，支持前端直接与 iii 引擎交互 |
+| **持久化编排** | 管理长时间运行、容错的跨 Worker 任务流 |
+
+---
 
 ## 技术栈
 
-| 类别 | 技术 |
+| 组件 | 技术 |
 |------|------|
-| 核心引擎语言 | Rust |
-| SDK 支持语言 | Node.js/TypeScript、Python、Rust |
-| 包管理 | pnpm/npm（Node.js）、pip（Python）、Cargo（Rust） |
-| 通信协议 | WebSocket（Worker 与引擎之间） |
-| 前端/控制台 | Web 技术栈 |
-| 文档 | Markdown 文档站 |
-| 构建/CI | Monorepo 结构，含 STRUCTURE.md 描述依赖链和 CI/CD |
+| **核心引擎** | Rust |
+| **SDK** | Node.js/TypeScript、Python、Rust |
+| **开发者控制台** | React + Rust |
+| **浏览器 SDK** | TypeScript |
+| **可观测性** | OpenTelemetry |
+| **容器化部署** | Docker |
+
+---
 
 ## 项目亮点
 
-1. **范式革新** — 将软件集成的二次方复杂度降为线性，从根本上改变了服务间协作的方式，新增能力只需"添加一个 Worker"
-2. **三个原语搞定一切** — 仅凭 Worker、Trigger、Function 三个核心概念即可构建整个软件栈，统一的心智模型大幅降低学习和使用门槛
-3. **人机协作设计** — iii 的 Worker 机制同时服务于人类开发者和 AI Agent，Agent 可在运行时自主扩展系统功能，实现真正的自动化协作
-4. **多语言无缝互操作** — 不同语言编写的服务通过统一协议实时通信，一个 TypeScript API 服务、一个 Python 数据管道和一个 Rust 微服务可以即时发现和调用彼此
+### 三个原语统一后端开发
+只用 Worker、Function、Trigger 三个概念即可覆盖传统需要数十种工具的后端能力。
+
+### 运行时热扩展
+`iii worker add` 命令可在运行中动态添加新服务，无需重启或重新部署。
+
+### 跨语言无缝互调
+TypeScript Worker 可直接调用 Python Worker 的函数，无需额外中间件。
+
+### AI Agent 原生支持
+Agent 可以自主发现系统功能、添加新 Worker、调用函数并追踪结果——这是 iii 的独特卖点。
+
+---
 
 ## 应用场景
 
-1. **微服务架构编排** — 将现有的微服务（如 TypeScript API 服务、Python 数据管道、Rust 微服务）统一注册到 iii 引擎中，实现实时发现和互调用，替代传统的 API 网关 + 服务注册方案
-2. **AI Agent 工作流** — 当 AI Agent 执行任务时，可以动态发现系统中可用的能力并调用，也可以按需添加新 Worker 来扩展能力边界——适用于自动化运维、智能助手等场景
-3. **物联网（IoT）和边缘计算** — 在 IoT 和边缘计算领域，iii 可用于编排分布在不同设备上的轻量级 Worker，实现低延迟的服务发现和协同
-4. **后端 API 快速开发** — 团队可以快速添加新的 API 端点作为 Worker 触发器，无需手动配置路由、服务发现和负载均衡，加速后端服务的迭代
+### 微服务编排
+替代传统 API Gateway + 消息队列 + 服务发现方案，零集成成本。
+
+### AI/ML 管道
+TypeScript API 服务调用 Python ML 推理，状态管理贯穿全流程。
+
+### AI Agent 平台
+Agent 动态发现和扩展系统能力的运行时基础设施。
+
+### 快速原型开发
+`iii create` 一键脚手架，分钟级搭建可运行的后端系统。
+
+---
 
 ## Star 数据
 
-| 指标 | 数据 |
+| 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | ~16,595 |
-| 🍴 Forks | ~1,097 |
-| 📈 今日新增 | 热门趋势 |
-| 📜 许可证 | Elastic License 2.0（引擎）/ Apache License 2.0（SDK 等） |
-| 💻 主要语言 | Rust（引擎），TypeScript、Python（SDK） |
-| 📋 Open Issues | 41 |
-| 🏷️ 最新版本 | v0.16.0-next.2 |
+| **总 Stars** | 16,800+ |
+| **总 Forks** | 1,097+ |
+| **今日新增 Stars** | ~200+ |
+| **许可证** | Elastic License 2.0（引擎）/ Apache License 2.0（SDK 等） |
+| **创建时间** | 2025 年 |
+| **主要语言** | Rust |
+
+---
 
 ## 总结
 
-iii 是一个极具创新性的服务组合基础设施平台，通过 Worker、Trigger、Function 三个简洁原语将微服务集成的二次方复杂度降为线性。其核心引擎使用 Rust 编写以保证高性能，SDK 覆盖 Node.js、Python、Rust 三大语言生态，实现多语言服务的无缝互操作。特别值得关注的是其对 AI Agent 的原生支持——Agent 可以在运行时动态发现和扩展系统能力，代表了 AI 时代软件架构的新方向。项目自 2025 年 1 月创建以来已获得超过 1.6 万星标，处于快速迭代阶段，值得持续关注。
+iii 是一个**后端服务编排框架**，16.8k+ Stars。它用三个简单原语（Worker/Function/Trigger）统一了后端服务的组合、扩展和可观测性，从根本上消除了微服务架构中的集成复杂度。项目基于 Rust 构建高性能引擎，支持 TypeScript、Python、Rust 多语言 SDK，特别是其 AI Agent 原生集成能力在当前 AI Agent 热潮中具有独特吸引力。
+
+---
+
+*数据来源：GitHub 仓库 (iii-hq/iii)、iii.dev，2026 年 5 月访问*
