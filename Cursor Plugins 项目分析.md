@@ -2,7 +2,7 @@
 
 ## 项目名称
 
-**Cursor Plugins** — Cursor 官方推出的插件规范与官方插件市场，为 AI 编程提供可扩展的工具集
+**Cursor Plugins** — Cursor AI IDE 官方插件生态系统，为开发者工具、框架和 SaaS 产品提供扩展能力
 
 - **GitHub**: [cursor/plugins](https://github.com/cursor/plugins)
 - **许可证**: MIT
@@ -11,45 +11,30 @@
 
 ## 项目概述
 
-Cursor Plugins 是由 AI 编程工具 Cursor 官方维护的插件生态仓库。Cursor 作为一款基于 VS Code 深度定制的 AI 驱动代码编辑器，正在快速构建自己的插件扩展体系。该仓库定义了 Cursor 插件的标准化规范（Plugin Specification），并发布了一系列官方出品的官方插件，涵盖开发者工具、框架集成、SaaS 产品对接等多个领域。每个插件以独立目录形式存放在仓库根目录中，通过 `.cursor-plugin/plugin.json` 清单文件进行声明和管理，形成了一个类似 VS Code Extension Marketplace 的多插件市场仓库。
+Cursor Plugins 是 Cursor AI 编辑器的官方插件规范与插件仓库，由 Cursor 团队维护。该项目定义了一套标准化的插件架构，使第三方工具和框架能够以插件形式接入 Cursor AI IDE，让 AI 编程助手能够连接外部服务、获取专业知识并执行复杂的工作流。每个插件作为独立目录存放，通过 `.cursor-plugin/plugin.json` 清单文件进行元数据管理。
 
-仓库采用多插件市场仓库架构（Multi-Plugin Marketplace Repository），根目录的 `.cursor-plugin/marketplace.json` 作为总索引文件列出所有插件，每个插件目录包含独立的 `.cursor-plugin/plugin.json` 清单、`skills/` 目录（Agent 技能，含 SKILL.md 及 frontmatter 元数据）、`rules/` 目录（Cursor 规则，.mdc 文件）、`mcp.json`（MCP 服务器定义）、README、CHANGELOG 和 LICENSE。这种标准化结构使得插件开发、分发和维护变得规范有序，降低了第三方开发者参与门槛。
+该仓库包含多个官方插件，涵盖了开发全生命周期的各类场景。例如 `cursor-team-kit` 提供 CI/CD、代码审查和本地自动化工作流；`continual-learning` 实现基于对话记录的增量记忆更新；`orchestrate` 支持跨多个 Agent 的并行任务管理；`create-plugin` 则为插件开发者提供脚手架和验证工具。此外，Cursor 已与 Amplitude、AWS、Figma、Linear、Stripe 等知名企业合作推出合作伙伴插件。
 
-该仓库的发布标志着 Cursor 正在从单一 AI 编辑器向开放插件平台演进。通过定义统一的插件规范并提供官方示例插件（包括来自社区贡献者如 Lauren Tan 的 pstack），Cursor 正在建立类似 VS Code 的插件生态系统。目前仓库已收录 13 个官方插件，覆盖从代码审查、文档渲染到 SDK 开发、并行任务编排等丰富场景。
+从技术角度看，Cursor 插件系统支持多种扩展机制，包括 MCP（Model Context Protocol）服务器、技能（Skills）、子代理（Subagents）、规则（Rules）和钩子（Hooks）。这种灵活的架构使插件既能为 AI 提供上下文知识和工具调用能力，也能自定义 AI 的行为逻辑。插件市场（Marketplace）还支持社区创作者构建和发布自定义插件，未来还将推出私有团队市场功能。
 
 ---
 
 ## 核心功能
 
-### 1. Continual Learning（持续学习）
-基于增量转录驱动的记忆更新系统，仅提取高信号量的关键要点写入 AGENTS.md，实现 AI Agent 在长期对话中的持续记忆积累与知识更新。
-
-### 2. Cursor Team Kit（团队工具包）
-Cursor 内部开发团队使用的团队工作流工具集，涵盖 CI 持续集成、代码审查、产品发布、本地自动化和代码验证等完整开发流程。
-
-### 3. Thermos（热核分支审查）
-高强度代码分支审查工具，提供深度安全/正确性审计、严格代码质量评分、并行子 Agent 审查，支持热核编排和可选的合并就绪 PR 流程。
-
-### 4. Create Plugin（插件创建器）
-脚手架与验证工具，帮助开发者快速创建和验证新的 Cursor 插件，降低插件开发门槛。
-
-### 5. Agent Compatibility（Agent 兼容性检查）
-基于 CLI 的仓库兼容性扫描工具，配合 Cursor Agent 对启动、验证和文档进行现实审计，确保代码库与 AI Agent 的兼容性。
-
-### 6. PR Review Canvas（PR 审查画布）
-将 PR 差异渲染为交互式 Cursor Canvas，按重要性分组变更，分离样板代码与核心逻辑，突出显示棘手或意外代码，优化审阅体验。
-
-### 7. Docs Canvas（文档画布）
-将架构笔记、API 参考、操作手册和代码库导览等文档渲染为可导航的 Cursor Canvas，支持章节、目录、图表和交叉引用。
-
-### 8. Cursor SDK
-基于 `@cursor/sdk` TypeScript SDK 构建应用、脚本、CI 流水线和自动化的开发工具，涵盖运行时选择、认证、流式处理、MCP、错误处理和可扩展的集成模式。
-
-### 9. Orchestrate（任务编排）
-将大型任务分发到并行 Cursor 云端 Agent 的编排系统，包含规划器、工作器、验证器和结构化交接流程，支持 Slack 通知集成。
-
-### 10. Teaching（教学）
-提供技能映射、练习计划和学习回顾功能，辅助 AI 辅助的技术学习场景。
+| 功能 | 描述 |
+|------|------|
+| 标准化插件规范 | 通过 plugin.json 清单文件定义插件的元数据、技能和配置 |
+| MCP 服务器集成 | 允许插件暴露外部工具和服务供 AI Agent 调用 |
+| 技能（Skills）系统 | 为 AI 提供特定领域的知识和操作指令 |
+| 子代理（Subagents） | 定义专用 AI 代理执行特定任务 |
+| 规则（Rules）引擎 | 自定义 AI 的行为约束和编码规范 |
+| 钩子（Hooks）机制 | 在特定事件触发时自动执行预定义操作 |
+| 持续学习 | 基于对话记录的增量记忆更新 |
+| 任务编排（Orchestrate） | 跨多个 Agent 的并行任务管理与协调 |
+| Agent 兼容性检测 | CLI 驱动的仓库兼容性扫描和审计工具 |
+| Cursor SDK | 为构建应用和自动化流程提供软件开发工具包 |
+| PR Review Canvas | 将 PR 差异渲染为交互式 Canvas，按重要性分组展示 |
+| 插件市场（Marketplace） | 发现、安装和发布插件的官方平台 |
 
 ---
 
@@ -57,68 +42,48 @@ Cursor 内部开发团队使用的团队工作流工具集，涵盖 CI 持续集
 
 | 组件 | 技术 |
 |------|------|
-| **插件规范/清单系统** | JSON（plugin.json + marketplace.json） |
-| **Agent 技能定义** | Markdown + YAML Frontmatter（SKILL.md） |
-| **规则引擎** | MDC 格式规则文件 |
-| **外部集成协议** | MCP（Model Context Protocol）服务器 |
-| **SDK 开发语言** | TypeScript（`@cursor/sdk`） |
-| **运行时环境** | Bun（编排插件依赖） |
-| **任务编排** | Cursor Cloud Agents + SDK API |
-| **通知集成** | Slack API（可选） |
-| **代码托管** | GitHub |
-| **许可证** | MIT License |
+| 主要语言 | TypeScript |
+| 插件配置格式 | JSON (plugin.json / marketplace.json) |
+| AI 协议 | MCP (Model Context Protocol) |
+| 扩展机制 | Skills / Subagents / Rules / Hooks |
+| CI/CD | GitHub Actions |
+| 运行环境 | Cursor AI IDE |
+| 许可证 | MIT |
 
 ---
 
 ## 项目亮点
 
-### 标准化的多插件市场架构
-仓库定义了一套完整的 Cursor 插件规范体系：顶层 `marketplace.json` 作为全局索引，每个插件通过独立的 `plugin.json` 声明元数据，配合 `skills/`、`rules/`、`mcp.json` 等标准化目录结构。这种设计借鉴了 VS Code 的 Marketplace 模式，但针对 AI Agent 场景做了深度定制，为插件生态的长期发展奠定了坚实基础。
-
-### 深度 Agent 原生设计
-与传统 IDE 插件不同，Cursor Plugins 是专门为 AI Agent 场景设计的。技能系统通过 SKILL.md 文件定义 Agent 的行为模式，编排系统支持规划器-工作器-验证器的多 Agent 协作模式；持续学习插件实现了基于转录的增量记忆更新，体现对 AI Agent 工作流的深度理解。
-
-### Canvas 可视化交互范式
-PR Review Canvas 和 Docs Canvas 插件引入了独特的"Canvas"交互范式——将代码差异和文档渲染为可交互的可视化画布，而非传统的纯文本视图。PR 审查画布能按重要性智能分组变更，自动区分样板代码与核心逻辑；文档画布支持章节导航和交叉引用。
-
-### 开放的 MCP 生态集成
-每个插件都支持通过 `mcp.json` 定义 MCP（Model Context Protocol）服务器，实现与外部工具和数据源的数据打通。Cursor SDK 插件进一步提供了本地与云端运行时切换、流式处理、认证管理等完整的 SDK 集成能力。
+1. **由 Cursor 官方团队维护**：定义了插件生态系统的标准规范，是 Cursor Marketplace 的权威参考实现
+2. **多种 AI 扩展机制**：支持 MCP、Skills、Subagents、Rules、Hooks，架构灵活且可组合
+3. **覆盖完整产品开发生命周期**：已集成 Linear、Figma、Stripe、AWS、Vercel 等主流工具
+4. **开源 MIT 许可**：提供 create-plugin 脚手架工具，降低社区开发者的插件创建门槛
 
 ---
 
 ## 应用场景
 
-### 团队协作与代码审查
-借助 Cursor Team Kit、Thermos 和 PR Review Canvas 插件，开发团队可以在 Cursor 中实现完整的 CI/CD 工作流。Thermos 提供热核级的安全审查和代码质量审计，PR Review Canvas 将差异可视化呈现，显著提升团队协作效率和代码质量。
-
-### 文档生成与知识管理
-Docs Canvas 插件可以将架构文档、API 参考、操作手册等渲染为结构化的可导航画布；Continual Learning 插件实现 AI Agent 的长期记忆积累；Teaching 插件支持技能映射和学习计划制定，适用于大型项目的文档维护和新人培训。
-
-### 大规模并行任务执行
-Orchestrate 插件支持将大型任务拆分并分发到多个云端 Agent 并行执行，内置规划器-工作器-验证器的协作模式，适用于大规模代码重构、批量测试生成、多模块同步开发等场景。
-
-### 插件开发与生态建设
-Create Plugin 提供插件脚手架和验证工具，Cursor SDK 提供完整的开发指南，CLI for Agents 提供 Agent 友好的 CLI 设计模式，为参与 Cursor 插件生态的开发者提供了完整的开发链路。
+1. **支付集成开发**：利用 Stripe 插件快速构建支付功能和 Stripe 应用
+2. **基础设施管理**：通过 AWS、Cloudflare、Vercel 插件在 Cursor 中直接部署和管理云服务
+3. **数据查询与分析**：借助 Databricks、Snowflake、Amplitude 插件进行数据查询和洞察生成
+4. **设计到代码转换**：使用 Figma 插件将设计稿直接转化为可用的前端代码
+5. **团队工作流自动化**：通过 Cursor Team Kit 管理 CI/CD、代码审查和本地验证流程
+6. **自定义插件开发**：基于 plugin-template 和 create-plugin 为团队或社区构建专属插件
 
 ---
 
 ## Star 数据
 
-| 指标 | 数值 |
+| 指标 | 数据 |
 |------|------|
-| **总 Stars** | 1,174 |
-| **总 Forks** | 105 |
-| **今日新增 Stars** | +129 |
-| **许可证** | MIT |
-| **插件数量** | 13 个官方插件 |
-| **主要语言** | TypeScript / Markdown |
+| 总 Stars | 940+ |
+| 总 Forks | 91+ |
+| 今日新增 | N/A |
+| 许可证 | MIT |
+| 主要语言 | TypeScript |
 
 ---
 
 ## 总结
 
-Cursor Plugins 是 Cursor 向开放平台转型的关键里程碑，通过标准化的插件规范和 13 个官方插件（涵盖代码审查、SDK 开发、任务编排、文档渲染等），正在构建 AI 编程时代的"插件生态系统"。项目采用 Agent 原生设计和 Canvas 可视化交互范式，为 AI 编程工具的可扩展性设立了新标准。
-
----
-
-*数据来源：GitHub 仓库 (cursor/plugins)，2026 年 5 月访问*
+Cursor Plugins 是 Cursor AI IDE 的官方插件规范与仓库，采用 TypeScript 开发、MIT 许可开源，目前已有 940 Stars。该项目通过标准化的 plugin.json 清单和 MCP 协议，定义了一套灵活的 AI 插件架构，支持技能、子代理、规则和钩子等多种扩展机制。仓库内包含持续学习、任务编排、Agent 兼容性检测、PR 审查画布等官方插件，同时与 Amplitude、AWS、Figma、Linear、Stripe 等合作伙伴共同构建了覆盖完整开发生命周期的插件生态。该项目为 Cursor 的 AI Agent 赋予了连接外部工具和获取领域知识的能力，使开发者能在同一编码环境中编排从设计、开发到部署的全流程工作流。

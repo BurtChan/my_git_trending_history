@@ -2,7 +2,7 @@
 
 ## 项目名称
 
-**Compound Engineering Plugin** — 官方复合工程方法论插件，适用于 Claude Code、Codex、Cursor 等编码工具
+**Compound Engineering Plugin** — AI 原生复合工程哲学插件，让每次工程工作都比上一次更轻松
 
 - **GitHub**: [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin)
 - **许可证**: MIT
@@ -11,42 +11,33 @@
 
 ## 项目概述
 
-Compound Engineering Plugin 是由 Every Inc. 开发的**官方 AI 编码增强插件**，适用于 Claude Code、OpenAI Codex、Cursor、GitHub Copilot 等主流 AI 编码工具。项目基于"复合工程"（Compound Engineering）方法论——核心理念是**每个工程单元都应使后续单元更容易，而不是更难**，即工程工作应像复利一样积累价值。
+Compound Engineering Plugin 是由 Every 公司开发的一款官方插件，旨在将「复合工程」（Compound Engineering）哲学注入 AI 编码代理中。其核心理念源自 Every 团队在构建 AI 首席参谋产品 Cora 的过程中积累的经验——每次工程单元的产出应当使后续工作变得更容易，而非更困难。该插件通过结构化的规划、审查和知识沉淀机制，打破了传统 AI 辅助编码中「提示→编码→交付→遗忘」的事务性循环。
 
-传统 AI 辅助编码往往陷入"快速生成代码但积累技术债"的困境。Compound Engineering Plugin 通过 37 个 Skills（技能）和 51 个 Agents（代理）将编码工作流结构化，将 80% 的时间投入在规划和审查上，20% 用于执行。这套工具链覆盖了从战略规划、头脑风暴、方案设计、编码实施、调试修复到代码审查、知识积累的完整软件开发生命周期。
+该插件提供超过 50 个专业化子代理和 38 个斜杠命令，覆盖从策略制定、需求头脑风暴、代码规划到代码审查、调试、知识复合等完整的工程工作流。它支持 Claude Code、OpenAI Codex、Cursor、GitHub Copilot、Gemini、Qwen Code、Windsurf、Kiro 等 10 余种主流 AI 编码工具，实现了跨平台统一的工程规范和协作标准。
 
-插件支持多种安装方式，包括 Claude Code 的 `/plugin` 市场、Cursor、Codex、GitHub Copilot、Factory Droid、Qwen Code、OpenCode、Pi、Gemini 和 Kiro CLI 等十余个平台，是目前跨平台兼容性最广的 AI 编码增强插件之一。项目在 GitHub 上已获得 17,600+ Stars。
+复合工程方法论强调将 80% 的精力投入在规划和审查阶段，仅 20% 用于实际编码执行。通过持续捕获每次编码会话中的经验教训并反馈到系统中，团队的知识和 AI 代理的能力得以不断累积和提升。这种「学习循环」使得代码库不会随时间增长而变得难以维护，反而会随着迭代变得更加清晰和高效。
 
 ---
 
 ## 核心功能
 
-### 1. /ce-strategy — 战略规划
-定义项目方向和技术策略，为后续工程工作建立清晰的目标和约束。
-
-### 2. /ce-ideate — 创意构思
-基于策略生成多种实现方案的创意构想，扩展解决方案空间。
-
-### 3. /ce-brainstorm — 头脑风暴
-结构化的头脑风暴工具，围绕特定问题展开深入讨论并记录决策。
-
-### 4. /ce-plan — 方案规划
-将头脑风暴结果转化为详细的实施计划，明确任务分解和执行路径。
-
-### 5. /ce-work — 编码执行
-基于规划方案执行具体的编码任务，确保代码实现与计划一致。
-
-### 6. /ce-debug — 调试修复
-系统化的调试工具，帮助快速定位和修复代码中的问题。
-
-### 7. /ce-code-review — 代码审查
-结构化代码审查流程，结合分层角色代理、置信度门控和去重管道确保代码质量。
-
-### 8. /ce-compound — 知识积累
-将本次工作中学到的经验和知识沉淀下来，使未来工作更高效（复合效应）。
-
-### 9. /ce-product-pulse — 产品脉搏
-监控和追踪产品开发进展，确保工程工作与产品目标保持一致。
+| 命令 | 描述 |
+|------|------|
+| /ce-strategy | 定义产品目标、方法和关键指标，建立 STRATEGY.md 作为项目北极星 |
+| /ce-ideate | 生成、评估和路由创意想法，从发散思维到收敛决策 |
+| /ce-brainstorm | 结构化头脑风暴，生成功能需求并支持概念图输出 |
+| /ce-plan | 基于契约驱动的详细开发计划，自动综合需求并内联到 SKILL.md |
+| /ce-code-review | 多代理并行代码审查，含置信度门控、去重和主题分组 |
+| /ce-doc-review | 文档、架构和产品计划的一致性与可行性审查 |
+| /ce-work | 执行计划中的工作项，支持自动修复和深度选择器 |
+| /ce-debug | 系统化调试流程，精准定位和修复问题 |
+| /ce-compound | 捕获会话学习成果并沉淀为结构化知识，供未来会话复用 |
+| /ce-compound-refresh | 刷新和更新已沉淀的知识库，确保信息时效性 |
+| /ce-commit-push-pr | 自动创建特性分支、生成含核心原则的 PR 描述 |
+| /ce-product-pulse | 生成产品使用和性能报告，辅助策略迭代 |
+| /ce-sessions | AI 代理会话发现与解析，跨会话知识管理 |
+| /ce-setup | 一站式环境诊断、工具安装和项目配置 |
+| /lfg | 全自动工程工作流，一键启动完整的复合工程循环 |
 
 ---
 
@@ -54,64 +45,49 @@ Compound Engineering Plugin 是由 Every Inc. 开发的**官方 AI 编码增强�
 
 | 组件 | 技术 |
 |------|------|
-| **核心语言** | TypeScript |
-| **辅助语言** | Python、Shell |
-| **运行时** | Bun / Node.js |
-| **兼容平台** | Claude Code / Codex / Cursor / Copilot / Droid / Qwen / OpenCode / Gemini / Kiro 等 |
-| **安装方式** | /plugin 市场 / CLI / Shell alias |
-| **组件规模** | 37 Skills + 51 Agents |
-| **许可证** | MIT |
+| 核心语言 | TypeScript |
+| 插件格式 | SKILL.md（Markdown 约定） |
+| 代理系统 | 50+ 专业化子代理（Reviewer、Strategist、Architect 等） |
+| 斜杠命令 | 38+ 个结构化工作流命令 |
+| 支持平台 | Claude Code、Codex、Cursor、Copilot、Gemini、Qwen、Windsurf、Droid、OpenCode、Pi、Kiro |
+| CLI 工具 | @every-env/compound-plugin（bunx 安装适配器） |
+| 知识管理 | STRATEGY.md、SKILL.md、CHANGELOG.md 结构化文档 |
+| 输出格式 | Markdown、HTML（可选）、JSON（headless 模式） |
+| 图像生成 | Google Gemini API 集成 |
+| 许可证 | MIT License |
 
 ---
 
 ## 项目亮点
 
-### 复合工程方法论
-核心哲学"每个工程单元都使后续单元更容易"直接对抗技术债积累问题，通过结构化的规划和审查流程确保代码质量的复利增长。
-
-### 跨平台广泛兼容
-支持 Claude Code、Codex、Cursor、GitHub Copilot、Factory Droid、Qwen Code、OpenCode、Pi、Gemini、Kiro CLI 等十余个 AI 编码工具，是目前兼容性最广的编码增强插件。
-
-### 完整的开发生命周期覆盖
-从战略规划到知识积累的 9 个核心 Skills，配合 51 个 Agents 覆盖了软件开发的每一个环节，形成闭环的工程效能提升系统。
-
-### 80/20 时间分配原则
-强调将 80% 时间投入在规划和审查（策略、头脑风暴、方案设计、代码审查），20% 用于执行（编码），显著减少返工和技术债。
+1. **跨平台统一标准**：同一套代理配置可无缝运行于 Claude Code、Codex、Cursor 等 10 余种 AI 编码工具，消除工具间碎片化
+2. **复合学习循环**：每次编码会话的经验自动沉淀为结构化知识，AI 代理越用越聪明，代码库越迭代越清晰
+3. **50+ 专业化代理**：涵盖代码审查、架构策略、API 契约、设计还原、数据完整性等维度的并行审查，确保代码质量
+4. **活跃社区与快速迭代**：18.3k+ Stars、66+ 贡献者，每周持续更新，版本已迭代至 3.9.x
 
 ---
 
 ## 应用场景
 
-### AI 辅助软件开发团队
-将 AI 编码工具从"代码生成器"升级为"工程伙伴"，通过结构化工作流提升团队整体开发效率和代码质量。
-
-### 技术债治理
-通过复合工程方法论和代码审查流程，逐步偿还和预防技术债，使代码库随时间推移越来越健康。
-
-### 个人开发者效能提升
-利用完整的 Skills 和 Agents 工具链，将个人开发过程结构化，减少返工和遗漏，提升单兵作战能力。
-
-### 开源项目维护
-通过知识积累（/ce-compound）和结构化工作流，让开源项目的维护和迭代更加可持续。
+1. **AI 原生产品全流程开发**：从产品策略定义、需求头脑风暴、开发规划到代码实现、审查、部署的端到端 AI 辅助工程
+2. **多 AI 工具团队的统一工程规范**：跨 Claude Code、Cursor、Copilot 等不同 AI 工具的团队建立统一的工程工作流和质量标准
+3. **大型代码库的知识管理**：通过持续的知识沉淀和代码简化审查，防止代码库随时间退化，实现正向累积效应
+4. **代码审查自动化**：利用多代理并行审查机制替代传统人工 code review，提升审查效率并覆盖更多维度
 
 ---
 
 ## Star 数据
 
-| 指标 | 数值 |
+| 指标 | 数据 |
 |------|------|
-| **总 Stars** | 17,600+ |
-| **总 Forks** | 1,350+ |
-| **今日新增 Stars** | ~180 |
-| **许可证** | MIT |
-| **主要语言** | TypeScript |
+| 总 Stars | 18,300+ |
+| 总 Forks | 1,400+ |
+| 今日新增 | ~128（本周新增） |
+| 许可证 | MIT |
+| 主要语言 | TypeScript |
 
 ---
 
 ## 总结
 
-Compound Engineering Plugin 是**AI 编码增强领域的标杆插件**，17k+ Stars。它由 Every Inc. 开发，基于"复合工程"方法论，提供 37 个 Skills 和 51 个 Agents，将 AI 编码工作流从简单的代码生成升级为完整的结构化工程流程。插件兼容 Claude Code、Codex、Cursor 等 10+ 主流 AI 编码工具，核心理念是 80% 规划审查 + 20% 执行，确保每次工程工作都为未来积累价值而非技术债，是追求高质量 AI 辅助开发的团队和个人的必备工具。
-
----
-
-*数据来源：GitHub 仓库 (EveryInc/compound-engineering-plugin)、WotAI（2026 年 5 月访问）*
+Compound Engineering Plugin 是 Every 公司开源的 AI 编码工程哲学实践工具，以「让每次工程工作都比上一次更轻松」为核心理念，通过 50+ 专业化代理和 38+ 结构化命令覆盖了从策略到交付的完整软件开发生命周期。它打破了 AI 编码的事务性模式，建立了持续学习和知识复用的复合循环，支持 10 余种主流 AI 编码平台，以 MIT 许可证开源，已获得 18.3k+ Stars，成为 AI 辅助开发领域最具影响力的工作流插件之一。
