@@ -2,7 +2,7 @@
 
 ## 项目名称
 
-**Headroom** — LLM 输入压缩中间件，在不损失答案质量的前提下将 Token 消耗减少 60-95%
+**Headroom** — 在 LLM 处理前压缩工具输出、日志、文件和 RAG 数据块，减少 60-95% 的 Token，保持相同答案质量。
 
 - **GitHub**: [chopratejas/headroom](https://github.com/chopratejas/headroom)
 - **许可证**: Apache-2.0
@@ -11,33 +11,39 @@
 
 ## 项目概述
 
-Headroom 是一款面向 LLM 应用和 AI Agent 的**上下文压缩中间件**，其核心目标是在不降低模型输出质量的前提下，大幅减少发送给 LLM 的 Token 数量。该项目由开发者 chopratejas 于 2025 年 5 月创建，凭借出色的实用性和广泛的框架兼容性，在短时间内获得了近 5,000 Star，并在 2026 年 6 月 2 日单日新增 1,266 Star，是当日 GitHub Trending 上增长最猛烈的项目之一。
+Headroom 是一个面向 AI Agent 和 LLM 应用的上下文压缩层工具，能够在数据到达大语言模型之前智能压缩工具输出、日志、文件以及 RAG 检索结果。该项目在 2026 年 1 月创建后迅速获得了广泛关注，以其显著的 Token 节省效果（60-95%）和近乎无损的答案质量脱颖而出，成为 AI 基础设施领域的重要创新。
 
-在当前 AI Agent 生态中，一个日益严重的瓶颈是**上下文窗口的 Token 成本**。Claude Code、Cursor、Copilot 等 AI 编码工具在执行任务时，需要将大量的工具输出（tool outputs）、日志文件、RAG 检索结果和代码文件注入到 LLM 的上下文中。这些数据往往包含大量冗余信息——JSON 格式的多余字段、日志中的重复行、代码注释等——却要按原样计费。Headroom 的解决方案是在这些数据到达 LLM 之前进行智能压缩，保留语义关键信息，剔除冗余。
+该项目采用本地优先的设计理念，所有数据处理均在本地完成，确保用户数据隐私安全。其核心架构通过 ContentRouter 智能识别内容类型，并选择最适合的压缩算法——从 JSON 结构化数据的 SmartCrusher、到基于 AST 的代码压缩器 CodeCompressor、再到基于 HuggingFace 模型的文本压缩 Kompress-base，形成了一套完整的多模态压缩方案。社区累计已节省超过 600 亿 Token。
 
-与传统 Token 压缩方案（如 RTK、lean-ctx）不同，Headroom 有三大独特优势：**本地优先**（所有数据留在用户本地，不发送到第三方服务器）、**可逆压缩**（原始数据不会被删除，LLM 可按需检索完整内容），以及**跨 Agent 记忆共享**（Cross-Agent Memory, CCR），允许不同 AI 工具共享压缩记忆。
+Headroom 提供了四种灵活的使用模式：作为 Python/TypeScript 库直接嵌入代码、作为透明代理无需修改任何代码、通过一行命令包装现有 Agent 工具（如 Claude Code、Codex、Cursor 等），以及作为 MCP Server 集成到任何 MCP 客户端中。这种多模式的集成策略使得 Headroom 几乎可以在任何 AI 工作流中无缝接入。
 
 ---
 
 ## 核心功能
 
-### 1. 多算法内容压缩
-Headroom 内置 6 种压缩算法，通过 ContentRouter 自动检测内容类型并选择最合适的压缩器：
-- **SmartCrusher**：专门处理 JSON 数据，智能提取关键字段，去除冗余结构
-- **CodeCompressor**：基于 AST（抽象语法树）压缩代码，保留结构和语义，去除注释和空白
-- **Kompress-base**：基于 HuggingFace 模型压缩自然语言文本，保留核心语义
+### SmartCrusher — JSON 智能压缩器
 
-### 2. CacheAligner（缓存对齐器）
-稳定提示词前缀，优化 LLM API 的缓存命中率。对于 Anthropic 等支持 Prompt Caching 的 API，相同的 prompt 前缀可以复用缓存，显著降低成本和延迟。
+通用 JSON 压缩引擎，能够高效处理数组、嵌套对象和混合类型数据。在代码搜索场景中实现了 92% 的 Token 节省（17,765 → 1,408 Token），是目前处理结构化工具输出的核心模块。
 
-### 3. CCR（跨 Agent 记忆）
-将原始数据存储在本地，当 LLM 需要完整上下文时按需检索。这意味着压缩后的 prompt 可以极其精简，但在需要时仍能恢复完整数据，实现真正的"零信息损失"。
+### CodeCompressor — AST 感知代码压缩器
 
-### 4. Headroom Learn（失败学习）
-自动挖掘失败的 LLM 会话，将纠正内容写入文档文件，形成知识积累。这一功能让 Headroom 不仅能压缩上下文，还能从错误中学习，持续改进压缩策略。
+基于抽象语法树的代码压缩方案，支持 Python、JavaScript、Go、Rust、Java 和 C++ 六种主流编程语言。通过理解代码语义结构，在保留关键信息的同时大幅减少 Token 用量。
 
-### 5. MCP 服务器模式
-可作为 MCP（Model Context Protocol）服务器运行，通过 `headroom mcp install` 一键安装，无缝集成 Claude Code、Cursor 等支持 MCP 的 AI 工具。
+### Kompress-base — 模型驱动的文本压缩
+
+托管在 HuggingFace 上的预训练模型，专门针对 Agent 追踪数据训练。能够智能理解文本的重要性，实现高质量的上下文压缩，是处理非结构化文本和 RAG 数据块的关键组件。
+
+### CacheAligner — 缓存对齐优化器
+
+通过稳定化前缀内容，确保 LLM 提供商的 KV 缓存能够有效命中，从而进一步提升推理速度和降低成本。这一机制在频繁调用场景下尤为关键。
+
+### CCR 可逆压缩协议
+
+Headroom 的核心设计原则——所有原始数据永不删除。压缩后的内容通过 CCR（Context Compression & Retrieval）协议保持可逆，LLM 可以按需检索原始内容，确保信息完整性。
+
+### 跨 Agent 记忆系统
+
+支持 Claude Code、Codex、Gemini 等多个 Agent 之间的共享记忆存储，自动去重，实现跨 Agent 的知识协同。配合 `headroom learn` 功能，还能从失败会话中学习并自动写入修正建议到 CLAUDE.md/AGENTS.md。
 
 ---
 
@@ -45,44 +51,53 @@ Headroom 内置 6 种压缩算法，通过 ContentRouter 自动检测内容类�
 
 | 组件 | 技术 |
 |------|------|
-| 核心库 | Python（76.8%） |
-| 性能关键模块 | Rust（18.4%） |
-| 前端/集成 | TypeScript（2.7%） |
-| 压缩模型 | HuggingFace Transformers（Kompress-base） |
-| 代码解析 | AST（抽象语法树） |
-| 部署方式 | 本地运行 / Docker / MCP Server / Proxy |
+| 核心语言 | Python（76.8%）、Rust（18.4%）、TypeScript（2.7%） |
+| 代理服务器 | FastAPI |
+| 模型部署 | HuggingFace |
+| 压缩算法 | AST 解析、JSON 智能压缩、ML 模型推理 |
+| 集成协议 | MCP（Model Context Protocol） |
+| 支持平台 | Python 3.10+、Node.js |
+| SDK 兼容 | Anthropic SDK、OpenAI SDK、Vercel AI SDK、LiteLLM、LangChain、Agno |
 
 ---
 
 ## 项目亮点
 
-### 1. 惊人的压缩率与零质量损失
-在标准基准测试中，Headroom 在 GSM8K、TruthfulQA、SQuAD v2、BFCL 等任务上完全保持了 LLM 的原有准确率。在实际场景中表现更为出色：代码搜索节省 92% Token，SRE 事件调试节省 92%，GitHub Issue 分类节省 73%，代码库探索节省 47%。
+### 极致 Token 节省，答案质量不变
 
-### 2. 极致广泛的框架兼容性
-Headroom 提供了令人惊叹的集成能力——原生支持 Python 和 TypeScript SDK、OpenAI 和 Anthropic SDK、Vercel AI SDK、LangChain、Agno、Strands 框架，甚至可以作为 ASGI 中间件无缝嵌入 Web 应用。无论你使用哪个 AI 开发框架，几乎都可以一行代码接入。
+在真实工作负载的基准测试中，Headroom 实现了 60-95% 的 Token 压缩率。代码搜索场景节省 92%，SRE 事件调试节省 92%，GitHub Issue 分类节省 73%。更关键的是，在 GSM8K 数学基准测试中准确率保持 ±0.000 不变，TruthfulQA 事实性基准甚至提升了 +0.030，SQuAD v2 问答基准在 19% 压缩率下仍保持 97% 的准确率。
 
-### 3. 本地优先的隐私设计
-与 Compresr、Token Co 等云端压缩服务不同，Headroom 完全在本地运行，用户数据不会离开自己的机器。这对于处理敏感代码、企业内部日志或隐私数据的场景至关重要。
+### 四种灵活集成模式，零侵入接入
 
-### 4. Rust 加速的性能优化
-18.4% 的代码使用 Rust 编写，覆盖性能关键路径。Rust 的高性能确保了压缩过程不会成为 LLM 调用链中的瓶颈，即使处理大型代码文件也能快速完成。
+Headroom 提供了从库调用到透明代理的四种使用方式，开发者可以在不修改任何现有代码的情况下通过 `headroom proxy --port 8787` 启用压缩功能，也可以通过 `headroom wrap claude` 一行命令直接包装 Claude Code 等 AI 工具。这种多层次的集成策略极大降低了使用门槛。
+
+### 强大的 Agent 生态兼容性
+
+已验证兼容 Claude Code、Codex、Cursor、Aider、Copilot CLI、OpenClaw 等主流 AI Agent 工具，同时支持通过 MCP 协议接入任何 MCP 客户端。跨 Agent 记忆系统让多个 AI 工具可以共享压缩上下文和知识，构建统一的知识协作体系。
+
+### 本地优先与隐私保障
+
+所有数据压缩处理均在本地完成，数据不会离开用户环境。这一设计在企业和隐私敏感场景中尤为重要，用户可以在享受 Token 节省优势的同时完全掌控数据安全。
 
 ---
 
 ## 应用场景
 
-### 1. AI 编码助手成本优化
-对于使用 Claude Code、Cursor、Copilot 等工具的开发者，工具输出（如文件内容、搜索结果、编译日志）往往占据大量 Token。Headroom 可在数据发送到 LLM 前自动压缩，将每次调用的 Token 消耗降低 60-95%，直接降低 API 费用。
+### AI Agent 生产环境成本优化
 
-### 2. RAG 系统检索结果优化
-在 RAG（检索增强生成）系统中，检索到的文档块往往包含大量与当前查询无关的内容。Headroom 可以智能压缩这些 RAG chunks，只保留与问题相关的核心信息，既减少了上下文占用，又可能提升 LLM 的回答质量（减少干扰信息）。
+对于在生产环境中大量使用 AI Agent 的团队，Headroom 可以显著降低 API Token 消耗。通过代理模式部署后，所有经过 LLM 的工具输出、日志和 RAG 数据块自动压缩，团队几乎不需要修改任何代码即可获得 60-95% 的成本节省。
 
-### 3. 日志分析与 SRE 事件调试
-SRE 工程师在调试生产事故时，需要将大量日志注入 LLM 进行分析。Headroom 的 SmartCrusher 可以高效压缩 JSON 格式的日志，CodeCompressor 可以精简代码片段，让 LLM 在更精简的上下文中快速定位问题。
+### RAG 系统性能提升
 
-### 4. 企业内部 LLM 平台建设
-对于在 Anthropic、OpenAI 等 API 上投入大量预算的企业，Headroom 的 CacheAligner + Token 压缩组合可以带来显著的成本节约。特别是对于高频调用的场景（如自动代码审查、文档问答系统），节省的 Token 费用可能非常可观。
+在检索增强生成（RAG）系统中，检索到的文档片段往往占据大量 Token。Headroom 的 Kompress-base 模型可以智能压缩 RAG 数据块，在保持语义完整性的同时大幅减少输入 Token，使得 RAG 系统可以处理更多文档而不增加成本。
+
+### 多 Agent 协作知识共享
+
+在企业级 AI 应用中，多个 Agent（如 Claude Code 进行代码审查、Codex 进行代码生成）往往需要共享大量上下文。Headroom 的跨 Agent 记忆系统和共享存储可以高效管理这些知识，避免重复传输和存储。
+
+### 大规模代码库和日志分析
+
+对于需要将大量代码搜索结果、SRE 调试日志等结构化数据输入 LLM 的场景，Headroom 的 SmartCrusher 和 CodeCompressor 能够将数万 Token 的输入压缩至不足十分之一，使得 AI 能够处理更复杂、更大规模的分析任务。
 
 ---
 
@@ -90,18 +105,20 @@ SRE 工程师在调试生产事故时，需要将大量日志注入 LLM 进行�
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Star 数 | 4,895 |
-| 🍴 Fork 数 | 377 |
-| 📈 今日新增 Star | 1,266 |
-| 📅 创建时间 | 2025-05-19 |
-| 📝 主要语言 | Python / Rust |
-| 📄 许可证 | Apache-2.0 |
+| 总 Star 数 | 14,512 |
+| 总 Fork 数 | 923 |
+| 今日新增 Star | 2,473（今日最高！） |
+| 编程语言 | Python |
+| 许可证 | Apache-2.0 |
+| 创建时间 | 2026-01-07 |
+| 版本发布数 | 152（最新：v0.22.4） |
+| 社区累计节省 Token | 600 亿+ |
 
 ---
 
 ## 总结
 
-Headroom 是当前 AI 工具链中一个极具实用价值的项目——它直击 LLM 应用中"Token 成本"这一核心痛点，通过智能压缩在零质量损失的前提下实现了 60-95% 的 Token 节省。其广泛的语言和框架支持、本地优先的隐私设计、可逆压缩的优雅架构，使其成为任何使用 LLM API 的开发者都值得关注的工具。
+Headroom 是一个解决 AI Agent 和 LLM 应用中 Token 成本痛点的创新项目，凭借其多算法协同的压缩架构、灵活的四模式集成策略以及出色的基准测试表现，在创建仅 5 个月内便收获了超过 14,000 Star 并登上了 GitHub 趋势榜首。该项目不仅是 Token 优化的工具，更是 AI 基础设施效率提升的重要里程碑，特别适合在生产环境中使用多个 AI Agent、处理大量 RAG 数据或需要严格控制 API 成本的团队和企业。
 
 ---
 

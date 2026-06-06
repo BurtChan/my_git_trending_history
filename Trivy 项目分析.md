@@ -1,122 +1,52 @@
 # Trivy 项目分析
 
 ## 项目名称
-
-**Trivy** — 全方位开源安全扫描器，守护容器、Kubernetes 和代码仓库的安全
-
-- **GitHub**: [aquasecurity/trivy](https://github.com/aquasecurity/trivy)
-- **许可证**: Apache-2.0
-
----
+**Trivy** (`aquasecurity/trivy`)
 
 ## 项目概述
-
-Trivy 是由 Aqua Security 开发的**开源综合安全扫描器**，也是目前云原生安全领域最流行的开源工具之一。项目于 2019 年 4 月发布，经过多年发展，已成为 Kubernetes 生态系统中不可或缺的安全基础设施组件。其名称发音为 "trigger" + "envy"（发音：特拉吉）。
-
-Trivy 的核心设计理念是**全面性与易用性并重**。它能够扫描多种目标——容器镜像、Kubernetes 集群、代码仓库、云基础设施（IaC）、文件系统和 Git 仓库，并支持漏洞检测、配置错误发现、密钥泄露检测和 SBOM（软件物料清单）生成。对于运维团队和开发者而言，只需一条命令即可启动全面安全扫描：
-
-```bash
-trivy image nginx:latest
-```
-
-项目用 Go 语言编写，内置了丰富的漏洞数据库，支持 Alpine、Amazon Linux、Debian、Ubuntu、Red Hat 等主流操作系统，以及 Ruby、Python、Node.js、Java、PHP、Go、Rust 等主要编程语言的依赖扫描。2026 年 3 月，Trivy 曾经历一次引人注目的供应链安全事件（CVE-2026-26189），项目团队迅速响应修复，展现了开源社区在安全事件中的应对能力。
-
----
+Trivy 是由 Aqua Security 开发和维护的开源综合安全扫描器，被誉为云原生安全领域的"瑞士军刀"。它能够全面检测容器镜像、文件系统、Git 仓库、虚拟机镜像和 Kubernetes 集群中的安全漏洞、配置错误、敏感信息和软件物料清单（SBOM）。作为 CNCF（云原生计算基金会）毕业项目，Trivy 已成为 DevSecOps 领域最成熟、最广泛使用的安全工具之一。
 
 ## 核心功能
-
-### 1. 容器镜像扫描
-自动检测容器镜像中的 OS 包漏洞和应用依赖漏洞，支持 Docker、OCI、containerd 等多种容器格式，也可直接扫描运行中的 Kubernetes Pod。
-
-### 2. 代码仓库扫描
-扫描 Git 仓库中的源代码，检测依赖库的已知漏洞（支持 npm、pip、Maven、Cargo、Go Modules、NuGet 等包管理器）。
-
-### 3. IaC 基础设施即代码扫描
-分析 Terraform、CloudFormation、Kubernetes manifest、Dockerfile、Helm Chart 等配置文件，发现安全配置错误和合规违规。
-
-### 4. 密钥泄露检测
-扫描代码仓库和配置文件中的硬编码密钥、API Key、密码等敏感信息，支持 AWS、GCP、Azure、GitHub 等数十种凭证格式。
-
-### 5. SBOM 软件物料清单生成
-生成 CycloneDX 和 SPDX 格式的 SBOM，满足供应链合规需求，支持 SPDX V2.3 标签验证。
-
-### 6. Kubernetes 集群扫描
-深度扫描 K8s 集群中的运行时配置、RBAC 权限、网络策略和 Pod 安全，提供集群级别的安全态势报告。
-
-### 7. 云安全扫描
-支持扫描 AWS、Azure、GCP 等云平台中的 IaC 配置，发现云资源的安全配置问题。
-
-### 8. 漏洞数据库
-内置每日更新的漏洞数据库，覆盖 CVE、NVD、GitHub Advisory 等多个数据源，确保扫描结果的时效性。
-
----
+- **漏洞扫描 (Vulnerability Scanning)**：检测 OS 包和依赖库中的已知 CVE 漏洞，覆盖多种操作系统包管理器和编程语言生态
+- **配置错误检测 (Misconfiguration Scanning)**：扫描基础设施即代码（IaC）文件，发现云资源配置中的安全隐患和合规问题
+- **敏感信息泄露 (Secrets Detection)**：自动发现代码仓库和容器镜像中硬编码的密钥、令牌、密码等敏感信息
+- **许可证合规 (License Scanning)**：检查软件依赖的开源许可证，确保合规性
+- **SBOM 生成 (Software Bill of Materials)**：生成标准格式的软件物料清单，支持 SPDX 和 CycloneDX 格式
 
 ## 技术栈
-
-| 组件 | 技术 |
-|------|------|
-| **核心语言** | Go |
-| **漏洞数据库** | 自建数据库（每日更新，聚合 NVD、GitHub Advisory 等） |
-| **包管理器支持** | npm/yarn/pnpm, pip/poetry, Maven/Gradle, Cargo, Go Modules, NuGet, Composer, Gem 等 |
-| **IaC 支持** | Terraform, CloudFormation, Kubernetes YAML, Dockerfile, Helm Chart, Arm |
-| **输出格式** | Table, JSON, SARIF, CycloneDX, SPDX, HTML |
-| **集成方式** | CLI, GitHub Actions, GitLab CI, Jenkins, Kubernetes Operator |
-| **容器运行时** | Docker, containerd, Podman |
-| **平台** | Linux, macOS, Windows（跨平台二进制分发） |
-
----
+- **编程语言**：Go（Golang）
+- **开源协议**：Apache-2.0
+- **扫描目标**：Container Image、Filesystem、Git Repository、VM Image、Kubernetes
+- **CI/CD 集成**：GitHub Actions、GitLab CI、Jenkins 等主流 CI/CD 平台
+- **平台集成**：Kubernetes Operator、VS Code 插件、Homeland Security（美国国土安全部）推荐工具
+- **提交次数**：4,076 次（生产级项目，开发持续且稳定）
 
 ## 项目亮点
-
-### 开箱即用的全面扫描能力
-Trivy 的最大优势在于其**一站式安全扫描**理念。传统安全工具通常只关注某一类问题（如只扫容器漏洞或只扫密钥泄露），而 Trivy 将漏洞扫描、配置审计、密钥检测和 SBOM 生成整合到单一工具中，大幅降低了安全运营的复杂性。
-
-### 深度 CI/CD 集成
-Trivy 提供了成熟的 GitHub Actions、GitLab CI 和 Jenkins 插件，可无缝嵌入到现有 CI/CD 流水线中。在 PR 合并前自动扫描新增依赖和配置变更，实现安全左移（Shift-Left Security），在代码进入生产环境前就发现并修复安全问题。
-
-### 强大的 Kubernetes 生态支持
-作为云原生计算基金会（CNCF）项目，Trivy 与 Kubernetes 生态深度集成。其 Kubernetes Operator 可持续监控集群安全态势，配合 Trivy Operator 的 misconfiguration 和 secrets 扫描能力，为 K8s 集群提供全面的安全保障。
-
-### 丰富的输出和报告格式
-支持 Table（终端可视化）、JSON（机器处理）、SARIF（IDE 集成）、CycloneDX/SPDX（SBOM 合规）、HTML（团队报告）等多种输出格式，适配不同使用场景和利益相关方需求。
-
----
+1. **全面的扫描能力**：单一工具覆盖漏洞、配置、密钥、许可证、SBOM 五大安全维度，无需组合多个工具
+2. **CNCF 毕业项目**：经过严格的社区审核和技术评估，代表了云原生安全工具的最高标准
+3. **极致的易用性**：零配置开箱即用，简单的 CLI 界面使得集成到现有工作流中非常容易
+4. **丰富的生态系统**：支持 Kubernetes Operator 进行集群级持续扫描，VS Code 插件提供 IDE 内实时反馈，GitHub Actions 实现自动化安全门禁
+5. **多目标覆盖**：从容器镜像到 Kubernetes 集群，从 Git 仓库到虚拟机镜像，真正实现了"一处扫描，全面覆盖"
+6. **持续的社区活力**：超过 35,000 颗 Star 和今日新增 207 颗 Star，证明其在安全社区中保持着强劲的影响力和活跃度
 
 ## 应用场景
-
-### DevSecOps 安全流水线
-在企业 CI/CD 流水线中集成 Trivy，在构建阶段扫描容器镜像、依赖库和 IaC 配置，实现自动化的安全门禁（Security Gate），阻止不合规的镜像部署到生产环境。
-
-### 合规审计
-利用 Trivy 的 SBOM 生成功能和 IaC 扫描能力，为组织的软件供应链建立完整的物料清单，满足 NIST、SOC2、ISO 27001 等合规框架的供应链透明度要求。
-
-### 安全事件响应
-当新的 CVE 漏洞公开披露时，使用 Trivy 快速扫描现有基础设施，评估影响范围，确定哪些容器和依赖需要紧急修补，加速安全事件响应流程。
-
-### 开发者日常安全检查
-开发者在本地开发环境中使用 Trivy 扫描自己编写的 Dockerfile 和代码依赖，在提交代码前就发现潜在的安全问题，培养安全编码习惯。
-
----
+- **CI/CD 管道安全门禁**：在代码构建和部署流程中自动进行安全扫描，阻止不安全的镜像上线
+- **容器安全审计**：对企业容器镜像仓库中的所有镜像进行定期安全扫描和合规检查
+- **Kubernetes 集群安全**：通过 Operator 模式持续监控集群中运行的所有工作负载
+- **代码仓库安全**：在代码提交和合并请求中检测硬编码的密钥和敏感信息
+- **合规性管理**：生成 SBOM 和许可证报告，满足行业和法规的供应链安全要求
+- **基础设施安全审计**：扫描 Terraform、CloudFormation 等 IaC 文件中的配置错误
 
 ## Star 数据
-
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 35,365 |
-| **总 Forks** | 413 |
-| **今日新增 Stars** | ~26 |
-| **许可证** | Apache-2.0 |
-| **创建时间** | 2019 年 4 月 |
-| **主要语言** | Go |
-| **Open Issues** | 245 |
-| **Releases** | 86 |
-
----
+| 总 Star 数 | 35,855 ⭐ |
+| 总 Fork 数 | 443 🍴 |
+| 今日新增 Star | 207 ⭐ |
+| 创建时间 | 2019-04-11 |
+| 运营时间 | 约 7 年 |
+| 开源协议 | Apache-2.0 |
+| CNCF 状态 | 毕业项目 (Graduated) |
 
 ## 总结
-
-Trivy 是**云原生安全领域的标杆级开源工具**，35k+ Stars，CNCF 毕业项目。它用 Go 语言编写，提供从容器镜像、Kubernetes 集群到代码仓库和 IaC 配置的全方位安全扫描能力，集成漏洞检测、配置审计、密钥泄露检测和 SBOM 生成于一体。凭借零配置即可使用的极简体验、与主流 CI/CD 平台的深度集成，以及对云原生生态的全面支持，Trivy 已成为 DevSecOps 团队安全工具链中不可或缺的一环。
-
----
-
-*数据来源：GitHub 仓库 (aquasecurity/trivy)，2026 年 6 月访问*
+Trivy 是云原生安全领域当之无愧的标杆项目。凭借其全面的扫描能力、卓越的易用性和丰富的集成生态，Trivy 已成为 DevSecOps 实践中不可或缺的基础工具。作为 CNCF 毕业项目，其代码质量和社区治理都达到了顶级水平。无论是初创团队还是大型企业，Trivy 都能提供从开发到生产环境的安全保障。每日 207 Star 的稳定增长进一步印证了其在安全社区的持续影响力和不可替代的地位。对于任何关注云原生安全的组织和个人，Trivy 都是首选的安全扫描解决方案。

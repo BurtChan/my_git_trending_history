@@ -2,101 +2,63 @@
 
 ## 项目名称
 
-**ECC (Everything Claude Code)** — AI 编码智能体性能优化系统
+**ECC（Everything Claude Code）**
 
-- **GitHub**: [affaan-m/ECC](https://github.com/affaan-m/ECC)
-- **许可证**: MIT
-
----
+- GitHub 地址：https://github.com/affaan-m/ECC
+- 开源协议：MIT
+- 创建时间：2026 年 1 月 18 日
+- 当前版本：v2.0.0-rc.1
 
 ## 项目概述
 
-ECC（Everything Claude Code）是一个全面的 AI 编码智能体性能优化系统，由开发者 Affaan Mustafa 创建，起源于 2025 年 9 月 Anthropic 黑客松的获奖项目。截至 2026 年 5 月，该项目已获得 19.2 万+ Stars，成为 GitHub 上最受欢迎的 AI 编码工具配置框架之一。
-
-ECC 的核心理念是"不仅是一套配置，而是一个完整的系统"。它为 AI 编码工具提供了技能（Skills）、本能（Instincts）、记忆优化（Memory）、持续学习（Continuous Learning）、安全扫描（Security Scanning）和研究优先开发（Research-First Development）六大核心能力。项目支持 Claude Code、Codex CLI、Cursor、OpenCode、Gemini CLI、Zed、GitHub Copilot 等主流 AI 编码工具，实现跨平台统一的智能体增强体验。
-
-ECC 的 v1.9.0 版本已包含 28 个专业智能体、119 个技能和 60 个命令，覆盖 TypeScript、Python、Go、Swift、PHP 等 12+ 语言生态系统。项目还包含 Token 优化功能，帮助用户降低 AI 编码工具的使用成本。
-
----
+ECC（Everything Claude Code）是由开发者 Affaan Mustafa 历经 10+ 个月日常使用打磨而成的 **AI 代理性能优化系统**。最初作为一个个人 Claude Code 配置包诞生，如今已发展成为横跨多个 AI 编程平台的跨平台代理协作系统，支持 Claude Code、OpenAI Codex、Cursor、OpenCode、Gemini、Zed、GitHub Copilot 等主流工具。该项目被定位为"agent harness performance optimization system"（代理线束性能优化系统），运行 997 个内部测试，覆盖代理、技能、钩子和规则等层面。
 
 ## 核心功能
 
-| 功能 | 描述 |
-|------|------|
-| **28 个专业智能体** | 覆盖编码标准、测试、安全审查、文档更新等多种角色 |
-| **119 个技能** | 可组合的技能系统，为不同任务场景提供专业化指导 |
-| **60 个命令** | 丰富的斜杠命令，快速触发常用工作流 |
-| **记忆优化** | 智能上下文管理和记忆持久化，减少重复输入 |
-| **安全扫描** | 自动检测代码中的安全漏洞和潜在风险 |
-| **研究优先开发** | 在编码前自动进行技术调研和方案分析 |
-| **Token 优化** | 可调节 MAX_THINKING_TOKENS 等参数，降低 API 成本 |
-| **跨平台支持** | 兼容 Claude Code、Codex、Cursor、OpenCode、Gemini 等 7+ 工具 |
-| **12+ 语言生态** | 支持 TypeScript、Python、Go、Swift、PHP 等主流语言 |
-| **多语言文档** | 文档覆盖中英日韩等 10+ 种语言 |
-
----
+1. **63 个智能代理（Agents）**：内置丰富的代理编排引擎 NanoClaw v2，覆盖从代码审查、架构设计到自动化测试等多种开发场景
+2. **249 项技能（Skills）**：涵盖代码生成、上下文管理、优化工作流等关键能力，分为 10.0 版本技能体系
+3. **79 条命令（Commands）**：包括 `/code-review`、`/context-budget`、`/agent-eval`、`/run-tests`、`/hackify` 等开发提效命令
+4. **34 条规则（Rules）**：建立代理行为规范与安全边界
+5. **8+ 钩子事件（Hook Events）**：提供全生命周期的钩子回调机制，确保操作可靠性
+6. **14 个 MCP 配置（MCP Configs）**：内置模型上下文协议配置，开箱即用
+7. **跨线束安装（Cross-harness Install）**：两条命令即可完成安装部署，实现多工具统一工作流
 
 ## 技术栈
 
-| 组件 | 技术 |
-|------|------|
-| **插件架构** | Claude Code Plugin / SKILL.md 规范 |
-| **配置格式** | JSON / YAML / Markdown |
-| **脚本语言** | Python / Shell |
-| **支持平台** | Claude Code、Codex CLI、Cursor、OpenCode、Gemini CLI、Zed、GitHub Copilot |
-| **语言覆盖** | TypeScript、Python、Go、Swift、PHP、Rust 等 12+ 语言 |
-| **许可证** | MIT |
-
----
+- **主要语言**：JavaScript（Shell、TypeScript、Python 等 12+ 语言生态）
+- **核心架构**：代理编排引擎 + 技能模块化系统 + 钩子事件框架
+- **兼容平台**：Claude Code、OpenAI Codex、Cursor、OpenCode、Gemini、Zed、GitHub Copilot
+- **包分发**：ecc-universal（周下载量 2.7K）、ecc-agentshield（周下载量 5.1K）
+- **测试体系**：997 个内部测试用例
 
 ## 项目亮点
 
-### 超大规模社区
-19.2 万+ Stars、2.9 万+ Forks、170+ 贡献者，是 GitHub 上规模最大的 AI 编码工具增强项目。
-
-### 黑客松获奖项目
-源自 Anthropic 官方黑客松的获奖作品，经过数月持续迭代，已发展为成熟的生态系统。
-
-### 完整的智能体系统
-不同于简单的配置文件集合，ECC 提供了从技能定义、本能训练、记忆管理到安全扫描的全栈智能体优化方案。
-
-### 极致的跨工具兼容
-一套系统同时支持 7+ 主流 AI 编码工具，用户无需为不同工具维护多套配置。
-
----
+1. **惊人的增长速度**：自 2026 年 1 月开源以来，在不到 5 个月内累计超过 20 万 Star，日均增长 1,361 Star，成为 GitHub 上最受关注的 Claude Code 配置仓库
+2. **社区生态庞大**：170+ 贡献者参与维护，覆盖 12+ 语言生态系统，体现了极强的社区凝聚力
+3. **v2.0.0-rc.1 重大升级**：引入元线束（meta-harness）概念、优化技能包、门控策略等高级功能，从"配置包"升级为完整的"代理性能优化系统"
+4. **研发优先理念**：内建研究工具和预测市场研究工作流，体现"研究优先开发"的设计哲学
+5. **多工具统一管理层**：为使用多种 AI 编程工具的团队提供共享操作层
 
 ## 应用场景
 
-### AI 编码效率提升
-为使用 Claude Code、Cursor 等工具的开发者提供开箱即用的性能增强，显著提升编码效率和代码质量。
-
-### 团队开发标准化
-企业团队可以使用 ECC 统一编码标准、安全规范和最佳实践，确保 AI 辅助编码的一致性。
-
-### AI 编码工具评估
-开发者可以参考 ECC 的技能和智能体设计，了解不同 AI 编码工具的能力边界和最佳用法。
-
-### 安全编码实践
-利用 ECC 的安全扫描功能，在 AI 辅助编码过程中自动检测和防范安全漏洞。
-
----
+1. **AI 辅助编程**：为 Claude Code、Cursor 等 AI 编程助手提供增强配置与工作流优化
+2. **自动化开发流程**：通过钩子事件和命令系统实现代码审查、测试、部署的自动化
+3. **跨平台开发协作**：团队统一使用一套代理配置，消除不同 AI 工具之间的差异
+4. **上下文管理优化**：通过 `/context-budget` 等命令优化 LLM 上下文窗口使用效率
+5. **代理性能调优**：通过内建优化技能和测量循环提升 AI 代理的输出质量
 
 ## Star 数据
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 192,985 |
-| **总 Forks** | 29,832 |
-| **今日新增 Stars** | 2,025 |
-| **许可证** | MIT |
-| **主要语言** | 多语言（Python / Shell / Markdown） |
-
----
+| ⭐ 总 Star 数 | **208,363** |
+| 🍴 总 Fork 数 | **31,966** |
+| 📈 今日新增 Star | **1,361** |
+| 👥 贡献者数量 | **170+** |
+| 🌐 支持语言生态 | **12+** |
+| 📅 创建时间 | 2026 年 1 月 18 日 |
+| 📄 开源协议 | MIT |
 
 ## 总结
 
-ECC 是 **GitHub 上最流行的 AI 编码智能体增强系统**，19.2 万+ Stars。源自 Anthropic 黑客松获奖项目，提供 28 个智能体、119 个技能和 60 个命令，覆盖 Claude Code、Codex、Cursor 等 7+ 主流 AI 编码工具。项目以"技能+本能+记忆+安全+研究"五大核心能力构建完整的智能体性能优化体系，支持 12+ 语言生态系统，是 AI 辅助开发的基础设施级工具。
-
----
-
-*数据来源：GitHub 仓库 (affaan-m/ECC)，2026 年 5 月访问*
+ECC 是 2026 年 GitHub 上最具爆发力的 AI 开发者工具项目之一。它从一个个人配置包演变为拥有 20 万+ Star 的跨平台代理优化系统，仅用了不到 5 个月时间。项目的核心竞争力在于：①对 Claude Code 等 AI 编程助手的深度适配与性能优化；②模块化的技能/命令/规则体系使开发者可以按需组合；③活跃的社区和快速的迭代节奏。对于正在使用 AI 编程工具的开发者而言，ECC 是一个不可忽视的效率倍增器。随着 v2.0.0 的正式发布，它有望进一步巩固在 AI 代理优化领域的领先地位。
