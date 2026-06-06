@@ -2,40 +2,40 @@
 
 ## 项目名称
 
-**OpenAI Plugins** — OpenAI Codex 的官方插件生态系统，为 AI 编码助手提供与外部服务深度集成的可扩展插件框架。
+**OpenAI Plugins** — OpenAI Codex 官方插件仓库，提供 170+ 个精心策划的插件示例，涵盖设计、开发、数据分析和企业集成等领域。
 
 - **GitHub**: [openai/plugins](https://github.com/openai/plugins)
-- **许可证**: 未明确声明
+- **许可证**: 各插件独立授权（MIT、Apache-2.0 及厂商自定义许可等）
 
 ---
 
 ## 项目概述
 
-OpenAI Plugins 是 OpenAI 官方维护的 Codex 插件示例与生态仓库。该项目于 2026 年 3 月创建，作为 OpenAI Codex 平台插件系统的官方参考实现和社区贡献中心。Codex 是 OpenAI 推出的 AI 编码助手（定位对标 Anthropic Claude Code 和 Google Gemini CLI），而 Plugins 机制则是其区别于竞争对手的关键扩展能力——允许开发者通过标准化插件格式将 Codex 与 GitHub、Gmail、Figma、Notion、Slack 等 170+ 外部服务进行深度集成。
+OpenAI Plugins 是 OpenAI 官方维护的 Codex 插件仓库，于 2026 年 3 月随 Codex 插件系统一同发布。仓库包含 170 多个精心策划的插件示例，每个插件都是一个功能完整的集成包，配备标准化的 `.codex-plugin/plugin.json` 清单文件以及可选的 skills、MCP 服务器、agents、commands、hooks 等配套组件。该仓库是 Codex 插件生态的官方参考实现，也是开发者学习和构建自定义插件的首选起点。
 
-每个插件遵循统一的 `.codex-plugin/plugin.json` 清单格式，可包含技能定义（skills/）、MCP 服务器配置（.mcp.json）、应用配置（.app.json）、Agent 配置（agents/）、命令（commands/）、钩子（hooks.json）和资产文件（assets/）等多种组件。这种模块化的插件架构使得 Codex 能够从单纯的代码生成工具扩展为一个连接企业全部数字工作流的 AI Agent 平台。
+项目的核心设计理念是"插件即能力包"——每个插件不仅仅是代码片段，而是一个可打包、可分享、可复用的工作流单元。插件可以包含技能（Skills，描述工作流的提示词）、应用集成（Apps，与外部服务交互的配置）、MCP 服务器（Model Context Protocol，标准化工具调用接口）以及子 Agent（Agents，针对特定任务优化的 AI 代理）。这种多层次的组件架构使插件能够覆盖从简单自动化到复杂多步骤工作流的全部场景。
 
-2026 年 6 月 2 日，OpenAI 宣布推出 6 个面向企业的角色专属插件（analytics、sales、creative、finance），并将 Codex 功能嵌入 ChatGPT 应用的全平台版本。这标志着 OpenAI Plugins 正从开发者工具快速扩展为企业知识工作平台的核心基础设施。
+从行业背景来看，Codex 插件系统的推出是 OpenAI 对 Anthropic Claude Code 技能系统和 Google Gemini CLI 插件能力的直接回应。值得注意的是，该项目已经促成了跨厂商合作——Anthropic 开发者 Dion Kundel 甚至为 Claude Code 构建了一个 Codex 插件，使 Claude 能够将代码审查等任务委托给 Codex 执行。截至目前，仓库已有 54 位贡献者、252 次提交，社区已在此基础上构建了"Awesome Codex Plugins"等扩展项目。
 
 ---
 
 ## 核心功能
 
-### 插件清单系统 — 标准化集成规范
+### 标准化插件清单（plugin.json）
 
-每个插件通过 `.codex-plugin/plugin.json` 清单文件声明其能力边界和配置。该清单文件是插件系统的核心契约，定义了插件提供的技能、支持的应用集成、MCP 服务器端点等元数据。标准化的清单格式确保了插件的发现、安装和运行时管理的一致性，降低了插件开发门槛。
+每个插件的核心是 `.codex-plugin/plugin.json` 清单文件，定义了插件的名称、版本、描述、作者、关键词、技能路径、应用配置等元数据。清单还包含 `interface` 字段，提供插件的显示名称、分类（Design、Developer Tools、Analytics 等）、能力类型（Interactive、Read、Write）、默认提示词和品牌视觉标识。这种标准化使得 Codex 能够自动发现、安装和管理所有插件。
 
-### 技能包（Skills）— 可复用工作流模板
+### Skills — 工作流技能包
 
-技能是描述 Codex 工作流程的提示词模板，可被多个插件共享和组合。每个插件可在 `skills/` 目录下定义一组技能，覆盖从代码审查、构建部署到数据分析的各类任务。技能的设计理念是将最佳实践固化为可复用的模板，让团队中所有 Codex 用户都能受益于相同的工作流配置。
+Skills 是描述特定工作流程的提示词集合，指导 Codex 在特定场景下按照预设步骤执行任务。例如 Figma 插件的 `use_figma` 技能可以让 Codex 检查 Figma 设计稿并将其实现为代码，GitHub 插件的技能支持 PR 审查和 CI 调试。Skills 的预打包设计减少了 Codex 每次从头生成代码的需求，降低了幻觉风险和推理成本。
 
-### MCP 服务器集成 — 标准协议桥接
+### MCP 服务器集成
 
-插件可通过 `.mcp.json` 配置文件声明 MCP（Model Context Protocol）服务器端点，使 Codex 能够通过标准化协议与外部工具和服务通信。这意味着任何支持 MCP 协议的服务都可以被 Codex 插件无缝接入，大幅扩展了 Codex 的工具调用能力边界。
+插件可以通过 `.mcp.json` 配置文件集成 MCP（Model Context Protocol）服务器，为 Codex 提供与外部工具和服务的标准化交互接口。这使得 Codex 能够以统一的方式调用各种 API 和工具，无需为每个服务单独编写集成代码。
 
-### 内置插件目录 — 170+ 服务预置集成
+### 子 Agent（Sub-agents）
 
-仓库目前包含约 170 个官方和社区贡献的插件，覆盖开发者工具（GitHub、Vercel、Netlify、Cloudflare）、设计工具（Figma）、协作平台（Notion、Slack、Teams）、数据分析（Datadog、Mixpanel、PostHog）、CRM（HubSpot、Salesforce、Close）、支付（Stripe、Razorpay）、云服务（AWS、GCP、Azure 相关插件）等几乎所有主流企业服务类别。这种开箱即用的广度是 OpenAI Plugins 相比竞争对手的重要优势。
+高级插件可以包含 plugin-level `agents/` 目录，定义针对特定任务优化的 AI 子代理。这种能力使插件能够封装完整的专家工作流，例如代码审查代理、安全扫描代理或性能优化代理。
 
 ---
 
@@ -43,54 +43,55 @@ OpenAI Plugins 是 OpenAI 官方维护的 Codex 插件示例与生态仓库。�
 
 | 组件 | 技术 |
 |------|------|
-| 核心语言 | JavaScript |
-| 插件格式 | `.codex-plugin/plugin.json` 清单 |
-| 服务集成协议 | MCP（Model Context Protocol） |
-| 应用配置 | `.app.json`（Codex App 定义） |
-| 技能定义 | `skills/` 目录下的提示词模板 |
-| Agent 配置 | `agents/` 目录 |
-| 命令扩展 | `commands/` 目录 |
-| 钩子系统 | `hooks.json`（生命周期事件钩子） |
+| 核心语言 | JavaScript / TypeScript |
+| 插件规范 | `.codex-plugin/plugin.json`（JSON 清单） |
+| 工具协议 | MCP（Model Context Protocol） |
+| 应用配置 | `.app.json`（应用集成配置） |
+| 自动化钩子 | `hooks.json`（事件驱动自动化） |
+| 命令扩展 | `commands/`（自定义 CLI 命令） |
+| 资源文件 | `assets/`（品牌图标、截图等） |
+| 包管理 | Codex Plugin Marketplace |
+| 分发方式 | 本地、仓库级、CLI 三种安装方式 |
 
 ---
 
 ## 项目亮点
 
-### OpenAI 官方生态的核心扩展机制
+### 170+ 覆盖面极广的官方插件
 
-作为 OpenAI 官方维护的仓库，OpenAI Plugins 是 Codex 平台扩展性的基石。170+ 插件的规模已经形成了一个繁荣的生态系统，使 Codex 不再局限于代码编写，而是能够深度参与从设计（Figma）、协作（Notion/Slack）、部署（Vercel/Netlify）到监控（Datadog/Sentry）的完整软件开发生命周期。这种"一个入口连接所有工具"的愿景是 AI Agent 平台竞争的核心战场。
+仓库涵盖的插件类型极为丰富，从设计工具（Figma、Canva）、开发基础设施（GitHub、Vercel、Netlify、Cloudflare）、数据平台（Datadog、PostHog、Mixpanel）、企业服务（Notion、Slack、Zoom、Gmail）到垂直行业（生命科学研究、金融分析、法律文档）。这种广度使其成为了解 AI 辅助开发工具生态的绝佳窗口，也展示了 Codex 插件系统的强大扩展能力。
 
-### 与 MCP 协议深度集成的前瞻设计
+### 跨厂商生态合作的里程碑
 
-插件系统对 MCP 协议的原生支持意味着 OpenAI 正在拥抱行业标准化方向。MCP 正在成为 AI Agent 工具调用的通用协议（已被 Anthropic Claude Code、Cursor 等广泛采用），OpenAI Plugins 通过 MCP 集成确保了 Codex 能够接入快速增长的 MCP 服务器生态系统，避免供应商锁定风险。
+该项目最引人注目的亮点之一是跨厂商合作。Anthropic 开发者为 Claude Code 构建的 Codex 插件，标志着 AI 编码工具领域从封闭竞争走向开放协作。开发者可以在 Claude Code 中直接调用 Codex 的能力进行代码审查和对抗性分析，两个 AI 系统的互补协作大大提升了开发效率。这种"竞合"模式预示着 AI 工具生态将走向更开放的未来。
 
-### 从开发工具到企业知识工作平台的战略转型
+### 标准化插件架构降低开发门槛
 
-2026 年 6 月推出的 6 个角色专属插件和 ChatGPT 全平台嵌入计划，标志着 OpenAI Plugins 正在从开发者编码辅助扩展为面向企业全员的知识工作 AI 平台。这与 Anthropic 的 Claude Cowork（2026 年 1 月推出 11 个角色插件）形成了直接竞争。插件生态的广度和深度将成为这场平台竞赛的决定性因素。
+`.codex-plugin/plugin.json` 清单格式和标准的目录结构（skills/、agents/、commands/ 等）提供了一个清晰的插件开发规范。开发者只需遵循这一规范，即可快速创建自定义插件并提交到 Codex Plugin Marketplace 分享。社区已在此基础上建立了 "Awesome Codex Plugins" 等扩展项目，目前跟踪了 12 个官方 + 15 个社区插件。
 
-### 低门槛的社区贡献模式
+### 官方维护确保质量和稳定性
 
-每个插件作为独立目录存在于 `plugins/` 下，结构清晰、依赖明确。开发者可以轻松 fork 仓库、添加新插件、提交 PR。170 个插件中有大量来自社区和第三方服务商的贡献（如 Shopify、Razorpay、Zoom 等），体现了开放生态的吸引力。
+作为 OpenAI 官方维护的仓库，所有插件都经过审查和测试，确保与 Codex 的兼容性和安全性。54 位贡献者的参与和 252 次提交表明项目保持活跃的开发节奏，插件数量和质量持续增长。
 
 ---
 
 ## 应用场景
 
-### 跨平台开发工作流自动化
+### AI 辅助设计与开发协同
 
-开发团队可以同时启用 GitHub、Vercel、Slack、Sentry 等插件，让 Codex 在一个对话中完成"从代码提交到构建部署再到错误监控"的完整工作流。例如，开发者在 Codex 中讨论一个 bug，Codex 通过 GitHub 插件查看代码变更，通过 Sentry 插件分析错误堆栈，通过 Slack 插件通知团队，通过 Vercel 插件触发重新部署——全部在自然语言对话中无缝完成。
+通过 Figma 插件的 `use_figma` 技能和 Code Connect 模板，设计师和开发者可以在 Codex 中实现从设计稿到代码的无缝转换。Codex 能够自动检查 Figma 设计文件，生成对应的代码实现，并创建可复用的 Code Connect 模板，大幅缩短设计到开发的交付周期。
 
-### 企业多角色协作平台
+### 全流程代码审查与 CI/CD 集成
 
-借助 6 个新推出的角色专属插件（analytics、sales、creative、finance），企业中不同职能的团队可以用同一个 Codex 平台完成各自的工作。分析师可以用数据分析插件连接 Datadog/Mixpanel，销售团队可以用 CRM 插件连接 HubSpot/Salesforce，设计师可以用 Figma 插件进行设计评审——打破了传统 AI 编码助手仅面向开发者的限制。
+GitHub 插件使 Codex 能够直接审查 Pull Request、处理 Issue 反馈、调试失败的 CI 检查，并准备代码变更提交。配合 CircleCI、Render、Vercel 等部署插件，开发者可以用自然语言描述需求，让 Codex 完成从代码修改到部署上线的完整工作流。
 
-### 快速接入新服务的标准化流程
+### 企业知识管理与办公自动化
 
-对于希望将内部工具接入 Codex 的企业，插件系统提供了清晰的标准化路径：创建 `plugins/my-service/` 目录，编写 `plugin.json` 清单，可选添加 skills、MCP 配置和 Agent 定义。这种标准化的插件开发流程大幅降低了企业自定义集成的开发成本，使 AI Agent 的能力扩展变得可预测和可维护。
+Notion、Slack、Google Workspace、Teams 等企业级插件的集成，使 Codex 能够充当智能办公助手。例如 Notion 插件支持项目规划、研究和知识捕获，Gmail 插件处理邮件管理，Google Calendar 插件协调日程安排，实现 AI 驱动的办公自动化。
 
-### 多 AI Agent 平台的插件互操作性参考
+### 数据分析与可视化
 
-作为 OpenAI 官方的插件实现，该项目也是观察 AI Agent 插件架构设计趋势的重要参考。将 OpenAI Plugins 与 Anthropic Claude Code 的 MCP 扩展、Cursor 的规则系统进行对比，可以帮助开发者和企业理解不同 AI Agent 平台的扩展性差异，做出更明智的技术选型决策。
+PostHog、Mixpanel、Metabase、Datadog 等数据分析插件的集成，让 Codex 能够直接查询和分析业务数据，生成可视化报告。开发者可以用自然语言提问，Codex 通过插件连接数据源，执行查询并返回分析结果。
 
 ---
 
@@ -98,19 +99,22 @@ OpenAI Plugins 是 OpenAI 官方维护的 Codex 插件示例与生态仓库。�
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 1,572 |
-| 🍴 总 Forks | 243 |
-| 👀 今日新增 | 49 stars today |
-| 📅 创建时间 | 2026-03-04 |
-| 🔄 最近更新 | 2026-06-06 |
-| 📝 主要语言 | JavaScript |
-| 📦 插件数量 | ~170 个 |
+| 总 Star 数 | 1,596 |
+| 总 Fork 数 | 244 |
+| 今日新增 Star | 49 |
+| 编程语言 | JavaScript |
+| 许可证 | 各插件独立授权 |
+| 创建时间 | 2026-03-04 |
+| 累计提交数 | 252 |
+| 贡献者数 | 54 |
+| 插件总数 | 170+ |
+| Open Issues | 29 |
 
 ---
 
 ## 总结
 
-OpenAI Plugins 是 OpenAI 为 Codex 平台打造的官方插件生态系统，通过标准化的 `.codex-plugin` 清单格式和 MCP 协议集成，将 AI 编码助手的能力从代码生成扩展到连接 170+ 外部服务的全栈工作流自动化。随着 2026 年 6 月企业级角色插件和 ChatGPT 全平台嵌入的推出，该项目正在从开发者工具演变为面向企业全员的知识工作 AI 平台——与 Anthropic Claude Code 和 Google Gemini CLI 在 AI Agent 生态层面的正面竞争中占据关键位置。
+OpenAI Plugins 是 Codex 插件生态的官方基石项目，通过 170+ 个精心策划的插件示例展示了 AI 编码助手的无限扩展可能。标准化插件架构（plugin.json 清单 + skills/MCP/agents 等组件）为开发者提供了清晰的开发范式，跨厂商合作（如 Claude Code 集成 Codex）则标志着 AI 工具生态正在走向开放协作的新阶段。虽然仓库 Star 数不高（1,596），但作为 OpenAI 官方项目，其影响力和参考价值远超数字本身——它是理解 Codex 插件系统、学习插件开发模式、以及探索 AI 辅助开发未来方向的最佳入口。
 
 ---
 
