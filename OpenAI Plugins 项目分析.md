@@ -1,85 +1,103 @@
 # OpenAI Plugins 项目分析
 
-> 数据更新时间：2026-06-07
+## 概述
 
-## 项目名称
+**OpenAI Plugins** 是 OpenAI 官方维护的 Codex 插件示例仓库，收录了一系列精心策划的插件（Plugin）集合。Codex 是 OpenAI 推出的 AI 编码代理，支持终端 CLI 运行、macOS 桌面应用以及 JetBrains IDE 集成，被誉为"AI 代理的指挥中心"。插件系统于 2026 年 3 月正式上线，旨在让开发者能够为 Codex 配置特定任务的工作流，使其从单纯的编码工具扩展为覆盖设计、协作、部署等全流程的智能开发平台。
 
-**OpenAI Plugins** — openai/plugins
-- **GitHub**: [openai/plugins](https://github.com/openai/plugins)
-
----
-
-## 项目概述
-
-OpenAI Plugins 是 OpenAI 官方维护的 Codex 插件示例仓库，为 OpenAI Codex 代码编写 AI 代理提供了可扩展的插件生态系统。该仓库是 Codex 插件框架的官方参考实现，包含多个精心设计的插件示例，涵盖从设计工具集成到移动应用构建、从部署工作流到内容创作等多个领域。
-
-Codex 插件系统于 2026 年推出，是 OpenAI 为其 AI 编码助手 Codex 打造的可扩展架构。每个插件是一个可安装的包，通过 `.codex-plugin/plugin.json` 清单文件定义，可以将技能（Skills）、应用配置（App）、MCP 服务器、代理（Agents）、命令（Commands）、钩子（Hooks）等多种组件打包在一起。这意味着开发者可以用一个插件同时定义 Codex 应该如何处理某类任务、连接哪些外部工具、以及提供哪些专业能力。
-
-该仓库目前包含 Figma、Notion、iOS 应用构建、macOS 应用构建、Web 应用构建、Expo/React Native、Netlify、Remotion 视频制作、Google Slides 等多个高质量插件示例。这些插件不仅仅是演示代码，而是经过 OpenAI 团队精心设计、可以在生产环境中使用的完整解决方案。
+每个插件存放在 `plugins/<name>/` 目录下，包含必需的 `.codex-plugin/plugin.json` 清单文件，以及可选的 `skills/`（技能工作流）、`.mcp.json`（MCP 服务集成）、`agents/`（子代理）、`commands/`（自定义命令）、`hooks.json`（钩子脚本）和 `assets/`（资源文件）等扩展组件。
 
 ## 核心功能
 
-- **标准化插件清单**：每个插件通过 `.codex-plugin/plugin.json` 清单文件声明元数据、依赖和能力
-- **技能系统（Skills）**：为 Codex 提供可复用的指令集，定义代理处理特定任务的方式
-- **MCP 服务器集成**：每个插件可内嵌 MCP（Model Context Protocol）服务器，让 Codex 在运行时自动发现和调用外部工具
-- **应用配置（App）**：通过 `.app.json` 定义插件连接的外部服务和认证方式
-- **钩子系统（Hooks）**：支持在特定生命周期事件（如代码生成前后）自动执行操作
-- **代理定义（Agents）**：插件可包含专门的代理配置，针对特定场景优化行为
-- **命令扩展（Commands）**：为 Codex CLI 添加自定义命令
+### 插件清单系统
+
+每个插件通过 `.codex-plugin/plugin.json` 清单文件定义元数据和配置，这是插件系统的核心入口。清单文件描述了插件的功能、依赖关系和可用的扩展面（surfaces），确保 Codex 能够正确加载和识别插件能力。
+
+### 技能工作流（Skills）
+
+插件可包含 `skills/` 目录，内含预定义的工作流提示（prompts），指导 Codex 按特定流程执行任务。这种预打包的脚本避免了 Codex 每次从头生成代码，从而降低了幻觉风险并减少推理开销。
+
+### MCP 服务器集成
+
+通过 `.mcp.json` 配置，插件可以接入 Model Context Protocol（MCP）服务器，实现与外部服务（如 GitHub、Gmail、Cloudflare、Vercel 等）的深度集成，使 Codex 获得调用外部 API 和工具的能力。
+
+### 子代理（Sub-agents）
+
+插件可定义专门的子代理，针对特定任务集进行优化，实现多代理协作的开发模式。
+
+### 自定义命令与钩子
+
+`commands/` 目录支持自定义命令，`hooks.json` 支持在特定生命周期事件中自动触发脚本，增强了插件的自动化能力。
 
 ## 技术栈
 
-| 组件 | 技术 |
-|------|------|
-| 插件清单格式 | JSON（`.codex-plugin/plugin.json`） |
-| 主要语言 | JavaScript / TypeScript |
-| 协议支持 | MCP（Model Context Protocol） |
-| 外部工具集成 | Figma API、Notion API、Netlify API 等 |
-| 移动端支持 | SwiftUI、Expo/React Native |
-| 许可证 | 未明确声明 |
+| 技术组件 | 说明 |
+|---------|------|
+| 主语言 | JavaScript |
+| 插件清单 | `.codex-plugin/plugin.json`（JSON 配置） |
+| 技能系统 | `skills/` 目录（基于提示词的工作流） |
+| 外部集成 | MCP（Model Context Protocol）服务器 |
+| 代理扩展 | 插件级别 `agents/` 子代理 |
+| 命令系统 | `commands/` 自定义命令 |
+| 钩子机制 | `hooks.json` 生命周期钩子 |
+| 应用配置 | `.app.json` 应用集成配置 |
+| 运行环境 | OpenAI Codex CLI / macOS App / JetBrains IDE |
+| 许可证 | 未声明 |
 
-## 项目亮点
+## 亮点
 
-### 官方权威的参考实现
-作为 OpenAI 官方发布的 Codex 插件仓库，它是开发者学习和构建 Codex 插件的权威参考。仓库由 OpenAI 团队直接维护，包含 54 位贡献者，代码质量高、架构设计清晰。对于希望为 Codex 构建自定义插件的开发者来说，这些示例是最佳的学习材料。
+### 官方出品，生态标杆
 
-### 三层架构设计
-Codex 插件采用三层架构：Skills 层定义代理行为模式，App 层配置外部服务连接和认证，MCP Server 层提供标准化的工具调用接口。这种分层设计使得单个插件可以同时处理"如何做"、"连接什么"和"用什么工具"三个维度的问题，极大提升了插件的灵活性和可组合性。
+作为 OpenAI 官方维护的仓库，这是 Codex 插件生态的参考实现和最佳实践模板。仓库不仅提供现成可用的插件，还为社区开发者展示了如何构建高质量的 Codex 插件，具有很高的示范价值。
 
-### 丰富的生态集成
-仓库中的插件覆盖了开发者工作流的方方面面——从 Figma 设计稿到代码实现、从 Notion 知识管理到研究规划、从 SwiftUI 原生应用到 React Native 跨平台开发、从 Netlify 部署到 Google Slides 演示文稿制作。这种广度体现了 Codex 插件系统的通用性，也为社区开发者展示了插件框架的能力边界。
+### 场景覆盖广泛
 
-### MCP 原生支持
-每个插件可以内嵌 MCP 服务器，使 Codex 代理能够在运行时自动发现和调用外部工具，无需任何手动配置或集成代码。随着 MCP 协议在 AI 代理生态中的快速普及，Codex 插件将成为连接数百万 Codex 用户与外部 API 服务的关键桥梁。
+仓库收录的插件覆盖了从设计到部署的完整开发链路：
+- **Figma 插件**：包含 use_figma 工具、Code to Canvas（代码转画布）、Code Connect、设计系统规则等
+- **Notion 插件**：支持规划、研究、会议管理和知识捕获
+- **iOS/macOS/Web 构建插件**：分别覆盖 SwiftUI 实现、重构、性能优化、调试和 Web 部署
+- **Expo/Netlify/Remotion/Google Slides 插件**：支持跨平台移动开发、自动化部署、视频生成和演示文稿制作
 
-## 应用场景
+### 竞品生态追赶的战略意义
 
-### AI 辅助设计与开发
-通过 Figma 插件，开发者可以用自然语言描述设计需求，Codex 直接操作 Figma 设计稿，实现从设计到代码的无缝衔接。`use_figma` 技能、Code to Canvas 和 Code Connect 等功能让设计师和开发者之间的协作更加高效。
+插件系统的推出是 OpenAI 对 Anthropic Claude Code 和 Google Gemini CLI 类似功能的重要回应。通过插件机制，Codex 正从"编码助手"进化为"通用知识工作代理"，扩展至非编码场景。值得注意的是，OpenAI 甚至为 Claude Code 发布了官方 Codex 插件，实现跨平台代理协作。
 
-### 全栈应用开发
-从 Web 应用（build-web-apps 插件）、iOS 应用（build-ios-apps 插件）到 macOS 应用（build-macos-apps 插件），这些插件为 Codex 提供了针对不同平台的专业化知识和工作流。开发者只需描述需求，Codex 就能遵循平台最佳实践自动生成、构建和部署应用。
+### 可复制的组织级配置
 
-### 团队知识管理
-Notion 插件将 Codex 与团队知识库深度集成，支持项目规划、研究整理、会议记录和知识捕获等工作流。AI 代理可以直接读写 Notion 数据库，将编码过程中产生的知识自动归档到团队共享空间。
+插件使 Codex 的配置能够在团队成员间标准化和复用，对于企业级部署具有重要价值。开发者可以上传防火墙配置脚本等预打包工作流，确保团队使用一致的开发规范。
 
-### 自动化部署与内容创作
-Netlify 插件简化了从代码到部署的流程，Remotion 插件则让开发者可以用代码方式创建视频内容，Google Slides 插件则将 AI 代理的输出直接转化为演示文稿。这些插件展示了 Codex 在编码之外的广阔应用可能。
+## 适用场景
+
+### 设计与开发桥接
+
+通过 Figma 插件，设计师的创意可以无缝转化为代码。Code to Canvas 功能将代码映射回设计稿，Code Connect 建立设计与代码的双向关联，实现真正意义上的设计与开发一体化。
+
+### 全平台应用开发
+
+- **iOS 开发**：利用 build-ios-apps 插件，Codex 可处理 SwiftUI 实现、代码重构、性能优化和调试
+- **macOS 开发**：build-macos-apps 插件覆盖 SwiftUI 和 AppKit 工作流
+- **Web 开发**：build-web-apps 插件支持部署、UI 构建、支付集成和数据库操作
+- **跨平台移动开发**：Expo 插件支持 Expo 和 React Native 生态
+
+### 团队协作与知识管理
+
+Notion 插件将项目规划、技术研究、会议记录和知识沉淀纳入 Codex 工作流，使 AI 代理能够参与团队协作的全过程。
+
+### DevOps 与内容创作
+
+Netlify 插件支持自动化部署流水线；Remotion 插件支持用代码生成视频内容；Google Slides 插件支持自动化演示文稿制作，展现了插件系统超越传统编码的潜力。
 
 ## Star 数据
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 1,808 ⭐ |
-| 今日新增 | 213 ⭐ |
-| Forks | 258 |
-| 创建日期 | 2026-03-04 |
-| 贡献者 | 54 |
+| GitHub Stars | 1,949 |
+| Forks | 267 |
+| 今日新增 Stars | 262 |
+| 主语言 | JavaScript |
+| 许可证 | 未声明 |
+| 创建时间 | 2026-03-04 |
+| 仓库地址 | https://github.com/openai/plugins |
 
 ## 总结
 
-OpenAI Plugins 仓库是 Codex 插件生态系统的官方基石。尽管 1,808 个 Stars 在 Trending 页面中不算突出，但今日新增 213 个 Stars（增长率超过 11%）反映了社区对 Codex 插件系统的强烈兴趣。随着 OpenAI Codex 用户规模的快速增长，插件开发者生态正在形成——社区已有超过 15 个经过验证的第三方插件。该仓库的价值不在于某个单一插件的功能，而在于它为整个 Codex 插件生态树立了架构标准、开发范式和质量基准。对于关注 AI 编码工具生态演进的开发者来说，这是一个值得持续跟踪的重要项目。
-
----
-
-*数据来源：GitHub 仓库 (openai/plugins)，2026 年 6 月访问*
+OpenAI Plugins 仓库是 Codex AI 编码代理插件生态的官方参考实现，标志着 OpenAI 将 Codex 从编码工具推向更广阔的知识工作领域。插件系统的设计理念强调模块化、可组合和可复用——通过清单文件、技能工作流、MCP 集成和子代理等组件，开发者可以为 Codex 定制专属能力。当前仓库已收录涵盖 Figma 设计、Notion 协作、iOS/macOS/Web 全平台开发、Expo 跨平台、Netlify 部署、Remotion 视频和 Google Slides 演示等场景的插件示例，单日新增 262 Star 的高热度反映出社区对 AI 代理插件化趋势的强烈关注。尽管许可证尚未声明，但作为 OpenAI 官方出品，该仓库对理解 AI 编码代理的未来发展方向具有重要的参考价值。
