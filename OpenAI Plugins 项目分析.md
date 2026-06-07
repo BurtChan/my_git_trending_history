@@ -1,52 +1,50 @@
-# OpenAI Plugins 项目深度分析
+# OpenAI Plugins 项目分析
 
-> **项目地址**：https://github.com/openai/plugins  
-> **数据来源**：2026 年 6 月访问
+## 项目名称
+**OpenAI Plugins** — OpenAI Codex 官方插件示例集合
+- **GitHub**: [openai/plugins](https://github.com/openai/plugins)
+- **许可证**: 未明确声明
 
 ---
 
 ## 项目概述
 
-OpenAI Plugins 是 OpenAI 官方维护的 Codex 插件示例仓库，为 OpenAI Codex 编码代理提供了一套标准化的插件开发框架和参考实现。该项目于 2026 年 3 月随 Codex 插件系统一同发布，是 OpenAI 正式将 Codex 从纯编码工具扩展为可定制化知识工作平台的重要里程碑。
+OpenAI Plugins 是 OpenAI 官方维护的 Codex 插件（Plugin）示例仓库。Codex 是 OpenAI 推出的 AI 编码代理，支持桌面应用、CLI 和 IDE 扩展。而插件系统则是 Codex 生态中用于**打包、分发和复用 AI 编码工作流**的核心机制。
 
-Codex 插件本质上是一种模块化的功能捆绑包（bundle），可以包含技能定义（Skills，即描述工作流的提示词）、应用集成配置、MCP（Model Context Protocol）服务器定义、自定义代理（Agents）、命令（Commands）、生命周期钩子（Hooks）以及静态资源等。每个插件通过 `.codex-plugin/plugin.json` 清单文件声明元数据和组件位置，Codex 引擎据此加载和执行插件功能。这种设计使得复杂工作流可以在团队成员之间一键安装、复用和共享，大幅降低了 AI 编码代理的定制门槛。
+该仓库的核心价值在于提供一个经过精心策划的插件示例集合，开发者可以参考这些示例了解如何构建自己的 Codex 插件。每个插件都遵循统一的目录结构——包含必需的 `.codex-plugin/plugin.json` 清单文件，以及可选的 `skills/`、`.app.json`、`.mcp.json`、`agents/`、`commands/`、`hooks.json`、`assets/` 等配套文件。
 
-从行业格局来看，Codex 插件系统是 OpenAI 对 Anthropic Claude Code 的 Skills 系统和 Google Gemini CLI 的类似功能的直接回应。虽然 Claude Code 在这方面先行一步并积累了大量社区生态，但 OpenAI 凭借其庞大的开发者基础和品牌影响力，通过官方插件仓库和插件市场（Marketplace）机制，快速缩小了与竞争对手的差距。
+这种三层架构设计意味着一个插件可以同时定义：**技能**（Skills，即指导 Codex 如何完成任务的指令）、**应用**（App，即连接外部工具如 Notion、Slack 的配置）、以及 **MCP 服务器**（提供专业能力的模型上下文协议服务）。三者打包为可版本化、可安装的单元，跨 Codex 桌面端、CLI 和 IDE 扩展通用。
+
+截至 2026 年 6 月，该仓库已有 252 次提交、54 位贡献者，收录了 Figma、Notion、iOS/macOS/Web 应用构建、Expo、Netlify、Remotion、Google Slides 等多个领域的官方插件示例，是了解和上手 Codex 插件开发的首选参考。
 
 ---
 
 ## 核心功能
 
-| 功能模块 | 说明 |
-|----------|------|
-| **插件清单系统** | 通过 `.codex-plugin/plugin.json` 声明插件名称、版本、技能路径、应用配置等元数据，Codex 引擎据此自动加载 |
-| **技能定义 (Skills)** | 以 Markdown 格式编写的 SKILL.md 文件，描述工作流提示词，指导 Codex 在特定场景下执行特定任务 |
-| **应用集成 (Apps)** | 通过 `.app.json` 配置与外部应用（如 Figma、Notion、Gmail 等）的集成接口 |
-| **MCP 服务器支持** | 通过 `.mcp.json` 定义 Model Context Protocol 服务器，扩展 Codex 的工具和能力 |
-| **自定义代理 (Agents)** | 插件级别定义专用代理，处理特定领域的复杂任务 |
-| **生命周期钩子 (Hooks)** | 通过 `hooks.json` 定义在特定事件（如安装、启动）时执行的自动化脚本 |
-| **插件市场 (Marketplace)** | JSON 格式的插件目录，支持本地、仓库级别和远程 Git 仓库三种来源，用户可在 Codex 应用内浏览和安装插件 |
-| **命令系统 (Commands)** | 插件可注册自定义命令，扩展 Codex 的交互能力 |
+### 1. 插件目录结构规范
+每个插件位于 `plugins/<name>/` 下，必须包含 `.codex-plugin/plugin.json` 清单文件，该文件定义插件的元数据、版本、依赖关系和入口点。其他文件均为可选但推荐的标准目录结构。
 
----
+### 2. 多维度扩展能力
+一个插件可以同时包含：
+- **Skills**（技能）：可复用的指令集，Codex 加载后指导其行为
+- **App 配置**（`.app.json`）：连接外部工具和服务
+- **MCP 服务**（`.mcp.json`）：通过模型上下文协议提供专业化能力
+- **Agents**（代理）：插件级别的代理配置
+- **Commands**（命令）：自定义命令扩展
+- **Hooks**（钩子）：自动化工作流触发器
 
-## 插件生态示例
+### 3. 官方示例插件
+仓库收录了多个高质量的官方插件示例，涵盖主要开发场景：
+- **Figma 插件**：`use_figma` 技能、Code to Canvas、Code Connect 和设计系统规则
+- **Notion 插件**：规划、研究、会议记录和知识管理
+- **iOS 应用构建插件**：SwiftUI 实现、重构、性能优化和调试
+- **macOS 应用构建插件**：SwiftUI/AppKit 工作流、构建/运行/调试循环
+- **Web 应用构建插件**：部署、UI、支付和数据库工作流
+- **Expo 插件**：Expo 和 React Native 应用、SDK 升级、EAS 工作流
+- **Netlify/Remotion/Google Slides 插件**：基于技能和 MCP 支持的插件包
 
-仓库中包含多个高质量的参考插件，覆盖了不同领域和场景：
-
-| 插件名称 | 功能说明 |
-|----------|---------|
-| **figma** | Figma 设计集成，支持代码到画布转换、Code Connect 和设计系统规则 |
-| **notion** | Notion 协作集成，涵盖规划、研究、会议和知识捕获工作流 |
-| **build-ios-apps** | iOS SwiftUI 应用开发，包括实现、重构、性能优化和调试 |
-| **build-macos-apps** | macOS 原生应用开发，支持 SwiftUI/AppKit 工作流、构建运行调试和打包 |
-| **build-web-apps** | Web 应用开发，涵盖部署、UI、支付和数据库工作流 |
-| **expo** | Expo 和 React Native 应用开发，支持 SDK 升级、EAS 工作流和 Codex Run 动作 |
-| **netlify** | Netlify 部署集成插件 |
-| **remotion** | Remotion 视频生成集成插件 |
-| **google-slides** | Google Slides 演示文稿集成插件 |
-
-这些插件不仅展示了插件框架的能力边界，也为开发者提供了可直接参考的工程实践。
+### 4. 插件市场（Marketplace）支持
+插件可通过 Marketplace 机制进行分发。Codex 支持本地和远程两种 Marketplace 来源，开发者可通过 `codex plugin marketplace add` 命令注册插件源，实现团队级别的插件共享。
 
 ---
 
@@ -54,55 +52,44 @@ Codex 插件本质上是一种模块化的功能捆绑包（bundle），可以�
 
 | 组件 | 技术 |
 |------|------|
-| 核心语言 | JavaScript / TypeScript |
-| 插件清单 | JSON（`plugin.json`） |
-| 技能定义 | Markdown（`SKILL.md`） |
-| 配置文件 | JSON（`.app.json`、`.mcp.json`、`hooks.json`） |
-| 代理配置 | `.agents/` 目录结构 |
-| 插件市场 | JSON 目录格式（`marketplace.json`） |
-| 包管理 | Codex CLI（`codex plugin marketplace add` 等命令） |
-| 分发方式 | 本地安装、Git 仓库、GitHub 简写（`owner/repo`） |
-| 开源协议 | 未明确声明（仓库无 LICENSE 文件） |
+| 清单格式 | JSON（`.codex-plugin/plugin.json`） |
+| 技能定义 | Markdown 指令文件（`skills/` 目录） |
+| 外部集成 | MCP 协议（`.mcp.json`） |
+| 插件分发 | Marketplace JSON Catalog |
+| 目标平台 | Codex Desktop、CLI、VS Code Extension |
+| 主要语言 | JavaScript / TypeScript |
 
 ---
 
 ## 项目亮点
 
-### 官方标杆，定义行业标准
+### 官方权威参考
+作为 OpenAI 官方维护的仓库，这里的插件示例代表了 Codex 插件开发的**最佳实践和规范标准**。54 位贡献者中大部分为 OpenAI 员工，确保了代码质量和架构设计的权威性。
 
-作为 OpenAI 官方发布的 Codex 插件仓库，该项目直接定义了 Codex 插件开发的标准范式。从文件结构、命名规范到清单格式，开发者只需参考此仓库即可快速上手插件开发。这种"官方出示范"的做法降低了生态建设的摩擦力，类似于 Kubernetes 生态中官方示例仓库的作用。
+### 三层架构设计
+插件系统将 Skills（行为指令）、App（外部工具连接）和 MCP（专业能力）统一打包，这种设计使得一个插件可以同时控制 Codex "做什么"、"用什么工具做" 和 "怎么做"，比单纯的 prompt 模板或 MCP 服务器更加完整和强大。
 
-### 一站式捆绑包设计
+### 覆盖主流开发场景
+从设计工具（Figma）到文档协作（Notion），从移动开发（iOS/macOS/Expo）到 Web 部署（Netlify），插件覆盖了开发者日常工作中最常见的场景。这些示例不仅是学习材料，也可以直接安装使用。
 
-与传统的单一功能扩展不同，Codex 插件将技能、应用集成、MCP 服务器和生命周期钩子打包为一个可分发的整体。这种捆绑包设计使得复杂的多步骤工作流（如"从 Figma 设计稿生成 SwiftUI 代码并部署到 TestFlight"）可以通过一个插件完成，而不需要用户逐一配置各个组件。这极大提升了团队协作效率——一个插件开发者可以封装完整工作流，其他团队成员一键安装即可使用。
-
-### 市场机制完善
-
-插件市场系统支持三种来源（本地目录、仓库级别、远程 Git），配合 `codex plugin marketplace add` CLI 命令和 Codex 应用内的可视化浏览界面，形成了从开发、分发到安装的完整链路。更重要的是，市场 JSON 格式设计简洁（仅包含 `name`、`source`、`policy`、`category` 等必要字段），开发者可以轻松创建私有或公共市场，在企业内部实现插件治理。
-
-### 跨平台插件架构
-
-插件同时支持终端 CLI 和 Codex 桌面应用两种使用场景。通过统一的 `.codex-plugin/` 目录结构和清单格式，一个插件可以同时在命令行和图形界面中工作，用户无需为不同使用方式维护两套配置。此外，插件兼容 `.agents/` 和 `.claude-plugin/` 两种路径约定，保持了对社区已有配置的兼容性。
+### 社区生态快速成长
+Codex 插件社区已经从最初的官方示例扩展到包含 12 个官方 + 15 个社区插件（截至 2026 年 4 月的社区统计），社区讨论区有专门的 awesome plugins 合集，生态发展迅速。
 
 ---
 
 ## 应用场景
 
-### AI 辅助 UI/UX 开发
+### 团队工作流标准化
+开发团队可以基于插件系统将编码规范、部署流程、代码审查标准等封装为 Codex 插件，确保所有团队成员使用一致的 AI 辅助开发工作流，减少因个人 prompt 差异导致的输出不一致。
 
-以 Figma 插件为例，设计师和开发者可以实现从设计稿到代码的全自动化工作流：Codex 读取 Figma 设计令牌和组件定义，自动生成对应的 SwiftUI 或 React 组件代码，并通过 Code Connect 维护设计与代码的同步关系。这对于大型设计系统尤为有价值，可以显著减少设计与开发之间的翻译成本。
+### 跨平台开发提效
+iOS、macOS 和 Web 开发插件让 Codex 能够理解各平台特有的 API、设计模式和最佳实践。开发者无需在 prompt 中反复描述平台约束，插件自动提供上下文。
 
-### 团队知识工作自动化
+### 设计-开发协同
+Figma 插件实现了从设计稿到代码的自动化流程——Code to Canvas 将代码变更同步回设计稿，Code Connect 建立设计与组件的映射关系，设计系统规则确保代码符合设计规范。
 
-Notion 插件展示了 Codex 超越纯编码任务的潜力——通过插件，Codex 可以参与会议纪要整理、研究资料归档、项目规划等知识管理工作。这标志着 AI 编码代理正在向通用知识工作助手演进，与 Anthropic 和 Google 在同一方向上的探索形成了竞争态势。
-
-### 多平台应用开发流水线
-
-iOS、macOS、Web 和 Expo 四个构建类插件共同构成了一个覆盖主流移动和桌面平台的应用开发流水线。开发者安装对应插件后，Codex 即可理解各平台的原生 API、构建系统和部署流程，提供平台特定的代码生成、调试和优化建议，降低跨平台开发的学习成本。
-
-### 企业插件治理与分发
-
-企业 IT 团队可以基于市场机制创建私有插件仓库，封装公司内部的代码规范、部署流程、安全策略等工作流，分发给内部开发者使用。通过 `policy.installation` 和 `policy.authentication` 策略字段，可以精细控制插件的可见性和安装权限，实现标准化的开发环境配置管理。
+### 第三方服务集成
+Notion、Google Slides 等插件展示了如何将 AI 编码能力与文档、协作工具打通，实现从需求文档到代码实现的无缝衔接。
 
 ---
 
@@ -110,22 +97,19 @@ iOS、macOS、Web 和 Expo 四个构建类插件共同构成了一个覆盖主�
 
 | 指标 | 数值 |
 |------|------|
-| 总 Star 数 | 1,745 |
-| 总 Fork 数 | 256 |
-| 今日新增 Star | 215 |
-| 主要语言 | JavaScript |
-| 开源协议 | 未声明 |
-| 创建时间 | 2026-03-04 |
-| 提交数量 | 252+ |
-| 仓库结构 | 根目录 + plugins/ 子目录（含多个插件示例） |
-
-该项目在发布后三个月内积累了约 1,700 颗 Star，近期因 Codex 生态的快速扩张再次进入 Trending 榜单。对于一个官方示例仓库而言，这一增长速度反映了开发者社区对 Codex 插件生态的高度关注。
+| ⭐ 总 Stars | 1,808 |
+| 🍴 总 Forks | 258 |
+| 📈 今日新增 | 213 |
+| 👥 贡献者 | 54 |
+| 📝 总提交数 | 252 |
+| 🏷️ 主要语言 | JavaScript |
+| 📅 创建时间 | 2026-03-04 |
 
 ---
 
 ## 总结
 
-OpenAI Plugins 是 Codex 插件系统的官方参考实现和示例仓库，它将 Skills、MCP 服务器、应用集成和生命周期钩子统一为可分发的插件捆绑包，通过市场机制实现了从开发到安装的完整链路。虽然作为示例仓库其代码量不大，但它定义了 Codex 插件开发的标准范式，是 OpenAI 将 Codex 从编码工具扩展为可定制化知识工作平台的关键基础设施。对于使用 Codex 的开发者和团队而言，此仓库是构建自定义插件的首选参考。
+OpenAI Plugins 仓库是 Codex 插件生态的官方参考实现，通过精心策划的插件示例展示了如何将 AI 编码工作流封装为可复用、可分发的标准化单元。其三层架构（Skills + App + MCP）的设计思路为 AI 辅助开发提供了全新的扩展范式——不再是简单的 prompt 模板，而是功能完整的"AI 能力包"。随着 Codex 用户群体的增长和社区插件的涌现，这个仓库将成为 AI 编码工具生态的关键基础设施。
 
 ---
 
