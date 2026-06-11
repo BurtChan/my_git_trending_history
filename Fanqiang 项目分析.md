@@ -1,0 +1,110 @@
+# Fanqiang 项目分析
+
+## 项目名称
+**fanqiang（翻墙）** — 综合性科学上网工具和教程项目库，覆盖全平台翻墙解决方案
+- **GitHub**: [bannedbook/fanqiang](https://github.com/bannedbook/fanqiang)
+- **许可证**: 开源（详见仓库许可文件）
+
+---
+
+## 项目概述
+
+fanqiang（翻墙）是一个专注于科学上网领域的综合性资源项目，由 bannedbook 组织维护。项目汇集了各类翻墙工具的使用教程、客户端下载、服务器搭建指南、免费账号信息以及机场推荐等内容，是中文互联网上最具影响力的翻墙工具导航库之一。凭借 46,500+ 的 Star 数，该项目长期位列 GitHub 中文热门项目前列，今日新增 342 颗 Star，显示出极高的社区关注度。
+
+项目覆盖范围极为广泛，几乎涵盖了所有主流平台和设备类型：从桌面操作系统（Windows、macOS、Linux）到移动设备（Android、iOS），再到路由器（梅林、OpenWRT）和游戏主机（PS4、PS5、Switch、Xbox），每个平台都有对应的工具推荐和详细使用教程。核心产品 ChromeGo 一键翻墙包集成了 Goflyway、v2ray、Daze、SSR、Brook、Lightsocks、trojan、蓝灯（Lantern）、psiphon 等多种协议引擎，用户可以根据自身网络环境灵活选择最优方案。
+
+除了工具和客户端，项目还提供丰富的自建服务器教程（包括 V2ray 和 Shadowsocks），以及配套的翻墙新闻 APP——FQNews，帮助用户获取未经审查的新闻资讯。自 2015 年创建以来，项目已累计 1,406 次提交，持续更新维护，是中文用户获取科学上网知识和工具的一站式参考资源。
+
+---
+
+## 核心功能
+
+| 功能模块 | 描述 |
+|---------|------|
+| ChromeGo 一键翻墙包 | 集成多种协议引擎（Goflyway、v2ray、Daze、SSR、Brook、Lightsocks、trojan、蓝灯、psiphon）的一键翻墙工具 |
+| 全平台客户端推荐 | 覆盖 Windows、macOS、Linux、Android、iOS 的翻墙客户端精选与教程 |
+| 自建服务器教程 | 详细的 V2ray 和 Shadowsocks 服务器搭建指南 |
+| 路由器翻墙方案 | 支持梅林固件、OpenWRT 等路由器平台的翻墙配置教程 |
+| 游戏主机翻墙 | PS4/PS5、Nintendo Switch、Xbox 等游戏设备的科学上网方案 |
+| FQNews 翻墙新闻 APP | 专用的新闻资讯客户端，获取未经审查的新闻信息 |
+| 免费账号与机场推荐 | 汇集免费翻墙节点信息和优质机场服务商推荐 |
+| 综合教程文档 | 各类翻墙工具的安装、配置和使用教程 |
+
+---
+
+## 技术栈
+
+| 组件 | 技术 |
+|------|------|
+| 主要语言 | Kotlin（Android 端核心） |
+| ChromeGo 引擎 | Goflyway、v2ray、Daze、SSR、Brook、Lightsocks、trojan、Lantern、psiphon |
+| 核心协议 | V2Ray（VMess/VLESS）、Shadowsocks、ShadowsocksR、Brook、Trojan、SOCKS5、HTTPS |
+| Windows 客户端 | Clash、V2rayN、SSR、SSTap |
+| macOS 客户端 | ClashX、V2rayU、Surge |
+| iOS 客户端 | Shadowrocket、Quantumult X、Surge |
+| Android 客户端 | Clash、V2RayNG、SSR |
+| 路由器方案 | 梅林固件（Merlin）、OpenWRT |
+| FQNews APP | 独立开发的 Android 新闻客户端 |
+
+---
+
+## 项目亮点
+
+### 全平台覆盖，一站式解决方案
+
+fanqiang 项目最大的特色在于其覆盖面的广度——从传统的桌面操作系统到移动设备、路由器、乃至游戏主机，几乎所有能联网的设备都有对应的翻墙方案和教程。这种「一站式」的资源组织方式极大降低了用户的学习和搜索成本，无论是新手还是高级用户都能快速找到适合自己的方案。
+
+### ChromeGo 多协议集成引擎
+
+ChromeGo 一键翻墙包是项目的核心产品，集成了超过 8 种主流翻墙协议引擎。用户无需分别安装和配置不同工具，通过一个包即可按需切换协议，适应各种网络封锁环境。这种多协议冗余设计显著提升了翻墙连接的稳定性和成功率。
+
+### 从工具到资讯的完整生态
+
+项目不仅提供技术工具，还配套了 FQNews 新闻 APP，形成从「获取工具」到「使用工具」再到「获取信息」的完整闭环。自建服务器教程则帮助有技术能力的用户实现完全自主的翻墙方案，不依赖任何第三方服务。
+
+### 持续维护与社区活跃
+
+自 2015 年创建至今，项目已积累 1,406 次提交，持续跟踪翻墙技术的最新发展。面对不断升级的网络封锁技术，项目保持高频更新，及时引入新的协议和工具，今日 342 颗新增 Star 也反映出社区的高度关注和信任。
+
+---
+
+## 应用场景
+
+### 日常科学上网
+
+对于需要访问 Google、YouTube、Twitter、Wikipedia 等全球互联网服务的普通用户，项目提供了从一键工具到手动配置的多层次方案。ChromeGo 一键包适合零基础用户快速上手，而 Clash、V2RayNG 等客户端则为有更高需求的用户提供精细化控制。
+
+### 开发者技术访问
+
+开发人员需要访问 GitHub、Stack Overflow、Docker Hub、npm 等技术资源站点，fanqiang 提供的路由器级翻墙方案可以让整个局域网设备自动代理，避免逐个设备配置的繁琐。Linux 平台的翻墙教程也专门面向开发者需求做了优化。
+
+### 自建翻墙服务器
+
+对于注重隐私安全、不愿依赖第三方机场服务的用户，项目提供的 V2ray 和 Shadowsocks 自建服务器教程涵盖了从购买 VPS、安装配置到客户端连接的完整流程，帮助用户搭建属于自己的私有翻墙节点。
+
+### 移动端随时翻墙
+
+项目为 Android 和 iOS 用户分别推荐了最适合的翻墙客户端——Android 端的 Clash、V2RayNG 和 SSR，iOS 端的 Shadowrocket、Quantumult X 和 Surge。配合 FQNews APP，移动端用户可以实现随时随地的安全上网和信息获取。
+
+---
+
+## Star 数据
+
+| 指标 | 数值 |
+|------|------|
+| 总 Star 数 | 46,559 |
+| 总 Fork 数 | 7,990 |
+| 主要编程语言 | Kotlin |
+| 今日新增 Star | 342 |
+| 创建时间 | 2015-01-14 |
+| 累计提交数 | 1,406 |
+
+---
+
+## 总结
+
+fanqiang 是中文互联网上最具影响力的科学上网资源聚合项目之一，凭借全平台的覆盖广度、ChromeGo 多协议一键翻墙包的核心产品、从工具到资讯的完整生态链，以及持续十多年（自 2015 年）的活跃维护，为超过 46,000 颗 Star 的社区用户提供了丰富实用的翻墙解决方案。无论是零基础新手还是技术老手，都能在这个项目中找到适合自己的科学上网方案。
+
+---
+
+*数据来源：GitHub 仓库 (bannedbook/fanqiang)，2026 年 6 月访问*
