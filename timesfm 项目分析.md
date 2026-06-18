@@ -1,0 +1,98 @@
+# TimesFM 项目分析
+
+## 项目名称
+**TimesFM** — Google Research 开发的时序预测基础模型，支持零样本时间序列 forecasting
+- **GitHub**: [google-research/timesfm](https://github.com/google-research/timesfm)
+- **许可证**: Apache-2.0
+
+---
+
+## 项目概述
+
+TimesFM（Time Series Foundation Model）是 Google Research 开发的一款开源时间序列基础模型，采用仅解码器（decoder-only）架构，预训练于 1000 亿个真实世界时间点数据。该项目的核心目标是提供强大的零样本（zero-shot）时序预测能力——用户无需在特定数据集上重新训练即可获得接近监督学习 SOTA 的预测效果。
+
+最新版本 TimesFM 2.5 在 2.0 基础上引入了频率支持（frequency）和协变量支持（XReg），进一步扩展了模型的适用范围。同时，项目新增了 HuggingFace Transformers + PEFT (LoRA) 微调支持，让用户可以基于预训练模型快速适配到特定领域。模型支持 PyTorch 和 JAX 双后端运行，可部署在 CPU、GPU、TPU 和 Apple Silicon 等多种硬件平台上。需要特别注意的是，该开源版本并非 Google 的正式产品，但作为研究资源的质量非常高。
+
+TimesFM 的论文被 ICML 2024 接收，其核心创新在于将 LLM 的 patch-as-token 思想与不对称输入/输出 patch 长度相结合，使 200M 参数的小模型在零样本设置下竟能匹配甚至超越专门训练的监督模型。
+
+---
+
+## 核心功能
+
+| 功能 | 描述 |
+|------|------|
+| **零样本时序预测** | 在未见过的数据集上直接进行高精度预测，无需额外训练 |
+| **Patch-based 架构** | 将连续时间点分组为 patch 作为 token，采用因果 Transformer 解码 |
+| **不对称 Patch 长度** | 输出 patch 长度大于输入 patch 长度，减少长程预测的误差累积 |
+| **XReg 协变量支持** | TimesFM 2.5 新增，支持外部协变量（如节假日、促销事件）纳入预测 |
+| **HuggingFace 微调** | 支持 Transformers + PEFT (LoRA) 进行高效参数微调 |
+| **多后端支持** | PyTorch 和 JAX 双后端，兼容 CPU/GPU/TPU/Apple Silicon |
+| **Agent 支持** | 提供 SKILL.md 和 AGENTS.md，可被 AI Agent 集成调用 |
+| **多粒度预测** | 支持从分钟级到年级多种时间粒度的预测任务 |
+
+---
+
+## 技术栈
+
+| 组件 | 技术 |
+|------|------|
+| **模型架构** | Decoder-only Transformer（仅解码器架构） |
+| **参数规模** | 200M 参数 |
+| **预训练数据** | 1000 亿时间点（Google Trends + Wikipedia Pageviews + 合成数据） |
+| **推理后端** | PyTorch / JAX |
+| **硬件支持** | CPU / GPU / TPU / Apple Silicon |
+| **微调框架** | HuggingFace Transformers + PEFT (LoRA) |
+| **安装方式** | PyPI（pip install timesfm） |
+| **模型权重** | HuggingFace Hub（google/timesfm-1.0-200m） |
+| **编程语言** | Python |
+| **许可证** | Apache-2.0 |
+
+---
+
+## 项目亮点
+
+### 不对称 Patch 长度的关键创新
+TimesFM 最具创造性的设计是"输出 patch 长度大于输入 patch 长度"。例如输入 patch 为 32、输出 patch 为 128 时，预测 256 个未来时间点只需 2 步生成而非 8 步。这种设计显著减少了长程预测中的误差累积问题，是 TimesFM 在长时域预测上能匹敌监督学习模型的核心原因。论文实验证明，更长的输出 patch 长度确实带来了更好的长程预测性能。
+
+### 零样本逼近监督 SOTA 的性能
+在 Monash Forecasting Archive（短中期）和 ETT 数据集（长期 96/192 时间点）上的评估显示，TimesFM 零样本预测性能超越了 ARIMA、ETS 等统计方法，超越了大多数监督深度学习方法，甚至超越了基于 GPT-3.5 的 llmtime(ZS)，并在长时域上匹配了专门训练的 PatchTST。这意味着对于许多实际应用场景，直接使用预训练模型即可满足需求，大幅降低了部署门槛。
+
+### 强大的预训练数据策略
+TimesFM 的预训练采用了"语法+真实"双层策略：合成数据（统计模型和物理模拟生成）教会模型理解基本的时序模式，而 1000 亿真实时间点数据（主要来自 Google Trends 和 Wikipedia Pageviews）赋予模型对人类行为模式的泛化能力。这种数据选择策略的洞察在于——搜索兴趣数据能够反映许多其他时序领域的变化趋势，帮助模型在未见过的领域上也能做出合理预测。
+
+---
+
+## 应用场景
+
+### 企业需求预测与供应链优化
+零售企业可直接使用 TimesFM 对销售数据进行零样本预测，快速评估不同 SKU 的需求趋势。对于有特定领域知识的场景，可通过 LoRA 微调将节假日、促销活动等协变量（XReg）纳入模型，获得更精准的预测结果。这相比传统的"为每个品类单独训练模型"的方式，部署速度提升了数个数量级。
+
+### 金融时序分析与风险预测
+金融机构可利用 TimesFM 对股票价格、交易量、利率等时序数据进行基线预测。多粒度支持使其能处理从分钟级高频数据到月度宏观指标的不同场景。结合 PyTorch/JAX 的灵活后端，可方便地集成到现有的量化交易和分析管线中。
+
+### IT 运维监控与异常检测
+TimesFM 可用于服务器负载、网络流量、API 响应时间等运维指标的预测。零样本能力意味着无需针对每类指标单独建模，预训练模型即可理解一般的时序模式，为异常检测提供基线预测。
+
+---
+
+## Star 数据
+
+| 指标 | 数值 |
+|------|------|
+| **总 Stars** | 21,897 |
+| **总 Forks** | 2,130 |
+| **今日新增 Stars** | 606 |
+| **创建时间** | 2024-04-29 |
+| **主要语言** | Python |
+| **许可证** | Apache-2.0 |
+| **论文发表** | ICML 2024 |
+
+---
+
+## 总结
+
+TimesFM 是时序基础模型领域的标杆之作——以仅 200M 参数的轻量架构实现了零样本逼近监督 SOTA 的预测能力，不对称 patch 长度的创新设计优雅地解决了长程预测的误差累积难题。2.5 版本引入 XReg 协变量和 HuggingFace 微调支持，进一步拉近了研究与生产的距离。2.1 万 Stars、持续更新迭代和社区贡献的活跃态势，表明时序基础模型正在从学术研究走向实际落地。
+
+---
+
+*数据来源：GitHub 仓库 (google-research/timesfm)，2026 年 6 月访问*

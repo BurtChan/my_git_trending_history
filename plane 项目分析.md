@@ -1,0 +1,111 @@
+# plane 项目分析
+
+## 项目名称
+**Plane** — 现代开源项目管理平台，Jira / Linear / Monday / ClickUp 的全面替代方案
+- **GitHub**: [makeplane/plane](https://github.com/makeplane/plane)
+- **许可证**: AGPL-3.0
+- **官网**: [plane.so](http://plane.so)
+
+---
+
+## 项目概述
+
+Plane 是目前 GitHub 上最成功的开源项目管理平台之一，拥有超过 51000 个 Star，是 Jira、Linear、Monday.com 和 ClickUp 等商业产品的强力开源替代。项目自 2022 年 11 月创建以来，经过 7000+ 次提交和 56 个版本的持续迭代，已经发展成为一个功能完备、架构成熟、社区活跃的企业级项目管理解决方案。
+
+Plane 的产品哲学是"为所有团队提供现代化的项目管理工具，而不是让团队花时间去管理工具本身"。这一理念贯穿于产品的每一个设计决策——简洁直观的界面、低配置即用的默认设置、高效的键盘快捷操作，以及对开发团队工作流的深度理解。与 Jira 等传统工具的臃肿复杂形成鲜明对比，Plane 追求的是极简但不简单的设计美学。
+
+在部署层面，Plane 提供了灵活的选择：用户可以使用免费的 Plane Cloud 托管服务快速上手，也可以通过 Docker 或 Kubernetes 在自己的基础设施上完全自托管，确保数据主权和合规性。AGPL-3.0 许可证保证了项目的开源性和社区驱动特性，同时 Plane 团队也通过商业的 Plane Cloud 服务获得可持续发展收入。
+
+---
+
+## 核心功能
+
+| 功能 | 描述 |
+|------|------|
+| **Work Items（工作项）** | 灵活的任务/Issue 管理，支持富文本编辑、文件上传、子属性、Issue 交叉引用 |
+| **Cycles（冲刺周期）** | Sprint 敏捷管理，支持燃尽图、进度追踪、自动化工作流 |
+| **Modules（模块）** | 将复杂项目拆解为可管理的小模块，实现项目结构的清晰分层 |
+| **Views（视图）** | 自定义过滤器视图，可保存和分享，支持看板、列表、日历等多种展示方式 |
+| **Pages（文档页面）** | AI 驱动的文档与笔记系统，支持富文本、图片、超链接，可将笔记转化为可执行任务 |
+| **Analytics（分析看板）** | 实时数据洞察、趋势可视化、瓶颈识别，帮助团队持续改进 |
+| **多工作区支持** | 支持创建多个工作区（Workspace），适配不同团队和项目组合管理 |
+| **快捷命令面板** | 类似 Spotlight/Alfred 的全局命令面板，键盘驱动的高效操作 |
+| **God Mode** | 实例管理员模式，支持全局配置和治理 |
+| **API 与 Webhook** | 完整的 REST API 和 Webhook 支持，方便与 CI/CD、Slack 等工具集成 |
+
+---
+
+## 技术栈
+
+| 组件 | 技术 |
+|------|------|
+| 前端框架 | React + React Router |
+| 后端框架 | Django（Python） |
+| 工具运行时 | Node.js |
+| 构建工具 | Vite |
+| 包管理 | pnpm |
+| Monorepo 管理 | Turborepo + pnpm workspaces |
+| 数据库 | PostgreSQL |
+| 缓存 | Redis |
+| 容器化 | Docker / Docker Compose |
+| 编排 | Kubernetes |
+| 许可证 | AGPL-3.0 |
+| 项目结构 | apps/ + packages/ + deployments/ + docs/ |
+
+---
+
+## 项目亮点
+
+### 开源 Jira 替代的最佳实践
+Plane 在"开源 Jira 替代品"这一赛道上已确立了绝对的领先地位。51000+ Star 的规模远超同类项目（如 Taiga ~9000 Star、Leantime ~4000 Star），证明其产品力和社区吸引力。Plane 不仅复刻了 Jira 的核心功能（Issue 追踪、Sprint 管理、看板视图），还在用户体验上实现了质的飞跃——更快的加载速度、更直觉的界面设计、更流畅的交互体验。
+
+### Monorepo 架构与工程化成熟度
+Plane 采用 pnpm workspaces + Turborepo 的现代 monorepo 架构，将应用代码（apps/）、共享包（packages/）、部署配置（deployments/）和文档（docs/）统一管理。7000+ commits 和 56 个 releases 的迭代历史展示了项目卓越的工程化成熟度和持续交付能力。这种架构也降低了社区贡献者的参与门槛。
+
+### 双模式部署：Cloud + Self-Hosted
+Plane 同时提供托管云服务和完全自托管方案。Plane Cloud 让个人和小团队可以零成本快速上手（免费层）；Docker Compose 和 Kubernetes 部署方案让中大型企业可以在自有基础设施上运行 Plane，确保数据安全和合规要求。这种"Cloud 优先，Self-Hosted 可选"的策略平衡了易用性和数据主权需求。
+
+### AI 增强的 Pages 文档系统
+Plane 的 Pages 功能集成了 AI 能力，不仅能作为团队的文档和知识库，还能通过 AI 辅助将文档中的行动项自动转化为可追踪的工作项（Work Items）。这种"文档即工作"的理念模糊了文档管理和任务管理之间的边界，极大提升了团队协作效率。
+
+---
+
+## 应用场景
+
+### 软件开发团队的敏捷项目管理
+Plane 最核心的使用场景是软件开发团队的项目管理。通过 Cycles 功能实现 Sprint 规划和燃尽图追踪，通过 Work Items 管理 Bug、Feature 和 Task，通过 Views 创建自定义的看板和过滤器视图，通过 Analytics 识别开发瓶颈。相比 Jira，Plane 提供了更轻量、更快速、更开发友好的体验。
+
+### 产品团队的路线图与模块管理
+产品经理可以使用 Plane 的 Modules 功能将大型产品规划拆分为可追踪的模块，每个模块包含相关的工作项和里程碑。结合 Analytics 的趋势可视化功能，产品团队可以实时了解产品开发进度和资源分配情况，做出更明智的优先级决策。
+
+### 跨部门协作与知识管理
+Plane 的 Pages 功能为跨部门团队提供了统一的知识管理平台。技术文档、会议纪要、设计规范都可以在 Pages 中创建和维护，并通过 AI 辅助将关键行动项自动同步到 Work Items，确保"每个决策都有追踪，每个任务都有归属"。
+
+### 企业级自托管部署
+对于有数据主权和合规要求的企业（如金融、医疗、政府机构），Plane 的 Docker/Kubernetes 自托管方案提供了完整的数据控制能力。AGPL-3.0 许可证允许自由使用和修改，企业可以根据自身需求进行定制化开发。
+
+---
+
+## Star 数据
+
+| 指标 | 数值 |
+|------|------|
+| 总 Star 数 | 51,294 |
+| 总 Fork 数 | 4,563 |
+| 今日新增 Star | 89 |
+| 主要语言 | TypeScript |
+| 许可证 | AGPL-3.0 |
+| 创建时间 | 2022-11-19 |
+| 总提交数 | 7,044 |
+| 总发布版本 | 56 |
+| GitHub 话题 | 21 |
+
+---
+
+## 总结
+
+Plane 是目前 GitHub 上最成功的开源项目管理平台，以 51000+ Star 和 7000+ commits 的规模，确立了其作为 Jira/Linear/Monday/ClickUp 开源替代品的领导地位。其 Work Items、Cycles、Modules、Views、Pages、Analytics 六大核心功能模块构成了完整的项目管理解决方案，配合现代化的 React+Django 技术栈、灵活的 Cloud/Self-Hosted 双模式部署和活跃的社区生态，Plane 已成为全球技术团队进行项目管理的首选开源工具。
+
+---
+
+*数据来源：GitHub 仓库 (makeplane/plane)，2026 年 6 月访问*

@@ -1,0 +1,106 @@
+# OpenMontage 项目分析
+
+## 项目名称
+**OpenMontage** — 世界首个开源 Agentic 视频制作系统，将 AI 编码助手转变为完整的视频制作工作室
+- **GitHub**: [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage)
+- **许可证**: AGPL-3.0
+
+---
+
+## 项目概述
+
+OpenMontage 是一个革命性的开源项目，它定义了一种全新的视频制作范式：将 AI 编码助手（如 Claude、Cursor、GitHub Copilot、Windsurf 等）转化为一个完整的、全自动的视频生产工作室。该项目于 2026 年 3 月发布，在短短不到 3 个月内便获得了超过 5300 个 Star，成为 AI 视频生成领域的明星项目。
+
+项目核心理念是通过 Agent 技能（Skills）和流水线（Pipelines）来驱动视频创作。OpenMontage 提供了 12 条预定义的生产流水线、52 个专业工具和超过 500 个 Agent 技能，覆盖了从脚本编写、素材获取、图像生成、视频合成、配音、字幕到最终渲染的完整视频制作流程。每个流水线都经过精心编排，Agent 可以自主选择和组合工具，完成复杂的视频制作任务。
+
+OpenMontage 的技术架构充分利用了现代 AI 能力：使用 FLUX/Stable Diffusion 进行图像生成，通过 Remotion 实现编程式视频合成（类似 React 的声明式 API），借助 ElevenLabs/Chirp3-HD 进行高质量的 TTS 配音，并利用 WhisperX 实现自动字幕。整个系统的单视频成本极低，仅为 $0.15-$1.33，极大地降低了高质量视频制作的门槛。
+
+---
+
+## 核心功能
+
+| 功能 | 描述 |
+|------|------|
+| 12 条视频生产流水线 | 预编排的端到端视频制作流程，覆盖多种视频类型和风格 |
+| 52 个专业工具 | 从 FFmpeg 视频处理到图像生成、音频合成、字幕生成等全链路工具集 |
+| 500+ Agent 技能 | 为 Claude/Cursor/Copilot 等 AI 助手提供精细化的视频制作指令集 |
+| 图像动画流水线 | FLUX 图像生成 + Remotion 动画合成，从文本/图片生成动态视频 |
+| 真实视频素材剪辑 | 集成免费 stock footage 素材库，支持真实视频片段的智能剪辑 |
+| TTS 配音系统 | 支持 ElevenLabs 和 Google Chirp3-HD 的高质量文字转语音 |
+| 自动字幕生成 | 基于 WhisperX 的自动语音识别和字幕时间轴对齐 |
+| 专业特效支持 | 粒子特效、镜头运动（Ken Burns 效果）、交叉淡化等电影级转场 |
+| 多 AI 助手兼容 | 同时支持 Claude、Cursor、GitHub Copilot、Windsurf 等主流 AI 编码助手 |
+| 提示词画廊 | 提供丰富的 Prompt Gallery，用户可直接复用成熟的视频制作提示词 |
+
+---
+
+## 技术栈
+
+| 组件 | 技术 |
+|------|------|
+| 核心语言 | Python |
+| 视频合成引擎 | Remotion（React 声明式视频 API） |
+| 图像生成 | FLUX、Stable Diffusion |
+| 视频处理 | FFmpeg |
+| 文字转语音 | ElevenLabs、Google Chirp3-HD |
+| 语音识别/字幕 | WhisperX |
+| AI 助手集成 | Claude、Cursor、GitHub Copilot、Windsurf |
+| Agent 技能框架 | `.agents/skills`、`.claude/skills`、`.cursor/rules` |
+| 环境配置 | `.env.example`、Makefile |
+
+---
+
+## 项目亮点
+
+### Agentic 视频制作范式
+OpenMontage 真正实现了"Agent 即导演"的理念。它不只是一个工具集，而是一套完整的 Agent 工作流——AI 助手可以像专业视频制作团队一样，自主完成脚本撰写、分镜规划、素材准备、视觉生成、音频合成、字幕叠加和最终渲染的全流程。用户只需用自然语言描述想要制作什么视频，Agent 就会自动调用合适的流水线和工具来完成制作。
+
+### 极致低成本
+传统视频制作需要专业的摄像设备、剪辑软件（如 Adobe Premiere/After Effects）和专业人员，成本高昂。OpenMontage 将单视频制作成本压缩到 $0.15-$1.33，这意味着即使是非专业人士也能以极低的成本批量生成高质量的视频内容，对内容创作者和中小企业具有巨大的经济价值。
+
+### 多 AI 助手全兼容
+OpenMontage 通过为不同的 AI 编码助手提供专门的技能配置文件（CLAUDE.md、CURSOR.md、COPILOT.md 等），实现了与 Claude、Cursor、GitHub Copilot、Windsurf 等主流 AI 助手的深度集成。这种"一次编写，到处运行"的设计让用户可以自由选择自己偏好的 AI 工具来完成视频制作。
+
+### Remotion 编程式视频合成
+项目采用 Remotion 作为视频合成引擎，这是一种基于 React 的声明式视频编程框架。所有视频效果、转场、动画都通过代码定义，确保了可重复性、可调试性和可版本控制——这比传统的 GUI 剪辑软件更适合 AI Agent 操作，也更适合批量生产和 CI/CD 集成。
+
+---
+
+## 应用场景
+
+### 短视频/社交媒体内容批量生产
+内容创作者和营销团队可以利用 OpenMontage 快速批量生成适合 TikTok、Instagram Reels、YouTube Shorts 等平台的短视频内容。通过 AI Agent 自动化流水线，从主题选定到成片输出的时间从数小时缩短到数分钟，实现真正的工业化内容生产。
+
+### 产品演示与营销视频
+SaaS 公司和电商企业可以利用 OpenMontage 快速制作产品演示视频、功能介绍视频和营销宣传片。结合真实视频素材剪辑和 AI 图像生成能力，可以制作出媲美专业制作团队的视频效果，成本却只有传统方式的零头。
+
+### 教育内容与知识传播
+教育工作者和知识类创作者可以使用 OpenMontage 制作教学视频、概念讲解动画和知识卡片。TTS 配音和自动字幕功能让内容创作更加高效，而 Remotion 的编程式动画则为抽象概念的视觉化提供了强大支持。
+
+### 已有视频的二创与改作
+OpenMontage 支持从已有视频开始进行二次创作，包括重新配音、添加字幕、调整剪辑节奏、添加特效等。这对于需要快速改编现有内容的团队特别有用，如将长视频剪辑为短版本、添加多语言配音等。
+
+---
+
+## Star 数据
+
+| 指标 | 数值 |
+|------|------|
+| 总 Star 数 | 5,328 |
+| 总 Fork 数 | 1,007 |
+| 今日新增 Star | 98 |
+| 主要语言 | Python |
+| 许可证 | AGPL-3.0 |
+| 创建时间 | 2026-03-29 |
+| 总提交数 | 103 |
+| GitHub 话题 | 20 |
+
+---
+
+## 总结
+
+OpenMontage 是 AI 与视频制作深度融合的里程碑式项目。它以"Agent 即导演"的核心理念，通过 12 条流水线、52 个工具和 500+ Agent 技能构建了一个完整的、低成本的开源视频生产系统。无论是内容创作者、营销团队还是教育工作者，都能借助这个系统以前所未有的效率和成本制作专业级视频，是 2026 年最值得关注的 AI 视频开源项目之一。
+
+---
+
+*数据来源：GitHub 仓库 (calesthio/OpenMontage)，2026 年 6 月访问*
