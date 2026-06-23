@@ -1,0 +1,114 @@
+# FreeLLMAPI 项目分析
+
+## 项目名称
+
+**FreeLLMAPI** — 将 16 个 LLM 提供商的免费额度汇聚到一个 OpenAI 兼容端口的代理服务
+
+- GitHub 仓库：[tashfeenahmed/freellmapi](https://github.com/tashfeenahmed/freellmapi)
+- 项目主页：[freellmapi.co](https://freellmapi.co)
+- 许可证：MIT
+- 开发语言：TypeScript
+
+---
+
+## 项目概述
+
+FreeLLMAPI 是一个自托管的代理服务，将 16 个大语言模型（LLM）提供商的免费额度汇聚到单一的 `/v1/chat/completions` 端口之后，每月可堆叠约 17 亿 token 的免费使用量，覆盖 100+ 模型。项目采用 OpenAI 兼容 API 设计，使得所有使用 OpenAI SDK 的应用（包括 LangChain、LlamaIndex、Continue 等框架）无需修改代码即可直接接入。
+
+该项目由独立开发者 tashfeenahmed 于 2026 年 4 月创建，在短短两个月内便获得了超过 11,600 个 GitHub Star 和 1,800+ Fork，足见其在开发者社区中的受欢迎程度。这得益于一个精准的产品定位：对于个人开发者、学生和研究者而言，LLM API 的使用成本是一个切实的痛点，而 FreeLLMAPI 巧妙地利用了各大提供商提供的免费额度（如 Google Gemini、Groq、Cerebras、Cloudflare Workers AI 等都有慷慨的免费计划），通过智能路由将请求分发到最合适的提供商。
+
+FreeLLMAPI 不仅是一个简单的请求转发代理，它在架构上做了许多深思熟虑的设计：基于"家庭路由"的 failover 策略确保 embedding 模型切换不会导致向量损坏；粘性会话保持同一对话使用同一模型长达 30 分钟；AES-256-GCM 加密存储上游 API 密钥；细粒度的速率追踪覆盖每个 `(平台, 模型, 密钥)` 组合的 RPM/TPM 计数器。这些设计使其从"玩具项目"跃升为可实际用于生产环境的可靠基础设施。
+
+---
+
+## 核心功能
+
+### 多提供商聚合
+
+支持 17 个 LLM 提供商，涵盖 Google（Gemini 2.5 Flash）、Groq（Llama 系列）、Cerebras（Qwen3 235B）、Mistral（Large 3、Codestral）、OpenRouter（21 个免费模型）、GitHub Models（GPT-4.1）、Cloudflare（Kimi K2、GLM-4.7）、Cohere（Command R+）、NVIDIA NIM、HuggingFace（DeepSeek V4）等，以及 4 个无需认证的匿名提供商（Pollinations、LLM7、OVH AI Endpoints、Kilo Gateway）。还支持添加任意 OpenAI 兼容的自定义端点（本地 Ollama、vLLM 等）。
+
+### 智能路由与自动故障转移
+
+当某个提供商返回 429（速率限制）、5xx 错误或超时时，系统自动冷却该密钥并切换到下一个可用模型，最多尝试 20 次。采用基于"模型族"的路由策略——特别是 embedding 请求的 failover 不会跨模型族，防止向量空间不一致导致的语义漂移。
+
+### 全面的 API 兼容性
+
+实现了完整的 OpenAI API 兼容性，包括 `POST /v1/chat/completions`（流式和非流式）、`GET /v1/models`、`POST /v1/embeddings`（基于家庭路由的 embedding 端点），以及 `POST /v1/responses`（Codex CLI 格式的翻译适配层）。支持 tool calling 多步骤流程和基于 `image_url` 的视觉输入，自动路由到支持视觉的模型。
+
+### 安全与管理
+
+统一 API 密钥（`freellmapi-…`）隔离客户端与上游密钥，AES-256-GCM 加密存储在 SQLite 中，运行时仅在内存中解密。内置健康检查机制，自动标记密钥状态（healthy/rate_limited/invalid/error）。提供 React + Vite 管理面板，支持暗色模式，包含密钥管理、故障转移链配置、实时分析统计和交互式 Playground。
+
+---
+
+## 技术栈
+
+| 组件 | 技术 |
+|------|------|
+| 运行时 | Node.js 20+ |
+| 后端语言 | TypeScript |
+| 前端面板 | React + Vite |
+| 数据存储 | SQLite（加密密钥存储） |
+| 部署方式 | Docker / Docker Compose / 桌面应用 |
+| 加密算法 | AES-256-GCM |
+| 协议支持 | OpenAI API 兼容（SSE 流式） |
+| 支持平台 | Windows、macOS、Linux、ARM/树莓派 |
+
+---
+
+## 项目亮点
+
+### 精准的产品定位——"免费 LLM 的终极聚合器"
+
+FreeLLMAPI 切中了一个真实且广泛存在的需求：个人开发者想要体验和使用各种 LLM，但不想为每个提供商单独注册和管理 API 密钥。每月约 17 亿 token 的免费额度（对比 GPT-4 的付费定价），足以支撑个人学习、原型开发和轻量级应用的日常使用。这种"整合免费资源"的思路虽然不复杂，但执行得非常完善——17 个提供商的接入、智能路由、故障转移，每一步都考虑到了实际使用中的边界情况。
+
+### 嵌入模型的家庭路由策略
+
+这是一个容易被忽略但极其重要的设计决策。当使用 embedding API 时，如果故障转移跨越了不同的模型族（例如从 text-embedding-3-small 切换到某个国产模型的 embedding），生成的向量会处于不同的向量空间，导致语义检索完全失效。FreeLLMAPI 通过"家庭路由"（family-based routing）确保 failover 只在同一模型族内进行，完美解决了这个隐含的一致性问题。
+
+### 粘性会话与速率追踪
+
+粘性会话功能确保同一对话在 30 分钟内始终使用同一模型，避免对话中途切换模型导致的上下文断裂和幻觉问题。每个 `(平台, 模型, 密钥)` 组合的细粒度速率追踪则使得系统可以精确管理每个免费额度的消耗速度，最大化利用率同时避免触发提供商的限制。这些设计展现了作者对 LLM API 使用场景的深入理解。
+
+### 多形态部署——从 Docker 到桌面应用
+
+FreeLLMAPI 提供了从 Docker 一键部署到本地开发、再到原生桌面应用（macOS .dmg 和 Windows .exe 菜单栏应用，带实时状态弹窗）的全覆盖部署选项。特别值得一提的是桌面应用形态——在菜单栏显示实时统计信息（请求延迟、token 消耗、提供商分布），让开发者可以直观地监控代理的运行状态。这种对"开发者体验"的重视在同类项目中非常罕见。
+
+---
+
+## 应用场景
+
+### 个人开发者的零成本 LLM 接入
+
+对于个人开发者、学生和独立研究者，FreeLLMAPI 提供了一种零成本体验多种 LLM 的途径。只需一个 Docker 容器和一个统一 API 密钥，就能访问 100+ 模型，覆盖从对话生成、代码补全到 embedding 的全场景需求。这对于预算有限但想要学习和实验 LLM 的用户而言极具价值。
+
+### AI 编程助手的统一后端
+
+FreeLLMAPI 的 OpenAI 兼容 API 设计使其可以直接作为 Claude Code、Cursor、Continue 等编程助手的后端。通过智能路由，编程助手可以在不同模型间自动切换（例如代码生成用 Groq 的 Llama、长上下文推理用 Google 的 Gemini），同时享受多个免费提供商汇聚的额度池，大幅延长免费使用时间。
+
+### 轻量级应用的 LLM 基础设施
+
+对于个人项目或小团队项目，FreeLLMAPI 可以作为一个轻量级的 LLM API 网关。其内置的速率追踪、自动故障转移和健康检查机制，使得它能够可靠地管理多个提供商的免费额度，为应用提供稳定（虽然免费）的 LLM 服务。项目自带的 React 管理面板让运维变得简单直观。
+
+---
+
+## Star 数据
+
+| 指标 | 数值 |
+|------|------|
+| GitHub Stars | 11,613 |
+| Forks | 1,821 |
+| 开发语言 | TypeScript |
+| 许可证 | MIT |
+| 创建时间 | 2026-04-21 |
+| 空闲内存占用 | ~40 MB RSS |
+
+---
+
+## 总结
+
+FreeLLMAPI 是一个构思精巧、执行完善的开源项目，它将分散在 16 个 LLM 提供商中的免费额度汇聚为一股可用的力量，通过 OpenAI 兼容 API 和智能路由，为个人开发者提供了接近 17 亿 token/月的免费 LLM 使用量。项目在故障转移策略（特别是 embedding 的家庭路由）、粘性会话管理、密钥加密存储等方面展现了超越"聚合代理"这一简单概念的专业设计。对于任何不想为 LLM API 付费、但又想获得稳定多模型体验的开发者来说，这是一个几乎完美的解决方案。
+
+---
+
+*数据来源：GitHub 仓库 (tashfeenahmed/freellmapi)，2026 年 6 月访问*
