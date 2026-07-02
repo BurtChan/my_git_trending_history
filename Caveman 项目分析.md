@@ -1,0 +1,108 @@
+# Caveman 项目分析
+
+## 项目名称
+**Caveman** — Claude Code 技能插件，通过"穴居人语言"压缩 AI 输出 token，节省 65% 的 token 消耗
+- **GitHub**: [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)
+- **许可证**: MIT
+- **语言**: JavaScript
+
+---
+
+## 项目概述
+
+Caveman 是一个为 AI 编码助手（Claude Code、Codex、Gemini、Cursor 等 30+ 个代理）设计的 Token 压缩技能插件。它的核心理念源自一个有趣的网络梗——"why use many token when few token do trick"（穴居人语言），通过让 AI 用极简的"穴居人风格"回复问题，将输出 token 减少约 65%，同时保持 100% 的技术准确性。
+
+该项目看似是一个恶搞项目，但实际上基于严肃的研究支撑：2026 年 3 月的一篇论文《Brevity Constraints Reverse Performance Hierarchies in Language Models》发现，约束大语言模型使用简洁回复，在某些基准测试上准确率提升了 26 个百分点。Caveman 将这一理念产品化，让开发者在日常编码中切实受益——代码、命令和错误字符串保持精确不变，仅压缩冗余的自然语言描述。
+
+项目自 2026 年 4 月创建以来迅速走红，目前已积累近 80,000 Stars，成为开发者社区中最热门的 AI 工具链优化项目之一。
+
+---
+
+## 核心功能
+
+| 功能 | 描述 |
+|------|------|
+| 输出 Token 压缩 | 通过"穴居人语言"压缩 AI 回复，平均减少 65% 输出 token |
+| 多级压缩模式 | lite（去除填充词）、full（默认穴居人风格）、ultra（电报体，最紧凑）、wenyan（文言文模式） |
+| 多语言支持 | 压缩风格而非语言本身，支持葡萄牙语、西班牙语、法语等多种语言 |
+| Caveman Commit | 生成精简的 Conventional Commit 消息，主题行 ≤50 字符 |
+| Caveman Review | 生成一行式 PR 评审评论，如 `L42: 🔴 bug: user null. Add guard.` |
+| Caveman Stats | 实时显示当前会话 token 使用量、终身节省量和 USD 金额 |
+| Caveman Compress | 将记忆文件（如 CLAUDE.md）压缩为穴居人语言，平均节省 46% 输入 token |
+| Caveman Shrink | MCP 中间件，压缩任何 MCP 服务器的工具描述 |
+| Cavecrew 子代理 | 穴居人风格的子代理（调查员/构建者/审查员），比普通子代理节省约 60% token |
+| 状态栏徽章 | Claude Code 界面显示终身节省 token 数量 |
+
+---
+
+## 技术栈
+
+| 组件 | 技术 |
+|------|------|
+| 运行时 | Node.js ≥18 |
+| 语言 | JavaScript |
+| 生态 | Claude Code Skills、Codex、Gemini、Cursor、Windsurf、Cline、Copilot 等 30+ 代理 |
+| 触发方式 | `/caveman` 命令或 "talk like caveman" 自然语言触发 |
+| MCP 支持 | caveman-shrink 作为 MCP 中间件 |
+
+---
+
+## 项目亮点
+
+### 实证有效的 Token 压缩
+
+Caveman 不是凭直觉设计的——它有详细的基准测试数据支撑。在 10 个真实编码任务中（包括 React 重渲染修复、PostgreSQL 连接池配置、Docker 多阶段构建等），平均 token 减少了 65%，最高达到 87%（React 错误边界实现）。对于记忆文件压缩，平均节省 46% 的输入 token，这对于上下文窗口有限的 AI 代理尤为关键。
+
+### 学术研究的工程化落地
+
+项目引用了 2026 年发表的学术论文作为理论基础，将"简洁约束提升模型准确性"的研究发现转化为实用的开发者工具。这种"研究→产品"的路径使 Caveman 超越了单纯的工具属性，更像是 AI 提示工程领域的一次实践探索。
+
+### 广泛的代理生态兼容
+
+Caveman 不仅支持 Claude Code，还兼容 Codex、Gemini、Cursor、Windsurf、Cline、Copilot 等 30 多个 AI 编码代理。对于支持自动激活的代理（Claude Code、Codex、Gemini），Caveman 提供内置集成；对于其他代理，可通过 init 文件或会话内 `/caveman` 命令启用。
+
+### 文言文模式（wenyan）
+
+除英文和多种欧洲语言外，Caveman 还提供"wenyan"（文言文）模式——一种比"ultra"模式更紧凑的中文压缩方式，利用文言文的高度精炼特性进一步压缩 token。这是该项目中极具创意的功能，尤其适合中文开发者社区。
+
+---
+
+## 应用场景
+
+### 降低 AI 编码成本
+
+在日常使用 AI 编码助手时，大量的 token 消耗来自冗长的自然语言解释而非代码本身。Caveman 通过压缩这些冗余描述，直接降低 API 调用成本。对于频繁使用 Claude Code 或 Codex 的开发者，长期累积的节省量相当可观（项目内置了终身 token 节省统计）。
+
+### 加速 AI 响应速度
+
+更少的输出 token 意味着更快的响应速度。Caveman 的基准数据显示，经过压缩的回复生成速度提升约 3 倍。在需要快速迭代的开发场景中（如调试、快速原型开发），这种速度提升显著改善工作效率。
+
+### 优化上下文窗口利用
+
+AI 代理的上下文窗口是有限资源。Caveman Compress 功能可以将项目记忆文件（如 CLAUDE.md）压缩 46%，为代码和实际工作内容腾出更多上下文空间。这在处理大型代码库时尤为重要。
+
+### 团队协作中的标准化沟通
+
+Caveman Commit 和 Caveman Review 功能不仅节省 token，还推动了团队内部更精练的沟通方式——commit 消息更简洁、PR 评论更直接。这种"少即是多"的哲学在工程实践中具有长期价值。
+
+---
+
+## Star 数据
+
+| 指标 | 数值 |
+|------|------|
+| ⭐ 总 Stars | 79,668 |
+| 🍴 总 Forks | 4,480 |
+| 📅 创建日期 | 2026-04-04 |
+| 📝 今日新增 | 866 stars |
+| 💻 主要语言 | JavaScript |
+
+---
+
+## 总结
+
+Caveman 以一个幽默的网络梗为切入点，将学术研究中的"简洁约束"理念工程化为实用的 AI 编码工具。它通过压缩 AI 输出中的自然语言冗余，在不牺牲技术准确性的前提下节省 65% 的 token 消耗，直接降低成本并提升响应速度。项目兼容 30+ 个 AI 编码代理，支持多级压缩模式和文言文压缩，展示了"娱乐化"与"工程价值"的完美结合。
+
+---
+
+*数据来源：GitHub 仓库 (JuliusBrussee/caveman)，2026 年 7 月访问*
