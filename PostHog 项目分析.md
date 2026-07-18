@@ -126,6 +126,40 @@ PostHog 的核心价值在于**消除工具碎片化和数据孤岛**。传统�
 - 支持 Slack/Web/桌面/MCP 全渠道集成
 - Rust 占比提升至 7.1%，代码提交突破 5.1 万次
 
+
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 18 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单（今日新增 438 Stars）
+
+**最新动态**：
+PostHog 近期持续活跃，社区关注度稳步上升。以下是最重要的更新：
+
+- Self-driving 模式：将错误、愤怒点击、失败查询等信号自动转化为研究报告和 PR，实现产品问题的自动诊断与修复建议
+- AI 可观测性新增：捕获 LLM 应用的 traces、generations、latency 和 cost，为 AI 产品提供完整的可观测性支持
+- 产品工具全面整合：Analytics、Session Replay、Feature Flags、Experiments、Error Tracking、Logs、Surveys、Data Warehouse、Data Pipelines、Workflows 十大功能一体化平台
+- MCP 集成：支持通过 Claude Code、Cursor 等 MCP 兼容代理进行交互，AI 原生产品分析
+- 多 SDK 全面覆盖：前端（JS/Next.js/React/Vue）、移动端（React Native/Android/iOS/Flutter）、后端（Python/Node/PHP/Ruby/Go/.NET）全覆盖
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 36,279 | 36.3K | +438（今日） |
+| 总 Forks | 3,012 | 3.0K | — |
+
+**核心变化概要**：
+- Self-driving 模式：将错误、愤怒点击、失败查询等信号自动转化为研究报告和 PR，实现产品问题的自动诊断与修复建议
+- AI 可观测性新增：捕获 LLM 应用的 traces、generations、latency 和 cost，为 AI 产品提供完整的可观测性支持
+- 产品工具全面整合：Analytics、Session Replay、Feature Flags、Experiments、Error Tracking、Logs、Surveys、Data Warehouse、Data Pipelines、Workflows 十大功能一体化平台
+- MCP 集成：支持通过 Claude Code、Cursor 等 MCP 兼容代理进行交互，AI 原生产品分析
+- 多 SDK 全面覆盖：前端（JS/Next.js/React/Vue）、移动端（React Native/Android/iOS/Flutter）、后端（Python/Node/PHP/Ruby/Go/.NET）全覆盖
+
+---
+
 ## 总结
 
 PostHog 是目前最成功的**开源产品分析平台**，32.8k+ Stars。它将产品分析、会话回放、Feature Flags、A/B 测试、错误追踪、调查、CDP、数据仓库和 AI 助手整合到一个 MIT 开源的平台中，98% 的用户可免费使用。技术栈基于 Python/Django + React/TypeScript + ClickHouse，支持完全自托管，是开发者驱动产品团队的理想选择。
@@ -133,3 +167,5 @@ PostHog 是目前最成功的**开源产品分析平台**，32.8k+ Stars。它�
 ---
 
 *数据来源：GitHub 仓库 (PostHog/posthog)、posthog.com（2026 年 4 月访问）*
+
+*首次分析：见文件头部 | 最近更新：2026 年 7 月*

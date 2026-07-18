@@ -107,9 +107,43 @@ Hallmark 不仅是一个编码代理技能，还有配套的在线演示站点�
 - 引入六轴自评机制，输出前全面评估设计质量
 - YouTube 多个技术博主深度评测，社区影响力显著提升
 
+
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 18 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单（今日新增 1485 Stars）
+
+**最新动态**：
+Hallmark 近期持续活跃，社区关注度稳步上升。以下是最重要的更新：
+
+- 新增 Custom Mode（自定义主题模式）：当 brief 带有创意意图而目录主题不匹配时，Hallmark 可从零设计——定制调色板、字体和布局，仍然执行全部 57 个 slop-test 门控
+- 四大核心命令体系：默认模式（构建新 UI）、audit（评分现有代码的反模式）、redesign（保留内容但重建设计指纹）、study（从优秀设计中提取 DNA 并输出可移植的 design.md）
+- 跨平台安装支持：一键安装到 Claude Code、Cursor、Codex 三大 AI 编码工具，npx skills add 即可
+- 20 种目录主题覆盖多种设计风格：Bubble、Distil、Cold Snap、Cinder、Ferns & Fathom 等主题确保每页输出具有独特视觉指纹
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 12,290 | 12.5K | +1485（今日） |
+| 总 Forks | 556 | 620 | — |
+
+**核心变化概要**：
+- 新增 Custom Mode（自定义主题模式）：当 brief 带有创意意图而目录主题不匹配时，Hallmark 可从零设计——定制调色板、字体和布局，仍然执行全部 57 个 slop-test 门控
+- 四大核心命令体系：默认模式（构建新 UI）、audit（评分现有代码的反模式）、redesign（保留内容但重建设计指纹）、study（从优秀设计中提取 DNA 并输出可移植的 design.md）
+- 跨平台安装支持：一键安装到 Claude Code、Cursor、Codex 三大 AI 编码工具，npx skills add 即可
+- 20 种目录主题覆盖多种设计风格：Bubble、Distil、Cold Snap、Cinder、Ferns & Fathom 等主题确保每页输出具有独特视觉指纹
+
+---
+
 ## 总结
 Hallmark 是 AI 辅助设计领域的重要创新——通过 57 个反模式关卡和 20 个精心策划的主题系统化解决 LLM 生成 UI 的"模板化"问题，让 AI 生成的网页设计拥有真正的独特性和专业品质。
 
 ---
 
 *数据来源：GitHub 仓库 (Nutlope/hallmark)，2026 年 7 月访问*
+
+*首次分析：见文件头部 | 最近更新：2026 年 7 月*
