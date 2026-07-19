@@ -103,69 +103,6 @@ PostHog 的核心价值在于**消除工具碎片化和数据孤岛**。传统�
 
 ## 📋 更新记录
 
-### 更新 1 — 2026 年 7 月 18 日（再次登上 Trending）
-**更新原因**：项目再次登上 GitHub Trending 榜单，今日新增 438 Stars
-
-**最新动态**：PostHog 自首次分析以来持续推进产品功能扩张和平台能力增强。Stars 从约 3.3 万增长至 3.6 万，Forks 从约 2,500 增至 3,012。代码提交量突破 5.1 万次，Rust 占比提升至 7.1%，反映了项目对性能关键路径的持续优化。
-
-最重大的新增功能是 AI Observability（AI 可观测性）模块——能够捕获 LLM 应用的对话记录、模型性能、Span 追踪、成本和延迟，全部作为常规 PostHog 事件处理，价格约为其他 LLM 可观测性工具的十分之一。支持 OpenAI、Anthropic Claude、Cohere 等主流 LLM 提供商的即插即用集成。此外，新增了 Self-Driving Mode（自主驾驶模式），能将错误、愤怒点击、失败查询等信号自动转化为调研报告和 PR。
-
-平台还新增了 Logs（日志）模块，可以在产品数据旁摄取、搜索和分析日志；Workflows（工作流）模块支持自动化操作和用户消息推送。集成渠道扩展到 Slack、Web、桌面客户端（PostHog Code）以及任何 MCP 兼容的编辑器，实现了全渠道数据操控。语言构成中 Rust 占比从接近零增长到 7.1%，TypeScript 占 34.5%，反映了项目向高性能后端的演进方向。
-
-**最新 Star 数据**：
-
-| 指标 | 上次记录 | 最新数据 | 变化 |
-|------|----------|----------|------|
-| 总 Stars | 32,800 | 36,279 | +3,479 |
-| 总 Forks | 2,500 | 3,012 | +512 |
-
-**核心变化概要**：
-- 新增 AI Observability 模块，价格仅为竞品十分之一
-- Self-Driving Mode 自动将异常信号转化为调研报告
-- 新增 Logs 和 Workflows 模块，平台功能进一步整合
-- 支持 Slack/Web/桌面/MCP 全渠道集成
-- Rust 占比提升至 7.1%，代码提交突破 5.1 万次
-
-
-
----
-
-## 📋 更新记录
-
-### 更新 1 — 2026 年 7 月 18 日（再次登上 Trending）
-**更新原因**：项目再次登上 GitHub Trending 榜单（今日新增 438 Stars）
-
-**最新动态**：
-PostHog 近期持续活跃，社区关注度稳步上升。以下是最重要的更新：
-
-- Self-driving 模式：将错误、愤怒点击、失败查询等信号自动转化为研究报告和 PR，实现产品问题的自动诊断与修复建议
-- AI 可观测性新增：捕获 LLM 应用的 traces、generations、latency 和 cost，为 AI 产品提供完整的可观测性支持
-- 产品工具全面整合：Analytics、Session Replay、Feature Flags、Experiments、Error Tracking、Logs、Surveys、Data Warehouse、Data Pipelines、Workflows 十大功能一体化平台
-- MCP 集成：支持通过 Claude Code、Cursor 等 MCP 兼容代理进行交互，AI 原生产品分析
-- 多 SDK 全面覆盖：前端（JS/Next.js/React/Vue）、移动端（React Native/Android/iOS/Flutter）、后端（Python/Node/PHP/Ruby/Go/.NET）全覆盖
-
-**最新 Star 数据**：
-
-| 指标 | 上次记录 | 最新数据 | 变化 |
-|------|----------|----------|------|
-| 总 Stars | 36,279 | 36.3K | +438（今日） |
-| 总 Forks | 3,012 | 3.0K | — |
-
-**核心变化概要**：
-- Self-driving 模式：将错误、愤怒点击、失败查询等信号自动转化为研究报告和 PR，实现产品问题的自动诊断与修复建议
-- AI 可观测性新增：捕获 LLM 应用的 traces、generations、latency 和 cost，为 AI 产品提供完整的可观测性支持
-- 产品工具全面整合：Analytics、Session Replay、Feature Flags、Experiments、Error Tracking、Logs、Surveys、Data Warehouse、Data Pipelines、Workflows 十大功能一体化平台
-- MCP 集成：支持通过 Claude Code、Cursor 等 MCP 兼容代理进行交互，AI 原生产品分析
-- 多 SDK 全面覆盖：前端（JS/Next.js/React/Vue）、移动端（React Native/Android/iOS/Flutter）、后端（Python/Node/PHP/Ruby/Go/.NET）全覆盖
-
----
-
-
-
----
-
-## 📋 更新记录
-
 ### 更新 1 — 2026 年 7 月 19 日（再次登上 Trending）
 **更新原因**：项目再次登上 GitHub Trending 榜单
 
@@ -190,6 +127,34 @@ PostHog 在 2026 年持续扩展其平台能力，最新的产品定位已从"�
 - LLM 成本追踪支持按模型分类监控 AI 使用支出
 - 专业评测对比文章增加，市场认知度提升
 - 工作流自动化和 Slack/Web 集成进一步增强
+
+
+---
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 20 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单，今日新增 438 Stars
+
+**最新动态**：
+PostHog 以 438 颗今日新增 Star 连续第三天登上 Trending 榜单，总 Star 数达到 36,333。项目作为"自动驾驶产品平台"的定位持续巩固，AI 可观测性功能在 AI Agent 爆发时代背景下越来越受到关注。
+
+PostHog 近期在博客中发布了多项产品更新，包括用户行为分析的多模态 LLM 实现、LLM traces 的自动聚类功能，以及 Notebooks（笔记本）功能的介绍。UserPilot 发布了详尽的 PostHog 2026 深度评测文章，将 PostHog 与商业竞品进行全面功能对比。Vision Labs 发布了超过 29 分钟的 PostHog 2026 完整教程视频，覆盖了从产品分析到 LLM 成本追踪的全功能模块，在 YouTube 上获得了 6,803 次观看和 110 个点赞。
+
+PostHog 的 LLM 分析功能允许团队按模型（GPT、Claude 等）分类追踪 AI 使用成本和性能，这在当前 AI 应用快速爆发的背景下具有极高的实用价值。平台对 HogQL（直接 SQL 访问）的持续优化和 Array 1.43.0 的"大幅性能改进"进一步巩固了其技术竞争力。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 36,279 | 36,333 | +54 |
+| 总 Forks | 3,012 | 3,013 | +1 |
+
+**核心变化概要**：
+- 连续第三天登上 Trending，自动驾驶产品平台定位巩固
+- Vision Labs 29 分钟完整教程获 6,800+ 观看
+- UserPilot 发布深度评测，市场认知度提升
+- LLM 分析支持按模型追踪成本和性能
+
 
 ## 总结
 
