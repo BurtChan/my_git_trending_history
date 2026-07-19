@@ -86,6 +86,29 @@ CWC Workshops 的 9 个工作坊覆盖了 AI 代理开发的核心技能，适�
 | 🌐 语言 | TypeScript / Python / JavaScript |
 | 📜 许可证 | Apache-2.0 |
 
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026年07月20日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+CWC Workshops 仓库在 2026 年 5 月 Anthropic 旧金山 Code with Claude 大会后持续获得关注。大会结束后，Anthropic 公布了主要 sessions 的录制视频，工作坊的代码仓库（即本仓库）也随之获得了更多开发者关注。虽然仓库本身标注为"Not maintained and not accepting contributions"，但其 9 个工作坊的教学内容仍然具有很高的参考价值。特别值得一提的是 research-desk 工作坊展示的 SEC 文件研究台架构（自托管 Next.js 控制台 + 子代理专家 + 共享记忆 + 每周备忘录部署），以及 eval-driven-agent-development 工作坊的评估驱动方法论，持续被社区引用和学习。Stars 从 1,500 增长到 1,668，Forks 从 478 增长到 491。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 1,500 | 1,668 | +168 |
+| 总 Forks | 478 | 491 | +13 |
+
+**核心变化概要**：
+- Code with Claude 2026 大会视频录制公开后持续获得关注
+- 9 个工作坊的教学内容被广泛引用和学习
+- Stars 从 1,500 增长至 1,668（+168），Forks 从 478 增长至 491（+13）
+
 ## 总结
 
 CWC Workshops 是 Anthropic 官方出品的 Claude 代理开发实战教程合集，通过 9 个精心设计的工作坊，系统性地涵盖了从模型选择、代理拆解、记忆管理到评估驱动开发和生产级部署的完整代理开发知识体系。它不仅是一套教学材料，更是 Anthropic 对 AI 代理最佳实践的官方阐述，对于任何希望深入理解 Claude 代理生态的开发者来说都具有极高的参考价值。
