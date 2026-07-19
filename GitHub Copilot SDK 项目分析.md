@@ -104,10 +104,41 @@ Copilot CLI 和 Copilot SDK 共享同一套 Agent 引擎，CLI 上验证过的�
 
 ---
 
+
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026年07月20日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单，今日新增 233 颗 Star
+
+**最新动态**：
+
+自上次分析以来，GitHub Copilot SDK 迎来了最重要的里程碑——2026 年 6 月 2 日正式进入 GA（Generally Available）阶段。这意味着 SDK 的 API 已经稳定，GitHub 提供生产级的技术支持，开发者可以放心地将其用于生产环境。
+
+GA 版本带来了多项重要改进：一是增强了多客户端工作流支持，允许多个客户端同时为同一个 Agent session 贡献工具和权限，这对于需要多种 AI 工具协同工作的企业级场景至关重要；二是新增了安全审查功能，开发者可以在 Copilot App 中审查Agent 的工具调用和文件操作，增强了 AI Agent 在企业环境中的可控性。
+
+自 GA 以来，SDK 的社区采用率持续增长，Stars 从 9,244 增至 9,851（+607），Forks 增至 1,336。BYOK（自带密钥）模式的持续完善降低了使用门槛，使企业可以用自己的 OpenAI、Anthropic 等 LLM API Key 运行 Copilot Agent，而无需依赖 GitHub 订阅。Copilot SDK 正在成为构建 AI Agent 应用的基础设施级工具之一。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 9,244 | 9,851 | +607 |
+| 总 Forks | 1,223 | 1,336 | +113 |
+
+**核心变化概要**：
+- Stars 从 9,244 增至 9,851（+607），稳步增长
+- 2026 年 6 月 2 日正式发布 GA（Generally Available），API 进入稳定阶段
+- 新增多客户端工作流支持，不同客户端可为同一 session 贡献工具和权限
+- 安全审查功能已在 Copilot App 中可用
+- BYOK 模式（自带密钥）支持 OpenAI、Azure AI Foundry、Anthropic 等
 ## 总结
 
 GitHub Copilot SDK 是 GitHub 将其成熟的 Copilot Agent 能力开放给开发者的关键一步。通过支持六大主流编程语言、提供 BYOK 灵活认证、复用生产级 Agent 引擎，Copilot SDK 让任何开发者都能在自己的应用中嵌入与 GitHub Copilot 同等质量的 AI 能力，是构建 AI Agent 应用的基础设施级工具。
 
 ---
 
-*数据来源：GitHub 仓库 (github/copilot-sdk)，2026 年 6 月访问*
+*数据来源：GitHub 仓库 (github/copilot-sdk)，2026 年 07 月访问*
+*首次分析：见文件创建时间 | 最近更新：2026年07月20日*
