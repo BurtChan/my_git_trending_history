@@ -87,6 +87,35 @@ Harness 系统是 Open Interpreter 最独特的技术贡献。不同的模型有
 | 发布版本数 | 55 |
 | 主题标签 | acp, coding-agent, deepseek, kimi, qwen, rust |
 
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 20 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单，Stars 从 65,171 增长至 66,567（+1,396），今日新增 431 颗
+
+**最新动态**：
+Open Interpreter 近期迎来了重大更新——项目正式宣布"Open Interpreter is back"，并在 2026 年 7 月 13 日发布了重要版本更新。最引人注目的变化是项目对 Kimi K3 模型的全面支持：团队重新实现了月之暗面（Moonshot AI）推荐的 Kimi Code Harness，将其用 Rust 重写，为用户提供最大化的 K3 性能体验，同时保持与 Codex 一致的终端界面。
+
+这一更新标志着 Open Interpreter 在"低成本模型也能做编码代理"理念上的进一步实践——Kimi K3 作为月之暗面最新的大语言模型，具有竞争力的 API 定价，配合 Open Interpreter 优化的 Harness 可以实现接近商业工具的编码效果。项目的官网 openinterpreter.com 也进行了更新，突出展示了"It can read files, edit code, run commands"等核心能力。
+
+Open Interpreter 的 ACP（Agent Communication Protocol）集成持续完善，支持在 Claude Code 等 ACP 兼容编辑器中作为 Agent 运行。Harness 系统的扩展也持续进行，目前支持 native、claude-code、kimi-cli、qwen-code、deepseek-tui 等多种代理模式，用户通过 `/harness` 命令即可在不同模型的交互风格间灵活切换。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 65,171 | 66,567 | +1,396 |
+| 今日新增 | — | 431 | — |
+| 总 Forks | 5,644 | 5,717 | +73 |
+
+**核心变化概要**：
+- 正式支持 Kimi K3 模型，Rust 重写 Kimi Code Harness
+- 官网更新，宣布"Open Interpreter is back"
+- ACP 集成持续完善，支持 ACP 兼容编辑器
+- Stars 从 65,171 增长至 66,567（+1,396），增幅 2.1%
+- Forks 从 5,644 增至 5,717（+73），社区贡献活跃
 ## 总结
 
 Open Interpreter 是 AI 编码代理领域中独具特色的"模型无关"方案，它通过基于 OpenAI Codex CLI 的坚实基础、创新的 Harness 代理框架和 Rust 高性能重写，为开发者提供了一个既能适配低成本模型又不牺牲体验的终端编码工具。65K+ 的 Star 数量和持续活跃的开发节奏表明社区对其技术路线的高度认可。对于预算敏感的开发者和需要多模型灵活切换的团队，Open Interpreter 是值得关注的重要开源项目。
