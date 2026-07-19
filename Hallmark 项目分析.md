@@ -136,6 +136,30 @@ Hallmark 持续保持强劲的增长势头，今日以 1,485 颗新增 Star 连�
 - 反 AI 模板化设计方法论成为行业标杆
 
 
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026年07月19日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单（连续第 5 天，今日排名第 1）
+
+**最新动态**：
+Hallmark 持续在 GitHub Trending 上保持极高热度，自 7 月 15 日首次登上 Trending 后连续 5 天在榜。社区反馈显示，Hallmark 已成为 AI 编码代理（Claude Code、Cursor、Codex）设计技能的事实标准。explainx.ai 技能注册中心已收录 Hallmark，支持一键安装到 Claude Code 和 Cursor。Hallmark 的 57 个 AI 废话检测门控（slop-test gates）和 20 个设计主题在社区中被广泛讨论和引用。Together AI 官方继续维护和推广该项目，新增了更多设计主题和改进的 UI 审计流程。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 12,451 | 12,451 | +0 |
+| 总 Forks | 619 | 619 | +0 |
+
+**核心变化概要**：
+- 连续 5 天在 GitHub Trending 榜单上保持前 3 名
+- 被 explainx.ai 技能注册中心收录为一键安装技能
+- 57 个 slop-test gates 成为 AI 设计质量的社区标准
+- Stars 从约 11.1K 增长至 12,451（5 天内增长约 1,350+）
+- 社区教程和 YouTube 深度解析视频大量涌现
 ## 总结
 Hallmark 是 AI 辅助设计领域的重要创新——通过 57 个反模式关卡和 20 个精心策划的主题系统化解决 LLM 生成 UI 的"模板化"问题，让 AI 生成的网页设计拥有真正的独特性和专业品质。
 
