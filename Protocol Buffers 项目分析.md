@@ -117,6 +117,27 @@ Protocol Buffers 项目持续迭代，近期发布了 v26.1 版本，并持续�
 - 推进 Edition 2026 支持，新增 enforce_proto_limits 功能
 - Stars 从 71,510 增长至 71,573（+63），Forks 从 16,191 增长至 16,194（+3）
 
+---
+
+## 📋 更新记录
+
+### 更新 2 — 2026 年 7 月 21 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：Protocol Buffers 作为 Google 的核心数据交换格式持续演进。Edition 2026 预览版引入了 enforce_proto_limits 新特性，将在 descriptor 中默认启用 proto 限制检查。C# 语言正式宣布支持 Edition 2026，并将 Nullable Reference Type 支持纳入该 Edition（与 34.x 行为一致，但与 35.0 构成破坏性变更）。安全方面修复了 CVE-2026-0994（通过嵌套 Any 消息的 JSON 解析导致 DoS）和 CVE-2025-4565（解析任意递归消息组导致 RecursionError 崩溃）。Java JsonFormat 新增严格 JSON 解析选项，C++ Proto JSON 对齐了 type.proto 和 descriptor.proto 路径的行为。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 71,510 | 71,584 | +74 |
+| 总 Forks | 16,180 | ~16,194 | +14 |
+
+**核心变化概要**：
+- Edition 2026 预览版发布，引入 enforce_proto_limits 新特性
+- C# 宣布支持 Edition 2026 并默认启用 Nullable Reference Type
+- 修复 CVE-2026-0994（DoS 漏洞）和 CVE-2025-4565（递归解析崩溃）
+
 ## 总结
 
 Protocol Buffers 是 Google 开源的工业级结构化数据序列化框架，拥有超过 71,000 Star、216 个发布版本和覆盖 10+ 种编程语言的运行时实现。凭借其卓越的性能、极致的语言生态覆盖和成熟的前后兼容性设计，protobuf 已成为全球软件工程中最基础的数据交换基础设施之一，是 gRPC、微服务通信、数据持久化和 AI 模型格式等核心领域的事实标准。

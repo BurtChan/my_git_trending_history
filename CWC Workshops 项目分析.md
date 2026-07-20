@@ -109,6 +109,27 @@ CWC Workshops 仓库在 2026 年 5 月 Anthropic 旧金山 Code with Claude 大�
 - 9 个工作坊的教学内容被广泛引用和学习
 - Stars 从 1,500 增长至 1,668（+168），Forks 从 478 增长至 491（+13）
 
+---
+
+## 📋 更新记录
+
+### 更新 2 — 2026 年 7 月 21 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：Anthropic 的 CWC Workshops（Code with Claude Workshops）仓库在 Code with Claude 2026 大会后持续获得关注。大会所有 Workshop 的代码仓库已在 GitHub 公开发布，开发者可自行在家完成实践。仓库涵盖了 Agent 架构设计、Eval 评估体系、MCP 工具开发等多个前沿主题。与此同时，Claude Code 本身也在快速迭代——新增后台 /fork 会话管理、更智能的 /resume 历史会话恢复、WebSearch 安全增强、子代理安全防护和 Bash 执行安全措施等。CWC 仓库作为 Anthropic 官方维护的教学实践合集，已成为 Claude Code 生态中不可或缺的学习资源。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 1,500 | 1,713 | +213 |
+| 总 Forks | 477 | ~491 | +14 |
+
+**核心变化概要**：
+- Code with Claude 2026 大会所有 Workshop 代码仓库已公开发布
+- 社区贡献者持续增长，覆盖 Agent 架构、Eval 评估等多个主题
+- Claude Code 新增后台 /fork 会话、更智能的 /resume 和安全增强
+
 ## 总结
 
 CWC Workshops 是 Anthropic 官方出品的 Claude 代理开发实战教程合集，通过 9 个精心设计的工作坊，系统性地涵盖了从模型选择、代理拆解、记忆管理到评估驱动开发和生产级部署的完整代理开发知识体系。它不仅是一套教学材料，更是 Anthropic 对 AI 代理最佳实践的官方阐述，对于任何希望深入理解 Claude 代理生态的开发者来说都具有极高的参考价值。

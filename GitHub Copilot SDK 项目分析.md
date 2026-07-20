@@ -134,6 +134,27 @@ GA 版本带来了多项重要改进：一是增强了多客户端工作流支�
 - 新增多客户端工作流支持，不同客户端可为同一 session 贡献工具和权限
 - 安全审查功能已在 Copilot App 中可用
 - BYOK 模式（自带密钥）支持 OpenAI、Azure AI Foundry、Anthropic 等
+---
+
+## 📋 更新记录
+
+### 更新 2 — 2026 年 7 月 21 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：GitHub Copilot SDK 持续演进为多平台 AI 编程代理集成标准。近期更新包括：Copilot CLI 远程会话现已支持 GitHub Mobile 的实时通知推送，开发者可以在手机端监控 Copilot 代理执行进度；v1.0.42+ 版本引入了更智能的会话恢复（/resume）和后台任务（/background）管理流程，支持从 Agent 视图直接选取历史会话恢复为后台任务。生产环境 A/B 测试数据显示工具失败率降低 23%，用户等待时间（P95）降低 5%，代码审查质量保持不变。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 9,244 | 10,084 | +840 |
+| 总 Forks | 1,253 | ~1,340 | +87 |
+
+**核心变化概要**：
+- Copilot CLI 远程会话支持 GitHub Mobile 实时通知功能上线
+- v1.0.42+ 发布，带来更智能的 /resume 和 /background 工作流
+- 生产环境 A/B 测试显示工具失败率降低 23%，搜索工具失败率降低 27%
+
 ## 总结
 
 GitHub Copilot SDK 是 GitHub 将其成熟的 Copilot Agent 能力开放给开发者的关键一步。通过支持六大主流编程语言、提供 BYOK 灵活认证、复用生产级 Agent 引擎，Copilot SDK 让任何开发者都能在自己的应用中嵌入与 GitHub Copilot 同等质量的 AI 能力，是构建 AI Agent 应用的基础设施级工具。
