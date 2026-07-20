@@ -78,62 +78,6 @@ Build Your Own X 是 GitHub 上最受欢迎的开源学习资源之一，由 Dan
 
 ## 📋 更新记录
 
-### 更新 1 — 2026 年 7 月 19 日（再次登上 Trending）
-**更新原因**：项目再次登上 GitHub Trending 榜单
-
-**最新动态**：
-Build Your Own X 以 1,068 颗今日新增 Star 和 527,815 总 Star 数再次登上 Trending 榜单，稳固其作为 GitHub 全球最受欢迎仓库之一的地位。自上次分析以来，项目继续由 CodeCrafters, Inc. 维护，并与 buildyourownx.com 官网深度整合。
-
-官网已进行了全新改版，提出了"像职业运动员一样训练工程技能"的品牌口号。改版后的官网突出了"超越基础的项目"理念，展示了由 Mike Krieger（Instagram 联合创始人）、Arash Ferdowsi（Dropbox 联合创始人）等知名工程师背书的社区。官网还增加了活动专区（如 WildHacks 编程马拉松），进一步强化了从教程学习到实战应用的闭环。
-
-项目在 CodeCrafters 论坛上持续保持活跃的社区讨论，用户就"Build your own shell 挑战深度"、"免费挑战月"等话题展开交流。作为 CC0 公共领域许可证的开源项目，它仍然是全球开发者深入学习计算机系统底层原理的首选参考资源。
-
-**最新 Star 数据**：
-
-| 指标 | 上次记录 | 最新数据 | 变化 |
-|------|----------|----------|------|
-| 总 Stars | 527,666 | 527,815 | +149 |
-| 今日新增 | — | 1,068 | — |
-| 总 Forks | 49,930 | 49,942 | +12 |
-
-**核心变化概要**：
-- 官网 buildyourownx.com 全面改版，提出新品牌口号
-- 获得 Mike Krieger、Arash Ferdowsi 等知名工程师背书
-- 新增活动专区，如 WildHacks 编程马拉松活动
-- CodeCrafters 论坛社区持续活跃，讨论深入
-- 教程覆盖 30+ 技术领域，社区贡献者超过 140 人
-
-
----
-## 📋 更新记录
-
-### 更新 1 — 2026 年 7 月 20 日（再次登上 Trending）
-**更新原因**：项目再次登上 GitHub Trending 榜单，今日新增 1,068 Stars
-
-**最新动态**：
-Build Your Own X 以 1,068 颗今日新增 Star 和 527,815 总 Star 数稳固其作为 GitHub 全球最受欢迎仓库之一的地位，连续第三天登上 Trending 榜单。项目继续由 CodeCrafters, Inc. 维护，教程覆盖范围持续扩充。
-
-star-history.com 数据显示，Build Your Own X 在 2026 年 7 月保持了持续稳定的新增 Star 流量，全球排名第一的地位无可撼动。SourceForge 上也有了官方镜像，确保了分发的可靠性。CodeCrafters 平台持续深化与项目的集成，为学习者提供"理论教程 + 实践挑战"的完整学习体验。教程新增了 3D Renderer、Voxel Engine、Augmented Reality 等前沿类别，保持了 30+ 技术领域的全面覆盖。
-
-**最新 Star 数据**：
-
-| 指标 | 上次记录 | 最新数据 | 变化 |
-|------|----------|----------|------|
-| 总 Stars | 527,666 | 527,815 | +149 |
-| 总 Forks | 49,930 | 49,942 | +12 |
-
-**核心变化概要**：
-- 连续第三天登上 Trending，全球排名第一地位稳固
-- 教程覆盖 30+ 技术领域，新增前沿方向
-- CodeCrafters 平台集成持续深化
-- SourceForge 官方镜像上线，分发可靠性增强
-
-
-
----
-
-## 📋 更新记录
-
 ### 更新 1 — 2026年07月19日（再次登上 Trending）
 **更新原因**：项目再次登上 GitHub Trending 榜单
 
