@@ -116,6 +116,33 @@ Open Interpreter 的 ACP（Agent Communication Protocol）集成持续完善，�
 - ACP 集成持续完善，支持 ACP 兼容编辑器
 - Stars 从 65,171 增长至 66,567（+1,396），增幅 2.1%
 - Forks 从 5,644 增至 5,717（+73），社区贡献活跃
+
+---
+
+## 📋 更新记录
+
+### 更新 2 — 2026 年 07 月 21 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+Open Interpreter 持续巩固其在开源编码代理领域的领先地位。项目近期发布的 YouTube 技术教程（2026 年 7 月 18 日）详细展示了其核心创新——Harness Emulation 系统，涵盖 9 种以上的 Harness 模式（Claude Code、Kimi Code、Qwen Code、DeepSeek TUI、SWE-agent 等）的实战演示。教程重点介绍了基于 Rust 的新版本如何通过 Agent Client Protocol（ACP）协议与 Zed、VS Code 和 JetBrains 编辑器深度集成，以及通过 Codex SDK 的一行代码替换实现低成本模型路由。
+
+在社区生态方面，Open Interpreter 的 TUI 界面基于 Ratatui（Rust 终端 UI 框架）构建，支持实时模型切换、配置文件管理（dev/production 环境）和 Exec 模式（结构化 JSON 输出，适用于 CI 管道）。GitHub Actions 集成的加入使得代码审查自动化成为可能。项目博客（changes.openinterpreter.com）记录了从基于生成器的全新架构重构，使得开发者可以将 OI 作为库集成到自己的应用中。
+
+Open Interpreter 的定位日益清晰：不仅是一个终端编码代理，更是一个「低成本模型的最佳运行环境」。通过 Harness Emulation 让每个模型运行在最适合自己的代理框架中，这种设计哲学正在被越来越多的开发者认可。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 65,171 | 65,602 | +431 |
+| 总 Forks | 5,644 | 5,717 | +73 |
+
+**核心变化概要**：
+- YouTube 技术教程展示 9+ Harness 模式和 ACP 编辑器集成
+- 基于 Ratatui 的 TUI 界面支持实时模型切换和配置文件管理
+- Exec 模式支持结构化 JSON 输出，适用于 CI 管道
+- 项目架构重构为基于生成器的新设计，支持库级集成
 ## 总结
 
 Open Interpreter 是 AI 编码代理领域中独具特色的"模型无关"方案，它通过基于 OpenAI Codex CLI 的坚实基础、创新的 Harness 代理框架和 Rust 高性能重写，为开发者提供了一个既能适配低成本模型又不牺牲体验的终端编码工具。65K+ 的 Star 数量和持续活跃的开发节奏表明社区对其技术路线的高度认可。对于预算敏感的开发者和需要多模型灵活切换的团队，Open Interpreter 是值得关注的重要开源项目。

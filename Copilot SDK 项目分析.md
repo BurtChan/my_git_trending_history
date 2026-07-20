@@ -133,6 +133,33 @@ Copilot SDK 自 2026 年 6 月进入正式发布（GA）以来，持续获得开
 - Microsoft Build 2026 大会作为核心展示项目
 - Stars 从 8,827 增长至 9,851（+1,024），Forks 从 1,203 增长至 1,336（+133）
 
+
+---
+
+## 📋 更新记录
+
+### 更新 2 — 2026 年 07 月 21 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+GitHub Copilot SDK 在 7 月持续获得社区关注，以 +233 Stars 的增量再次登上 Trending。7 月初 GitHub 在 VS Code 的 Copilot 扩展 July Release（v1.103）中引入了多项改进，包括全新的工具选择器（Quick Tree）让用户更方便地启用 Agent 工具，以及将 run-in-terminal 和 task 工具迁移到 VS Code 核心以减少终端挂起问题。
+
+Copilot Monthly Roundup（7 月）总结了本月的重要进展：GitHub Spark 进入公开预览（Pro+ 订阅用户），支持 .instructions.md 文件在仓库中为 Copilot 提供自定义指令，以及 Agents 页面用于管理编码助手工作流。这些功能持续扩展了 Copilot SDK 的应用场景。
+
+在企业端，Copilot SDK 的自定义 Agent 和 Skills 机制使得 CI/CD 助手、内部开发者工具等场景的实现更加成熟。SDK 的多客户端工作流支持（不同客户端可向同一会话贡献 Tools 和权限）为团队协作型 AI Agent 奠定了基础。从 6 月 GA 到现在的稳定增长（8,827 到接近 10,100 Stars）表明 Copilot SDK 正在成为 AI Agent 产品化的事实标准。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 8,827 | 9,060 | +233 |
+| 总 Forks | 1,203 | 1,336 | +133 |
+
+**核心变化概要**：
+- VS Code July Release (v1.103) 引入 Quick Tree 工具选择器和终端优化
+- GitHub Spark 进入公开预览，支持 .instructions.md 自定义指令
+- Agents 页面新增，便于管理编码助手工作流
+- 多客户端工作流支持持续完善，Stars 稳步增长至接近 10,100
 ## 总结
 
 GitHub Copilot SDK 是 AI Agent 产品化进程中的一个重要里程碑。它将 GitHub Copilot 的 Agent 编排能力封装为跨平台 SDK，让任何开发者都能在自己的应用中嵌入生产级的 AI Agent 能力。六种语言的全面覆盖、灵活的自定义机制和精细的权限控制，使 Copilot SDK 成为企业级 AI Agent 集成的首选方案。随着 AI Agent 逐渐成为软件开发的标配能力，Copilot SDK 有望成为这一领域的基础设施级项目。

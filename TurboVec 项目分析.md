@@ -193,6 +193,33 @@ TurboVec 在创建仅约 2.5 个月的时间里即获得 6,500+ Star，且单日
 - 多篇技术深度评测文章发布（Medium、KnightLi 等），详细介绍 TurboQuant 算法原理和基准测试
 - Qdrant v1.18 集成 TurboQuant 的生态效应持续发酵
 - Hand-written NEON/AVX-512 SIMD 内核的工程优势获得社区广泛认可
+
+---
+
+## 📋 更新记录
+
+### 更新 2 — 2026 年 07 月 21 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+TurboVec 在向量搜索领域的势头持续增强。继 2026 年 7 月 20 日首次更新记录后（当时 Stars 翻倍增长），项目今日再次以 +280 Stars 的增量登上 Trending，累计 Star 已接近 13,700。Trendshift 数据显示，TurboVec 在 7 月 17 日曾达到 Rust 分类第 1 名、全语言第 2 名的巅峰排名。
+
+近期社区讨论的热点集中在 TurboVec 的实际部署体验上。多篇技术博客（包括 Neel Shah 的深度评测、KnightLi 的本地 RAG 实战指南）详细记录了将 TurboVec 替换 FAISS 的具体步骤和性能对比。特别是在 1000 万文档级别的 RAG 场景中，TurboVec 的 4GB 内存占用（对比 FAISS 的 31GB）和 ARM 平台上 12-20% 的速度优势，给开发者留下了深刻印象。
+
+x86 平台的性能优化仍在持续进行中——目前 x86 上 TurboVec 比 FAISS 慢 1.4-3.7 倍（4-bit 配置），作者表示这是持续优化的重点方向。同时，IdMapIndex 的稳定 ID 映射机制和 search-time 过滤功能，使得 TurboVec 在需要动态增删和混合检索的实际业务场景中展现出独特的工程优势。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 6,576 | 6,856 | +280 |
+| 总 Forks | 647 | 1,182 | +535 |
+
+**核心变化概要**：
+- Trendshift 排名：Rust 第 1、全语言第 2（7 月 17 日）
+- 多篇技术博客记录 FAISS 替换实战和性能对比
+- 1000 万文档场景验证：4GB vs 31GB，ARM 平台快 12-20%
+- x86 性能优化持续进行中，IdMapIndex 稳定 ID 机制受好评
 ## 总结
 
 TurboVec 是向量搜索领域一个具有里程碑意义的项目。它将 Google Research 发表于 ICLR 2026 的 TurboQuant 算法从一个学术概念转化为了可直接使用的工程库——用 Rust 实现核心引擎以保证性能，用 Python 绑定降低使用门槛，并深度集成了主流 RAG 框架。

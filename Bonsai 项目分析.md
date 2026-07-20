@@ -108,6 +108,33 @@ Bonsai 项目自首次分析以来持续增长，PrismML 团队在超低比特�
 - llama.cpp 主线已合入 Bonsai 量化支持，用户可直接使用
 - Stars 从 1,394 增长至 1,771（+377），Forks 从 149 增长至 170（+21）
 
+
+---
+
+## 📋 更新记录
+
+### 更新 2 — 2026 年 07 月 21 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+PrismML 在 2026 年 7 月 14 日正式发布了 Bonsai 27B 模型——这是 Bonsai 系列迄今最大、最强的版本，提供 1-bit（3.9GB）和 Ternary（5.9GB）两种量化变体。Bonsai 27B 基于 Qwen3.6 27B 构建，不仅是语言模型，还支持视觉输入（照片、截图、PDF）、Agentic 工具调用和可调节推理深度的思维链能力，代表了这个系列首次覆盖多模态大模型领域。
+
+最引人注目的里程碑是 PrismML 宣布 1-bit Bonsai 27B 成为「首个可在手机上运行的 27B 参数模型」——在 iPhone 17 Pro 上实现了 11 tokens/s 的推理速度。3.9GB 的内存占用意味着 27B 级别的模型推理能力正式从云端下沉到消费级移动设备，这在 LLM 部署领域具有里程碑意义。
+
+PrismML 还发布了 Ternary-Bonsai 白皮书，详细阐述了 ~1.7 bits per weight 的量化方案。HuggingFace Collections 已上线 Bonsai 27B、1-bit Bonsai 和 Ternary-Bonsai 三个模型系列。Demo 仓库通过 setup.sh 一键下载 + llama.cpp 启动的方式，让用户两行命令即可在本地体验 27B 模型的对话、视觉和工具调用能力。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 1,394 | 1,672 | +278 |
+| 总 Forks | 149 | 170 | +21 |
+
+**核心变化概要**：
+- Bonsai 27B 正式发布（1-bit 3.9GB / Ternary 5.9GB），基于 Qwen3.6 27B
+- 成为「首个可在手机上运行的 27B 模型」，iPhone 17 Pro 达 11 tokens/s
+- 支持视觉输入、Agentic 工具调用和可调节推理深度
+- HuggingFace Collections 上线三个模型系列，Demo 两行命令即可启动
 ## 总结
 
 Bonsai 是 LLM 量化领域的前沿项目，通过 1-bit 和 Ternary 量化技术将 27B 参数的大模型压缩到 iPhone 级别的内存占用，同时保持视觉输入、工具调用和长上下文等高级能力。其上游集成的量化支持使其具备极高的可用性和生态兼容性，为边缘 AI 和本地 AI Agent 部署开辟了新的可能性。
