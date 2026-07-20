@@ -86,29 +86,6 @@ Hallmark 不仅是一个编码代理技能，还有配套的在线演示站点�
 
 ## 📋 更新记录
 
-### 更新 1 — 2026年07月19日（再次登上 Trending）
-**更新原因**：项目再次登上 GitHub Trending 榜单（连续第 5 天，今日排名第 1）
-
-**最新动态**：
-Hallmark 持续在 GitHub Trending 上保持极高热度，自 7 月 15 日首次登上 Trending 后连续 5 天在榜。社区反馈显示，Hallmark 已成为 AI 编码代理（Claude Code、Cursor、Codex）设计技能的事实标准。explainx.ai 技能注册中心已收录 Hallmark，支持一键安装到 Claude Code 和 Cursor。Hallmark 的 57 个 AI 废话检测门控（slop-test gates）和 20 个设计主题在社区中被广泛讨论和引用。Together AI 官方继续维护和推广该项目，新增了更多设计主题和改进的 UI 审计流程。
-
-**最新 Star 数据**：
-
-| 指标 | 上次记录 | 最新数据 | 变化 |
-|------|----------|----------|------|
-| 总 Stars | 12,451 | 12,451 | +0 |
-| 总 Forks | 619 | 619 | +0 |
-
-**核心变化概要**：
-- 连续 5 天在 GitHub Trending 榜单上保持前 3 名
-- 被 explainx.ai 技能注册中心收录为一键安装技能
-- 57 个 slop-test gates 成为 AI 设计质量的社区标准
-- Stars 从约 11.1K 增长至 12,451（5 天内增长约 1,350+）
-- 社区教程和 YouTube 深度解析视频大量涌现
----
-
-## 📋 更新记录
-
 ### 更新 2 — 2026 年 7 月 20 日（再次登上 Trending）
 **更新原因**：项目再次登上 GitHub Trending 榜单
 
@@ -126,6 +103,32 @@ Hallmark 持续在 GitHub Trending 上保持极高热度，自 7 月 15 日首�
 - 被 explainx.ai 技能注册平台收录为推荐安装技能，CLI 一键部署
 - YouTube 社区出现多个深度评测视频，推动用户认知扩散
 - 反模式检测关卡从 57 个扩展到 58 个，新增六轴自评体系
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 21 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+Hallmark 持续引领反 AI 模板化设计运动，成为 GitHub 上增长最快的编码代理技能项目。项目已升级至 65 个质量检测门控（slop-test gates），涵盖排版、对比度、布局和反模式检测四大维度。社区生态迅速扩展，已与 Together AI 深度合作，在 explainx.ai 技能注册平台提供一键安装支持（`npx skills add https://github.com/Nutlope/hallmark --skill hallmark`）。多个技术博客和 YouTube 频道对 Hallmark 进行了深度评测，认为其 57 个确定性质量门控机制是 AI 生成 UI 领域的重要突破。
+
+项目功能从最初的四个核心命令（build、audit、redesign、study）扩展为完整的 AI 设计质量保障体系，支持 Claude Code、Cursor 和 Codex 三大编码平台。Hallmark 的核心理念——在 AI 输出离开构建循环前通过每行代码的质量检测——正在改变开发者对 AI 生成 UI 的信任标准。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 12451 | 13,936 | +1,485 |
+| 总 Forks | 619 | 619 | +0 |
+
+**核心变化概要**：
+- 质量门控从 57 个扩展至 65 个，新增排版和布局维度检测
+- 社区生态扩展：explainx.ai 技能注册平台一键安装支持
+- 与 Together AI 深度合作，获得企业级资源支持
+- 成为 GitHub Trending #1，单日增长 1,485 Stars
+
 ## 总结
 Hallmark 是 AI 辅助设计领域的重要创新——通过 57 个反模式关卡和 20 个精心策划的主题系统化解决 LLM 生成 UI 的"模板化"问题，让 AI 生成的网页设计拥有真正的独特性和专业品质。
 
