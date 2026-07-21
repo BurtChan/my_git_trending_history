@@ -90,10 +90,36 @@ Ontology Playground 不是孤立的学习工具，而是微软 Fabric IQ 生态�
 
 ---
 
-## 总结
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 22 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+
+Ontology Playground 在微软 FabCon 2026 大会上获得了重要曝光。微软在大会上预览了 Fabric IQ Ontology 的下一代能力，包括更强大的本体论表达性、更紧密的连接性和更高的可靠性，这些新能力将以 Ontology Playground 作为学习和入门工具。Fabric IQ 现已支持本体论项目的共享和权限管理，用户可以通过 GitHub 设备流登录后直接从设计器提交本体论到社区目录——应用会自动 Fork 仓库、创建分支、提交 RDF + 元数据并发起 Pull Request。
+
+此外，微软举办了 Fabric Ontology Innovation Challenge（本体论创新挑战赛），并安排了专门的 Reactor 直播活动介绍 Ontology Playground 的使用方法。项目作为纯前端静态应用（Cytoscape.js 驱动的交互式图表），用户可以在浏览器中完成从浏览预构建本体论目录、可视化设计自定义本体论到导出 RDF/XML 的完整流程。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 1,896 | 2,337 | +441 |
+| 总 Forks | 240 | 243 | +3 |
+
+**核心变化概要**：
+- FabCon 2026 大会预览 Fabric IQ Ontology 下一代能力
+- 支持本体论共享和权限管理，可通过 GitHub 设备流直接提交到社区目录
+- 微软举办本体论创新挑战赛和 Reactor 专题直播
+- Star 数增长 23%，反映社区对语义技术学习工具的持续关注## 总结
 
 Ontology Playground 是微软在语义技术和知识工程教育领域的一次高质量开源贡献。它以「零后端、可视化、交互式」的方式，将抽象的本体论概念转化为直观的学习体验，同时作为 Microsoft Fabric IQ 生态的入门工具，形成了从学习到实践的完整路径。对于知识工程的学习者、教育者和从业者而言，这是一款值得关注和使用的工具。
 
 ---
 
-*数据来源：GitHub 仓库 (microsoft/Ontology-Playground)，2026 年 7 月访问*
+*数据来源：GitHub 仓库 (microsoft/Ontology-Playground)，2026 年 7 月 22 日访问*
+*首次分析：见文件创建时间 | 最近更新：2026 年 7 月 22 日*
