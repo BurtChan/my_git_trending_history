@@ -108,6 +108,28 @@ LangChain 还配套发布了免费的 [Deep Research with LangGraph](https://aca
 
 ---
 
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 22 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：Open Deep Research 持续保持活跃发展态势。项目 Stars 从上次记录的 12,084 增长至 12,281，Forks 从 1,730 增长至 1,744。开放 Issues 从 38 个增长至 69 个，反映出社区参与度持续提升。2026 年 5 月，Reddit 社区对本地深度研究工具进行了全面对比评测，将 Open Deep Research 与 GPT Researcher、Local Deep Research、STORM 等项目并列讨论，确认了其在「自带模型、自带工具」理念上的独特定位。此外，Sergey Bolshchikov 发布了详细的架构解析文章，深入剖析了 ODR 的 Reflection Pattern、动态图调用和三阶段流水线的内部工作机制，进一步提升了项目的社区认知度。Medium 上也出现了多篇企业级深度研究 Agent 构建实践教程，基于 ODR 框架进行扩展开发。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 12,084 | 12,281 | +197 |
+| 总 Forks | 1,730 | 1,744 | +14 |
+
+**核心变化概要**：
+- Stars 持续稳定增长（+197），Forks +14，社区活跃度稳步提升
+- 开放 Issues 从 38 增至 69，反映用户参与度和功能需求持续增长
+- Reddit 和技术博客社区持续讨论和对比评测，认可其作为「本地深度研究」领域标杆项目的地位
+- 多篇架构解析和企业级实践教程发布，进一步丰富了项目的生态系统
+
 ## 总结
 
 Open Deep Research 是 LangChain 在 AI Agent 深度研究领域的标杆性开源项目。它以三阶段流水线和 Supervisor-Sub-Agent 多 Agent 架构为核心，通过上下文隔离、智能简报生成和一次性报告撰写等设计，在研究深度、报告质量和 Token 效率之间取得了出色的平衡。
@@ -117,3 +139,5 @@ Open Deep Research 是 LangChain 在 AI Agent 深度研究领域的标杆性开�
 对于希望构建自定义研究 Agent 的开发者和团队而言，Open Deep Research 提供了一个经过充分验证、社区活跃、文档完善的基础框架，是当前开源深度研究领域的首选方案之一。
 
 *数据来源：GitHub 仓库 (langchain-ai/open_deep_research)，2026 年 7 月访问*
+
+*首次分析：2026 年 7 月 | 最近更新：2026 年 7 月 22 日*
