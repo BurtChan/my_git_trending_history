@@ -109,6 +109,28 @@ LLMfit 采用了 Monorepo 架构，在同一个仓库中维护了 Rust 核心引
 
 ---
 
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 22 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：LLMfit 近期持续快速迭代，v0.9.36 版本引入了「llmfit doctor」诊断工具和「honest fit verdicts」诚实适配度判定机制，并实现了模型目录的自动更新功能——用户可通过 `llmfit update` 命令实时从 HuggingFace API 获取热门模型并合并到本地目录。硬件检测方面新增了对 Intel Arc 独立显卡VRAM 的 sysfs 读取支持（xe/i915 驱动），并新增 RamaLama 作为推理后端检测提供者。模型匹配层面，修复了 Unsloth 动态量化 GGUF 文件（-UD 后缀）与目录模型的匹配逻辑，以及 LM Studio 和 Docker Desktop 在空闲状态下的正确识别。此外还修复了 AMD 统一 APU在 rocm-smi 报告 N/A 时的命名问题，以及 serve API 中每 GPU 内存带宽信息的返回。项目 Star 数已突破 3 万大关，持续巩固其在本地 AI 工具赛道的领先地位。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 29,970 | 30,196 | +226 |
+| 总 Forks | 1,829 | 1,843 | +14 |
+
+**核心变化概要**：
+- v0.9.36 里程碑：引入 llmfit doctor 诊断和自更新模型目录
+- 新增 Intel Arc 独立显卡 VRAM 检测和 RamaLama 推理后端支持
+- 修复 Unsloth 动态量化 GGUF 匹配和 LM Studio/Docker Desktop 空闲检测
+- 修复 AMD 统一 APU 命名问题，serve API 新增每 GPU 内存带宽数据
+
 ## 总结
 
 LLMfill 是 2026 年本地 AI 工具赛道中的一颗耀眼新星。它精准地切中了一个真实且高频的痛点——"我的硬件能跑什么模型"，并用 Rust 的高性能引擎、四维评分体系、众包基准测试机制以及全平台多形态的工具链给出了优雅的解决方案。

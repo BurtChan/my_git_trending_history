@@ -92,6 +92,28 @@ AI Agent 需要根据用户输入选择并调用外部工具，工具调用的�
 
 ---
 
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 22 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：Outlines 背后的 dottxt-ai 团队近期进行了品牌升级，正式更名为「.txt」，定位为「结构化生成的行业标准」。与此同时推出了 Dottxt API——一项云端结构化生成服务，用户通过简单 REST API 即可获得 100% Schema 合规的输出，无需自建 GPU 推理环境。组织层面新增了多个仓库：`dottxt-python`（.txt API 的官方 Python 客户端库）、`outlines-core`（Rust 核心引擎），以及 `xgrammar-rs`（基于 Rust 的文法引擎），表明项目正在向多语言、云端化方向扩展。Outlines 本体保持了稳定的开发节奏，继续作为开源结构化生成领域的事实标准，与 Dottxt API 形成开源 + 云端的双轨产品策略。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 14,653 | 14,842 | +189 |
+| 总 Forks | 791 | 800 | +9 |
+
+**核心变化概要**：
+- dottxt-ai 品牌升级为 .txt，推出云端 Dottxt API 服务
+- 新增 dottxt-python 官方客户端库和 outlines-core Rust 核心引擎
+- 形成开源 Outlines + 云端 Dottxt API 的双轨产品策略
+- 新增 xgrammar-rs Rust 文法引擎，扩展多语言技术栈
+
 ## 总结
 
 Outlines 是 LLM 结构化输出领域的核心基础设施项目，通过有限状态机在 token 生成层面施加约束，从根本上保证了 LLM 输出的格式正确性。其丰富的约束表达力（JSON Schema、正则、CFG、Python 类型）、多后端兼容性以及学术与工程的平衡，使其成为 AI Agent、数据抽取、对话系统等 LLM 应用场景中不可或缺的工具。14,600+ Stars 和近 3 年的持续开发证明了其在社区中的广泛认可。
