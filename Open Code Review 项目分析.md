@@ -111,3 +111,15 @@ Open Code Review 是阿里巴巴将内部经过两年大规模验证的 AI 代�
 ---
 
 *数据来源：GitHub 仓库 (alibaba/open-code-review)，2026 年 06 月访问*
+
+---
+
+## 📰 最新动态
+
+### 2026年7月24日 — Star 数从 4,647 暴增至 11,336，增长超 140%
+
+Open Code Review 经历了爆发式增长，Star 数从上次分析时的 4,647 增长至 11,336。项目连续发布 v1.7.13~v1.7.15，新增 PowerShell 安装脚本、Gerrit CI 集成示例和 Pot/Po 审查规则。详见 → [2026-07-24 更新](./2026-07-24_Open%20Code%20Review_更新.md)
+
+---
+
+*数据来源：GitHub 仓库 (alibaba/open-code-review)，2026 年 7 月访问*
