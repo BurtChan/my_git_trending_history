@@ -1,7 +1,8 @@
 # Awesome Claude Skills 项目分析
 
 ## 项目名称
-**Awesome Claude Skills** — Claude AI 技能生态的终极资源清单
+**Awesome Claude Skills** — Claude Skills 生态系统中最全面的精选技能目录，覆盖 1000+ 生产级技能
+
 - **GitHub**: [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)
 - **许可证**: Apache-2.0
 
@@ -9,24 +10,24 @@
 
 ## 项目概述
 
-Awesome Claude Skills 是由 ComposioHQ 维护的一个精选 Claude 技能（Skills）资源集合，收录了 1000+ 个生产级可用的 Claude Skills 和插件。项目创建于 2025 年 10 月，旨在为 Claude AI 生态提供一站式技能发现平台。
+Awesome Claude Skills 是一个精心策划的 Claude Skills 综合目录，收录了 1000+ 个生产就绪的实用 Claude Skills 和 Plugins。Claude Skills 是 Anthropic 于 2025 年 10 月引入、12 月发布的开放标准——可复用的指令包，教会 AI 代理如何处理特定类别的任务。每个 Skill 是一个包含 SKILL.md 文件（YAML frontmatter + Markdown 指令）的文件夹，可选附带脚本、参考资料和资产文件。
 
-Claude Skills 是 Anthropic 于 2025 年 10 月引入、12 月作为开放标准发布的可复用指令包，用于教 AI 代理如何处理特定任务类型。每个 Skill 以 YAML frontmatter + Markdown 指令的 `SKILL.md` 文件为核心，可选包含辅助脚本、模板和参考文件。与 MCP（定义代理如何连接外部系统）和 Tools（代理调用的具体函数）不同，Skills 定义的是工作流——一旦代理建立了连接和工具，Skills 决定「做什么、什么顺序、什么护栏」。
+该目录不仅服务于 Claude.ai 和 Claude Code，还覆盖了 OpenAI Codex CLI、Cursor、Gemini CLI、Antigravity、Windsurf 等多个 AI 编码代理平台，体现了 Skills 标准的跨平台特性。项目由 Composio 团队维护，同时提供了 connect-apps 插件，让 Claude 能通过 Composio 连接 500+ 个应用（Gmail、Slack、GitHub、Notion 等），执行真实的操作动作。
 
-项目采用渐进式加载机制：会话启动时仅加载名称和描述（每个约 100 tokens），当相关时才加载完整 SKILL.md 主体（通常 <5,000 tokens），按需加载辅助文件。这使得 Claude 可以同时拥有数百个 Skills 而不膨胀上下文窗口。
+随着 Agent Skills 开放标准的推广（agentskills.io），Claude Skills 已成为 AI 代理能力扩展的重要范式，与 MCP（连接层）和 Tools（执行层）形成互补的三层架构：MCP 负责连接外部系统，Tools 是具体函数调用，Skills 定义工作流和行为策略。
 
 ---
 
 ## 核心功能
 
-| 功能类别 | 内容 |
-|----------|------|
-| **文档处理** | Word（docx）创建/编辑/批注、PDF 提取/合并/标注、PPT 幻灯片生成/调整、Excel 公式/图表、Markdown 转 EPUB |
-| **开发工具** | HTML Artifacts 构建、AWS CDK 最佳实践、Chrome 远程控制、D3.js 可视化、FFUF 模糊测试、iOS 模拟器交互 |
-| **AI 集成** | Connect 连接 1000+ 应用（Gmail/Slack/GitHub/Notion）、MCP Server 构建、LangSmith 可观测性调试 |
-| **安全合规** | 7 子代理全 SDLC 覆盖（技术主管/高级开发/QA/安全/DevOps/L3 支持/审计）、13 个合规框架 |
-| **平台兼容** | Claude.ai、Claude Code、Claude API、OpenAI Codex、Cursor、Gemini CLI、Antigravity、Windsurf |
-| **法律服务** | NDA 分流、版本差异对比、引用验证器、10 份参考文档、3 个律所模板 |
+| 功能 | 描述 |
+|------|------|
+| **1000+ Skills 目录** | 涵盖文档处理、开发工具、安全审计、AWS、前端、测试等数十个类别 |
+| **connect-apps 插件** | 让 Claude 通过 Composio 连接 500+ 应用，执行实际操作 |
+| **跨平台兼容** | Claude Code、Claude.ai、Codex、Cursor、Gemini CLI 等 |
+| **渐进式加载** | 会话启动仅加载名称/描述（~100 tokens/skill），完整内容按需加载 |
+| **分类详尽** | 文档处理、代码工具、安全、AWS、前端、MCP 构建器、浏览器自动化等 |
+| **开放标准** | 基于 Anthropic 发布的 Agent Skills 开放标准 |
 
 ---
 
@@ -34,46 +35,43 @@ Claude Skills 是 Anthropic 于 2025 年 10 月引入、12 月作为开放标准
 
 | 组件 | 技术 |
 |------|------|
-| 技能格式 | YAML frontmatter + Markdown（SKILL.md 标准） |
-| 前端 | Astro（文档站） |
-| 包管理 | npm / Claude Plugin Marketplace |
-| 兼容协议 | MCP、A2A、Claude Skills 开放标准 |
+| **主要语言** | Python、JavaScript、Shell |
+| **Skill 格式** | SKILL.md（YAML frontmatter + Markdown） |
+| **集成协议** | MCP（Model Context Protocol）、A2A（Agent-to-Agent） |
+| **应用连接** | Composio API（500+ 应用集成） |
+| **许可证** | Apache-2.0 |
 
 ---
 
 ## 项目亮点
 
-### 生态系统的导航灯塔
+### 跨平台 Skill 标准的实践典范
+Claude Skills 是 Anthropic 推出的开放标准，已被 Claude Code、Claude.ai、OpenAI Codex CLI、Cursor、Gemini CLI 等多个平台采纳。Awesome Claude Skills 目录展示了这一标准的实际生态规模——1000+ 个生产级 Skills 覆盖了从文档处理到安全审计、从 AWS 运维到浏览器自动化的完整工作流。
 
-随着 Claude Code、Codex、Cursor 等 AI 编程工具的爆发式增长，Skills 生态也迅速膨胀。Awesome Claude Skills 在这个碎片化的生态中扮演了「导航灯塔」的角色——开发者不需要在 GitHub 上盲目搜索，只需浏览这个清单就能找到经过社区验证的优质 Skills。这种「策展人」模式降低了 AI 工具的发现成本。
+### Skills-MCP-Tools 三层架构
+项目清晰阐释了 Skills 与 MCP、Tools 的关系：MCP 定义代理如何连接外部系统（认证、传输、工具发现），Tools 是具体函数调用，Skills 定义工作流——做什么、按什么顺序、有什么约束。在生产环境中三层协同运行。
 
-### 跨平台兼容的技能标准
+### 渐进式加载的 Token 效率
+每个 Skill 在会话启动时仅加载名称和描述（约 100 tokens），完整的 SKILL.md 内容（通常 <5000 tokens）仅在相关时加载，辅助文件按需加载。这种设计确保了即使安装大量 Skills 也不会显著增加上下文开销。
 
-Claude Skills 作为开放标准发布，不局限于 Claude 生态。项目明确标注了与 OpenAI Codex、Cursor、Gemini CLI 等多平台的兼容性。这意味着一个精心编写的 Skill 可以在多个 AI 编程工具中复用，打破了平台壁垒。
-
-### 生产级而非玩具级
-
-收录的 1000+ Skills 不是简单的 prompt 模板，而是包含完整指令、边界条件、错误处理和示例的生产级包。例如法律 Skill Pack 包含 NDA 分流逻辑和 13 个合规框架，Great CTO 包含 7 个子代理的完整 SDLC 覆盖。这种深度远超一般的 prompt engineering 仓库。
-
-### 渐进式加载的精巧设计
-
-Skills 的加载机制体现了对 LLM 上下文窗口的深刻理解。会话启动时仅消耗约 100 tokens/skill 的元数据，按需加载完整内容。这种设计使得同时安装数百个 Skills 成为可能，而不会显著增加 token 消耗或降低响应质量。
+### 实际操作能力
+通过 connect-apps 插件，Claude 不只是生成文本，而是能执行真实操作：发送邮件、创建 Issue、发布到 Slack、管理 Notion 页面等。这使 Claude Skills 从「提示词增强」升级为「代理行为编程」。
 
 ---
 
 ## 应用场景
 
-### AI 编程工作流定制
+### AI 代理能力扩展
+开发者和团队可以通过安装 Skills 来增强 AI 编码代理的能力，如文档生成、代码审查、安全扫描等，无需自己编写复杂的提示词。
 
-开发者可以根据自己的工作流需求，从清单中选择合适的 Skills 组合。例如前端开发者可以安装 Artifacts Builder + Playwright + Full-Page Screenshot 的组合，后端开发者可以安装 AWS Skills + Connect + LangSmith Fetch 的组合，构建个性化的 AI 辅助开发环境。
+### 企业级 AI 工作流
+通过 connect-apps 插件连接企业内部工具（Jira、Confluence、Slack 等），让 Claude 能够执行跨应用的自动化工作流。
 
-### 企业级 AI 代理配置
+### 学习 Claude Skills 开发
+作为最全面的 Skills 目录，项目本身是学习如何编写高质量 Claude Skills 的最佳参考——每个 Skill 都有完整的 SKILL.md 示例。
 
-企业 IT 团队可以利用 Awesome Claude Skills 中的安全合规类 Skills（如 Great CTO 的 7 子代理 SDLC 覆盖），为内部 AI 编程工具配置标准化的开发流程、安全检查和审计追踪，确保 AI 辅助开发符合企业治理要求。
-
-### Skills 生态贡献与学习
-
-对于想要编写自己 Skills 的开发者，这个项目本身就是一个极佳的学习资源。通过阅读高质量的 SKILL.md 文件，学习如何编写清晰、有效的 AI 指令包，理解 Skills 的最佳实践和设计模式。
+### 多代理平台统一部署
+基于开放标准编写的 Skills 可以在 Claude Code、Codex、Cursor、Gemini CLI 等多个平台运行，一次编写多处使用。
 
 ---
 
@@ -81,19 +79,19 @@ Skills 的加载机制体现了对 LLM 上下文窗口的深刻理解。会话�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 68,608 |
-| **总 Forks** | 7,793 |
-| **主要语言** | Python |
-| **创建时间** | 2025-10-17 |
-| **今日新增 Stars** | 155 |
+| **总 Stars** | 68,789 |
+| **总 Forks** | 7,805 |
+| **主要语言** | Python、JavaScript、Shell |
+| **许可证** | Apache-2.0 |
+| **Watch** | 430+ |
 
 ---
 
 ## 总结
 
-Awesome Claude Skills 是 Claude AI 生态中最重要的资源聚合项目之一，以 68.6K Stars 证明了社区对 AI Agent 技能标准化和发现平台的需求。它不仅是 Claude Skills 的导航目录，更是 AI 编程工具生态走向成熟的重要标志——当生态足够复杂时，好的策展和分类就变得和工具本身一样重要。
+Awesome Claude Skills 是 Claude Skills 生态系统中规模最大、分类最全面的精选目录，收录了 1000+ 个生产级 Skills。它不仅是 Skills 的发现平台，更是 Claude Skills 开放标准跨平台能力的最佳证明——从 Claude Code 到 Codex、Cursor、Gemini CLI，同一套 Skills 可以在多个 AI 代理平台上运行。随着 Agent Skills 标准的推广和 connect-apps 插件的 500+ 应用集成，该项目已成为 AI 代理能力扩展生态的核心入口之一，68K+ 的 Star 数反映了社区对这一新兴范式的高度关注。
 
 ---
 
-*数据来源：GitHub 仓库 (ComposioHQ/awesome-claude-skills)，2026 年 7 月访问*
-*首次分析：2026 年 7 月*
+*数据来源：GitHub 仓库 (ComposioHQ/awesome-claude-skills)，2026 年 7 月 23 日访问*
+*首次分析：2026 年 7 月 23 日*
