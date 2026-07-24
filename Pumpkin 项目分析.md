@@ -98,11 +98,33 @@ Pumpkin 的插件 API 采用 WIT（WebAssembly Interface Types）接口，这是
 
 ---
 
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 24 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+Pumpkin 在 2026 年 7 月迎来社区关注度的显著提升。项目正式上线了基于 Mintlify 的文档站（pumpkin-mc-pumpkin.mintlify.app），提供从快速入门、插件开发到部署优化的完整指南。OceanHost 等游戏托管平台宣布赞助 Pumpkin，称其为「世界最快 Minecraft 服务器」。同时，YouTube 技术博主 KasaiSora 发布评测视频，展示了 Pumpkin 的核心性能优势：约 5ms 启动（比 Vanilla 快 1000 倍）、约 100MB 运行内存（比 Vanilla 少 18 倍）、Java/Bedrock 双协议内置支持等。这些推广活动推动了 Stars 的快速增长。
+
+**最新 Star 数据**：
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 8,224 | 9,484 | +1,260 |
+| 总 Forks | 537 | 615 | +78 |
+
+**核心变化概要**：
+- Mintlify 文档站上线，提供完整的快速入门和插件开发指南
+- 获得 OceanHost 等游戏托管平台赞助，社区推广力度加大
+- YouTube 技术评测视频传播，10ms 启动和 18x 内存节省的性能优势广为人知
 ## 总结
 
 Pumpkin 是 Minecraft 服务器 Rust 化浪潮中的领军项目，以 8.2K Stars 证明了社区对高性能游戏服务器软件的强烈需求。其 Java/基岩版双协议支持和 WIT 接口插件系统设计在同类项目中独具特色，模块化的 Rust workspace 架构也为游戏服务器开发树立了工程标杆。虽然尚未发布 1.0.0 正式版，但活跃的提交节奏（2,438 次）和完善的部署支持（Docker/Nix/Pterodactyl）表明项目正在快速成熟。
 
 ---
 
-*数据来源：GitHub 仓库 (Pumpkin-MC/Pumpkin)，2026 年 7 月访问*
+*数据来源：GitHub 仓库 (Pumpkin-MC/Pumpkin)，2026 年 7 月 24 日 访问*
+*最近更新：2026 年 7 月 24 日
 *首次分析：2026 年 7 月*

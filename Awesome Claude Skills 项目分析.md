@@ -87,6 +87,27 @@ Claude Skills 是 Anthropic 推出的开放标准，已被 Claude Code、Claude.
 
 ---
 
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 24 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+Awesome Claude Skills 作为 Claude AI 技能和工具的权威策展列表，随着 Claude Code 和 Claude Agent 生态的快速发展而持续增长。Anthropic 不断扩展 Claude 的能力边界，社区贡献者积极创建和分享各类技能，覆盖从代码审查、项目管理到创意写作等多个领域。该仓库已成为 Claude 生态的关键基础设施之一，帮助用户快速发现和采用高质量的 Claude Skills。
+
+**最新 Star 数据**：
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 68,789 | 70,067 | +1,278 |
+| 总 Forks | 7,613 | 7,853 | +240 |
+
+**核心变化概要**：
+- Claude Skills 生态持续扩展，社区贡献技能数量持续增长
+- 随着 Claude Code 和 Claude Agent 的普及，技能需求持续旺盛
+- 作为 Claude 技能的权威策展列表，已成为 Claude 生态的基础设施
 ## 总结
 
 Awesome Claude Skills 是 Claude Skills 生态系统中规模最大、分类最全面的精选目录，收录了 1000+ 个生产级 Skills。它不仅是 Skills 的发现平台，更是 Claude Skills 开放标准跨平台能力的最佳证明——从 Claude Code 到 Codex、Cursor、Gemini CLI，同一套 Skills 可以在多个 AI 代理平台上运行。随着 Agent Skills 标准的推广和 connect-apps 插件的 500+ 应用集成，该项目已成为 AI 代理能力扩展生态的核心入口之一，68K+ 的 Star 数反映了社区对这一新兴范式的高度关注。
@@ -95,3 +116,4 @@ Awesome Claude Skills 是 Claude Skills 生态系统中规模最大、分类最�
 
 *数据来源：GitHub 仓库 (ComposioHQ/awesome-claude-skills)，2026 年 7 月 23 日访问*
 *首次分析：2026 年 7 月 23 日*
+*最近更新：2026 年 7 月 24 日*
