@@ -93,6 +93,29 @@ Harper 的多格式解析器（AsciiDoc、TeX、Typst 等）使其成为技术�
 
 ---
 
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 25 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+Harper 持续获得开发者社区关注，Better Stack 于 7 月 22 日发布详细评测视频（6,100+ 播放），展示 Harper 在离线模式下的语法检查能力，并与 Grammarly 和 LanguageTool 进行对比。评测强调了 Harper 的三大优势：完全离线运行、毫秒级响应速度和基于规则的确定性检查引擎（非生成式 AI）。项目在 Chrome 扩展、Neovim、Zed、Obsidian 等多平台集成持续完善，monorepo 架构已扩展至 12+ 子模块。作为 Automattic 旗下项目，Harper 在隐私优先的写作工具领域建立了独特定位。
+
+**最新 Star 数据**（Forks 为估算值）：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 12,106 | 12,928 | +822 |
+| 总 Forks | 448 | 454 | +6 |
+
+**核心变化概要**：
+- Better Stack 发布详细评测视频（6,100+ 播放量），展示离线语法检查能力
+- 与 Grammarly/LanguageTool 对比评测中在隐私和性能维度全面领先
+- monorepo 扩展至 12+ 子模块，覆盖 Git 提交、TeX、Typst 等多种格式
+- 社区讨论聚焦于 Harper 是否能替代 Grammarly，反映市场对其定位的关注
+
 ## 总结
 
 Harper 是 Automattic 推出的高性能离线英语语法检查器，用 Rust 实现了毫秒级检查和极低内存占用，在隐私保护、性能表现和编辑器生态覆盖三个维度上全面超越了 Grammarly 和 LanguageTool。对于重视隐私的开发者和专业写作者而言，Harper 是目前最优秀的开源语法检查方案。
