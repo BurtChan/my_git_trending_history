@@ -152,6 +152,32 @@ WorldMonitor 持续巩固其全球态势感知平台的地位。数据聚合能�
 - 新增金融雷达模块：覆盖 29 个证券交易所、大宗商品和加密货币，7 信号市场综合指数
 - Country Instability Index（CII）升级至 v8 版本，覆盖 31 个一级国家
 
+---
+
+## ?? 更新记录
+
+### 更新 1 — 2026 年 7 月 26 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：Stars 从 63.5K 增长至 74.8K，保持强劲增长势头。从单一地缘政仪表盘演进为多领域智能情报平台。
+- 发布 Tauri 2 原生桌面应用，支持 macOS、Windows 和 Linux
+- 新增多个领域变体：finance.worldmonitor.app、commodity.worldmonitor.app、energy.worldmonitor.app
+- 新闻源扩展至 500+ 策划源，地图图层达 56 种类型
+- GitHub Trending 多次榜首（最高 #1），贡献者超过 100 人
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 63,552 | 74,786 | +11,234 |
+| 总 Forks | 8,300 | 10,801 | +2,501 |
+
+**核心变化概要**：
+- 发布 Tauri 2 原生桌面应用，支持 macOS、Windows 和 Linux
+- 新增多个领域变体：finance.worldmonitor.app、commodity.worldmonitor.app、energy.worldmonitor.app
+- 新闻源扩展至 500+ 策划源，地图图层达 56 种类型
+- GitHub Trending 多次榜首（最高 #1），贡献者超过 100 人
+
 ## 总结
 
 World Monitor 是一款**开源实时全球情报态势感知平台**，48.9k+ Stars。它基于 TypeScript + Vite + deck.gl 构建，将 AI 新闻聚合、地缘政治监控、军事追踪、金融信号分析和基础设施监测整合到统一的 3D 交互式仪表盘中。项目最大的亮点在于隐私优先的本地 AI 推理（Transformers.js + ONNX）和多变体架构设计（World/Tech/Finance/Happy 四种版本），适用于新闻媒体、安全分析、金融研究和学术研究等多个领域，是开源情报（OSINT）领域的重要工具。

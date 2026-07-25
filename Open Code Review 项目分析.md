@@ -155,6 +155,34 @@ Open Code Review 在开源后迎来了快速增长期。作为阿里巴巴内部
 - 集成 LiteLLM AI Gateway、Eden AI、Ollama Cloud 等多个新 LLM 供应商
 - 扩展语言支持：新增 FreeMarker（.ftl）和 Python 代码审查规则
 
+---
+
+## ?? 更新记录
+
+### 更新 1 — 2026 年 7 月 26 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：Stars 近一个月内增长超过 2.5 倍，从阿里内部工具升级为开源社区热门项目。混合架构（确定性管道 + LLM Agent）审查质量在基准测试中超越 Claude Code。
+- 7 月 23 日登上 GitHub Trending #1，Stars 从约 4.6K 飞跃至 11.7K
+- 新增 Delegation Mode，支持 host-agent 驱动的代码审查流程
+- 新增 LiteLLM AI Gateway、Ollama Cloud、OpenAI Responses API 等多个 LLM 提供商预设
+- 新增 Python 代码审查规则、FreeMarker 模板支持、可恢复会话功能
+- Claude Code 插件和 VS Code 扩展持续完善
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 4,647 | 11,707 | +7,060 |
+| 总 Forks | 300 | 796 | +496 |
+
+**核心变化概要**：
+- 7 月 23 日登上 GitHub Trending #1，Stars 从约 4.6K 飞跃至 11.7K
+- 新增 Delegation Mode，支持 host-agent 驱动的代码审查流程
+- 新增 LiteLLM AI Gateway、Ollama Cloud、OpenAI Responses API 等多个 LLM 提供商预设
+- 新增 Python 代码审查规则、FreeMarker 模板支持、可恢复会话功能
+- Claude Code 插件和 VS Code 扩展持续完善
+
 ## 总结
 
 Open Code Review 是阿里巴巴将内部经过两年大规模验证的 AI 代码审查能力开源的重要成果，其"确定性工程 × Agent 混合架构"在基准测试中领先通用方案 3 倍，token 成本仅为 1/5，为开发者提供了一种经过实战检验、准确高效、灵活易用的 AI 代码审查解决方案。

@@ -297,6 +297,34 @@ OmniRoute 作为 AI 编码网关的定位更加清晰和强大。从最初的 AP
 - 新增 Cloudflare Workers AI 集成，支持边缘推理
 - 引入 AgentRouter 作为新供应商（$200 免费额度）和 workspace 内置技能系统
 
+---
+
+## ?? 更新记录
+
+### 更新 1 — 2026 年 7 月 26 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：Stars 从 22.8K 增长至 29.1K，作为免费 AI 网关持续迷你增长。今日单日 +1,929 Stars，反映社区对免费 AI 接入层的强烈需求。
+- 提供商数从 200+ 扩展至 290+，免费提供商从 50+ 增至 90+
+- 新增 Auto-Combo 引擎，基于 12 个因素（健康、配额、成本、延迟等）智能评分选择
+- 新增 Cerebras、NVIDIA NIM、Cloudflare AI 等提供商集成
+- 支持 33 个 CLI 工具，包括 Claude Code、Codex CLI、Cline、Kilo Code 等
+- Docker 部署支持，含 Caddy HTTPS 和 Cloudflare Tunnels
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 22,804 | 29,127 | +6,323 |
+| 总 Forks | 2,800 | 3,565 | +765 |
+
+**核心变化概要**：
+- 提供商数从 200+ 扩展至 290+，免费提供商从 50+ 增至 90+
+- 新增 Auto-Combo 引擎，基于 12 个因素（健康、配额、成本、延迟等）智能评分选择
+- 新增 Cerebras、NVIDIA NIM、Cloudflare AI 等提供商集成
+- 支持 33 个 CLI 工具，包括 Claude Code、Codex CLI、Cline、Kilo Code 等
+- Docker 部署支持，含 Caddy HTTPS 和 Cloudflare Tunnels
+
 ## 总结
 
 OmniRoute 是 2026 年 AI 基础设施领域最具野心的开源项目之一。它不仅仅是一个 API 代理——而是一个功能全面、工程精良的 AI 中间件平台，覆盖了从供应商聚合、智能路由、token 压缩、弹性容灾到协议支持（MCP/A2A）、隐私保护、记忆管理等全栈需求。
