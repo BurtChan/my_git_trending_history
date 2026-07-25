@@ -110,6 +110,30 @@ Block 公司于 2026 年 7 月 21 日正式公开发布 Buzz，将其定位为�
 - Block 公司于 7 月 21 日正式公开发布 Buzz，硅谷媒体 SiliconANGLE、Precedence Research 等进行报道
 - 定位为 Slack 和 GitHub 的统一替代方案，将 AI Agent 作为平等团队成员融入工作流
 - 已上线托管服务，桌面客户端（Tauri + React）和 ACP 集成持续完善，移动端开发中
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 07 月 25 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+2026 年 7 月 21 日，Jack Dorsey 领导的 Block 公司正式发布 Buzz——一个基于 Nostr 协议的开源协作平台。Buzz 将聊天、代码仓库、工作流整合在一个去中心化工作空间中，人类和 AI Agent 共享相同的房间、相同的身份模型和审计追踪。项目发布后迅速走红，4 天内 Stars 从约 7000 增长至 9000+，单日新增超过 2100 Stars。Buzz 支持 ACP 协议接入 Goose、Codex、Claude Code 等 AI Agent，提供 YAML 工作流自动化、Git 事件集成（NIP-34）、以及 buzz-cli 代理优先的命令行工具。项目采用 Rust 和 TypeScript 构建，核心架构基于 Axum Web 框架和 Nostr 中继，数据存储使用 Postgres + Redis + S3/MinIO。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 6,280 | 9,090 | +2,810 |
+| 总 Forks | 499 | 563 | +64 |
+
+**核心变化概要**：
+- Block（Jack Dorsey）于 7 月 21 日正式发布 Buzz
+- 4 天内 Stars 从约 7000 增长至 9000+，今日新增 2162
+- 支持 ACP 协议接入多种 AI Agent（Goose/Codex/Claude Code）
+- YAML 工作流自动化 + Git 事件集成（NIP-34）
+- Rust + TypeScript 技术栈，Axum + Nostr 中继架构
+
 ## 总结
 
 Buzz 是 Block 公司推出的创新通信平台，以 Nostr 协议为基础构建了人类与 AI Agent 平等协作的工作空间。其「功能分支即房间」的设计理念和统一的密码学审计追踪，为代码审查、事故响应和自动化发布等场景提供了全新的协作范式。

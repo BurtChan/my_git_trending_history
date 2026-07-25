@@ -108,6 +108,30 @@ Awesome Claude Skills 作为 Claude AI 技能和工具的权威策展列表，�
 - Claude Skills 生态持续扩展，社区贡献技能数量持续增长
 - 随着 Claude Code 和 Claude Agent 的普及，技能需求持续旺盛
 - 作为 Claude 技能的权威策展列表，已成为 Claude 生态的基础设施
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 07 月 25 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+Awesome Claude Skills 持续作为 Claude Skills 生态最全面的精选目录，目前已收录 1000+ 生产级技能和插件。目录覆盖文档处理（docx/pdf/pptx/xlsx）、开发工具（D3.js 可视化、Playwright 自动化、MCP Builder）、安全审计（FFUF 模糊测试）、合规框架等多个领域。新增值得关注的方向包括 Chrome Relay（无需 Playwright/MCP 的浏览器操控）、Full-Page Screenshot、以及多智能体协作框架（Septim Agents Pack、great_cto 的 7 个子代理 SDLC 覆盖）。项目与 Composio 平台深度集成，支持一键连接 500+ 应用（Gmail、Slack、GitHub、Notion 等）。Claude Skills 作为开放标准（2025 年 12 月发布），其生态在 2026 年上半年持续快速扩张。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 68,789 | 70,067 | +1,278 |
+| 总 Forks | 7,613 | 7,800 | +187 |
+
+**核心变化概要**：
+- 收录 1000+ 生产级 Claude 技能和插件
+- 新增 Chrome Relay、多智能体协作框架等热门技能
+- 与 Composio 平台集成，支持 500+ 应用一键连接
+- Claude Skills 开放标准生态持续快速扩张
+- 今日新增 636 Stars，总 Star 数突破 70,000
+
 ## 总结
 
 Awesome Claude Skills 是 Claude Skills 生态系统中规模最大、分类最全面的精选目录，收录了 1000+ 个生产级 Skills。它不仅是 Skills 的发现平台，更是 Claude Skills 开放标准跨平台能力的最佳证明——从 Claude Code 到 Codex、Cursor、Gemini CLI，同一套 Skills 可以在多个 AI 代理平台上运行。随着 Agent Skills 标准的推广和 connect-apps 插件的 500+ 应用集成，该项目已成为 AI 代理能力扩展生态的核心入口之一，68K+ 的 Star 数反映了社区对这一新兴范式的高度关注。
