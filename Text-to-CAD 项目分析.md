@@ -155,6 +155,26 @@ Text-to-CAD 持续扩展其 AI 代理技能库，目前提供 11+ 个专业技�
 - 支持 Claude Code、Codex、Cursor、Cline 等多个 AI 编程工具
 - 新增 SendCutSend 文件验证技能，支持 DXF 和 STEP 格式
 
+### 更新 3 — 2026 年 7 月 27 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+Text-to-CAD 连续第三天登上 GitHub Trending 榜单，今日新增 230 Stars，总 Star 数突破 10,400。项目作为 AI 驱动 CAD/硬件设计的核心技能库，已支持 Claude Code、Codex、Cursor、Cline 等主流 AI 编程工具，通过 `npx skills install` 实现零配置安装。技能库覆盖从 STEP/STL 三维建模到 URDF 机器人描述、G-code 3D 打印切片、SendCutSend 加工验证的完整工作流，并在 10 个基准测试用例中验证了从简单校准块到行星齿轮组的建模能力。2026 年 AI 驱动 CAD 成为热门方向，Text-to-CAD 作为开源 Agent Skill 生态的代表性项目持续获得关注。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 10,210 | 10,440 | +230 |
+
+**核心变化概要**：
+- 连续第三天登上 Trending，AI 驱动 CAD 持续热门
+- 支持 Claude Code/Codex/Cursor/Cline 等主流 AI 编程工具
+- 技能库覆盖完整 CAD/机器人/3D 打印工作流
+- `npx skills install` 零配置安装，降低使用门槛
+
+---
+
 ## 总结
 
 Text-to-CAD 是一个具有里程碑意义的开源项目，它成功地将 AI 代理的能力从纯软件开发拓展到了 CAD/机器人/硬件设计领域。通过 11 个精心设计的技能模块，项目构建了从概念设计到制造加工的完整自动化链路，覆盖了 STEP、STL、URDF、G-code 等工业标准格式。
