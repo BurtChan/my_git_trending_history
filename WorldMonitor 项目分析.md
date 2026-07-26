@@ -105,34 +105,6 @@ World Monitor 强调隐私与本地化处理——其本地 AI 摘要功能基�
 
 ## 📋 更新记录
 
-### 更新 1 — 2026 年 7 月 24 日（再次登上 Trending）
-**更新原因**：Stars 从 63,552 增长至 71,616（+8,064），今日新增 3,175 星，持续高增长态势
-
-**最新动态**：
-WorldMonitor 在过去数月中保持了高速增长，Stars 从 6.35 万增至 7.16 万。项目持续扩展其数据源和功能模块，新增了 WorldMonitor PRO 版本（#1302），提供 30+ 实时数据层、AI 驱动的国家情报简报和估值指标。平台已发展出多个垂直变体版本：tech.worldmonitor.app 聚焦科技产业、finance.worldmonitor.app 聚焦全球金融、commodity.worldmonitor.app 聚焦大宗商品、happy.worldmonitor.app 聚焦正面新闻，形成完整的全球情报监控产品矩阵。项目在 Reddit 的 RILB 社区获得广泛讨论，被认为是目前最全面的开源态势感知平台。原生桌面应用（Tauri 2）已覆盖 Windows、macOS 和 Linux 三大平台，进一步降低了使用门槛。
-
-**最新 Star 数据**：
-
-| 指标 | 上次记录 | 最新数据 | 变化 |
-|------|----------|----------|------|
-| 总 Stars | 63,552 | 71,616 | +8,064 |
-| 总 Forks | 8,300 | 10,802 | +2,502 |
-| 主语言 | TypeScript | TypeScript | - |
-| 许可证 | AGPL-3.0 | AGPL-3.0 | - |
-
-**核心变化概要**：
-- Stars 从 63,552 增长至 71,616，今日新增 3,175 星，保持高增长态势
-- 推出 WorldMonitor PRO 版本，提供 30+ 实时数据层和 AI 国家情报简报
-- 平台矩阵扩展至 4 个垂直变体：科技、金融、大宗商品、正面新闻
-- 原生桌面应用（Tauri 2）覆盖三大平台，已发布稳定版二进制文件
-- Forks 从 8,300 增至 10,802，社区贡献持续活跃
-
----
-
----
-
-## 📋 更新记录
-
 ### 更新 2 — 2026 年 7 月 25 日（再次登上 Trending）
 **更新原因**：项目再次登上 GitHub Trending 榜单
 
@@ -178,6 +150,31 @@ WorldMonitor 持续巩固其全球态势感知平台的地位。数据聚合能�
 - 新闻源扩展至 500+ 策划源，地图图层达 56 种类型
 - GitHub Trending 多次榜首（最高 #1），贡献者超过 100 人
 
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 27 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+WorldMonitor 持续快速迭代，已从全球情报仪表板发展为完整的「全球态势感知平台」。核心升级包括：新闻源从早期版本扩展至 **500+ 条策展信息流**，覆盖 15 个分类，AI 自动合成情报简报；地图引擎升级为双引擎架构（globe.gl 3D 地球 + deck.gl WebGL 平面地图），支持 **56 种地图图层**（冲突、军事基地、海底电缆、卫星火灾、抗议等）；推出 **国家不稳定指数（CII）v8**，对 31 个一级国家进行服务器端权威压力评分。
+
+基础设施方面，新增 **6 个站点变体**（World、Tech、Finance、Commodity、Happy、Energy）从同一代码库构建；桌面端基于 **Tauri 2**（Rust）发布原生应用，支持 macOS/Windows/Linux；API 层面新增 **MCP Server**（Streamable HTTP）、REST API（OpenAPI 规范）及 Python/Ruby/Go 三语言 SDK；协议层使用 Protocol Buffers 定义 281 个 proto 和 35 个服务。整体技术栈显著扩展，部署在 Vercel Edge Functions（60+）+ Railway 中继 + Redis 三级缓存架构上。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 71,616 | 74,786 | +3,170 |
+| 总 Forks | 10,802 | 10,801 | -1 |
+
+**核心变化概要**：
+- 新闻源扩展至 500+ 条策展信息流，AI 自动合成情报简报
+- 双地图引擎（3D 地球 + WebGL 平面）支持 56 种图层类型
+- 发布 6 个站点变体和 Tauri 2 跨平台桌面应用
+- 新增 MCP Server、REST API 及 Python/Ruby/Go SDK
+- Protocol Buffers 定义 281 个 proto、35 个服务
 ## 总结
 
 World Monitor 是一款**开源实时全球情报态势感知平台**，48.9k+ Stars。它基于 TypeScript + Vite + deck.gl 构建，将 AI 新闻聚合、地缘政治监控、军事追踪、金融信号分析和基础设施监测整合到统一的 3D 交互式仪表盘中。项目最大的亮点在于隐私优先的本地 AI 推理（Transformers.js + ONNX）和多变体架构设计（World/Tech/Finance/Happy 四种版本），适用于新闻媒体、安全分析、金融研究和学术研究等多个领域，是开源情报（OSINT）领域的重要工具。
