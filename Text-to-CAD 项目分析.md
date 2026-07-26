@@ -112,31 +112,6 @@ Text-to-CAD 是一个面向 CAD、机器人技术和硬件设计领域的 AI 代
 
 ## 📋 更新记录
 
-### 更新 1 — 2026 年 7 月 24 日（再次登上 Trending）
-**更新原因**：项目再次登上 GitHub Trending 榜单
-
-**最新动态**：
-text-to-cad 在 2026 年 7 月进入快速迭代期，发布了 v0.4.0 版本（7 月中旬），新增了完整的机器人技能集（Robotics Superpowers），使 AI Agent 能够从松散规格迭代到机械上可行的硬件设计。项目在 Trendshift 上曾登顶 JavaScript 日榜第一，目前在 GitHub Actions 中有密集的 CI 测试活动。多个活跃 PR 包括 CAD Viewer 的 STEP 导出集成、Agent 反馈循环、碰撞分析等功能，显示项目正在向更完整的 CAD/机器人设计工作台演进。作者的另一个项目 step.parts 已提供 12,000+ 开源 STEP 零件库，与 text-to-cad 形成生态互补。
-
-**最新 Star 数据**：
-
-| 指标 | 上次记录 | 最新数据 | 变化 |
-|------|----------|----------|------|
-| 总 Stars | 8,809 | 10,210 | +1,401 |
-| 总 Forks | 987 | 1,097 | +110 |
-
-**核心变化概要**：
-- v0.4.0 版本发布，新增机器人技能集
-- 新增 STEP 碰撞分析、CAD Viewer 反馈循环等 PR 活跃开发中
-- 配套项目 step.parts 提供 12,000+ 开源零件库形成生态互补
-- Trendshift 登顶 JavaScript 日榜第一
-
----
-
----
-
-## 📋 更新记录
-
 ### 更新 1 — 2026 年 07 月 25 日（再次登上 Trending）
 **更新原因**：项目再次登上 GitHub Trending 榜单
 
@@ -156,6 +131,29 @@ Text-to-CAD 持续扩展其 AI 代理技能库，目前提供 11+ 个专业技�
 - 基准测试扩展至 10 个复杂场景
 - 支持 Claude Code/Codex 原生插件安装
 - AI 驱动 CAD 成为 2026 热门方向，项目关注度持续上升
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 26 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：项目再次登上 GitHub Trending 榜单，显示其在 AI 驱动 CAD 设计领域的影响力持续增长。自上次分析以来，text-to-cad 已从单一的 CAD 生成工具扩展为完整的 CAD/机器人/硬件设计 Agent Skill 生态系统。新增了 URDF 机器人技能支持，可从自然语言生成机器人模型。同时新增了 G-code 切片技能（将网格文件切片为可打印的 .gcode）、Bambu Labs 打印机集成以及 SendCutSend 文件验证技能。该项目在 Hacker News 上引发了广泛讨论，社区反馈积极。其技能已支持 Claude Code、Codex、Cursor、Cline 等多个 AI 编程工具，形成了跨平台的开发者工具链。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 8,809 | 10,210 | +1,401 |
+| 总 Forks | 900 | 1,097 | +197 |
+
+**核心变化概要**：
+- 从单一 CAD 生成工具扩展为 CAD/机器人/硬件设计 Agent Skill 生态系统
+- 新增 URDF 机器人模型、G-code 切片、Bambu Labs 打印机集成等技能
+- Hacker News 上引发广泛讨论，社区反馈积极
+- 支持 Claude Code、Codex、Cursor、Cline 等多个 AI 编程工具
+- 新增 SendCutSend 文件验证技能，支持 DXF 和 STEP 格式
 
 ## 总结
 
