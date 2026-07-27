@@ -192,3 +192,30 @@ WorldMonitor 今日单日新增 3,196 颗 Star，Star 总数从上次分析的 6
 *数据来源：GitHub 仓库 (koala73/worldmonitor)，2026 年 7 月 24 日 访问*
 *数据来源：GitHub 仓库 (koala73/worldmonitor), 2026 年 7 月访问*
 *首次分析：2026 年 7 月 | 最近更新：2026 年 7 月*
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 28 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+WorldMonitor 持续保持开源情报（OSINT）领域的领先地位，Stars 从约 63.5K 增长至约 74.8K，单日新增 3,175 颗 Star。技术架构进一步扩展：新增 **MCP Server**（Streamable HTTP 端点 `worldmonitor.app/mcp`）、**REST API**（OpenAPI 规范）及 **Python/Ruby/Go 三语言零依赖 SDK**，支持 Agent 驱动的程序化查询。CLI 工具 `npx worldmonitor` 可直接执行临时查询。Agent 发现机制通过 `.well-known/` 下的 `llms.txt`、`agent-skills` manifest 和 `api-catalog` 实现标准化服务暴露。
+
+数据源方面，外部数据提供商扩展至 **65+ 个**，覆盖地缘政治、金融、能源、气候、航空、网络、军事、基础设施和新闻情报 9 大领域，500+ 策展信息流由 35 个源组的新鲜度监控器追踪。**国家不稳定指数（CII）v8** 对 31 个一级国家进行服务器端权威压力评分。
+
+部署架构升级：Vercel Edge Functions（60+）+ Railway 中继 + Redis（Upstash）三级缓存 + CDN + Service Worker。协议层使用 Protocol Buffers 定义 **281 个 proto** 和 **35 个服务**。安全方面，Cody Richard 于 2026 年披露了三项安全发现（IPC 命令暴露、渲染器到 sidecar 信任边界分析、fetch patch 凭证注入架构），项目已修复。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 63,552 | 74,786 | +11,234 |
+| 总 Forks | 10,801 | 10,801 | - |
+
+**核心变化概要**：
+- 新增 MCP Server、REST API 及 Python/Ruby/Go SDK，支持 Agent 驱动查询
+- 外部数据提供商扩展至 65+，500+ 策展信息流覆盖 9 大领域
+- CII v8 对 31 个一级国家进行服务器端权威评分
+- Protocol Buffers 定义 281 个 proto、35 个服务
+- 6 个站点变体（World/Tech/Finance/Commodity/Happy/Energy）和 Tauri 2 桌面应用均稳定运行

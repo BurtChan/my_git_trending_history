@@ -200,3 +200,30 @@ Open Code Review 经历了爆发式增长，Star 数从上次分析时的 4,647 
 
 *数据来源：GitHub 仓库 (alibaba/open-code-review), 2026 年 7 月访问*
 *首次分析：2026 年 7 月 | 最近更新：2026 年 7 月*
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 28 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+Open Code Review 在开源约两个月后 Stars 飞跃至约 **11.7K**，较开源初期的 4,647 增长超过 **150%**。项目定位已从「阿里内部代码审查工具」升级为「开源 AI 代码审查标准方案」，核心架构「确定性工程 × LLM Agent 混合」经过大规模基准测试验证。
+
+基准测试体系更加完善：基于 **50 个热门开源仓库**的 **200 个真实 PR**、**10 种编程语言**、由 **80+ 高级工程师**交叉验证标注的 **1,505 个 ground-truth 问题**构建 AACR-Bench。结果显示，相比通用 Agent（如 Claude Code），在相同底层模型下实现显著更高的 **Precision** 和 **F1**，同时仅消耗约 **1/9 的 token** 且速度更快。这一「高精度、低成本」的 trade-off 设计在代码审查场景中具有重大实用价值。
+
+集成生态持续扩展：支持 Claude Code、Codex、Cursor、OpenCode 等编码 Agent，提供 **Skill/Plugin/Native/Delegation 四种集成模式**。新增 `ocr scan` 全文件审查模式（无需 diff，直接审计指定目录）。LLM 供应商支持扩展至 LiteLLM AI Gateway、Eden AI、Ollama Cloud、OpenAI Responses API 等十余家。WebUI 会话查看器和 VS Code 扩展持续完善。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 4,647 | 11,707 | +7,060 |
+| 总 Forks | 300 | 796 | +496 |
+
+**核心变化概要**：
+- Stars 从约 4.6K 增长至约 11.7K，增长超过 150%
+- AACR-Bench 基准测试体系完善（50 仓库、200 PR、1,505 ground-truth）
+- Token 消耗仅通用 Agent 方案的 1/9，Precision 和 F1 显著领先
+- 新增 Skill/Plugin/Native/Delegation 四种编码 Agent 集成模式
+- 新增 `ocr scan` 全文件审查模式和十余家 LLM 供应商支持

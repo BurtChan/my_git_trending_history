@@ -356,3 +356,30 @@ OmniRoute 的定位比 FreeLLMAPI 更为全面和野心勃勃——它不仅聚�
 
 *数据来源：GitHub 仓库 (diegosouzapw/OmniRoute), 2026 年 7 月访问*
 *首次分析：2026 年 7 月 | 最近更新：2026 年 7 月*
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 28 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+OmniRoute 作为免费 MIT AI 网关持续快速扩张，Stars 从约 22.8K 增长至约 29.1K（+6,323），今日单日新增 **1,929** 颗 Star。项目从 2 月创建至今仅约 5 个月，已迭代至 **v3.8.49**（270+ 个 release），**500+ 贡献者**参与开发。
+
+核心规模大幅扩展：AI 提供商 **290+**（其中 **90+ 提供免费额度**，40+ 永久免费无需信用卡），覆盖模型 **500+** 个，月度免费 token 总量约 **15.3 亿**（来自 43 个提供商池、516 个模型）。路由策略从早期的 fallback 演进为 **19 种**（新增 cost-optimized、headroom、reset-window、context-relay、context-optimized、cache-optimized、lkgp、fusion、pipeline 等）。旗舰功能 **Combo** 实现跨模型自动链式路由，配额耗尽或提供商故障时静默切换到下一个模型，19 种路由策略 + 4 层级联降级（Subscription → API Key → Cheap → Free）确保「永不停机」。
+
+压缩引擎升级为 **12 级引擎栈**（Session-Dedup、CCR、Lite、RTK、Caveman、Aggressive、LLMLingua-2、OmniGlyph 等），RTK + Caveman 叠加后平均节省 **89.2%** token（78.4%–94.6%）。MCP 工具数增至 **104 个**，测试用例增至 **25,000+**，兼容 **33+ 个 CLI/Agent 工具**（Claude Code、Codex CLI、Cursor、Cline、Kilo Code、Hermes Agent 等）。新增 prompt injection 防护、PII 脱敏、可选 int8 向量量化的持久化记忆系统，以及 `/v1/ocr`（Mistral OCR）和 `/v1/audio/translations`（Whisper 风格）端点。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 22,804 | 29,127 | +6,323 |
+| 总 Forks | 2,800 | 3,565 | +765 |
+
+**核心变化概要**：
+- 提供商 290+（90+ 免费），模型 500+，月免费 token 约 15.3 亿
+- 路由策略增至 19 种，Combo 跨模型自动链式路由 + 4 层级联降级
+- 12 级压缩引擎栈，RTK + Caveman 叠加节省 89.2% token
+- 104 MCP 工具、25,000+ 测试、33+ CLI/Agent 工具兼容
+- 新增 prompt injection 防护、OCR/音频翻译端点、持久化记忆系统
