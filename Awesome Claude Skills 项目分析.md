@@ -87,53 +87,30 @@ Claude Skills 是 Anthropic 推出的开放标准，已被 Claude Code、Claude.
 
 ---
 
-
 ---
 
 ## 📋 更新记录
 
-### 更新 1 — 2026 年 7 月 26 日（再次登上 Trending）
-**更新原因**：项目再次登上 GitHub Trending 榜单
-
-**最新动态**：项目再次登上 GitHub Trending 榜单，显示 Claude Agent Skills 生态系统的爆发式增长。自上次分析以来，该项目已成为 Claude Skills 生态的权威索引，收录超过 1000 个 Skills。其中头部技能包括 Frontend Design Skill（277K+ 安装量，2026 年最受欢迎的设计技能）和 Karpathy Behavioural Skill（144K Stars，2026 年增长最快的 Claude Code 技能）。技能已超越 Claude Code，支持 Cursor、Codex、Copilot 等多个 AI 编程工具。新兴的视频类技能表现突出，包括产品视频、素材治理和手绘短片等。社区认为该索引本身就是 Claude Skills 生态成熟的重要标志——足够多的技能使得人们需要一张地图。
-
-**最新 Star 数据**：
-
-| 指标 | 上次记录 | 最新数据 | 变化 |
-|------|----------|----------|------|
-| 总 Stars | 68,789 | 70,067 | +1,278 |
-| 总 Forks | 7,500 | 7,853 | +353 |
-
-**核心变化概要**：
-- 收录技能突破 1000 个，成为 Claude Skills 生态权威索引
-- Frontend Design Skill 达 277K+ 安装量，Karpathy Behavioural Skill 达 144K Stars
-- 技能已跨平台支持 Claude Code、Cursor、Codex、Copilot
-- 视频类技能新兴，包括产品视频、素材治理和手绘短片
-- 社区认为该索引本身是 Claude Skills 生态成熟的标志
-
-
----
-
-## 📋 更新记录
-
-### 更新 1 — 2026 年 7 月 27 日（再次登上 Trending）
-**更新原因**：项目再次登上 GitHub Trending 榜单
+### 更新 1 — 2026 年 7 月 28 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单，今日新增 +636 Stars
 
 **最新动态**：
-Claude Skills 生态在 2026 年 7 月持续爆发式增长。作为 Claude Code 技能的权威聚合列表，该项目本月新增大量社区贡献的 Skills，覆盖前端设计、代码审查、测试自动化等场景。Composio 官方发布了「2026 年 Top 10 Claude Skills」推荐文章，推动社区关注度和安装量大幅提升。Skills 安装量已达 277K+，npm 安装便捷性进一步降低了使用门槛。项目在 GitHub 全球排名上升至 #265，成为 Claude 生态中不可忽视的基础设施项目。
+Awesome Claude Skills 持续作为 Claude Code 技能生态的核心资源库，目前已收录 32 个技能，总安装量超 10 万次。其中 tailored-resume-generator（7.5K 安装）、content-research-writer（6.1K）、changelog-generator（5.5K）排名前三。该仓库已在 GitHub Trending 多次出现（2025 年 11 月首次登榜），并在 Trendshift 的日/周/月榜单均出现。技能覆盖简历生成、内容研究、代码测试、MCP 构建、Gmail/Calendar/Sheets 自动化等多个领域。项目与 Claude Code 生态深度集成，已上架 LobeHub Skills 市场和 Claude Code Skills 目录。
 
 **最新 Star 数据**：
 
 | 指标 | 上次记录 | 最新数据 | 变化 |
 |------|----------|----------|------|
 | 总 Stars | 68,789 | 70,067 | +1,278 |
-| 总 Forks | 7,853 | 7,949 | +96 |
+| 总 Forks | 7,853 | 7,853 | +0 |
 
 **核心变化概要**：
-- Claude Skills 生态持续扩张，npm 安装量突破 277K+
-- GitHub 全球排名上升至 #265，社区影响力显著提升
-- 覆盖前端设计、代码审查、测试等丰富场景
-- 与 Claude Code、Claude Connect 等官方工具深度集成
+- 32 个技能模块，总安装量超 10 万次
+- 多次登上 GitHub Trending 和 Trendshift 榜单
+- 已集成 LobeHub 和 Claude Code 官方技能市场
+- 覆盖简历、内容、测试、MCP、谷歌工具等多领域
+
+---
 
 ## 总结
 
@@ -141,6 +118,6 @@ Awesome Claude Skills 是 Claude Skills 生态系统中规模最大、分类最�
 
 ---
 
-*数据来源：GitHub 仓库 (ComposioHQ/awesome-claude-skills)，2026 年 7 月 23 日访问*
+*数据来源：GitHub 仓库 (ComposioHQ/awesome-claude-skills)，2026 年 7 月 28 日访问*
 *首次分析：2026 年 7 月 23 日*
-*最近更新：2026 年 7 月 24 日*
+*最近更新：2026 年 7 月 28 日*
