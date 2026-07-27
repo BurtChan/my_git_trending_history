@@ -92,30 +92,6 @@ Claude Skills 是 Anthropic 推出的开放标准，已被 Claude Code、Claude.
 
 ## 📋 更新记录
 
-### 更新 1 — 2026 年 07 月 25 日（再次登上 Trending）
-**更新原因**：项目再次登上 GitHub Trending 榜单
-
-**最新动态**：
-Awesome Claude Skills 持续作为 Claude Skills 生态最全面的精选目录，目前已收录 1000+ 生产级技能和插件。目录覆盖文档处理（docx/pdf/pptx/xlsx）、开发工具（D3.js 可视化、Playwright 自动化、MCP Builder）、安全审计（FFUF 模糊测试）、合规框架等多个领域。新增值得关注的方向包括 Chrome Relay（无需 Playwright/MCP 的浏览器操控）、Full-Page Screenshot、以及多智能体协作框架（Septim Agents Pack、great_cto 的 7 个子代理 SDLC 覆盖）。项目与 Composio 平台深度集成，支持一键连接 500+ 应用（Gmail、Slack、GitHub、Notion 等）。Claude Skills 作为开放标准（2025 年 12 月发布），其生态在 2026 年上半年持续快速扩张。
-
-**最新 Star 数据**：
-
-| 指标 | 上次记录 | 最新数据 | 变化 |
-|------|----------|----------|------|
-| 总 Stars | 68,789 | 70,067 | +1,278 |
-| 总 Forks | 7,613 | 7,800 | +187 |
-
-**核心变化概要**：
-- 收录 1000+ 生产级 Claude 技能和插件
-- 新增 Chrome Relay、多智能体协作框架等热门技能
-- 与 Composio 平台集成，支持 500+ 应用一键连接
-- Claude Skills 开放标准生态持续快速扩张
-- 今日新增 636 Stars，总 Star 数突破 70,000
-
----
-
-## 📋 更新记录
-
 ### 更新 1 — 2026 年 7 月 26 日（再次登上 Trending）
 **更新原因**：项目再次登上 GitHub Trending 榜单
 
@@ -134,6 +110,30 @@ Awesome Claude Skills 持续作为 Claude Skills 生态最全面的精选目录�
 - 技能已跨平台支持 Claude Code、Cursor、Codex、Copilot
 - 视频类技能新兴，包括产品视频、素材治理和手绘短片
 - 社区认为该索引本身是 Claude Skills 生态成熟的标志
+
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 27 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+Claude Skills 生态在 2026 年 7 月持续爆发式增长。作为 Claude Code 技能的权威聚合列表，该项目本月新增大量社区贡献的 Skills，覆盖前端设计、代码审查、测试自动化等场景。Composio 官方发布了「2026 年 Top 10 Claude Skills」推荐文章，推动社区关注度和安装量大幅提升。Skills 安装量已达 277K+，npm 安装便捷性进一步降低了使用门槛。项目在 GitHub 全球排名上升至 #265，成为 Claude 生态中不可忽视的基础设施项目。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 68,789 | 70,067 | +1,278 |
+| 总 Forks | 7,853 | 7,949 | +96 |
+
+**核心变化概要**：
+- Claude Skills 生态持续扩张，npm 安装量突破 277K+
+- GitHub 全球排名上升至 #265，社区影响力显著提升
+- 覆盖前端设计、代码审查、测试等丰富场景
+- 与 Claude Code、Claude Connect 等官方工具深度集成
 
 ## 总结
 

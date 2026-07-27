@@ -103,30 +103,6 @@ Pumpkin 的插件 API 采用 WIT（WebAssembly Interface Types）接口，这是
 
 ## 📋 更新记录
 
-### 更新 1 — 2026 年 07 月 25 日（再次登上 Trending）
-**更新原因**：项目再次登上 GitHub Trending 榜单
-
-**最新动态**：
-Pumpkin 作为用 Rust 构建的高性能 Minecraft 服务器持续活跃开发，目前已有 2487 次提交。项目在协议支持方面进展显著：Java Edition 已支持加密、数据包压缩、服务器状态/Ping 等核心功能，Bedrock Edition 正在开发中。世界系统支持多种区块加载模式（Vanilla、Linear、Pump），实体系统支持玩家皮肤、传送、移动、动画、物品栏、经验、饥饿等。服务器功能已支持 Bungeecord 和 Velocity 代理。项目采用模块化架构，核心模块包括 pumpkin-protocol、pumpkin-world、pumpkin-inventory、pumpkin-nbt 等，支持 Docker 和 Nix flakes 部署。随着 Rust 在游戏服务器领域的应用日益广泛，Pumpkin 作为完全用 Rust 编写的 Minecraft 服务器替代方案受到越来越多关注。
-
-**最新 Star 数据**：
-
-| 指标 | 上次记录 | 最新数据 | 变化 |
-|------|----------|----------|------|
-| 总 Stars | 8,224 | 9,484 | +1,260 |
-| 总 Forks | 537 | 631 | +94 |
-
-**核心变化概要**：
-- 2487 次提交，项目持续活跃开发
-- Java Edition 核心协议基本完备，Bedrock Edition 开发中
-- 支持 Bungeecord/Velocity 代理
-- 模块化 Rust 架构（pumpkin-protocol/world/inventory/nbt）
-- 今日新增 565 Stars，总 Star 接近 10,000
-
----
-
-## 📋 更新记录
-
 ### 更新 1 — 2026 年 7 月 26 日（再次登上 Trending）
 **更新原因**：项目再次登上 GitHub Trending 榜单
 
@@ -145,6 +121,30 @@ Pumpkin 作为用 Rust 构建的高性能 Minecraft 服务器持续活跃开发�
 - 性能指标经社区测试验证，OceanHost 宣布赞助
 - 新增插件系统、权限系统和配置系统
 - 多位 YouTube 创作者评测，认为有潜力挑战 PaperMC
+
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 27 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+Pumpkin 作为纯 Rust 编写的 Minecraft 服务器实现，在 2026 年 7 月受到广泛关注。项目同时支持 Java Edition 和 Bedrock Edition（WIP），在性能和兼容性方面持续改进。项目最近更新了部署配置，推荐内存从 2GB 提升到 4GB 以防止构建失败。Chunk Loading 机制新增 Linear 和 Pump 模式，提供了超越 Vanilla 的灵活区块加载策略。社区活跃度显著提升，GitHub Daily Trend AI Podcast 专题报道，吸引大量 Minecraft 服务器管理员和 Rust 爱好者关注。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 8,224 | 9,484 | +1,260 |
+| 总 Forks | 615 | 660 | +45 |
+
+**核心变化概要**：
+- 纯 Rust 实现，支持 Java + Bedrock 双版本
+- 新增 Linear 和 Pump 区块加载模式
+- 部署配置优化，推荐 4GB 内存
+- 被 GitHub Daily Trend AI Podcast 专题报道
 
 ## 总结
 

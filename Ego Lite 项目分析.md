@@ -110,6 +110,30 @@ Ego Lite 作为 AI Agent 专用浏览器持续受到关注。项目通过代码�
 - Forks 增长 22 个，社区二次开发活跃
 - 路线图中包含经验积累功能，未来类似任务可提速至 5 倍
 
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 27 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+Ego Lite 是专为 AI Agent 设计的浏览器自动化工具，允许 AI Agent 在独立工作空间中操控真实浏览器。2026 年 7 月，该项目受到 YouTube 技术频道和 AI 社区的广泛报道，Smart Tutorials 频道的相关教程获得 24K+ 播放。项目核心创新在于「Space」概念——Agent 的自动化操作在独立工作空间中运行，不会干扰用户正在使用的标签页。基准测试显示，相比 Vercel 的 agent-browser，Ego Lite 在复杂任务上速度快 2.5 倍且 token 消耗更少。目前支持 macOS（Apple Silicon 和 Intel），Windows 和 Linux 版本已在路线图中。通过 `npx skills add citrolabs/ego-lite` 一键安装，使用门槛极低。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 1,496 | 1,896 | +400 |
+| 总 Forks | 92 | 188 | +96 |
+
+**核心变化概要**：
+- Space 独立工作空间设计，Agent 操作不干扰用户
+- 基准测试比 Vercel agent-browser 快 2.5 倍，token 更省
+- YouTube 教程 24K+ 播放，社区关注度飙升
+- npx 一键安装，与 Claude Code/Codex/Cursor 无缝集成
+
 ## 总结
 
 Ego Lite 重新定义了「AI 浏览器」这一品类——不是为 AI 造一个专用浏览器，而是让人类日常使用的浏览器原生支持 AI Agent 并行工作。其代码驱动架构、Chrome 数据继承和通用 Agent 兼容性，使其在浏览器自动化赛道中形成了独特的差异化优势。
