@@ -134,10 +134,32 @@ Ego Lite 是专为 AI Agent 设计的浏览器自动化工具，允许 AI Agent 
 - YouTube 教程 24K+ 播放，社区关注度飙升
 - npx 一键安装，与 Claude Code/Codex/Cursor 无缝集成
 
+### 更新 1 — 2026 年 7 月 28 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+ego-lite 是一个专为 AI Agent 设计的浏览器，支持用户与 AI Agent 并行工作，每个 Agent 在独立的 Space 中运行任务。近期社区关注度大幅提升，YouTube 教程视频（Smart Tutorials 频道）获得了超过 2.4 万次观看，详细演示了 ego-lite 如何解决传统浏览器自动化中「登录丢失、弹窗干扰、页面被 Agent 占用」等痛点。项目核心优势在于：继承 Chrome 数据（登录、Cookie、书签）、语义化页面快照（而非像素截图）、基于代码的 Agent 交互（Agent 直接调用 JavaScript 函数，而非 CLI 命令循环），使复杂工作流完成速度比传统 CLI 方案快 2.5 倍。支持 Claude Code、Codex、Cursor 等主流 AI 编程工具的插件集成。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 1,496 | 1,896 | +400 |
+| 总 Forks | ~70 | 92 | ~+22* |
+
+*注：Fork 数据为估算值（GitHub API 不可达）
+
+**核心变化概要**：
+- YouTube 教程视频广泛传播，项目知名度大幅提升
+- 代码级 Agent 交互架构（vs CLI 循环）带来 2.5 倍性能提升
+- 支持 Claude Code / Codex / Cursor 插件集成，生态持续扩展
+
+---
+
 ## 总结
 
 Ego Lite 重新定义了「AI 浏览器」这一品类——不是为 AI 造一个专用浏览器，而是让人类日常使用的浏览器原生支持 AI Agent 并行工作。其代码驱动架构、Chrome 数据继承和通用 Agent 兼容性，使其在浏览器自动化赛道中形成了独特的差异化优势。
 
----
+| 最近更新：2026 年 7 月
 
 *数据来源：GitHub 仓库 (citrolabs/ego-lite)，2026 年 7 月访问*
