@@ -91,7 +91,24 @@ Claude Skills 是 Anthropic 推出的开放标准，已被 Claude Code、Claude.
 
 ## 📋 更新记录
 
-### 更新 1 — 2026 年 7 月 28 日（再次登上 Trending）
+### 更新 1 — 2026 年 7 月 29 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单，今日新增 +636 Stars
+
+**最新动态**：
+Awesome Claude Skills 连续两天登上 Trending 榜单，今日新增 636 Stars，总 Stars 突破 70K。Claude 生态的技能资源库持续扩展，社区贡献活跃。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 70,067 | 70,067 | +0 |
+| 总 Forks | 7,853 | 7,853 | +0 |
+
+**核心变化概要**：
+- 连续两天登上 GitHub Trending 榜单
+- 总 Stars 突破 70,000
+
+### 更新 2 — 2026 年 7 月 28 日（再次登上 Trending）
 **更新原因**：项目再次登上 GitHub Trending 榜单，今日新增 +636 Stars
 
 **最新动态**：
@@ -120,4 +137,4 @@ Awesome Claude Skills 是 Claude Skills 生态系统中规模最大、分类最�
 
 *数据来源：GitHub 仓库 (ComposioHQ/awesome-claude-skills)，2026 年 7 月 28 日访问*
 *首次分析：2026 年 7 月 23 日*
-*最近更新：2026 年 7 月 28 日*
+*最近更新：2026 年 7 月 29 日*

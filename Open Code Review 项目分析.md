@@ -104,107 +104,31 @@ Open Code Review 是阿里巴巴集团开源的 AI 驱动代码审查 CLI 工具
 
 ---
 
----
-
 ## 📋 更新记录
 
-### 更新 2 — 2026 年 7 月 25 日（再次登上 Trending）
+### 更新 4 — 2026 年 7 月 29 日（再次登上 Trending）
 **更新原因**：项目再次登上 GitHub Trending 榜单
 
 **最新动态**：
-Open Code Review 在开源后迎来了快速增长期。作为阿里巴巴内部服务数万开发者、识别数百万代码缺陷的 AI 代码审查工具，其混合架构（确定性流水线 + LLM Agent）的价值被社区广泛认可。近期新增的委托模式（Delegation Mode）让宿主机可以驱动审查流程，增强了在 CI/CD 管道中的灵活性。LLM 供应商支持从最初的 OpenAI/Anthropic 扩展到 LiteLLM、Eden AI、Ollama Cloud 等十余家，审查规则也从 Java/TypeScript/Go 扩展到 FreeMarker 和 Python。Apache 2.0 许可证和完善的 CI 集成使其成为企业级 AI 代码审查的热门选择。
+Open Code Review 持续保持高速增长势头，Stars 从 11.7K 进一步攀升至约 14.4K，Forks 增至 971。项目在 Hacker News 上获得 284 点赞和 73 条讨论，社区关注度持续走高。社区积极提交新功能请求，包括 Zig 语言支持、Korean 国际化、IntelliJ IDEA 插件、会话评论查看器等，显示全球开发者的广泛参与。
 
 **最新 Star 数据**：
 
 | 指标 | 上次记录 | 最新数据 | 变化 |
 |------|----------|----------|------|
-| 总 Stars | 4,647 | 11,707 | +7,060 |
-| 总 Forks | - | 796 | - |
+| 总 Stars | 4,647 | 14,400 | +9,753 |
+| 总 Forks | 300 | 971 | +671 |
 
 **核心变化概要**：
-- Stars 从约 4.6K 增长至约 11.7K，增长超过 150%，社区影响力显著提升
-- 新增 Delegation Mode（委托模式），支持宿主机代理驱动的代码审查工作流
-- 集成 LiteLLM AI Gateway、Eden AI、Ollama Cloud 等多个新 LLM 供应商
-- 扩展语言支持：新增 FreeMarker（.ftl）和 Python 代码审查规则
+- Stars 从开源初期的 4,647 增长至约 14,400，增长超过 210%，全球排名升至第 3,382 位
+- Forks 达到 971，较上次的 796 继续增长，反映社区贡献活跃
+- Hacker News 上引发热议（284 points、73 comments），国际影响力扩大
+- 社区积极提交 Zig 语言支持、Korean i18n、IDEA 插件等功能请求
+- 贡献者增至 21 人，每周新增 72 Stars、9 次代码推送
 
 ---
 
-## ?? 更新记录
-
-### 更新 1 — 2026 年 7 月 26 日（再次登上 Trending）
-**更新原因**：项目再次登上 GitHub Trending 榜单
-
-**最新动态**：Stars 近一个月内增长超过 2.5 倍，从阿里内部工具升级为开源社区热门项目。混合架构（确定性管道 + LLM Agent）审查质量在基准测试中超越 Claude Code。
-- 7 月 23 日登上 GitHub Trending #1，Stars 从约 4.6K 飞跃至 11.7K
-- 新增 Delegation Mode，支持 host-agent 驱动的代码审查流程
-- 新增 LiteLLM AI Gateway、Ollama Cloud、OpenAI Responses API 等多个 LLM 提供商预设
-- 新增 Python 代码审查规则、FreeMarker 模板支持、可恢复会话功能
-- Claude Code 插件和 VS Code 扩展持续完善
-
-**最新 Star 数据**：
-
-| 指标 | 上次记录 | 最新数据 | 变化 |
-|------|----------|----------|------|
-| 总 Stars | 4,647 | 11,707 | +7,060 |
-| 总 Forks | 300 | 796 | +496 |
-
-**核心变化概要**：
-- 7 月 23 日登上 GitHub Trending #1，Stars 从约 4.6K 飞跃至 11.7K
-- 新增 Delegation Mode，支持 host-agent 驱动的代码审查流程
-- 新增 LiteLLM AI Gateway、Ollama Cloud、OpenAI Responses API 等多个 LLM 提供商预设
-- 新增 Python 代码审查规则、FreeMarker 模板支持、可恢复会话功能
-- Claude Code 插件和 VS Code 扩展持续完善
-
----
-
-## 📋 更新记录
-
-### 更新 1 — 2026 年 7 月 27 日（再次登上 Trending）
-**更新原因**：项目再次登上 GitHub Trending 榜单
-
-**最新动态**：
-OpenCodeReview 在阿里巴巴内部经过 2 年以上规模化验证，服务数万开发者、识别数百万代码缺陷后，持续优化其混合架构。核心架构保持「确定性工程 + LLM Agent」双轨设计——确定性层负责精确文件选择、智能文件捆绑（如将中英文 properties 文件合并为单个审查单元）、模板引擎驱动的细粒度规则匹配（比语言驱动更稳定）、外部定位和反思模块系统提升反馈准确度；Agent 层专注场景调优的提示和工具集。基准测试基于 50 个热门开源仓库的 200 个真实 PR、10 种编程语言、80+ 高级工程师标注的 1,505 个 ground-truth 问题，结果显示相比通用 Agent（如 Claude Code），在相同底层模型下实现显著更高的 Precision 和 F1，仅消耗约 **1/9 的 token** 且速度更快。内置规则集覆盖 NPE、线程安全、XSS、SQL 注入等常见缺陷模式。新增 Claude Code、Codex、Cursor、OpenCode 等编码 Agent 集成，支持 Skill/Plugin/Native/Delegation 四种集成模式。
-
-**最新 Star 数据**：
-
-| 指标 | 上次记录 | 最新数据 | 变化 |
-|------|----------|----------|------|
-| 总 Stars | 11,532 | 11,707 | +175 |
-| 总 Forks | 796 | 796 | - |
-
-**核心变化概要**：
-- 混合架构持续优化，确定性工程保证审查过程正确性
-- 基准测试显示 Precision 和 F1 显著优于通用 Agent，token 消耗仅 1/9
-- 新增 Claude Code/Codex/Cursor/OpenCode 等编码 Agent 集成
-- 内置 NPE/线程安全/XSS/SQL 注入等缺陷检测规则集
-- 支持 Skill/Plugin/Native/Delegation 四种集成模式
-## 总结
-
-Open Code Review 是阿里巴巴将内部经过两年大规模验证的 AI 代码审查能力开源的重要成果，其"确定性工程 × Agent 混合架构"在基准测试中领先通用方案 3 倍，token 成本仅为 1/5，为开发者提供了一种经过实战检验、准确高效、灵活易用的 AI 代码审查解决方案。
-
----
-
-*数据来源：GitHub 仓库 (alibaba/open-code-review)，2026 年 06 月访问*
-
----
-
-## 📰 最新动态
-
-### 2026年7月24日 — Star 数从 4,647 暴增至 11,336，增长超 140%
-
-Open Code Review 经历了爆发式增长，Star 数从上次分析时的 4,647 增长至 11,336。项目连续发布 v1.7.13~v1.7.15，新增 PowerShell 安装脚本、Gerrit CI 集成示例和 Pot/Po 审查规则。详见 → [2026-07-24 更新](./2026-07-24_Open%20Code%20Review_更新.md)
-
----
-
-*数据来源：GitHub 仓库 (alibaba/open-code-review)，2026 年 7 月访问*
-
-*数据来源：GitHub 仓库 (alibaba/open-code-review), 2026 年 7 月访问*
-*首次分析：2026 年 7 月 | 最近更新：2026 年 7 月*
----
-
-## 📋 更新记录
-
-### 更新 1 — 2026 年 7 月 28 日（再次登上 Trending）
+### 更新 3 — 2026 年 7 月 28 日（再次登上 Trending）
 **更新原因**：项目再次登上 GitHub Trending 榜单
 
 **最新动态**：
@@ -227,3 +151,43 @@ Open Code Review 在开源约两个月后 Stars 飞跃至约 **11.7K**，较开�
 - Token 消耗仅通用 Agent 方案的 1/9，Precision 和 F1 显著领先
 - 新增 Skill/Plugin/Native/Delegation 四种编码 Agent 集成模式
 - 新增 `ocr scan` 全文件审查模式和十余家 LLM 供应商支持
+
+---
+
+### 更新 2 — 2026 年 7 月 25 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+Open Code Review 在开源后迎来了快速增长期。作为阿里巴巴内部服务数万开发者、识别数百万代码缺陷的 AI 代码审查工具，其混合架构（确定性流水线 + LLM Agent）的价值被社区广泛认可。近期新增的委托模式（Delegation Mode）让宿主机可以驱动审查流程，增强了在 CI/CD 管道中的灵活性。LLM 供应商支持从最初的 OpenAI/Anthropic 扩展到 LiteLLM、Eden AI、Ollama Cloud 等十余家，审查规则也从 Java/TypeScript/Go 扩展到 FreeMarker 和 Python。Apache 2.0 许可证和完善的 CI 集成使其成为企业级 AI 代码审查的热门选择。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 4,647 | 11,707 | +7,060 |
+| 总 Forks | - | 796 | - |
+
+**核心变化概要**：
+- Stars 从约 4.6K 增长至约 11.7K，增长超过 150%，社区影响力显著提升
+- 新增 Delegation Mode（委托模式），支持宿主机代理驱动的代码审查工作流
+- 集成 LiteLLM AI Gateway、Eden AI、Ollama Cloud 等多个新 LLM 供应商
+- 扩展语言支持：新增 FreeMarker（.ftl）和 Python 代码审查规则
+
+---
+
+## 📰 最新动态
+
+### 2026年7月24日 — Star 数从 4,647 暴增至 11,336，增长超 140%
+
+Open Code Review 经历了爆发式增长，Star 数从上次分析时的 4,647 增长至 11,336。项目连续发布 v1.7.13~v1.7.15，新增 PowerShell 安装脚本、Gerrit CI 集成示例和 Pot/Po 审查规则。详见 → [2026-07-24 更新](./2026-07-24_Open%20Code%20Review_更新.md)
+
+---
+
+## 总结
+
+Open Code Review 是阿里巴巴将内部经过两年大规模验证的 AI 代码审查能力开源的重要成果，其"确定性工程 × Agent 混合架构"在基准测试中领先通用方案 3 倍，token 成本仅为 1/5，为开发者提供了一种经过实战检验、准确高效、灵活易用的 AI 代码审查解决方案。
+
+---
+
+*数据来源：GitHub 仓库 (alibaba/open-code-review)，2026 年 7 月访问*
+*首次分析：2026 年 7 月 | 最近更新：2026 年 7 月 29 日*

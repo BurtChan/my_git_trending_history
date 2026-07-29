@@ -102,24 +102,23 @@ Pumpkin 的插件 API 采用 WIT（WebAssembly Interface Types）接口，这是
 
 ## 📋 更新记录
 
-### 更新 1 — 2026 年 7 月 28 日（再次登上 Trending）
+### 更新 1 — 2026 年 7 月 29 日（再次登上 Trending）
 **更新原因**：项目再次登上 GitHub Trending 榜单，今日新增 +565 Stars
 
 **最新动态**：
-Pumpkin 作为全 Rust 编写的 Minecraft 服务器，今日新增 565 Stars。项目最近取得重大技术突破——开发了 PatchBukkit 兼容层，使得原有 Bukkit/Spigot 插件可以在 Pumpkin 的 Rust 核心上运行。这解决了非 Java 服务器迁移的最大障碍。服务器启动仅需约 5ms（比原版快 1000 倍），运行内存仅约 100MB（vs 原版 1.8GB）。支持 Java 和 Bedrock 版本的玩家同时连接，内置 50+ 命令和权限系统。项目发布了完整文档站点（docs.pumpkinmc.org）和 Mintlify 文档门户。
+Pumpkin 作为高效 Minecraft 服务器托管方案，连续两天登上 Trending 榜单，今日新增 565 Stars，总 Stars 接近 9.5K。项目致力于让每个人都能轻松托管高性能 Minecraft 服务器。
 
 **最新 Star 数据**：
 
 | 指标 | 上次记录 | 最新数据 | 变化 |
 |------|----------|----------|------|
-| 总 Stars | 8,224 | 9,484 | +1,260 |
-| 总 Forks | 615 | 615 | +0 |
+| 总 Stars | 8,354 | 9,484 | +1,130 |
+| 总 Forks | 589 | 615 | +26 |
 
 **核心变化概要**：
-- PatchBukkit 兼容层突破，支持原有 Bukkit 插件运行
-- 1000x 更快启动、仅 100MB 内存占用
-- Java + Bedrock 跨版本兼容，50+ 内置命令
-- 完整文档站点和 Docker 支持上线
+- 连续两天登上 GitHub Trending 榜单
+- 今日新增 +565 Stars，总 Stars 接近 9.5K
+- Forks 持续增长，社区参与度提升
 
 ---
 
@@ -130,5 +129,5 @@ Pumpkin 是 Minecraft 服务器 Rust 化浪潮中的领军项目，以 8.2K Star
 ---
 
 *数据来源：GitHub 仓库 (Pumpkin-MC/Pumpkin)，2026 年 7 月 28 日 访问*
-*最近更新：2026 年 7 月 28 日
+*最近更新：2026 年 7 月 29 日
 *首次分析：2026 年 7 月*
