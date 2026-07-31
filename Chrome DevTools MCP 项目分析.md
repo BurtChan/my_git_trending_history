@@ -89,6 +89,28 @@ Chrome DevTools MCP 是由 Google Chrome DevTools 团队官方开源的 Model Co
 
 ---
 
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 31 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：Chrome DevTools MCP 持续快速发展，Star 数从 35,500 增长至约 48,251（+12,751）。v1.6.0 版本（2026 年 7 月 14 日）引入了多项重要功能：实验性 TOON（结构化内容输出）支持、堆快照关闭工具、扩展 Service Worker 日志、内存调试工具、URL 模式过滤（allowedUrlPattern/blockedUrlPattern）以及多第三方开发者工具供应商处理。项目由 Google Chrome DevTools 团队官方维护，将 Chrome DevTools 完整能力通过 MCP 协议暴露给 AI 编程 Agent，已成为前端开发领域 AI Agent 工具链的核心组件。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 35,500 | 48,251 | +12,751 |
+| 总 Forks | 3,269 | 3,269 | — |
+
+**核心变化概要**：
+- Star 数增长超 12,700，逼近 5 万大关
+- v1.6.0 重大更新（2026 年 7 月 14 日），新增内存调试、TOON 输出等高级功能
+- 支持多第三方开发者工具供应商，扩展兼容性
+- Google 官方持续投入维护，已成为 AI Agent 前端开发的标准 MCP 服务器
+
+---
+
 ## 总结
 
 **Chrome DevTools MCP** 是 Google Chrome DevTools 团队官方推出的 MCP 服务器，通过标准化协议将 Chrome 浏览器完整的调试、自动化和性能分析能力赋予 AI 编码助手。项目以 TypeScript 编写，基于 Puppeteer 和 CDP 实现，提供 20+ 精心设计的工具（涵盖页面交互、网络监控、性能追踪、内存分析、Lighthouse 审计等），并与 Claude Code、Copilot、Cursor、Gemini 等 20+ 主流 AI 客户端无缝集成。凭借官方团队背书、活跃的社区和极低的上手门槛（一行 npx 命令即可启动），该项目已成为 AI 辅助 Web 开发领域最受欢迎的基础设施之一，拥有超过 35,000 Stars 和 2,200 Forks，代表了 AI 编码从"写代码"走向"端到端构建和调试真实网页"的重要趋势。

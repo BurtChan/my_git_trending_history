@@ -112,6 +112,28 @@ PowerToys 采用模块化架构设计，每个工具都可以独立启用或禁�
 
 ---
 
+## 📋 更新记录
+
+### 更新 1 — 2026 年 7 月 31 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：Microsoft PowerToys 持续稳定增长，Star 数从 129,000 增长至约 137,304（+8,304）。v0.100.2 版本（2026 年 6 月 26 日）是重大里程碑版本，引入了全新 Shortcut Guide、改进的 Command Palette、新 WinUI 3 键盘管理编辑器（默认启用）、Mouse Without Borders 新增 Refresh Connections 操作、Image Resizer 设置热更新（无需重启）以及 Quick Accent 在高 DPI 和多显示器场景的可靠性提升。启动速度显著优化，显示器识别更可靠，新增 Max Compatibility Mode 兼容不完全支持 DDC 的显示器。PowerToys 已成为 Windows 用户必备的系统增强工具套件。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 129,000 | 137,304 | +8,304 |
+| 总 Forks | 8,368 | 8,368 | — |
+
+**核心变化概要**：
+- v0.100 里程碑版本发布，Star 数增长超 8,300，逼近 14 万大关
+- 全新 Shortcut Guide 和 Command Palette 改进
+- WinUI 3 键盘管理编辑器默认启用，UI 现代化
+- Mouse Without Borders 新增连接刷新功能，Image Resizer 支持热更新
+
+---
+
 ## 总结
 
 Microsoft PowerToys 是 Windows 生态中当之无愧的"瑞士军刀"，以开源形式提供了 30 余个精心打磨的系统增强工具，覆盖窗口管理、文件操作、键盘鼠标定制、屏幕辅助等方方面面。作为微软官方主导的开源项目，它不仅拥有企业级的代码质量和持续活跃的开发节奏，更通过 WinUI 3 等前沿技术栈展示了 Windows 桌面应用开发的最佳实践。无论是追求效率的办公用户、需要系统工具的开发者，还是希望深度自定义 Windows 的高级用户，PowerToys 都是不可或缺的装机必备工具集。
