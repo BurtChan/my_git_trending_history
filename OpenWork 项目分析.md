@@ -115,3 +115,16 @@ OpenWork 是 AI 编码工具生态中一个重要的基础设施项目，通过 
 
 ### 趋势分析
 OpenWork 今日以 +915 的单日 Star 增长登上 GitHub Trending，核心驱动力在于其精准切中了 AI 编码工具生态中"工作流互通"的痛点。随着 Claude Code、Codex、Cursor 等 AI 编码工具的普及，开发者对跨工具复用 Skills/MCPs 的需求急剧上升，而 OpenWork 以开源免费的方式提供了这一能力，直接与 Anthropic 的 Claude Cowork 形成竞争。高增长也表明社区对 MCP 协议标准化方向的认可，OpenWork 正成为 AI 代理生态中重要的基础设施层。
+
+---
+
+## 更新记录
+
+### 更新 1 — 2026年7月31日
+
+| 指标 | 数值 |
+|------|------|
+| 上次记录 | 19,070 Stars |
+| 总 Stars | 19,955 |
+| 新增 | +885 |
+| 今日 Trending | +796 stars |

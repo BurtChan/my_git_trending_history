@@ -115,3 +115,16 @@ AI For Beginners 是微软官方出品的、GitHub 上最受欢迎的 AI 入门�
 ---
 
 *数据来源：GitHub 仓库 (microsoft/AI-For-Beginners)，2026 年 7 月访问*
+
+---
+
+## 更新记录
+
+### 更新 1 — 2026年7月31日
+
+| 指标 | 数值 |
+|------|------|
+| 上次记录 | 49,693 Stars |
+| 总 Stars | 56,519 |
+| 新增 | +6,826 |
+| 今日 Trending | +1592 stars |
