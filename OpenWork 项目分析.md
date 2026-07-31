@@ -93,3 +93,25 @@ OpenWork 是 AI 编码工具生态中一个重要的基础设施项目，通过 
 ---
 
 *数据来源：GitHub 仓库 (different-ai/openwork)，2026 年 7 月访问*
+
+---
+
+## 2026-07-31 更新 1
+
+### Star 数据更新
+| 指标 | 数值 | 备注 |
+|------|------|------|
+| 总 Stars | 19,070 | +210（较上次记录 18,860） |
+| 今日 Star 增长 | 915 | 强劲增长 |
+| 总 Forks | 1,935 | |
+| License | MIT | |
+
+### 最新动态
+- **Claude Cowork 开源替代定位明确**：OpenWork 持续强化作为 Claude Cowork 免费开源替代品的品牌形象，吸引大量寻求低成本 AI 工作流方案的开发者。
+- **MCP 协议标准化推进**：通过 OpenWork MCP 连接器，用户可将同一套 Skills/MCPs 接入 Codex、Claude Code、Cursor 等多个 AI 编码工具，实现真正的跨工具能力复用。
+- **跨平台桌面应用覆盖**：支持 macOS、Windows 和 Linux 三大平台，桌面应用为可选组件，通过远程 MCP URL 即可使用全部功能，降低使用门槛。
+- **团队管理功能完善（OpenWork Den）**：提供推理配置、团队成员管理、桌面策略管控、技能市场发布及 Anthropic 兼容插件导入等企业级能力。
+- **社区活跃度高**：项目累计 4,091+ 次提交，今日单日 Star 增长 915，反映出快速迭代的开发节奏和强烈的社区关注。
+
+### 趋势分析
+OpenWork 今日以 +915 的单日 Star 增长登上 GitHub Trending，核心驱动力在于其精准切中了 AI 编码工具生态中"工作流互通"的痛点。随着 Claude Code、Codex、Cursor 等 AI 编码工具的普及，开发者对跨工具复用 Skills/MCPs 的需求急剧上升，而 OpenWork 以开源免费的方式提供了这一能力，直接与 Anthropic 的 Claude Cowork 形成竞争。高增长也表明社区对 MCP 协议标准化方向的认可，OpenWork 正成为 AI 代理生态中重要的基础设施层。

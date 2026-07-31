@@ -98,3 +98,26 @@ Speech to Speech 是 Hugging Face 在语音 AI 领域的重要开源贡献，提
 ---
 
 *数据来源：GitHub 仓库 (huggingface/speech-to-speech)，2026 年 7 月访问*
+
+## 2026-07-31 更新 1
+
+### Star 数据更新
+
+| 指标 | 数值 | 备注 |
+|------|------|------|
+| 总 Stars | 9,492 | +388（上次记录 9,104，今日增长 628） |
+| 总 Forks | 1,164 | +50 |
+
+### 最新动态
+
+- **模块化语音管道架构**：项目采用 VAD → STT → LLM → TTS 四阶段完全模块化设计，每个组件均可在独立线程中运行并通过消息队列通信，实现极高的灵活性和可扩展性。
+- **多后端支持**：STT 支持 6 种方案（Parakeet TDT、Whisper、Faster Whisper 等），TTS 支持 5 种方案（Qwen3-TTS、Kokoro-82M、ChatTTS 等），LLM 支持 OpenAI 兼容 API、本地 Transformers 和 MLX 三种模式。
+- **生产级部署验证**：已为数千台 Reachy Mini 机器人提供对话后端，经过真实生产环境的充分验证，体现了企业级可靠性。
+- **OpenAI Realtime API 兼容**：通过 WebSocket `/v1/realtime` 端点提供与 OpenAI Realtime 完全兼容的标准接口，可无缝对接现有 OpenAI Realtime 客户端生态。
+- **全平台覆盖**：支持 Linux（CUDA/CPU）、macOS（Apple Silicon/MLX）和 Docker 部署，4 种运行模式（realtime、local、websocket、socket）适配从开发到生产的各种场景。
+
+### 趋势分析
+
+语音 agent 作为 AI 交互的核心形态正在迎来爆发式增长，Speech-to-Speech 项目凭借其「每组件可替换」的架构设计和 OpenAI Realtime API 兼容性，精准契合了市场对低延迟语音交互解决方案的强烈需求。随着开源 TTS/STT 模型生态的快速发展（如 Qwen3-TTS、Parakeet TDT 等新一代模型），此类模块化管道将成为构建语音 AI 应用的基础设施级工具。项目单日增长 628 Stars 的亮眼表现，反映了开发者社区对生产级开源语音代理解决方案的迫切期待。
+
+---
