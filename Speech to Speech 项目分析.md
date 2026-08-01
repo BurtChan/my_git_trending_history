@@ -121,3 +121,26 @@ Speech to Speech 是 Hugging Face 在语音 AI 领域的重要开源贡献，提
 语音 agent 作为 AI 交互的核心形态正在迎来爆发式增长，Speech-to-Speech 项目凭借其「每组件可替换」的架构设计和 OpenAI Realtime API 兼容性，精准契合了市场对低延迟语音交互解决方案的强烈需求。随着开源 TTS/STT 模型生态的快速发展（如 Qwen3-TTS、Parakeet TDT 等新一代模型），此类模块化管道将成为构建语音 AI 应用的基础设施级工具。项目单日增长 628 Stars 的亮眼表现，反映了开发者社区对生产级开源语音代理解决方案的迫切期待。
 
 ---
+
+## 2026-08-02 更新 2
+
+### Star 数据更新
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 9,492 | 10,136 | +644 |
+| 总 Forks | 1,164 | 1,241 | +77 |
+
+### 最新动态
+
+- **TTS 生态持续扩展**：默认 TTS 后端升级为 Qwen3-TTS（GGML/Linux, mlx-audio/macOS），支持 CUDA 12.4/12.8/13.x 多版本适配，同时新增 Pocket TTS 和 ChatTTS 可选后端
+- **STT 多方案并行**：默认 STT 升级为 Parakeet TDT，同时保留 Whisper、Faster Whisper、Lightning Whisper MLX（macOS 专用）和 Paraformer（FunASR）等多种方案
+- **全平台本地化支持**：支持纯本地 LLM（llama.cpp）运行，无需任何外部 API；macOS 优化配置一键启用 MPS + MLX 全套栈
+- **Docker Compose 一键部署**：集成 llama.cpp (Gemma 4) + TCP socket 服务器，暴露 8080/12345/12346 端口
+- **GitHub #1 Repository of the Day**：获评 GitHub 当日第一名仓库，社区热度持续攀升
+
+### 趋势分析
+
+Speech-to-Speech 在短短两天内从 9,104 增长至 10,136 Stars（+1,032），增速在语音 AI 开源项目中名列前茅。项目凭借「零外部 API 依赖即可运行」的本地化优势和 OpenAI Realtime 兼容的标准接口，正在成为语音 Agent 领域的事实标准管道。随着 Qwen3-TTS 等新一代开源 TTS 模型的成熟，该项目的生态壁垒持续加深。
+
+---

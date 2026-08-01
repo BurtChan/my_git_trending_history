@@ -87,5 +87,22 @@ GitHub 官方的 Stacked PR CLI 工具，为大型变更的分层审查提供了
 
 ---
 
+## 📋 更新记录
+
+### 更新 1 — 2026 年 8 月 2 日（再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 持续增长
+
+**最新动态**：GitHub 官方的 Stacked PR CLI 扩展持续获得社区关注，支持 `gh skill install` AI Agent 集成安装方式。工具提供完整的栈管理命令集（init、add、checkout、rebase、modify、sync、submit），其中 `stack modify` 提供交互式 TUI 进行栈重构（支持插入/删除/折叠/重排序分支），`stack sync` 实现一键 fetch→rebase→push→PR 同步全流程。目前仍处于私有预览阶段，需注册候补名单。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 696 | 769 | +73 |
+| 总 Forks | 32 | 35 | +3 |
+
+---
+
 *数据来源：GitHub 仓库 (github/gh-stack)，2026 年 08 月访问*
 *首次分析：2026 年 08 月*
