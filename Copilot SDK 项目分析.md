@@ -108,9 +108,6 @@ SaaS 产品开发者可以通过 Copilot SDK 快速为自己的产品添加 AI A
 
 ---
 
-
----
-
 ## 📋 更新记录
 
 ### 更新 1 — 2026年07月20日（再次登上 Trending）
@@ -133,10 +130,7 @@ Copilot SDK 自 2026 年 6 月进入正式发布（GA）以来，持续获得开
 - Microsoft Build 2026 大会作为核心展示项目
 - Stars 从 8,827 增长至 9,851（+1,024），Forks 从 1,203 增长至 1,336（+133）
 
-
 ---
-
-## 📋 更新记录
 
 ### 更新 2 — 2026 年 07 月 21 日（再次登上 Trending）
 **更新原因**：项目再次登上 GitHub Trending 榜单
@@ -160,19 +154,10 @@ Copilot Monthly Roundup（7 月）总结了本月的重要进展：GitHub Spark 
 - GitHub Spark 进入公开预览，支持 .instructions.md 自定义指令
 - Agents 页面新增，便于管理编码助手工作流
 - 多客户端工作流支持持续完善，Stars 稳步增长至接近 10,100
-## 总结
-
-GitHub Copilot SDK 是 AI Agent 产品化进程中的一个重要里程碑。它将 GitHub Copilot 的 Agent 编排能力封装为跨平台 SDK，让任何开发者都能在自己的应用中嵌入生产级的 AI Agent 能力。六种语言的全面覆盖、灵活的自定义机制和精细的权限控制，使 Copilot SDK 成为企业级 AI Agent 集成的首选方案。随着 AI Agent 逐渐成为软件开发的标配能力，Copilot SDK 有望成为这一领域的基础设施级项目。
 
 ---
 
-*数据来源：GitHub 仓库 (github/copilot-sdk)，2026 年 6 月访问*
-
----
-
-## 更新记录
-
-### 更新 1 — 2026年7月31日
+### 更新 3 — 2026年7月31日
 
 | 指标 | 数值 |
 |------|------|
@@ -180,3 +165,38 @@ GitHub Copilot SDK 是 AI Agent 产品化进程中的一个重要里程碑。它
 | 总 Stars | 10,075 |
 | 新增 | +1,248 |
 | 今日 Trending | +7 stars |
+
+---
+
+### 更新 4 — 2026 年 8 月 1 日（再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+2026 年 7 月，GitHub Copilot SDK 在 Visual Studio 中获得重大更新——基于 Copilot SDK 构建的新 Agent 现已进入公开预览阶段，为 VS Code、Visual Studio 和 CLI 提供了一致的 Agent 体验。Microsoft .NET 和 Azure 团队贡献了内置 Skills（Built-in Skills），可直接在工具选择器中使用，加速 .NET 和 Azure 生态的 Agentic 工作流。
+
+此外，Visual Studio 引入了「Review Selection」功能，允许开发者对选中的代码块获取内联代码审查评论。组织管理员现在可以设置自定义指令（Custom Instructions），自动应用于所有团队成员的 Copilot 会话。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 10,075 | 10,157 | +82 |
+| 总 Forks | 1,374 | ~1,380 | +~6 |
+
+**核心变化概要**：
+- Visual Studio 新增基于 Copilot SDK 的 Agent（公开预览），跨 IDE 体验统一
+- .NET 和 Azure 内置 Skills 上线，加速企业 Agentic 工作流
+- 组织级自定义指令功能上线，统一团队 Copilot 偏好
+- 「Review Selection」内联代码审查功能引入
+
+---
+
+## 总结
+
+GitHub Copilot SDK 是 AI Agent 产品化进程中的一个重要里程碑。它将 GitHub Copilot 的 Agent 编排能力封装为跨平台 SDK，让任何开发者都能在自己的应用中嵌入生产级的 AI Agent 能力。六种语言的全面覆盖、灵活的自定义机制和精细的权限控制，使 Copilot SDK 成为企业级 AI Agent 集成的首选方案。随着 AI Agent 逐渐成为软件开发的标配能力，Copilot SDK 有望成为这一领域的基础设施级项目。
+
+---
+
+*数据来源：GitHub 仓库 (github/copilot-sdk)，2026 年 6 月访问*
+*首次分析：2026 年 6 月 | 最近更新：2026 年 8 月*
