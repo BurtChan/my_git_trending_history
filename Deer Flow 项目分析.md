@@ -11,8 +11,8 @@
 | **项目名称** | DeerFlow（Deep Exploration and Efficient Research Flow） |
 | **GitHub 地址** | https://github.com/bytedance/deer-flow |
 | **官方网站** | https://deerflow.tech |
-| **Star 数** | ~23,900+（截至 2026 年 3 月） |
-| **Fork 数** | ~2,800+ |
+| **Star 数** | 78,600（截至 2026 年 8 月 2 日） |
+| **Fork 数** | 10,735 |
 | **开源协议** | MIT License |
 | **主要语言** | Python（后端）+ TypeScript（前端） |
 | **作者/组织** | 字节跳动（ByteDance） |
@@ -282,3 +282,29 @@ Help me clone DeerFlow if needed, then bootstrap it for local development by fol
 ## 九、总结
 
 > **DeerFlow 是字节跳动推出的开源超级智能体引擎，它将子智能体编排、沙箱执行、技能系统、长期记忆和上下文工程整合为一个开箱即用的完整平台。与传统 AI Agent 框架不同，DeerFlow 不只是"带工具的聊天机器人"，而是一个拥有独立执行环境、能真正完成复杂多步骤任务的智能体运行时——从深度研究、报告生成到网页开发，DeerFlow 让 Agent 真正从"会说"进化到"会做"。**
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 8 月 2 日
+
+**更新原因：** DeerFlow 再次登上 GitHub Trending
+
+**近期重要进展：**
+- DeerFlow 2.0 持续迭代，自 2026 年 2 月发布以来功能不断丰富
+- 新增 TIAMAT 云记忆系统，强化长期记忆能力
+- 集成 InfoQuest 智能搜索，提升信息检索质量
+- 新增 Claude Code 集成（claude-to-deerflow 技能）
+- 官方网站 deerflow.tech 正式上线，提供在线演示
+- 生产部署支持多 Worker 模式（Postgres + Redis Stream Bridge）
+- Python 版本要求从 3.11 升级到 3.12
+- v1 维护迁移至 main-1.x 分支，活跃开发集中在 2.0
+- 星标从 23.9k 增长至 78.6k，社区规模增长超过 3 倍
+
+**数据对比：**
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | ~23,900 | 78,600 | +54,700 |
+| 总 Forks | ~2,800 | 10,735 | +7,935 |

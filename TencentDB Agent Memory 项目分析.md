@@ -87,9 +87,9 @@ Agent 只在上下文中保留最顶层的摘要画布（几百 token），通�
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ Stars | 7,355 |
-| 🍴 Forks | 688 |
-| 📝 今日新增 | 610 |
+| ⭐ Stars | 10,091 |
+| 🍴 Forks | 972 |
+| 📝 今日新增 | 250 |
 | 💻 主要语言 | TypeScript |
 | 📅 创建时间 | 2026-04-07 |
 | 📜 许可证 | Custom |
@@ -103,3 +103,24 @@ TencentDB Agent Memory 是一个设计精良的 AI Agent 记忆系统，通过�
 ---
 
 *数据来源：GitHub 仓库 (TencentCloud/TencentDB-Agent-Memory)，2026 年 7 月访问*
+
+---
+
+## 📋 更新记录
+
+### Update 1 — 2026-08-02
+
+**更新原因**：Star 数显著增长，从 7.3k 增至 10k+，社区活跃度大幅提升。
+
+**最新动态**：
+- v2.0+ 大版本迭代发布，包含数据迁移工具等重要更新
+- Agent Loadout 装备系统上线，支持为 Agent 配置记忆装备
+- 四类记忆资产体系完善：Chat Memory（L0-L3 分层蒸馏）、Skill（可执行专家知识）、Wiki（带链接图的结构化知识）、CodeGraph（代码符号索引）
+- 冷启动导入能力：支持从现有代码库导入 → CodeGraph，文档导入 → Wiki，对话导入 → Skills/Chat Memory
+- 访问控制体系：支持 private/team/restricted/agent 四级权限
+- 一人公司模式（one-person company model）支持
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 7,355 | 10,091 | +2,736 |
+| 总 Forks | 688 | 972 | +284 |

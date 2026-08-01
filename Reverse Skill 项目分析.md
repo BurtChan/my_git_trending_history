@@ -74,9 +74,10 @@ CTF-Sandbox-Orchestrator 包含 40+ 子技能，可自动编排 CTF 解题流程
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ Stars | 10,113 |
-| 🍴 Forks | 1,557 |
-| 📝 语言 | Python、PowerShell、Bash |
+| ⭐ Stars | 11,584 |
+| 🍴 Forks | 1,759 |
+| 📝 语言 | PowerShell |
+| 📄 许可证 | MIT |
 | 📅 创建时间 | 2025 年 |
 
 ---
@@ -86,7 +87,7 @@ Reverse Skill 是目前最全面的 AI 辅助安全研究工具集，通过智�
 
 ---
 
-*数据来源：GitHub 仓库 (zhaoxuya520/reverse-skill)，2026 年 7 月访问*
+*数据来源：GitHub 仓库 (zhaoxuya520/reverse-skill)，2026 年 8 月 2 日访问*
 
 ---
 
@@ -113,3 +114,28 @@ Reverse Skill 是目前最全面的 AI 辅助安全研究工具集，通过智�
 - 正式发布 v1.0.0，从实验项目转为稳定可用
 - 社区贡献活跃，新增安全门控和 Burp MCP 集成
 - 实战案例持续积累，覆盖更多逆向场景
+
+### 更新 2 — 2026 年 8 月 2 日（连续 Trending）
+**更新原因**：连续登上 Trending，单日新增 1,360 星，社区增长势头强劲
+
+**最新动态**：
+- 连续两天登上 GitHub Trending 榜单，单日星增 1,360 创近期新高
+- v1.0.0 正式版后社区活跃度持续攀升，总星数突破 11.5k
+- 20+ 场景技能矩阵进一步完善，涵盖 APK 逆向、IDA、radare2、JS 逆向、.NET、固件渗透、CTF、pwn chain、EDR 绕过、LLM 安全、供应链安全等
+- MASTER-ROUTING.md + master-route.ps1 作为 PRIMARY 快速路由入口，提升技能分发效率
+- case-init 工具链和 field-journal 知识闭环持续优化
+- Ops contracts 完善：Scope/授权门控、Evidence→Finding→Path 证据链、角色分工、时间线追踪
+- CTF-Sandbox-Orchestrator 集成 40+ 子技能，覆盖主流 CTF 赛题类型
+- 跨平台支持：Windows 主力平台，Linux/macOS/Kali 支持路径已打通
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 11,089 | 11,584 | +495 |
+| 总 Forks | 1,594 | 1,759 | +165 |
+
+**核心变化概要**：
+- 连续 Trending 驱动社区爆发式增长，单日 1,360 星增量创项目新高
+- Fork 增长加速（+165），反映开发者参与和二次开发热情高涨
+- 场景技能矩阵和工具链引导体系日趋成熟
