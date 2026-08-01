@@ -87,6 +87,32 @@ YouTuber 和内容创作者可快速将视频翻译为多语言版本并配音�
 
 ---
 
+### 更新 1 — 2026 年 8 月 2 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单，Stars 从 11,557 增长至 11,710（+153）
+
+**最新动态**：
+Voice Pro v4.0 版本已完成重大架构升级：从 Miniconda/pip 迁移到 uv 包管理器（安装速度大幅提升），升级到 Python 3.12 + PyTorch 2.8.0+cu128（支持 RTX 50 系列），新增 Fun-CosyVoice3-0.5B 零样本语音克隆（支持 9 种语言含韩语），并移除了 CUDA Toolkit 和 Visual Studio Build Tools 的系统依赖。
+
+TTS 引擎方面，kokoro 已在 HuggingFace TTS Arena 位列第二。项目整合了 Faster-Whisper 1.2.1（支持 large-v3-turbo 和 distil-large-v3.5），WhisperX 已被移除。错误处理大幅改进，所有异常现在以持久化红色 Toast 形式显示在 WebUI 中，附带可操作的错误信息。模型下载具备自愈能力，翻译服务支持自动重试。
+
+项目定位为 ElevenLabs 的开源替代方案，面向播客创作者、开发者和内容创作者。注意：由于 WeConnect 开发工作，Voice Pro 暂停更新，代码已完全开源免费。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 11,557 | 11,710 | +153 |
+| 总 Forks | 1,715 | 1,715 | +0 |
+
+**核心变化概要**：
+- v4.0 重大升级：uv 包管理器 + Python 3.12 + PyTorch 2.8.0
+- 新增 Fun-CosyVoice3-0.5B 零样本语音克隆（9 种语言）
+- Faster-Whisper 1.2.1 替代 WhisperX，支持 large-v3-turbo
+- kokoro TTS 引擎在 HuggingFace TTS Arena 位列第二
+- WebUI 错误处理大幅改进，模型下载具备自愈能力
+
+---
+
 ## 总结
 Voice Pro 将 AI 语音领域的多种前沿技术整合为一个易用的 Gradio WebUI，实现了从语音识别到克隆配音的全流程覆盖，11K+ Star 证明了其在内容创作社区中的实用价值，是开源语音处理工具中的一站式解决方案。
 

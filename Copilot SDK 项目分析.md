@@ -190,11 +190,35 @@ Copilot Monthly Roundup（7 月）总结了本月的重要进展：GitHub Spark 
 - 组织级自定义指令功能上线，统一团队 Copilot 偏好
 - 「Review Selection」内联代码审查功能引入
 
+### 更新 2 — 2026 年 8 月 2 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单，Stars 从 10,075 增长至 10,267（+192）
+
+**最新动态**：
+2026 年 7 月是 GitHub Copilot SDK 的重要里程碑月份。Copilot SDK 正式成为 Visual Studio 中新 Agent（预览版）的底层引擎，该功能于 7 月 28 日发布在 Visual Studio Blog 并于 7 月 30 日收入 GitHub Changelog。这意味着 Copilot SDK 从 CLI 工具升级为跨平台 Agent 运行时标准，覆盖 VS Code、Visual Studio 和 CLI 三大开发环境。
+
+7 月底还推出了多项关键功能：预置的 .NET 和 Azure Skills（遵循开放 SKILL.md 规范）、Git 分支上下文注入 Copilot Chat、组织级自定义指令（Copilot Business/Enterprise）、C++ 工具链自动发现、全局默认模型启用策略。Copilot CLI 同期发布 v1.0.76，新增插件控制、grok-4.5 模型支持、Sessions 侧边栏和队列编辑功能。
+
+SDK 持续覆盖 Python、TypeScript、Go、.NET、Java、Rust 六种语言，每种语言都有配套 Cookbook 实例。BYOK 模式支持 OpenAI、Azure AI Foundry 和 Anthropic。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 10,075 | 10,267 | +192 |
+| 总 Forks | 1,385 | 1,385 | +0 |
+
+**核心变化概要**：
+- Copilot SDK 正式成为 Visual Studio Agent（预览版）底层引擎
+- 预置 .NET 和 Azure Skills，遵循开放 SKILL.md 规范
+- Copilot CLI v1.0.76：新增插件控制、grok-4.5 支持、Sessions 侧边栏
+- 组织级自定义指令功能，Copilot Business/Enterprise 可用
+- Git 分支上下文注入、C++ 工具链自动发现等 IDE 增强
+
 ---
 
 ## 总结
 
-GitHub Copilot SDK 是 AI Agent 产品化进程中的一个重要里程碑。它将 GitHub Copilot 的 Agent 编排能力封装为跨平台 SDK，让任何开发者都能在自己的应用中嵌入生产级的 AI Agent 能力。六种语言的全面覆盖、灵活的自定义机制和精细的权限控制，使 Copilot SDK 成为企业级 AI Agent 集成的首选方案。随着 AI Agent 逐渐成为软件开发的标配能力，Copilot SDK 有望成为这一领域的基础设施级项目。
+GitHub Copilot SDK 是 AI Agent 产品化进程中的一个重要里程碑。它将 GitHub Copilot 的 Agent 编排能力封装为跨平台 SDK，让任何开发者都能在自己的应用中嵌入生产级的 AI Agent 能力。六种语言的全面覆盖、灵活的自定义机制和精细的权限控制，使 Copilot SDK 成为企业级 AI Agent 集成的首选方案。2026 年 7 月 SDK 进一步成为 Visual Studio Agent 的底层引擎，完成了从 CLI 到 IDE 的全覆盖。随着 AI Agent 逐渐成为软件开发的标配能力，Copilot SDK 有望成为这一领域的基础设施级项目。
 
 ---
 

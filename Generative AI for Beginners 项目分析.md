@@ -84,6 +84,34 @@
 
 ---
 
+## 📋 更新记录
+
+### 更新 1 — 2026 年 8 月 2 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单，Stars 从 113,915 增长至 114,160（+245）
+
+**最新动态**：
+微软 Generative AI for Beginners（Version 3）课程在 2026 年 7 月持续活跃，提供 21 节课的生成式 AI 应用开发教学。课程内容涵盖 LLM 介绍、Prompt 工程、文本/图像生成、向量数据库与 RAG、AI Agents、模型微调、小语言模型（SLM）以及 Mistral 和 Meta 模型等前沿主题。每节课都提供 Python 和 TypeScript 双语言代码示例。
+
+2026 年 7 月，微软在 AI 平台层面推出多项重要更新：Azure OpenAI 支持Anthropic Claude 模型（包括 Claude Fable 5），GitHub Models 将于 2026 年 7 月底退役并迁移到 Microsoft Foundry Models，Foundry Local 支持完全离线运行模型。课程已相应更新 API 配置指引，引导学习者使用 Foundry Models 替代即将退役的 GitHub Models。微软还发布了 MAI thinking one（35B 活跃参数的 MoE 推理模型）和 MAI image 2.5 图像生成模型，这些新模型均可通过 Foundry 平台使用。
+
+课程已翻译为 50+ 语言，通过 GitHub Actions 自动化保持同步更新。近 7 天新增 245 颗星，总星标已突破 114,000，稳居 GitHub 全站最受关注的教育类仓库之一。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 113,915 | 114,160 | +245 |
+| 总 Forks | 61,211 | 61,211 | +0 |
+
+**核心变化概要**：
+- 课程更新 API 配置指引，适配 GitHub Models 迁移至 Foundry Models
+- Azure OpenAI 新增 Anthropic Claude 模型支持
+- Foundry Local 支持完全离线运行，降低学习门槛
+- 21 节课覆盖 RAG、AI Agents、微调、SLM 等前沿主题
+- 50+ 语言翻译通过 GitHub Actions 自动化同步
+
+---
+
 ## 总结
 微软出品的生成式 AI 入门旗舰课程，以 21 节课的完整结构和双语言代码示例，为开发者提供了从理论到实践的全方位学习路径，全球 11 万+ Star 证明了其作为 AI 学习首选资源的地位。
 

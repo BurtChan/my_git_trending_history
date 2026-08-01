@@ -91,6 +91,30 @@ Speech to Speech 是 Hugging Face 推出的低延迟、完全模块化的语音�
 
 ---
 
+## 📋 更新记录
+
+### 更新 1 — 2026 年 8 月 2 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单，Stars 从 9,492 增长至 10,173（+681）
+
+**最新动态**：
+Speech-to-Speech (S2S) 项目在 2026 年 7 月发布了 v0.2.11 版本，持续完善其模块化语音代理管道架构。该项目已被实际应用于数千台 Reachy Mini 机器人，验证了其生产级可用性。近期主要进展包括：支持 NVIDIA MagpieTTS 多语言语音合成模型，新增 Kokoro-82M、Pocket TTS、ChatTTS、MMS TTS 等多种 TTS 后端，Faster Whisper 和 Paraformer STT 选项，以及 WebRTC 传输模式。项目现在支持 OpenAI Realtime 兼容的 WebSocket API，方便与现有客户端集成。macOS 优化配置（--local_mac_optimal_settings）开箱即用地启用了 MLX 加速。
+
+社区关注度持续上升，近 7 天新增 681 颗星，反映出本地语音代理市场的高需求。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 9,492 | 10,173 | +681 |
+| 总 Forks | 1,245 | 1,245 | +0 |
+
+**核心变化概要**：
+- 发布 v0.2.11，持续完善语音代理管道架构
+- 新增多款 TTS 后端（Kokoro-82M、Pocket TTS、ChatTTS、MMS TTS）
+- 新增 Faster Whisper 和 Paraformer STT 选项
+- 支持 WebRTC 传输模式，提高实时通信质量
+- 已实际应用于数千台 Reachy Mini 机器人，验证生产级可用性
+
 ## 总结
 
 Speech to Speech 是 Hugging Face 在语音 AI 领域的重要开源贡献，提供了一个生产就绪的模块化语音代理管道。其「每组件可替换」的架构设计和 OpenAI Realtime 兼容 API 使其兼具灵活性和易用性，从个人开发者的桌面应用到企业级机器人部署均可覆盖。
