@@ -155,11 +155,33 @@ GA 版本带来了多项重要改进：一是增强了多客户端工作流支�
 - v1.0.42+ 发布，带来更智能的 /resume 和 /background 工作流
 - 生产环境 A/B 测试显示工具失败率降低 23%，搜索工具失败率降低 27%
 
+### 更新 3 — 2026 年 8 月 1 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+GitHub Copilot SDK 持续扩大其生态影响力。2026 年 7 月，Visual Studio 引入了基于 Copilot SDK 的新 Agent（公开预览），取代了原有的 Copilot Chat 后端，使 CLI、VS Code 和 Visual Studio 三大平台共享统一的基础架构。Microsoft Build 2026 大会上宣布了 MAI-Code-1-Flash 小型编码模型已开始在 GitHub Copilot 中推出。SDK 的多客户端工作流支持已扩展至 JetBrains IDE，Copilot CLI 的会话管理（/resume、/background）功能也在持续改进。GitHub 扩展了 Copilot 使用指标 API 的报告范围，新增 AI credits 按计费周期查看功能，并引入了 GA 模型的全局默认启用策略。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 10,084 | 10,144 | +60 |
+| 总 Forks | 1,340 | 1,372 | +32 |
+
+**核心变化概要**：
+- Visual Studio 7 月更新：基于 Copilot SDK 的新 Agent 公开预览，统一三平台架构
+- Copilot CLI 扩展至 JetBrains IDE，支持会话管理和 agentic 工作流
+- GitHub 扩展使用指标 API 报告范围，新增 AI credits 可视化
+- MAI-Code-1-Flash 小型编码模型开始推出
+- GA 模型全局默认启用策略上线，企业可统一管理
+
+---
+
 ## 总结
 
 GitHub Copilot SDK 是 GitHub 将其成熟的 Copilot Agent 能力开放给开发者的关键一步。通过支持六大主流编程语言、提供 BYOK 灵活认证、复用生产级 Agent 引擎，Copilot SDK 让任何开发者都能在自己的应用中嵌入与 GitHub Copilot 同等质量的 AI 能力，是构建 AI Agent 应用的基础设施级工具。
 
 ---
 
-*数据来源：GitHub 仓库 (github/copilot-sdk)，2026 年 07 月访问*
-*首次分析：见文件创建时间 | 最近更新：2026年07月20日*
+*数据来源：GitHub 仓库 (github/copilot-sdk)，2026 年 08 月访问*
+*首次分析：见文件创建时间 | 最近更新：2026 年 8 月 1 日*
