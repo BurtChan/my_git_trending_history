@@ -83,10 +83,35 @@ ds4 在发布后迅速获得了社区关注，四天内便收获了超过 7000 S
 
 ---
 
+
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 8 月 2 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+ds4（DwarfStar）项目自上次分析以来迎来了重大版本演进。项目正式更名为 DwarfStar，同时扩展了模型支持范围——除 DeepSeek V4 Flash 外，新增了对 GLM 5.2 和 DeepSeek V4 PRO（高内存机器）的支持。推理性能持续优化：MacBook Pro M5 Max 128GB 在 q2 量化下预填充速度达到 463.44 t/s，生成速度 25.90 t/s，较 M3 Max 提升约 30%。新增 SSD Streaming 功能，允许在内存不足以加载完整模型时，通过缓存专家层的 LRU 策略从 SSD 动态加载 MoE 路由专家，使 64GB MacBook 也能运行 DeepSeek V4 Flash。分布式推理方面引入了 Pipeline Parallelism，支持通过 TCP 将 Transformer 层分配到多台机器，实现两台 M5 Max 128GB 通过 Thunderbolt 5 的协同推理。项目还被 antirez 用于协助开发 GPT 5.5 和 5.6 的过程中获得灵感。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 12,619 | 19,839 | +7,220 |
+| 总 Forks | 1,152 | 1,760 | +608 |
+
+**核心变化概要**：
+- Star 数从 12,619 增至 19,839（+7,220），两个月增长 57%
+- 新增 GLM 5.2 和 DeepSeek V4 PRO 模型支持，不再局限于 DeepSeek V4 Flash
+- SSD Streaming 功能允许 RAM 不足时从 SSD 动态加载 MoE 专家层
+- Pipeline Parallelism 支持多机 TCP 协同推理，两台 M5 Max 可并行运行
+- M5 Max 预填充速度达 463 t/s，生成速度 25.9 t/s（q2 量化，128GB）
 ## 总结
 
 ds4 是 antirez 继 Redis 之后又一个令人瞩目的开源项目，作为专门为 DeepSeek V4 Flash 打造的本地推理引擎，它在性能、功能和易用性之间取得了出色的平衡。凭借自研的 C 语言推理内核、对 Metal 和 CUDA 的双平台支持，以及从 CLI 到分布式推理的完整功能集，ds4 为本地 AI 推理提供了一个极具吸引力的选择。无论是个人开发者还是企业用户，都可以从中受益。
 
 ---
 
-*数据来源：GitHub 仓库 (antirez/ds4)，分析日期 2026年6月1日*
+*首次分析：见文件头部 | 最近更新：2026 年 8 月 2 日*
