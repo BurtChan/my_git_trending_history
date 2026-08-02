@@ -130,3 +130,25 @@ Ansible 以"极简"为设计哲学，通过无 Agent 架构和接近自然语言
 
 ### 趋势分析
 Ansible 今日重回 GitHub Trending，主要得益于 stable-2.X 稳定分支的发布和持续的社区活跃度。作为 DevOps/SRE 领域的基础设施级工具，其无 Agent 架构在当前远程办公和多云管理趋势下具有天然优势。加上 Red Hat 的持续投入和 5,000+ 贡献者的庞大社区，使该项目始终保持稳定的增长势头（+917 Stars 区间增量）。
+
+---
+
+## 2026-08-02 更新 2
+
+### Star 数据更新
+| 指标 | 数值 | 备注 |
+|------|------|------|
+| 总 Stars | 70,098 | +114（上次记录 69,984 → 最新 70,098） |
+| 今日新增 Stars | 30 | |
+| 总 Forks | 24,270 | +12 |
+| 总提交数 | 55,504+ | |
+| 贡献者 | 5,000+ | |
+
+### 最新动态
+- **ansible-core 2.21 稳定发布**：Ansible-core 2.21 于 2026 年 5 月 31 日正式发布，支持 PowerShell 7.6 LTS，是当前推荐版本。Ansible Community Package 14.0.0（基于 2.21）正在开发中。
+- **Release Manager 导师计划**：新任 Release Manager Tray Keller 上任，并启动了 Ansible 历史上首个 Release Manager 导师计划，为项目治理注入新活力。
+- **版本生命周期管理**：ansible-core 2.18 于 2026 年 5 月 31 日 EOL，当前 2.19（支持至 2026 年 11 月）和 2.21（支持至 2027 年 11 月）双版本并行支持。
+- **Kolla Ansible 2026.1 发布**：OpenStack Kolla Ansible 2026.1 版本改进了 Cinder LVM 后端、RabbitMQ 4.2 无缝升级路径等重要功能。
+
+### 趋势分析
+Ansible 再次登上 Trending，持续展示其在 IT 自动化领域的统治地位。作为 Red Hat 旗舰开源项目，ansible-core 2.21 的稳定发布和 Release Manager 导师计划体现了社区治理的成熟度。在多云管理和基础设施即代码趋势下，Ansible 的无 Agent 架构和声明式自动化语言继续保持核心竞争力。
