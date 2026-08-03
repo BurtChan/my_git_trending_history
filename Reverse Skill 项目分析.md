@@ -185,3 +185,26 @@ Reverse Skill 是目前最全面的 AI 辅助安全研究工具集，通过智�
 - 连续多日 Trending 驱动 Star 暴增 1,869，创项目单日增长纪录
 - Fork 同步增长 242，反映安全研究社区的大规模参与
 - AI 代理安全技能路由器的差异化定位获得市场验证，在 Claude Code、Cursor 等主流 AI 代理中的集成案例持续增长
+
+### 更新 5 — 2026 年 8 月 4 日（再次登上 Trending）
+**更新原因**：连续多日登上 Trending，网络安全 AI 技能路由赛道持续爆发式增长
+
+**最新动态**：
+- Star 数从 14,725 增至 15,242（+517），连续多日维持日均 500+ 高增速
+- Fork 数从 2,172 增至 2,241（+69），开发者参与度持续攀升
+- **20+ 场景技能矩阵**全面覆盖：APK 逆向、IDA、radare2、JS 逆向、.NET、固件渗透、CTF（40+ 子技能）、pwn chain、EDR 绕过、LLM 安全、供应链安全
+- 支持 **5 大 AI 客户端**：Claude Code、Kiro、Cursor、Cline、Codex CLI，跨平台覆盖 Windows/Linux/macOS/Kali
+- MIT 许可（主项目）+ GPLv3（CTF 模块），MASTER-ROUTING 快速路由入口、case-init 案件管理工作流和 field-journal 知识库体系成熟完善
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 14,725 | 15,242 | +517 |
+| 总 Forks | 2,172 | 2,241 | +69 |
+
+**核心变化概要**：
+- 连续多日 Trending 驱动 Star 稳步增长 517，累计增星超 4,100 颗（从首次记录 11,089 算起）
+- 20+ 场景技能矩阵 + 40+ CTF 子技能构建了最全面的 AI 辅助安全研究工具集
+- 5 大 AI 客户端支持（Claude Code/Kiro/Cursor/Cline/Codex CLI）覆盖主流 AI 编码代理生态
+- case-init + field-journal + MASTER-ROUTING 三大核心工作流形成完整的安全研究闭环
