@@ -126,10 +126,29 @@ DeepSeek Reasonix 项目在成熟度方面取得了显著进展。Star 数从 23
 - 新增桌面客户端（macOS/Windows/Linux）和 VS Code 扩展
 - reasonix.toml 声明式配置，支持任意 OpenAI 兼容端点
 - 可选双模型组合（executor + planner），在不同缓存稳定会话中运行
+### 更新 2 — 2026 年 8 月 3 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+DeepSeek Reasonix 进入高频发布阶段，连续发布 v1.19.2（8月2日）和 v1.19.3（8月3日）两个版本。v1.19.3 修复了 Windows portable 归档的版本化校验问题（legacy flat 和 versioned-v1 两种布局均支持），改进了桌面客户端中 Delivery 运行时的阻塞恢复机制。v1.19.2 引入了双语、产品导向的 release notes 自动生成流程。项目在代码签名方面与 SignPath Foundation 合作，为 Windows 安装包提供免费 Authenticode 证书。社区活跃度极高，PR 合并频率保持每日多个。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 28,746 | 29,064 | +318 |
+| 总 Forks | 1,852 | 1,870 | +18 |
+
+**核心变化概要**：
+- Star 数从 28,746 增至 29,064（+318），连续两天高频发布
+- v1.19.3 修复 Windows portable 版本化校验，提升安装可靠性
+- 桌面客户端 Delivery 运行时阻塞恢复机制改进
+- release notes 自动生成流程，支持双语产品导向文档
+
 ## 总结
 
-DeepSeek Reasonix 是 2026 年 AI 编码工具领域最具特色的开源项目之一，它以"prefix-cache stability"为核心设计哲学，通过只支持 DeepSeek 的专一策略实现了 5 倍以上的推理成本压缩。从 TypeScript 到 Go 的全面重写展现了团队对工程质量的高标准追求，单二进制分发、丰富的 MCP 生态、Flash-First 智能路由等特性使其在实际使用中具备极高的工程价值。虽然在模型兼容性上有所取舍，且桌面客户端尚处预发布阶段，但对于 DeepSeek 用户和成本敏感的开发者而言，Reasonix 已成为终端 AI 编码代理的首选方案之一。其在两个月内突破 2.3 万 Star 的增速，以及被 DeepSeek 官方文档收录推荐的地位，充分证明了社区对其技术路线的认可。
+DeepSeek Reasonix 是 2026 年 AI 编码工具领域最具特色的开源项目之一，它以"prefix-cache stability"为核心设计哲学，通过只支持 DeepSeek 的专一策略实现了 5 倍以上的推理成本压缩。从 TypeScript 到 Go 的全面重写展现了团队对工程质量的高标准追求，单二进制分发、丰富的 MCP 生态、Flash-First 智能路由等特性使其在实际使用中具备极高的工程价值。虽然在模型兼容性上有所取舍，但对于 DeepSeek 用户和成本敏感的开发者而言，Reasonix 已成为终端 AI 编码代理的首选方案之一。
 
 ---
 
-*首次分析：见文件头部 | 最近更新：2026 年 8 月 2 日*
+*首次分析：见文件头部 | 最近更新：2026 年 8 月 3 日*
