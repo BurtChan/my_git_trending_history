@@ -211,3 +211,23 @@ Star 增长 257 颗，日增 663 颗（Trending Top5），连续多日上榜。�
 - 作为 Jira/Linear/ClickUp/Trello/Asana 的开源自托管替代方案，关注度和实际部署量稳步攀升
 - Docker Compose + Kubernetes Helm Chart + drim CLI 多种部署方案覆盖不同场景
 - TypeScript + React + Hono 技术栈清晰，社区贡献活跃
+
+---
+
+## 更新 7 — 2026年8月4日（晚间数据）
+
+**更新原因**：连续多日 Trending，晚间数据确认 Star 从 6,486 增长至 6,811（+325），作为轻量级自托管项目管理工具的关注度持续攀升
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 6,486 | 6,811 | +325 |
+| 总 Forks | 522 | 550 | +28 |
+
+**更新亮点**：
+- 连续多日 Trending 推动 Star 突破 6,800，累计从 5,102 增长至 6,811（+1,709，增长 33%）
+- v1.0.0 正式版已发布，项目进入稳定成熟期，功能持续迭代完善
+- 作为 Jira/Linear/ClickUp/Trello/Asana 的开源自托管替代方案，「少即是多」设计哲学精准定位
+- Docker Compose + Kubernetes Helm Chart + drim CLI 多种部署方案，覆盖不同运维场景
+- MIT 开源许可 + TypeScript + React + Hono 技术栈清晰，社区贡献活跃

@@ -171,3 +171,23 @@
 Star 增长 272 颗，日增 776 颗（Trending Top3），连续三日上榜。微软生成式 AI 入门课程 V3 持续更新，新增 Foundry Models 平台支持（取代即将退役的 GitHub Models），涵盖 RAG、向量数据库、AI Agents、微调等前沿主题。21 节课程、60+ 语言翻译、Python/TypeScript 双代码示例，是 GitHub 上最受欢迎的 AI 学习资源之一（115K+ Stars）。
 
 > 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
+
+---
+
+## 更新 5 — 2026年8月4日（晚间数据）
+
+**更新原因**：连续多日 Trending，晚间数据确认 Star 从 115,436 增长至 115,494（+58），生成式 AI 入门课程赛道持续火热
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 115,436 | 115,494 | +58 |
+| 总 Forks | 61,371 | 61,430 | +59 |
+
+**更新亮点**：
+- 连续多日 Trending 推动 Star 突破 115,490，累计从 113,915 增长至 115,494（+1,579）
+- GitHub Models 已正式退役，课程完全迁移至 Microsoft Foundry Models 平台
+- 21 节课完整结构（Learn + Build 双模式）+ Python/TypeScript 双语言代码示例
+- Foundry Local 离线模型支持降低学习门槛，推动更多开发者参与
+- 60+ 语言翻译通过 GitHub Actions 自动化同步，全球影响力持续扩大

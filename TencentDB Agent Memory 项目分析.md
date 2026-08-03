@@ -180,3 +180,23 @@ TencentDB Agent Memory 是一个设计精良的 AI Agent 记忆系统，通过�
 - L0-L3 分层记忆管道（会话→原子事实→情景→人格）架构设计持续引领行业方向
 - 与 OpenClaw、Hermes 等主流 Agent 框架的集成生态持续扩展
 - Agent Memory 赛道 2026 年持续升温（mem0 报告显示架构成熟度显著提升），TencentDB 凭借完全本地化零外部 API 的差异化定位脱颖而出
+
+---
+
+## 更新 5 — 2026年8月4日（晚间数据）
+
+**更新原因**：连续多日 Trending，晚间数据确认 Star 从 11,432 增长至 11,999（+567），Agent 记忆赛道热度不减
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 11,432 | 11,999 | +567 |
+| 总 Forks | 1,079 | 1,136 | +57 |
+
+**更新亮点**：
+- 连续多日 Trending 推动 Star 突破 11,900，累计从 7,355 增长至 11,999（+4,644，增长 63%）
+- v1.0.1 版本已发布，OpenClaw 插件集成 `@tencentdb-agent-memory/memory-tencentdb` 支持一键安装配置
+- 四类记忆资产体系（Chat Memory L0-L3、Skill Library、Wiki、CodeGraph）在 Agent 社区持续获得验证
+- PostgreSQL Protocol 和 REST API 双接入模式，便于与现有数据基础设施整合
+- 作为 Agent Memory 赛道的完全本地化方案，隐私零外部 API 调用的差异化定位持续吸引企业用户
