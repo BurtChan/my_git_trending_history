@@ -168,3 +168,15 @@ Invidious 是一个成熟且备受社区认可的 YouTube 替代前端项目，�
 - Star 增长趋缓但保持稳定，说明项目已进入成熟阶段
 - YouTube 广告追踪策略持续收紧，隐私替代需求保持刚性
 - Invidious + Materialious 衍生生态持续繁荣
+
+### 更新 5 — 2026年8月4日（连续上榜）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 22,146 增长至 22,207（+61），日增 403 颗 Star
+- 最新版本：v2.20260723.0（发布于 2026-07-23）
+
+| 总 Stars | 22,146 | 22,207 | +61 |
+
+**更新亮点**：
+Star 增长 61 颗，日增 403 颗（Trending）。Invidious 作为开源 YouTube 隐私前端，无广告、无追踪、无 JavaScript 依赖。最新稳定版 v2.20260723.0，持续安全更新。YouTube 频繁调整 API 政策推动用户转向隐私前端，Materialious 等 Material Design 前端生态持续扩展。
+
+> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取

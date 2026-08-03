@@ -160,3 +160,14 @@
 
 *数据来源：GitHub 仓库 (microsoft/generative-ai-for-beginners)，2026 年 08 月访问*
 *首次分析：2026 年 08 月*
+
+### 更新 4 — 2026年8月4日（连续上榜）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 115,164 增长至 115,436（+272），日增 776 颗 Star
+
+| 总 Stars | 115,164 | 115,436 | +272 |
+
+**更新亮点**：
+Star 增长 272 颗，日增 776 颗（Trending Top3），连续三日上榜。微软生成式 AI 入门课程 V3 持续更新，新增 Foundry Models 平台支持（取代即将退役的 GitHub Models），涵盖 RAG、向量数据库、AI Agents、微调等前沿主题。21 节课程、60+ 语言翻译、Python/TypeScript 双代码示例，是 GitHub 上最受欢迎的 AI 学习资源之一（115K+ Stars）。
+
+> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
