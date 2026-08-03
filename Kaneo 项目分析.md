@@ -176,3 +176,23 @@ Kaneo 以「极简」为核心理念，在项目管理工具市场提供了一�
 - 作为 Jira/Linear/ClickUp/Trello/Asana 的开源自托管替代方案，轻量级定位精准
 - Docker Compose 和 Kubernetes Helm Chart 部署方案持续优化，降低运维门槛
 - TypeScript + React 技术栈清晰，社区贡献活跃
+
+---
+
+## 更新 5 — 2026年8月3日
+
+**更新原因**：连续多日登上 Trending，Star 数从 6,289 增长至 6,486（+197），轻量级自托管项目管理工具赛道持续升温
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 6,289 | 6,486 | +197 |
+| 总 Forks | 522 | 533 | +11 |
+
+**更新亮点**：
+- 连续多日 Trending 持续推动增长，Star 数突破 6,400
+- v2.12.x 最新版本持续迭代，功能稳定性不断提升
+- 作为 Jira/Linear/ClickUp/Trello/Asana 的开源自托管替代方案，关注度和实际部署量稳步攀升
+- Docker Compose + Kubernetes Helm Chart + drim CLI 多种部署方案覆盖不同场景
+- TypeScript + React + Hono 技术栈清晰，社区贡献活跃
