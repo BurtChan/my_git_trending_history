@@ -80,3 +80,24 @@ free-claude-code 是一个轻量级的 API 代理服务器，它拦截 Claude Co
 ## 总结
 
 free-claude-code 是一个巧妙的开源项目，通过代理机制让开发者无需 Anthropic API Key 即可免费使用 Claude Code。项目基于 FastAPI 构建轻量级代理服务，支持 NVIDIA NIM、OpenRouter、LM Studio 等多个后端，还集成了 Discord/Telegram 远程控制和语音输入等特色功能。凭借 MIT 协议、极低的使用门槛和丰富的功能，在短时间内吸引了近 4,000 Star，是 AI 编程工具领域值得关注的开源项目。
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 8 月 3 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数出现爆发式增长
+
+**最新动态**：
+free-claude-code 自首次分析以来实现了惊人的 **10 倍以上增长**，Star 数从约 3,900 飙升至 **43,847**（+39,947）。这一爆发式增长与 2025-2026 年 AI 编程工具的浪潮高度吻合——Claude Code 成为最受开发者欢迎的 AI 编程助手之一，而 free-claude-code 作为零成本使用 Claude Code 的唯一可行方案，自然成为社区关注的焦点。项目持续支持 NVIDIA NIM、OpenRouter、LM Studio、llama.cpp 等后端，Discord/Telegram 远程编程功能也持续迭代。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | ~3,900 | 43,847 | +39,947 |
+
+**核心变化概要**：
+- Star 数从约 3,900 增长至 43,847，增幅超 **10 倍**，进入 GitHub 4 万 Star 俱乐部
+- AI 编程工具（特别是 Claude Code）在 2025-2026 年成为主流开发方式，免费代理需求井喷
+- 项目作为「零成本使用 Claude Code」的唯一可行方案，持续获得社区高度关注
+- 多后端支持（NVIDIA NIM、OpenRouter、DeepSeek、LM Studio、llama.cpp）确保了灵活性和可用性
