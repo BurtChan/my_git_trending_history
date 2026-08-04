@@ -101,12 +101,9 @@ Agent-Reach 将原本需要在各个平台注册 API、获取 Key、配置权限
 
 Agent-Reach 是一个解决 AI Agent 互联网访问痛点的实用工具，以「一键安装、零配置、零费用」的设计理念大幅降低了 AI Agent 获取外部信息的门槛。其脚手架架构保证了轻量性和透明性，16+ 平台的广泛覆盖（尤其是国内平台）使其成为中国开发者的理想选择。对于任何需要让 AI Agent 走出沙箱、连接真实世界的场景，Agent-Reach 都提供了最简便的解决方案。
 
-
-## 📋 更新记录
+---## 📋 更新记录
 
 ### 更新 1 — 2026年8月4日（再次登上 Trending）
-
-**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 21,280 增长至 66,013（+44,733），日增 1,057 颗 Star，增幅超 **200%**
 
 **最新 Star 数据**：
 
@@ -114,9 +111,12 @@ Agent-Reach 是一个解决 AI Agent 互联网访问痛点的实用工具，以�
 
 - Star 数从 21,280 增至 66,013（+44,733），日增 1,057 颗 Star
 
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 21,280 增长至 66,013（+44,733），日增 1,057 颗 Star
+
+Star 增长 44,733 颗，日增 1,057 颗（Trending）。Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongSh
+
 > 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
 
 
----
 
 *数据来源：GitHub 仓库 (Panniantong/Agent-Reach)，2026 年 6 月访问*

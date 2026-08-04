@@ -110,6 +110,20 @@
 - 21 节课覆盖 RAG、AI Agents、微调、SLM 等前沿主题
 - 50+ 语言翻译通过 GitHub Actions 自动化同步
 
+### 更新 5 — 2026年8月4日（再次登上 Trending）
+
+**最新 Star 数据**：
+
+| 总 Stars | 115,494 | 115,829 | +335 |
+
+- Star 数从 115,494 增至 115,829（+335），日增 775 颗 Star
+
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 115,494 增长至 115,829（+335），日增 775 颗 Star
+
+Star 增长 335 颗，日增 775 颗（Trending）。21 Lessons, Get Started Building with Generative AI 
+
+> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
+
 ---
 
 ### 更新 2 — 2026 年 8 月 3 日（第三次登上 Trending）
@@ -191,16 +205,3 @@ Star 增长 272 颗，日增 776 颗（Trending Top3），连续三日上榜。�
 - 21 节课完整结构（Learn + Build 双模式）+ Python/TypeScript 双语言代码示例
 - Foundry Local 离线模型支持降低学习门槛，推动更多开发者参与
 - 60+ 语言翻译通过 GitHub Actions 自动化同步，全球影响力持续扩大
-
-### 更新 5 — 2026年8月4日（再次登上 Trending）
-
-**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 115,494 增长至 115,829（+335），日增 775 颗 Star
-
-**最新 Star 数据**：
-
-| 总 Stars | 115,494 | 115,829 | +335 |
-
-- Star 数从 115,494 增至 115,829（+335），日增 775 颗 Star
-
-> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
-

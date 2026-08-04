@@ -115,13 +115,7 @@ Star 增长 95 颗，日增 148 颗（Trending）。LiveKit Agents Framework 是
 
 > 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
 
----
-
-*数据来源：GitHub 仓库 (livekit/agents)，2026 年 8 月 4 日访问*
-
 ### 更新 3 — 2026年8月4日（再次登上 Trending）
-
-**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 11,987 增长至 12,137（+150），日增 148 颗 Star
 
 **最新 Star 数据**：
 
@@ -129,5 +123,12 @@ Star 增长 95 颗，日增 148 颗（Trending）。LiveKit Agents Framework 是
 
 - Star 数从 11,987 增至 12,137（+150），日增 148 颗 Star
 
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 11,987 增长至 12,137（+150），日增 148 颗 Star
+
+Star 增长 150 颗，日增 148 颗（Trending）。A framework for building realtime voice AI agents 🤖🎙️📹 
+
 > 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
 
+---
+
+*数据来源：GitHub 仓库 (livekit/agents)，2026 年 8 月 4 日访问*

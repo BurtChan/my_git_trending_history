@@ -128,13 +128,7 @@ PDF Inspector 是 Firecrawl 团队在文档处理领域的一次精准出击。�
 - 在 PDF 处理基准测试中综合表现领先同类工具，技术优势得到数据验证
 - 五种语言绑定覆盖主流开发栈，生态拓展迅速
 
----
-
-*数据来源：GitHub 仓库 (firecrawl/pdf-inspector)，2026 年 8 月 4 日访问*
-
 ### 更新 2 — 2026年8月4日（再次登上 Trending）
-
-**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 7,338 增长至 8,837（+1,499），日增 1,699 颗 Star，增幅显著
 
 **最新 Star 数据**：
 
@@ -142,5 +136,12 @@ PDF Inspector 是 Firecrawl 团队在文档处理领域的一次精准出击。�
 
 - Star 数从 7,338 增至 8,837（+1,499），日增 1,699 颗 Star
 
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 7,338 增长至 8,837（+1,499），日增 1,699 颗 Star
+
+Star 增长 1,499 颗，日增 1,699 颗（Trending）。Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based P
+
 > 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
 
+---
+
+*数据来源：GitHub 仓库 (firecrawl/pdf-inspector)，2026 年 8 月 4 日访问*

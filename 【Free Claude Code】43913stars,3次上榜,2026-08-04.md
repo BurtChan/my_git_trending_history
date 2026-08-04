@@ -126,13 +126,14 @@ free-claude-code 自首次分析以来实现了惊人的 **10 倍以上增长**�
 
 ### 更新 3 — 2026年8月4日（再次登上 Trending）
 
-**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 43,913 增长至 44,169（+256），日增 278 颗 Star
-
 **最新 Star 数据**：
 
 | 总 Stars | 43,913 | 44,169 | +256 |
 
 - Star 数从 43,913 增至 44,169（+256），日增 278 颗 Star
 
-> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 43,913 增长至 44,169（+256），日增 278 颗 Star
 
+Star 增长 256 颗，日增 278 颗（Trending）。Use Claude Code, Codex and Pi for free from your terminal, app, IDE, or phone like OpenClaw (voice supported)
+
+> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取

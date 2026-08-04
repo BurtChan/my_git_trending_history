@@ -85,25 +85,9 @@ CTF-Sandbox-Orchestrator 包含 40+ 子技能，可自动编排 CTF 解题流程
 ## 总结
 Reverse Skill 是目前最全面的 AI 辅助安全研究工具集，通过智能路由将 AI 代码代理的安全能力提升到专业水平。它不仅覆盖了逆向工程和渗透测试的各个领域，还通过案件管理、知识进化、报告生成等功能构建了完整的安全研究工作流，是 AI 时代安全工具链的一次重要创新。
 
-
-## 📋 更新记录
-
-### 更新 6 — 2026年8月4日（再次登上 Trending）
-
-**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 15,242 增长至 16,477（+1,235），日增 2,446 颗 Star，增幅显著
-
-**最新 Star 数据**：
-
-| 总 Stars | 15,242 | 16,477 | +1,235 |
-
-- Star 数从 15,242 增至 16,477（+1,235），日增 2,446 颗 Star
-
-> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
-
-
 ---
 
-*数据来源：GitHub 仓库 (zhaoxuya520/reverse-skill)，2026 年 8 月 4 日访问*
+*数据来源：GitHub 仓库 (zhaoxuya520/reverse-skill)，2026 年 8 月 2 日访问*
 
 ---
 
@@ -224,3 +208,17 @@ Reverse Skill 是目前最全面的 AI 辅助安全研究工具集，通过智�
 - 20+ 场景技能矩阵 + 40+ CTF 子技能构建了最全面的 AI 辅助安全研究工具集
 - 5 大 AI 客户端支持（Claude Code/Kiro/Cursor/Cline/Codex CLI）覆盖主流 AI 编码代理生态
 - case-init + field-journal + MASTER-ROUTING 三大核心工作流形成完整的安全研究闭环
+
+### 更新 6 — 2026年8月4日（再次登上 Trending）
+
+**最新 Star 数据**：
+
+| 总 Stars | 15,242 | 16,477 | +1,235 |
+
+- Star 数从 15,242 增至 16,477（+1,235），日增 2,446 颗 Star
+
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 15,242 增长至 16,477（+1,235），日增 2,446 颗 Star
+
+Star 增长 1,235 颗，日增 2,446 颗（Trending）。Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-deman
+
+> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取

@@ -142,13 +142,14 @@ Star 增长 103 颗，日增 237 颗（Trending）。System Design Primer 以 36
 
 ### 更新 4 — 2026年8月4日（再次登上 Trending）
 
-**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 360,526 增长至 360,736（+210），日增 237 颗 Star
-
 **最新 Star 数据**：
 
 | 总 Stars | 360,526 | 360,736 | +210 |
 
 - Star 数从 360,526 增至 360,736（+210），日增 237 颗 Star
 
-> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 360,526 增长至 360,736（+210），日增 237 颗 Star
 
+Star 增长 210 颗，日增 237 颗（Trending）。Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.
+
+> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取

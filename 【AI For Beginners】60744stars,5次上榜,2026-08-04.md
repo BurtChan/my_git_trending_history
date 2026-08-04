@@ -158,6 +158,20 @@ AI For Beginners 的完整课程体系和丰富的可执行代码使其成为高
 
 AI For Beginners 是微软官方出品的、GitHub 上最受欢迎的 AI 入门课程之一。凭借近 50,000 颗 Star 和每日超过 250 的新增 Star，该项目已获得全球开发者社区的广泛认可和持续关注。课程以 12 周 24 课的完整体系，从 AI 历史哲学到深度学习前沿，从计算机视觉到自然语言处理与 Transformer，从强化学习到 AI 伦理，构建了当前最全面、最系统化的 AI 入门学习路径。每课配备的可执行 Jupyter Notebook（支持 PyTorch/TensorFlow 双框架）和 Microsoft Learn 集成模块，使学习者能够在"理论 → 实践 → 拓展"的闭环中高效掌握 AI 核心技术。50 多种语言的社区翻译进一步彰显了其全球影响力。无论你是零基础学习者、跨行业转型者、在校学生还是技术团队负责人，AI For Beginners 都是开启 AI 学习之旅的最佳起点。
 
+### 更新 — 2026年8月4日（晚间更新）
+
+**最新 Star 数据**：
+
+| 总 Stars | 60,744 | 61,152 | +408 |
+
+- Star 数从 60,744 增至 61,152（+408），日增 1,902 颗 Star
+
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 60,744 增长至 61,152（+408），日增 1,902 颗 Star
+
+Star 增长 408 颗，日增 1,902 颗（Trending）。12 Weeks, 24 Lessons, AI for All!
+
+> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
+
 ---
 
 *数据来源：GitHub 仓库 (microsoft/AI-For-Beginners)，2026 年 7 月访问*
@@ -269,16 +283,3 @@ AI For Beginners 是微软官方出品的、GitHub 上最受欢迎的 AI 入门�
 - 24 课完整体系覆盖 AI 全栈（符号 AI → 神经网络 → CV → NLP → 强化学习 → AI 伦理），适配暑期系统学习需求
 - 50+ 语言社区翻译版本持续更新，全球影响力进一步扩大
 - 日增 1,902 颗 Star 排名 Trending Top 3，暑期 AI 学习热度空前
-
-### 更新 5 — 2026年8月4日（再次登上 Trending）
-
-**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 60,744 增长至 61,152（+408），日增 1,902 颗 Star
-
-**最新 Star 数据**：
-
-| 总 Stars | 60,744 | 61,152 | +408 |
-
-- Star 数从 60,744 增至 61,152（+408），日增 1,902 颗 Star
-
-> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
-
