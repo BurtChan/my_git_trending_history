@@ -139,3 +139,16 @@ Star 增长 132 颗，日增 323 颗（Trending）。System Design Primer 以 36
 Star 增长 103 颗，日增 237 颗（Trending）。System Design Primer 以 360K+ Stars 稳居 GitHub Top 10，作为大规模分布式系统设计的权威学习资源，涵盖系统设计面试准备、负载均衡、数据库、缓存、消息队列等核心主题。持续维护更新反映最新技术趋势。
 
 > 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
+
+### 更新 4 — 2026年8月4日（再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 360,526 增长至 360,736（+210），日增 237 颗 Star
+
+**最新 Star 数据**：
+
+| 总 Stars | 360,526 | 360,736 | +210 |
+
+- Star 数从 360,526 增至 360,736（+210），日增 237 颗 Star
+
+> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
+

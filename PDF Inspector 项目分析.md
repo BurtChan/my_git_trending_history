@@ -131,3 +131,16 @@ PDF Inspector 是 Firecrawl 团队在文档处理领域的一次精准出击。�
 ---
 
 *数据来源：GitHub 仓库 (firecrawl/pdf-inspector)，2026 年 8 月 4 日访问*
+
+### 更新 2 — 2026年8月4日（再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 7,338 增长至 8,837（+1,499），日增 1,699 颗 Star，增幅显著
+
+**最新 Star 数据**：
+
+| 总 Stars | 7,338 | 8,837 | +1,499 |
+
+- Star 数从 7,338 增至 8,837（+1,499），日增 1,699 颗 Star
+
+> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
+

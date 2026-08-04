@@ -242,3 +242,16 @@ Kronos 持续获得量化社区关注，Star 数增长至 **35,721**。自 AAAI 
 Star 增长 61 颗，日增 217 颗（Trending）。Kronos 是基于 AAAI 2026 接收论文的金融 AI Agent 框架，支持多 Agent 协作、工具使用、知识增强等技术。论文接收带来的学术影响力持续推动社区关注，连续多日登上 Trending。
 
 > 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
+
+### 更新 8 — 2026年8月4日（再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 35,782 增长至 35,893（+111），日增 200 颗 Star
+
+**最新 Star 数据**：
+
+| 总 Stars | 35,782 | 35,893 | +111 |
+
+- Star 数从 35,782 增至 35,893（+111），日增 200 颗 Star
+
+> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
+
