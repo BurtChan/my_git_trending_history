@@ -186,3 +186,15 @@ Voicebox 是语音合成领域的一颗新星。它以"本地优先 + 多引擎 
 Star 增长 161 颗，日增 443 颗（Trending Top5）。Voicebox 作为开源 AI 语音工作室（ElevenLabs + WisprFlow 开源替代），提供 7 个 TTS 引擎、23 语言支持、零样本语音克隆、全局听写输入、MCP 代理语音输出等完整功能栈。基于 Tauri (Rust) 构建，完全本地运行，隐私友好。v0.5.0 大版本引入系统级全局听写和 MCP 集成，持续吸引开发者关注。
 
 > 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
+
+### 更新 4 — 2026年8月4日（晚间更新）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 48,565 增长至 48,678（+113），日增 412 颗 Star
+- 最新版本：v0.5.0（发布于 2026-04-25）
+
+| 总 Stars | 48,565 | 48,678 | +113 |
+
+**更新亮点**：
+Star 增长 113 颗，日增 412 颗（Trending），即将突破 5 万 Star 里程碑。Voicebox 作为开源 AI 语音工作室（ElevenLabs + WisprFlow 开源替代），提供 7 个 TTS 引擎、23 语言支持、零样本语音克隆、全局听写输入、MCP 代理语音输出等完整功能栈。基于 Tauri (Rust) 构建，完全本地运行，隐私友好。v0.5.0 大版本引入系统级全局听写和 MCP 集成，持续吸引开发者关注。
+
+> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取

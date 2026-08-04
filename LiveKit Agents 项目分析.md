@@ -103,6 +103,18 @@ Star 增长 89 首次上榜，日增 129 颗。最新版本 v1.6.7。LiveKit Age
 
 > 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
 
+### 更新 2 — 2026年8月4日（晚间更新）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 11,892 增长至 11,987（+95），日增 148 颗 Star
+- 最新版本：livekit-agents@1.6.7（发布于 2026-07-25）
+
+| 总 Stars | 11,892 | 11,987 | +95 |
+
+**更新亮点**：
+Star 增长 95 颗，日增 148 颗（Trending）。LiveKit Agents Framework 是构建实时语音 AI Agent 的成熟开源框架，支持灵活的 STT/LLM/TTS 组合、语义轮次检测、多 Agent 协作、SIP 电话集成、MCP 支持、内置测试框架等。Python + JS/TS 双语言支持，Apache-2.0 许可，12K+ Stars，生产级部署方案。
+
+> 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
+
 ---
 
-*数据来源：GitHub 仓库 (livekit/agents)，2026 年 8 月 3 日访问*
+*数据来源：GitHub 仓库 (livekit/agents)，2026 年 8 月 4 日访问*
