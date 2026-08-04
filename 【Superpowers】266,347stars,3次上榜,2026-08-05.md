@@ -170,6 +170,29 @@ copilot plugin install superpowers@superpowers-marketplace
 1. 在 Trending 榜单持续活跃，多次登上每日榜单
 
 
+
+---
+
+### 更新 2 — 2026 年 8 月 5 日（再次登上 Trending）
+**更新原因**：Superpowers 持续登 Trending，全球 Star 排名第 14，日增 617 Star
+
+**最新动态**：Superpowers 由 Jesse Vincent（Prime Radiant）创建，已从 2025 年 10 月的个人生产力实验成长为 GitHub 全球排名第 14 的开源项目（266K+ Stars）。作为最大的 Agentic Skills 框架，Superpowers 提供完整的软件开发生命周期方法论：Brainstorm → Spec → Subagent-Driven Development → Review。v6.1.1 于 2026 年 7 月发布，引入 autoresearch loop 自动优化构建参数，token 消耗降低 50%，wall-clock 时间减少 60%。项目已适配 Claude Code、Codex、Kimi、Gemini 等多个 AI 编码代理。新增 .claude-plugin、.codex-plugin、.kimi-plugin 和 .cursor-plugin 目录，实现跨 IDE/代理的原生插件支持。680 commits 的活跃开发节奏显示持续迭代。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 266,088 | 266,347 | +259 |
+| 总 Forks | 23,786 | 23,814 | +28 |
+
+**核心变化概要**：
+- GitHub 全球排名第 14（266K+ Stars），成为最大的 Agentic Skills 框架
+- v6.1.1 引入 autoresearch loop，token 消耗降 50%，时间降 60%
+- 新增 Claude Code、Codex、Kimi、Cursor 原生插件支持
+- 14-skill 方法论覆盖完整软件开发生命周期
+- Discord 社区和发布通知系统建立，开发者生态完善
+
+> 更新依据：GitHub Trending 2026-08-05 数据，Star 数由 GitHub API 实时获取
 ## 一句话总结
 
 > Superpowers 是一个 **140k+ Stars 的 AI Agent 技能框架与软件开发方法论**，由 Jesse Vincent 和 Prime Radiant 团队创建，通过可自动触发的技能系统（头脑风暴、TDD、子 Agent 驱动开发、系统化调试、代码审查等），让 Claude Code、Cursor、Codex、Gemini 等 AI 编程 Agent 自动遵循严格的软件工程流程，实现从需求分析到代码交付的全流程质量保障。今日新增 1,926 Stars，是当前 AI 编程工具生态中最热门的 Agent 增强框架之一。

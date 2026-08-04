@@ -168,6 +168,29 @@ DeepSeek Reasonix 进入高频发布阶段，连续发布 v1.19.2（8月2日）�
 - Discord 社区活跃，双语文档（EN/CN）降低全球用户使用门槛
 - SignPath 代码签名增强 Windows 用户信任度，提升分发可靠性
 
+
+---
+
+### 更新 5 — 2026年8月5日（再次登上 Trending）
+**更新原因**：DeepSeek-Reasonix 再次登上 Trending，Go 重写版本持续完善，日增 924 Star
+
+**最新动态**：DeepSeek-Reasonix 持续保持高增长势头，再次登上 GitHub Trending 榜单。项目已完成从 TypeScript 到 Go 的核心重写，v0.53.2 正式发布，提供 npm 和 Homebrew 双通道安装。作为 DeepSeek V4-Flash 的原生终端编码代理，Reasonix 围绕 prefix-cache 稳定性设计，支持长期运行不中断的会话模式。DeepSeek V4-Flash 于 7 月 31 日发布，明确面向 Agent 升级，原生 Responses API 支持和 Codex 适配使其成为终端编码代理的理想底层模型。项目新增桌面应用支持（macOS /Applications 安装）、health check、session 管理和 project-scoped memory 等功能，社区贡献者数量快速增长。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 30,249 | 30,699 | +450 |
+| 总 Forks | 1,950 | 1,980 | +30 |
+
+**核心变化概要**：
+- Go 重写版本 v0.53.2 正式发布，npm + Homebrew 双通道安装
+- DeepSeek V4-Flash 原生支持，prefix-cache 稳定性设计持续优化
+- 新增 macOS 桌面应用、health check 和 session 管理功能
+- 社区贡献者数量快速增长，680+ commits 已累积
+- 官网 reasonix.io 上线，提供完整的安装和使用指南
+
+> 更新依据：GitHub Trending 2026-08-05 数据，Star 数由 GitHub API 实时获取
 ## 总结
 
 DeepSeek Reasonix 是 2026 年 AI 编码工具领域最具特色的开源项目之一，它以"prefix-cache stability"为核心设计哲学，通过只支持 DeepSeek 的专一策略实现了 5 倍以上的推理成本压缩。从 TypeScript 到 Go 的全面重写展现了团队对工程质量的高标准追求，单二进制分发、丰富的 MCP 生态、Flash-First 智能路由等特性使其在实际使用中具备极高的工程价值。虽然在模型兼容性上有所取舍，但对于 DeepSeek 用户和成本敏感的开发者而言，Reasonix 已成为终端 AI 编码代理的首选方案之一。
