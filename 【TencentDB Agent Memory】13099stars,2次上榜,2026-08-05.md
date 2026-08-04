@@ -232,3 +232,24 @@ Star 增长 370 颗，日增 1,090 颗（Trending）。TencentDB Agent Memory is
 - v1.0.1 版本已发布，OpenClaw 插件集成 `@tencentdb-agent-memory/memory-tencentdb` 支持一键安装配置
 - 四类记忆资产体系（Chat Memory L0-L3、Skill Library、Wiki、CodeGraph）在 Agent 社区持续获得验证
 - 作为 Agent Memory 赛道的完全本地化方案，隐私零外部 API 调用的差异化定位持续吸引企业用户
+
+---
+
+### 更新 1 — 2026年8月5日（再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 12,093 增长至 13,099（+1,006），日增 1,138 颗 Star
+
+**最新动态**：
+- 7月23日举办线上发布会正式发布 v2.0，推出团队级四层记忆资产架构（Chat Memory / Skill / LLM-Wiki / Code-Graph）
+- 集成 OpenClaw 后 SWE-bench 从 58.4% 提升至 64.2%，同时 Token 消耗降低 33%
+- npm 周下载量持续攀升，社区生态快速扩展，已与多个 AI Agent 框架形成集成
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 12,093 | 13,099 | +1,006 |
+| 总 Forks | 1,244 | 1,257 | +13 |
+
+**核心变化概要**：
+- Star 数增长 +1,006，日增 1,138 颗（Trending）。腾讯云开源的团队级 AI Agent 记忆中枢，将对话、文档和代码转化为四种可复用记忆资产

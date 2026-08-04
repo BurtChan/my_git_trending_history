@@ -222,3 +222,24 @@ Reverse Skill 是目前最全面的 AI 辅助安全研究工具集，通过智�
 Star 增长 1,235 颗，日增 2,446 颗（Trending）。Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-deman
 
 > 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
+
+---
+
+### 更新 7 — 2026年8月5日（再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 16,477 增长至 17,462（+985），日增 1,138 颗 Star
+
+**最新动态**：
+- 连续第 7 天登上 GitHub Trending，网络安全 AI 技能路由赛道持续爆发
+- Star 数突破 17,000 大关，Fork 数同步增长至 2,500+，开发者 adoption 持续加速
+- AI 驱动的自动路由 + 按需工具链自举 + 自动进化经验库架构获得安全社区高度认可
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 16,477 | 17,462 | +985 |
+| 总 Forks | 2,423 | 2,510 | +87 |
+
+**核心变化概要**：
+- Star 数增长 +985，日增 1,138 颗（Trending）。逆向工程/渗透测试/安全研究 AI 技能路由包，支持 Claude Code/Kiro/Cursor/Cline 等 AI 编程客户端
