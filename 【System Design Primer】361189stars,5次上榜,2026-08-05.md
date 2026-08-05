@@ -81,8 +81,8 @@ System Design Primer 是 GitHub 上**最受欢迎的系统设计学习资源**�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 341,900+ |
-| **总 Forks** | 60,000+ |
+| **总 Stars** | 361,189 |
+| **总 Forks** | 57,587 |
 | **今日新增 Stars** | Trending 榜单 |
 | **许可证** | CC-BY-SA-4.0 |
 | **主要语言** | Markdown |
@@ -98,6 +98,7 @@ System Design Primer 是 GitHub 上最权威的系统设计学习资源，341k+ 
 ---
 
 *数据来源：GitHub 仓库 (donnemartin/system-design-primer)、star-history.com（2026 年 4 月访问）*
+*首次分析：2026 年 4 月 | 最近更新：2026 年 8 月*
 ---
 
 ## 📋 更新记录
@@ -153,3 +154,24 @@ Star 增长 103 颗，日增 237 颗（Trending）。System Design Primer 以 36
 Star 增长 210 颗，日增 237 颗（Trending）。Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.
 
 > 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
+
+
+### 更新 5 — 2026 年 8 月 5 日（再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单（304 stars today）
+
+**最新动态**：
+- System Design Primer 持续稳居 GitHub 全球 Top 10 仓库，Star 数突破 361K，保持系统设计学习领域绝对标杆地位
+- 项目持续维护更新，涵盖系统设计面试准备、负载均衡、数据库、缓存、消息队列等核心主题，Anki 闪卡等配套资源不断完善
+- 社区活跃度稳定，作为大规模分布式系统设计的权威学习资源持续吸引全球开发者
+
+**最新 Star 数据**：
+
+| 总 Stars | 360,736 | 361,189 | +453 |
+
+**核心变化概要**：
+1. Star 数从 360,736 增长至 361,189（+453）
+2. 继续稳居 GitHub 全球排名 Top 10 的权威系统设计学习资源
+3. 日增 304 颗 Star（Trending），保持强劲增长势头
+
+> 更新依据：GitHub Trending 2026-08-05 数据，Star 数由 GitHub API 实时获取
