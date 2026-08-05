@@ -80,7 +80,7 @@ Compound Engineering Plugin 是由 Every 公司开发的一款官方插件，旨
 
 | 指标 | 数据 |
 |------|------|
-| 总 Stars | 18,300+ |
+| 总 Stars | 23,941+ |
 | 总 Forks | 1,400+ |
 | 今日新增 | ~128（本周新增） |
 | 许可证 | MIT |
@@ -110,6 +110,29 @@ Compound Engineering Plugin 是由 Every 公司开发的一款官方插件，旨
 **核心变化概要**：
 1. Star 数从 18.3K 增长至 23.8K，增长约 30%，Compound Engineering 方法论持续获得关注
 1. 作为 Claude Code、Codex、Cursor 的官方插件，项目在 AI 编程工具生态中的地位稳固
+
+
+
+
+### 更新 2 — 2026 年 8 月 5 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单（40 stars today）
+
+**最新动态**：
+- 项目新增 Codex 原生插件支持：可通过 Codex marketplace 直接安装，安装流程自包含，无需额外自定义 agent 配置
+- 针对 Codex 环境清理了过时的 tool-map 块（旧版要求 Codex 将子代理调度折叠到主线程，新版 CE skills 改为内联命名工具），修复了跨工具兼容性问题
+- 持续作为 Claude Code、Codex、Cursor、Kiro 等主流 AI 编程客户端的官方技能/插件方案，36+ skills 与 50+ agents 的复合工程方法论生态不断扩展
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 23,771 | 23,941 | +170 |
+| 总 Forks | 1,944 | 1,958 | +14 |
+
+**核心变化概要**：
+1. Codex 原生 marketplace 安装支持上线，跨平台覆盖再进一步
+2. 清理过时 tool-map 兼容层，修复 Codex 子代理调度问题
+3. Star 稳步逼近 24K，成为 AI 编码工作流插件的头部项目
 
 
 ## 总结
