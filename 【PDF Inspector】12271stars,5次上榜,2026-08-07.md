@@ -93,9 +93,9 @@ PDF Inspector 的核心设计理念是"先判断再处理"。据统计，约 54%
 
 | 指标 | 数据 |
 |------|------|
-| **总 Stars** | 11,104 |
-| **总 Forks** | 734 |
-| **今日新增 Stars** | 1,583 |
+| **总 Stars** | 12,271 |
+| **总 Forks** | 823 |
+| **今日新增 Stars** | 1,194 |
 | **许可证** | MIT License |
 | **主要语言** | Rust |
 
@@ -106,6 +106,24 @@ PDF Inspector 是 Firecrawl 团队在文档处理领域的一次精准出击。�
 ---
 
 ## 📋 更新记录
+
+### 更新 5 — 2026年8月7日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 11,104 增长至 12,271（+1,167），日增 1,194 颗 Star
+
+**最新动态**：PDF Inspector 连续第四日登上 Trending，Star 总数突破 12K，24 小时增长 10.5%。作为 Firecrawl 团队开源的 Rust PDF 智能分类与解析库，其核心能力——10-50ms 内精准判断 PDF 为扫描件还是文本件、实现智能路由——在 AI 文档处理管线中的价值持续被验证。opendataloader-bench 综合得分与阅读顺序双第一、处理速度 0.47s 领先竞品的性能优势，加上纯 Rust 实现、零 ML 依赖、五种接入方式（Python/Node.js/Rust/WASM/CLI）的组合，使其稳居 RAG 与文档解析场景的基础设施级组件地位。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 11,104 | 12,271 | +1,167 |
+| 总 Forks | 734 | 823 | +89 |
+
+**核心变化概要**：
+- Star 数突破 12,000，连续四日登上 Trending，24 小时 +1,167（+10.5%）
+- opendataloader-bench 双第一 + 0.47s 处理速度的基准优势持续传播
+- 作为 AI 文档管线预分类组件，与 Firecrawl 生态的协同效应不断增强
+
 
 ### 更新 4 — 2026年8月6日（再次登上 Trending）
 **更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 9,553 增长至 11,104（+1,551），日增 1,583 颗 Star，突破 11K 大关
@@ -165,7 +183,7 @@ Star 增长 1,499 颗，日增 1,699 颗（Trending）。Fast Rust library for P
 
 ---
 
-*数据来源：GitHub 仓库 (firecrawl/pdf-inspector)，2026 年 8 月 4 日访问*
+*数据来源：GitHub 仓库 (firecrawl/pdf-inspector)，2026 年 8 月访问*
 
 ---
 
@@ -187,3 +205,6 @@ Star 增长 1,499 颗，日增 1,699 颗（Trending）。Fast Rust library for P
 
 **核心变化概要**：
 - Star 数增长 +716，日增 1,138 颗（Trending）。Firecrawl 团队开源的 Rust PDF 智能分类与解析库，10-50ms 内精准判断 PDF 类型
+---
+
+*首次分析：见文件头部 | 最近更新：2026年8月7日*

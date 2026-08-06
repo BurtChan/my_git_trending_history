@@ -87,8 +87,8 @@ Reasonix 的 MCP 一等公民支持使其可以无缝集成到现有开发工具
 
 | 指标 | 数值 |
 |------|------|
-| GitHub Stars | 31,393 |
-| GitHub Forks | 2,100 |
+| GitHub Stars | 32,282 |
+| GitHub Forks | 2,086 |
 | 本月新增 Stars（SnailDev 数据） | 18,527 |
 | 创建时间 | 2026 年 4 月 21 日 |
 | 主要编程语言 | Go（1.0）/ TypeScript（0.x 遗留） |
@@ -106,6 +106,24 @@ Reasonix 的 MCP 一等公民支持使其可以无缝集成到现有开发工具
 ---
 
 ## 📋 更新记录
+
+### 更新 7 — 2026年8月7日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 31,393 增长至 32,282（+889），日增 894 颗 Star
+
+**最新动态**：DeepSeek Reasonix 连续多日登上 Trending，Star 总数突破 32K。作为 DeepSeek 原生的终端 AI 编码 Agent，其围绕 prefix-cache 稳定性设计（可长时间常驻运行、会话越久单位成本越低）的技术路线持续构建差异化认知。Reasonix 2.0 的 Plugin-driven 架构（外部工具经 stdio JSON-RPC 以子进程运行、内置工具编译时自注册）不断吸引开发者，分发渠道覆盖 NPM、Homebrew、桌面客户端（macOS/Windows/Linux）与 VS Code 扩展。Go 单静态二进制（CGO_ENABLED=0）的极简依赖设计，叠加 oosmetrics Agents Top 2 的排名，使其在 DeepSeek 生态工具中保持领先地位。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 31,393 | 32,282 | +889 |
+| 总 Forks | 2,100 | 2,086 | -14 |
+
+**核心变化概要**：
+- Star 数突破 32,000，连续多日登上 Trending，增长势头稳定
+- prefix-cache 稳定性设计支撑「终端常驻」场景，与主流 Agent 形成差异
+- Plugin-driven 架构 + 多端分发（CLI/桌面/VS Code 扩展）完善产品形态
+
 
 ### 更新 6 — 2026年8月6日（再次登上 Trending）
 **更新原因**：项目再次登上 GitHub Trending 榜单，Star 数从 30,699 增长至 31,393（+694），日增 747 颗 Star
@@ -232,4 +250,4 @@ Star 增长 527 颗，日增 883 颗（Trending）。DeepSeek-native AI coding a
 
 ---
 
-*首次分析：见文件头部 | 最近更新：2026 年 8 月 6 日*
+*首次分析：见文件头部 | 最近更新：2026 年 8 月 7 日*

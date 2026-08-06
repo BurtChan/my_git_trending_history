@@ -78,8 +78,8 @@ isolation shell / JS 后端为"轻量执行"提供了低开销选项，适合原
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 2,475 |
-| 总 Forks | 72 |
+| 总 Stars | 4,632 |
+| 总 Forks | 232 |
 | 主要语言 | TypeScript |
 | 创建时间 | 2026 年 6 月 |
 
@@ -90,6 +90,24 @@ isolation shell / JS 后端为"轻量执行"提供了低开销选项，适合原
 ---
 
 ## 📋 更新记录
+
+### 更新 2 — 2026 年 8 月 7 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单（2,690 stars today）
+
+**最新动态**：Cloudflare Computer 连续第三日登上 Trending，且增速持续放大——单日新增近 2,700 颗 Star，Star 总数从 2,475 跃升至 4,632（+2,157，单日增长 87%），成为近期增速最猛烈的 Agent 基础设施项目之一。Cloudflare 持续推进其「Agent 原生基础设施」路线：Sandboxes（为 AI Agent 提供持久、隔离的完整 Linux 环境）已 GA，统一的 `cf` CLI 与 Agent Lee 面板内助手不断完善，把虚拟文件系统与执行环境放进 Durable Object 的前沿架构持续吸引开发者关注。作为 Cloudflare Agents Week 2026 后的重点实验项目，其「给 Agent 一台电脑」的定位正在社区形成强烈共鸣。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 2,475 | 4,632 | +2,157 |
+| 总 Forks | 112 | 232 | +120 |
+
+**核心变化概要**：
+1. Star 数 2,475 → 4,632（+2,157），单日增长 87%，三日累计增长近 3 倍
+2. Fork 数 112 → 232（+120），翻倍增长，开发者基于其架构构建 Agent 工作空间的热情高涨
+3. Sandboxes GA + Agent Cloud 生态持续扩张，Cloudflare 官方背书力度加大
+
 
 ### 更新 1 — 2026 年 8 月 6 日（再次登上 Trending）
 **更新原因**：项目再次登上 GitHub Trending 榜单（796 stars today）
@@ -119,4 +137,4 @@ Cloudflare Computer 是 Cloudflare 对"Agent 原生基础设施"的一次前沿�
 
 *数据来源：GitHub 仓库 (cloudflare/computer)，2026 年 8 月访问*
 
-*首次分析：2026 年 8 月 5 日 | 最近更新：2026 年 8 月 6 日*
+*首次分析：2026 年 8 月 5 日 | 最近更新：2026 年 8 月 7 日*

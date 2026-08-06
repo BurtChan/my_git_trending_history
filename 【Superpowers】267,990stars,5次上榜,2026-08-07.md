@@ -4,8 +4,8 @@
 
 - **GitHub**: [obra/superpowers](https://github.com/obra/superpowers)
 - **语言**: Shell（技能描述文件，Markdown / YAML）
-- **Stars**: 267,109 | **今日新增**: 931
-- **Forks**: 23,868
+- **Stars**: 267,990 | **今日新增**: 858
+- **Forks**: 23,954
 - **作者**: @obra（Jesse Vincent），Prime Radiant 团队
 - **许可证**: MIT
 
@@ -147,6 +147,24 @@ copilot plugin install superpowers@superpowers-marketplace
 ---
 
 ## 📋 更新记录
+
+### 更新 4 — 2026 年 8 月 7 日（再次登上 Trending）
+**更新原因**：Superpowers 持续登 Trending，Star 数从 267,109 增长至 267,990（+881），日增 858 Star
+
+**最新动态**：Superpowers 连续四日登上 Trending，Star 总数逼近 268K，稳居 GitHub 全球排名前列。作为最大的 Agentic Skills 框架，其「Brainstorm → Spec → Subagent-Driven Development → Review」方法论已成为 AI 编程 Agent 生态的事实标准。v6.1.1 的 autoresearch loop 优化持续发酵——token 消耗降 50%、时间降 60% 的效率优势在开发者社区口碑扩散，680+ commits 的活跃开发节奏显示迭代从未放缓。项目对 Claude Code、Codex、Kimi、Gemini、Cursor 等多 Agent 的原生插件支持（.claude-plugin、.codex-plugin、.kimi-plugin、.cursor-plugin），使其生态位从「Claude Code 专属技能」扩展为「跨 Agent 工程方法论」，Discord 社区与发布通知系统持续壮大开发者生态。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 267,109 | 267,990 | +881 |
+| 总 Forks | 23,868 | 23,954 | +86 |
+
+**核心变化概要**：
+- Star 总数逼近 268K，连续 4 日 Trending，全球排名稳定在前列
+- autoresearch loop（v6.1.1）效率优势持续传播，token 消耗降 50%、时间降 60%
+- 跨 Agent 原生插件（Claude Code/Codex/Kimi/Cursor）巩固方法论标准地位
+
 
 ### 更新 3 — 2026 年 8 月 6 日（再次登上 Trending）
 **更新原因**：Superpowers 持续登 Trending，Star 数从 266,347 增长至 267,109（+762），日增 931 Star
