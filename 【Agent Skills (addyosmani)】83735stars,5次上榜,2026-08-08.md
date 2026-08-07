@@ -110,9 +110,9 @@ Agent Skills 是由 Google Chrome 团队核心开发者 Addy Osmani 创建的开
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 82,843 |
-| 🍴 总 Forks | 8,882 |
-| 📈 今日新增 | 588 stars today |
+| ⭐ 总 Stars | 83,735 |
+| 🍴 总 Forks | 8,952 |
+| 📈 今日新增 | 892 stars today |
 | 🗓️ 创建时间 | 2026-02-15 |
 | 🏷️ 主要话题 | agent-skills, claude-code, codex, cursor |
 | 💻 主要语言 | JavaScript |
@@ -191,6 +191,26 @@ Agent Skills 是由 Google Chrome 团队核心开发者 Addy Osmani 创建的开
 2. Fork 数从 8,847 增至 8,882（+35），企业级采纳持续
 3. 82.8K Star 规模下日增仍近 500，长尾热度稳定
 
+---
+
+### 更新 4 — 2026 年 8 月 8 日（再次登上 Trending）
+**更新原因**：Agent Skills 连续第四日登上 Trending，Star 数从 82,843 增长至 83,735（+892），逼近 84K
+
+**最新动态**：Agent Skills 连续四日登榜，Star 总数逼近 84K，成为生产级工程技能标准化的代表项目。仓库由 Addy Osmani（Google Chrome 团队前技术负责人）主导维护，389 commits，结构持续扩展：新增 .agents/plugins、.opencode、.gemini/commands 等目录，对 Claude Code、Codex、Cursor、Gemini、OpenCode 的主流编码 Agent 实现全覆盖。8 个 slash commands（/spec、/plan、/build、/test、/review、/ship 等）将「Spec before code → 小步原子任务 → 单切片构建 → 证据化验收」的资深工程师工作流固化为可重复流程，evals 目录的出现显示项目开始用评测体系量化技能质量。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 82,843 | 83,735 | +892 |
+| 总 Forks | 8,882 | 8,952 | +70 |
+
+**核心变化概要**：
+- Star 逼近 84K，连续四日登榜，月内从 72K 增长超 11K
+- 多 Agent 覆盖扩展至 Gemini/OpenCode，插件目录体系成型
+- evals 评测目录引入，技能质量开始量化验证
+- 8 个 slash commands 完整映射 DEFINE-PLAN-BUILD-VERIFY-REVIEW-SHIP 生命周期
+
 ## 总结
 
 Agent Skills 是目前 AI 编码代理生态中**最全面、最成熟的工程技能库**之一，由业界知名开发者 Addy Osmani 主导。项目将传统软件工程的精华——从规格驱动开发到质疑驱动审查——系统性地转化为 AI 可执行的技能规范，填补了 AI 编码工具"会写代码但不懂工程"的关键空白。72K+ 的 Stars 和 1,300+ 的今日新增充分说明了开发社区对 AI 编码质量标准化的强烈需求。
@@ -198,4 +218,4 @@ Agent Skills 是目前 AI 编码代理生态中**最全面、最成熟的工程�
 ---
 
 *数据来源：GitHub 仓库 (addyosmani/agent-skills)，2026 年 8 月访问*
-*首次分析：2026 年 7 月 | 最近更新：2026 年 8 月 7 日*
+*首次分析：2026 年 7 月 | 最近更新：2026 年 8 月 8 日*

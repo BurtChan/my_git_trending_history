@@ -78,8 +78,8 @@ isolation shell / JS 后端为"轻量执行"提供了低开销选项，适合原
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 4,632 |
-| 总 Forks | 232 |
+| 总 Stars | 5,443 |
+| 总 Forks | 279 |
 | 主要语言 | TypeScript |
 | 创建时间 | 2026 年 6 月 |
 
@@ -129,6 +129,26 @@ isolation shell / JS 后端为"轻量执行"提供了低开销选项，适合原
 2. Fork 数 72 → 112（+40），开发者开始基于其架构搭建自己的 Agent 工作空间
 3. Cloudflare 官方 Sandboxes GA 与 Agent Cloud 扩张为项目提供生态背书
 
+---
+
+### 更新 3 — 2026 年 8 月 8 日（再次登上 Trending）
+**更新原因**：Cloudflare Computer 连续第三日登上 Trending，Star 数从 4,632 增长至 5,443（+811），三日累计增长超 2 倍
+
+**最新动态**：Cloudflare Computer 连续三日登榜，Star 数突破 5.4K，成为 Agent 基础设施领域增速最快的项目之一。核心架构持续清晰：虚拟文件系统运行在 Durable Object 内，SQLite 持有权威状态，通过 `workspace.runtime.exec(source, { backend })` 暴露单一执行入口。三种后端并行演进——Container 后端用 FUSE 挂载 + computerd 守护进程把状态投影为真实 Linux 用户空间；Isolate shell 在 Dynamic Worker 中运行 just-bash，通过 Workers RPC 直达权威 Workspace，无二次存储；Isolate JavaScript 后端支持结构化输入/结果、持久相对导入与 Workspace 托管的 node:fs/promises。593 commits 的迭代速度显示 Cloudflare 正全力推进这一「给 Agent 一台电脑」的愿景。当前仍为 PREVIEW 状态，API 不稳定，官方明确仅适合实验与原型。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 4,632 | 5,443 | +811 |
+| 总 Forks | 232 | 279 | +47 |
+
+**核心变化概要**：
+- Star 突破 5.4K，三日累计增长超 2 倍，增速居 Agent 基础设施前列
+- Container/Isolate shell/Isolate JavaScript 三后端并行，RPC 直达权威状态
+- 593 commits 高频迭代，性能文档（fs-bench）持续完善
+- 仍为 PREVIEW，官方明确 API 不稳定、仅限实验用途
+
 ## 总结
 
 Cloudflare Computer 是 Cloudflare 对"Agent 原生基础设施"的一次前沿探索——把虚拟文件系统与执行环境放进 Durable Object，用云原生方式重新定义 Agent 的工作空间，当前虽为预览阶段，但架构思路对 Agent 基础设施设计具有重要参考价值。
@@ -137,4 +157,4 @@ Cloudflare Computer 是 Cloudflare 对"Agent 原生基础设施"的一次前沿�
 
 *数据来源：GitHub 仓库 (cloudflare/computer)，2026 年 8 月访问*
 
-*首次分析：2026 年 8 月 5 日 | 最近更新：2026 年 8 月 7 日*
+*首次分析：2026 年 8 月 5 日 | 最近更新：2026 年 8 月 8 日*

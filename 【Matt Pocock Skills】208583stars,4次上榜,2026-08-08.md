@@ -105,9 +105,9 @@ Matt Pocock 将多年 TypeScript 咨询和教学经验凝练为这些技能，�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 206,879 |
-| **总 Forks** | 17,867 |
-| **今日新增 Stars** | 2,002 |
+| **总 Stars** | 208,583 |
+| **总 Forks** | 18,000 |
+| **今日新增 Stars** | 1,704 |
 | **许可证** | MIT |
 | **主要语言** | Shell |
 | **Watchers** | 529 |
@@ -161,6 +161,26 @@ Matt Pocock 将多年 TypeScript 咨询和教学经验凝练为这些技能，�
 2. Fork 数从 17,796 增至 17,867（+71），技能库复用与二次开发活跃
 3. 今日新增 2,002 stars，20 万 Star 体量下仍保持高速增长
 
+---
+
+### 更新 3 — 2026 年 8 月 8 日（再次登上 Trending）
+**更新原因**：Matt Pocock Skills 连续第三日登上 Trending，Star 数从 206,879 增长至 208,583（+1,704），正式突破 208K
+
+**最新动态**：Matt Pocock Skills 连续第三日登榜，Star 总数突破 208K，保持 AI 编码技能领域头部位置。项目已从「Matt Pocock 个人 .agents 目录」进化为成熟分发体系：通过 Claude Code 官方 marketplace 一键安装（`claude plugins install mattpocock-skills`），更新自动推送，订阅而非 fork 的哲学与 skills.sh 的可编辑副本形成互补。420 commits 的迭代节奏稳定，技能集合强调「小而可组合、适配任何模型」，与 GSD、BMAD、Spec-Kit 等接管整个流程的框架形成差异化——用户保留控制权，bug 也更易定位。newsletter 订阅者已达约 60,000 人，社区传播持续放大。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 206,879 | 208,583 | +1,704 |
+| 总 Forks | 17,867 | 18,000 | +133 |
+
+**核心变化概要**：
+- Star 总数突破 208K，连续三日登榜，日增超 1,700
+- Claude Code marketplace 官方插件分发 + skills.sh 可编辑副本双路径
+- 420 commits 稳定迭代，技能库持续扩充
+- newsletter 订阅者约 6 万，社区影响力持续放大
+
 ## 总结
 
 Matt Pocock Skills 是**AI 编码技能领域的标杆项目**，84k+ Stars。它由 TypeScript 社区知名教育者 Matt Pocock 创建，包含 20+ 个精心设计的技能，覆盖需求对齐、测试驱动开发、调试、架构改进等全流程，旨在将 AI 编码助手从 "vibe coding" 提升为真正的工程实践。技能可通过 npx 一键安装，支持主流 AI 编码工具。
@@ -172,4 +192,4 @@ Matt Pocock Skills 是**AI 编码技能领域的标杆项目**，84k+ Stars。�
 ---
 
 *数据来源：GitHub 仓库 (mattpocock/skills)，2026 年 8 月访问*
-*首次分析：2026 年 5 月 | 最近更新：2026 年 8 月 7 日*
+*首次分析：2026 年 5 月 | 最近更新：2026 年 8 月 8 日*

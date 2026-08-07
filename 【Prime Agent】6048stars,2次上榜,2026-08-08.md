@@ -68,11 +68,31 @@ PrimeIntellect 本身是分布式训练领域的知名团队，项目基于成�
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 5,262 |
-| 🍴 总 Forks | 418 |
-| 今日新增 | +2,271 |
+| ⭐ 总 Stars | 6,048 |
+| 🍴 总 Forks | 486 |
+| 今日新增 | +786 |
 
 ---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 8 月 8 日（再次登上 Trending）
+**更新原因**：Prime Agent 再次登上 GitHub Trending，Star 数从 5,262 增长至 6,048（+786），单日增幅 15%
+
+**最新动态**：Prime Agent 连续第二日登榜，Star 数突破 6K，作为 PrimeIntellect 的自我改进 RLM（Reinforcement Learning from Machine）Agent 受到关注。项目定位编码工作流与长时自主任务：支持长期运行与后台 Agent（detach/reattach、目标管理、心跳、调度），RLM 编程模型提供持久 IPython、子 Agent、技能系统与信任模型，JSON/RPC 模式支持无头自动化与集成。4,475 commits 显示团队（PrimeIntellect 与 pi 项目作者 badlogic 合作）正在高频迭代，构建产物（binaries）与 CI 均自动化。MIT 许可、全开源，文档体系覆盖架构（daemon/worker/kernel/persistence 边界）、Provider 接入与开发指南，上手路径完整。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 5,262 | 6,048 | +786 |
+| 总 Forks | 418 | 486 | +68 |
+
+**核心变化概要**：
+- Star 突破 6K，单日增长 15%，RLM 编码 Agent 概念持续升温
+- 长时自主任务 + 后台 Agent（detach/reattach/心跳/调度）差异化定位
+- JSON/RPC 无头模式与持久 IPython 编程模型完善
+- 4,475 commits 高频迭代，MIT 全开源
 
 ## 总结
 Prime Agent 是 PrimeIntellect 推出的自改进 RLM 编程智能体，以守护进程架构支持长时自治编码任务，今日 +2,271 Star 的增长证明自治型编码代理正在成为社区焦点。
@@ -80,3 +100,4 @@ Prime Agent 是 PrimeIntellect 推出的自改进 RLM 编程智能体，以守�
 ---
 
 *数据来源：GitHub 仓库 (PrimeIntellect-ai/prime-agent)，2026 年 8 月访问*
+*首次分析：2026 年 8 月 | 最近更新：2026 年 8 月 8 日*
