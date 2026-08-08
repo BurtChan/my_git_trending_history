@@ -68,9 +68,32 @@ Google 亲自维护，技能内容与 GCP 真实产品（认证、数据、Agent
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 16,003 |
-| 🍴 总 Forks | 1,273 |
-| 今日新增 | +305 |
+| ⭐ 总 Stars | 16,614 |
+| 🍴 总 Forks | 1,319 |
+| 今日新增 | +611 |
+
+---
+
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 8 月 9 日（再次登上 Trending）
+**更新原因**：Google Skills 再次登上 GitHub Trending，Star 数从 16,003 增长至 16,614（+611）。
+
+**最新动态**：Google Skills 仓库持续扩充 Google Cloud 技能矩阵：新增 GKE 成本分析与优化技能、Cloud Monitoring 图表生成技能、Managed Service for Apache Airflow（原 Cloud Composer）迁移指南、Spanner 基础、gcloud CLI Skill for AI Agents 与 Google Agents CLI 上手指南等；运维侧补充了 TPU 连接故障与 VBAR OOM 排查、GKE 观测性、跨项目日志配置等技能。Google Cloud 团队官方博客发文分享 Agent Skills 的构建、测试与规模化治理流程，并介绍了内部 DevRel Skills 实践。仓库正成为 AI Agent 接入 Google Cloud 生态的官方标准入口。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 16,003 | 16,614 | +611 |
+| 总 Forks | 1,273 | 1,319 | +46 |
+
+**核心变化概要**：
+- 新增 GKE 成本分析/优化、Cloud Monitoring 图表生成、Airflow 迁移指南等技能
+- 补充 gcloud CLI for AI Agents、Agents CLI 上手、TPU 故障排查等运维技能
+- Google Cloud 官方博客详解技能构建与治理流程
+- 成为 AI Agent 接入 Google Cloud 生态的官方标准入口
 
 ---
 
@@ -80,3 +103,4 @@ Google Skills 是谷歌官方的 Agent Skills 技能库，把 GCP 认证、架�
 ---
 
 *数据来源：GitHub 仓库 (google/skills)，2026 年 8 月访问*
+*首次分析：见文件头部 | 最近更新：2026 年 8 月 9 日*

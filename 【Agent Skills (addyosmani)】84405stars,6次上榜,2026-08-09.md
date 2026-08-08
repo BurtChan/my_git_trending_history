@@ -110,9 +110,9 @@ Agent Skills 是由 Google Chrome 团队核心开发者 Addy Osmani 创建的开
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 83,735 |
+| ⭐ 总 Stars | 84,405 |
 | 🍴 总 Forks | 8,952 |
-| 📈 今日新增 | 892 stars today |
+| 📈 今日新增 | 670 stars today |
 | 🗓️ 创建时间 | 2026-02-15 |
 | 🏷️ 主要话题 | agent-skills, claude-code, codex, cursor |
 | 💻 主要语言 | JavaScript |
@@ -211,6 +211,27 @@ Agent Skills 是由 Google Chrome 团队核心开发者 Addy Osmani 创建的开
 - evals 评测目录引入，技能质量开始量化验证
 - 8 个 slash commands 完整映射 DEFINE-PLAN-BUILD-VERIFY-REVIEW-SHIP 生命周期
 
+
+### 更新 5 — 2026 年 8 月 9 日（再次登上 Trending）
+**更新原因**：Agent Skills 再次登上 GitHub Trending，Star 数从 83,735 增长至 84,405（+670），连续第 6 次上榜。
+
+**最新动态**：Addy Osmani 团队发布新一轮更新，亮点包括：新增 **Source-driven Development** 技能——一个框架无关的「源驱动开发」技能，强制 Agent 在编码前引用官方文档、准确识别技术栈并解决信息冲突，把实现决策锚定在权威来源上；同时完成一轮性能优化重构，并强化了安全类技能（威胁建模、SSRF、供应链与 AI/LLM 安全）。此外修复了 marketplace 安装路径 bug、更新了 Gemini CLI 与 GitHub Copilot 的配置指南，社区 PR 活跃（#163/#183/#186/#215/#219 等）。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 83,735 | 84,405 | +670 |
+| 总 Forks | 8,952 | 9,023 | +71 |
+
+**核心变化概要**：
+- 新增 Source-driven Development「源驱动开发」技能，锚定官方文档
+- 性能优化重构 + 安全技能强化（威胁建模、SSRF、供应链）
+- 修复 marketplace 安装 bug，完善 Gemini CLI / Copilot 指南
+- Star 突破 8.4 万，保持 GitHub 最高星技能目录地位
+
+---
+
 ## 总结
 
 Agent Skills 是目前 AI 编码代理生态中**最全面、最成熟的工程技能库**之一，由业界知名开发者 Addy Osmani 主导。项目将传统软件工程的精华——从规格驱动开发到质疑驱动审查——系统性地转化为 AI 可执行的技能规范，填补了 AI 编码工具"会写代码但不懂工程"的关键空白。72K+ 的 Stars 和 1,300+ 的今日新增充分说明了开发社区对 AI 编码质量标准化的强烈需求。
@@ -218,4 +239,4 @@ Agent Skills 是目前 AI 编码代理生态中**最全面、最成熟的工程�
 ---
 
 *数据来源：GitHub 仓库 (addyosmani/agent-skills)，2026 年 8 月访问*
-*首次分析：2026 年 7 月 | 最近更新：2026 年 8 月 8 日*
+*首次分析：2026 年 7 月 | 最近更新：2026 年 8 月 9 日*

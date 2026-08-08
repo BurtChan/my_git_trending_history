@@ -105,9 +105,9 @@ Matt Pocock 将多年 TypeScript 咨询和教学经验凝练为这些技能，�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 208,583 |
+| **总 Stars** | 209,807 |
 | **总 Forks** | 18,000 |
-| **今日新增 Stars** | 1,704 |
+| **今日新增 Stars** | 1,224 |
 | **许可证** | MIT |
 | **主要语言** | Shell |
 | **Watchers** | 529 |
@@ -181,6 +181,27 @@ Matt Pocock 将多年 TypeScript 咨询和教学经验凝练为这些技能，�
 - 420 commits 稳定迭代，技能库持续扩充
 - newsletter 订阅者约 6 万，社区影响力持续放大
 
+
+### 更新 4 — 2026 年 8 月 9 日（再次登上 Trending）
+**更新原因**：Matt Pocock Skills 再次登上 GitHub Trending，Star 数从 208,583 增长至 209,807（+1,224），连续多日稳居榜单。
+
+**最新动态**：Matt Pocock 于 8 月 5 日发布 Skills v1.2.0，带来多项新技能与工具集成：新增 `/wait-what`（让 Agent 用大白话复述）、`/writing-for-agents`（面向 Agent 的写作规范）等技能，并正式支持 Claude Code Plugin 集成；同期还上线了 `/wizard`（生成引导用户完成设置的脚本）与 `/to-questionnaire`（把开放问题转成待填文档）两个新技能。v1.1 时代的 `/wayfinder`、`/to-spec`、`/to-tickets` 等规划类技能持续被社区引用，技能库已成长为 AI 编码工作流中「工程纪律」的代表性开源资产。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 208,583 | 209,807 | +1,224 |
+| 总 Forks | 18,000 | 18,132 | +132 |
+
+**核心变化概要**：
+- v1.2.0 发布：新增 /wait-what、/writing-for-agents，支持 Claude Code Plugin
+- 新增 /wizard、/to-questionnaire 技能，覆盖更多开发场景
+- Star 逼近 21 万，连续多日占据 Trending
+- 技能库从「提示词集合」演变为受治理的工程控制组件
+
+---
+
 ## 总结
 
 Matt Pocock Skills 是**AI 编码技能领域的标杆项目**，84k+ Stars。它由 TypeScript 社区知名教育者 Matt Pocock 创建，包含 20+ 个精心设计的技能，覆盖需求对齐、测试驱动开发、调试、架构改进等全流程，旨在将 AI 编码助手从 "vibe coding" 提升为真正的工程实践。技能可通过 npx 一键安装，支持主流 AI 编码工具。
@@ -192,4 +213,4 @@ Matt Pocock Skills 是**AI 编码技能领域的标杆项目**，84k+ Stars。�
 ---
 
 *数据来源：GitHub 仓库 (mattpocock/skills)，2026 年 8 月访问*
-*首次分析：2026 年 5 月 | 最近更新：2026 年 8 月 8 日*
+*首次分析：2026 年 5 月 | 最近更新：2026 年 8 月 9 日*
