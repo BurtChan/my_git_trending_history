@@ -96,8 +96,8 @@ MIT 许可证完全开放，68 位贡献者参与，社区不断贡献新的 Age
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 87,800+ |
-| **总 Forks** | 14,200+ |
+| **总 Stars** | 140,124 |
+| **总 Forks** | 22,874 |
 | **贡献者** | 68 |
 | **许可证** | MIT |
 | **主要语言** | Shell / Markdown |
@@ -106,6 +106,29 @@ MIT 许可证完全开放，68 位贡献者参与，社区不断贡献新的 Age
 
 ---
 
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 8 月 9 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单（连续多日上榜，Star 数暴涨）
+
+**最新动态**：Agency Agents 自 5 月分析以来热度持续攀升，Star 数从 87,800 暴涨至 140,124（+52,324），Forks 从 14,200 增至 22,874，成为 GitHub 上增长最快的 AI Agent 项目之一。社区贡献异常活跃：新增 HarmonyOS App Engineer、Solo Founder Operator、ServiceNow Developer & Mentor、FEA & Abaque Engineer、AI Automation Engineer、Office Collaborator（COM 自动化办公专家）等多个专业化 Agent；还加入了面向中国市场的营销专家（视频号、本地生活服务、广告合规）。安装器新增 Pi skill 安装支持，并修复了 Hermes plugins.enabled YAML 缩进问题。项目 PR/Issue 已超过 700+，社区驱动持续增长。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 87,800+ | 140,124 | +52,324 |
+| 总 Forks | 14,200+ | 22,874 | +8,674 |
+
+**核心变化概要**：
+- Star 数从 87,800+ 增长至 140,124（+52,324），实现爆发式增长
+- Agent 库持续扩充，新增 HarmonyOS、ServiceNow、FEA、中国市场营销等多领域专家
+- 安装器支持 Pi skill，修复 Hermes 集成 YAML 配置问题
+- 社区活跃度极高，PR/Issue 700+ 条
+
+
 ## 总结
 
 Agency Agents 是一个**现象级的 AI Agent 人格模板库**，87,800+ Stars。它不是传统软件框架，而是 51+ 个精心设计的专业化 AI Agent 人格集合，覆盖工程、设计、营销、产品、测试等 9 大领域。每个 Agent 都拥有独特个性、工作流程和可交付成果定义，可一键安装到 Claude Code、Copilot、Cursor 等 10+ 主流 AI 工具中。项目仅用 7 个月即获得近 9 万 Stars，反映了 AI 社区对"即插即用型 Agent 能力"的巨大需求，是降低 AI 工具使用门槛、提升 AI 协作质量的最佳实践之一。
@@ -113,3 +136,7 @@ Agency Agents 是一个**现象级的 AI Agent 人格模板库**，87,800+ Stars
 ---
 
 *数据来源：GitHub 仓库 (msitarzewski/agency-agents)（2026 年 5 月访问）*
+
+---
+
+*首次分析：见文件头部 | 最近更新：2026 年 8 月 9 日*
