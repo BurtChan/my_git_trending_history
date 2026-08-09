@@ -68,9 +68,9 @@ Google 亲自维护，技能内容与 GCP 真实产品（认证、数据、Agent
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 16,614 |
-| 🍴 总 Forks | 1,319 |
-| 今日新增 | +611 |
+| ⭐ 总 Stars | 17,139 |
+| 🍴 总 Forks | 1,390 |
+| 今日新增 | +525 |
 
 ---
 
@@ -97,10 +97,30 @@ Google 亲自维护，技能内容与 GCP 真实产品（认证、数据、Agent
 
 ---
 
+
+### 更新 2 — 2026 年 8 月 10 日（再次登上 Trending）
+**更新原因**：Google Skills 再次登上 GitHub Trending，Star 数从 16,614 增长至 17,139（+525），Forks 从 1,319 增至 1,390（+71），连续第三日上榜。
+
+**最新动态**：Google 官方 Agent Skills 仓库持续快速扩充，截至本次更新已有 221 个提交，技能目录覆盖面显著扩大。AI/ML 领域新增多款 Agent Platform 相关技能：Model Garden 部署、模型调优、Eval Flywheel、GenAI 推理、告警配置、端点管理与模型注册表管理；开发者工具侧新增 gcloud CLI 技能与 Google Agents CLI 上手技能；管理工具侧新增 Cloud Monitoring 图表生成、Cloud Logging/跨项目日志配置、Logging 查询语言生成、GKE 成本分析等技能；另有 Spanner 基础、Airflow 迁移指南等数据类技能。仓库还通过 submodule 组织 plugins 目录（含 cloud/data-agent-kit），并将技能打包为 Claude 插件（.claude-plugin）与 agents 插件（.agents/plugins），进一步降低接入门槛。Cloud Next 2026 上宣布的「按需渐进式加载、避免上下文膨胀」理念正随着技能目录扩张被更多开发者采纳。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 16,614 | 17,139 | +525 |
+| 总 Forks | 1,319 | 1,390 | +71 |
+
+**核心变化概要**：
+- Google Skills 再次登上 GitHub Trending，Star 数从 16,614 增长至 17,139（+525），Forks 从 1,319 增至 1,390（+71），连续第三日上榜。
+- 连续多日登上 Trending，社区关注度持续走高
+- 项目迭代与生态建设稳步推进
+
+---
+
 ## 总结
 Google Skills 是谷歌官方的 Agent Skills 技能库，把 GCP 认证、架构与数据平台的实操能力封装成可安装技能包，16K Star 印证了大厂主导 Agent Skills 生态标准化的大趋势。
 
 ---
 
 *数据来源：GitHub 仓库 (google/skills)，2026 年 8 月访问*
-*首次分析：见文件头部 | 最近更新：2026 年 8 月 9 日*
+*首次分析：见文件头部 | 最近更新：2026 年 8 月 10 日*
