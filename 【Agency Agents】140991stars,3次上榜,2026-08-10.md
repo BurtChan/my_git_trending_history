@@ -96,8 +96,8 @@ MIT 许可证完全开放，68 位贡献者参与，社区不断贡献新的 Age
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 140,124 |
-| **总 Forks** | 22,874 |
+| **总 Stars** | 140,991 |
+| **总 Forks** | 23,016 |
 | **贡献者** | 68 |
 | **许可证** | MIT |
 | **主要语言** | Shell / Markdown |
@@ -129,6 +129,25 @@ MIT 许可证完全开放，68 位贡献者参与，社区不断贡献新的 Age
 - 社区活跃度极高，PR/Issue 700+ 条
 
 
+### 更新 2 — 2026 年 8 月 10 日（再次登上 Trending）
+
+**更新原因**：项目连续多日登上 GitHub Trending 榜单
+
+**最新动态**：Agency Agents 热度持续攀升，Star 数从 140,124 增至 140,991（+867），Forks 增至 23,016。社区提交持续活跃：新增 Claude Code / VS Code 插件市场支持（feat: add Claude Code / VS Code plugin marketplace，#750）；Cursor 集成更新为 subagent-first 配置模式（#744）；RAG Pipeline Engineer Agent 的诊断与词汇检索引导得到改进（#752）。项目此前已新增 HarmonyOS App Engineer、Solo Founder Operator 及面向中国市场的视频号/本地生活/广告合规营销专家，生态覆盖面进一步扩大。Trendshift 显示该项目长期霸榜 GitHub Trending 日榜。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 140,124 | 140,991 | +867 |
+| 总 Forks | 22,874 | 23,016 | +142 |
+
+**核心变化概要**：
+- 新增 Claude Code / VS Code 插件市场支持，安装分发渠道进一步拓宽
+- Cursor 集成转向 subagent-first 配置，适配主流 IDE 的最新 Agent 架构
+- RAG Pipeline Engineer Agent 诊断能力增强
+- 连续多日登顶 GitHub Trending，Star 数逼近 14.1 万
+
 ## 总结
 
 Agency Agents 是一个**现象级的 AI Agent 人格模板库**，87,800+ Stars。它不是传统软件框架，而是 51+ 个精心设计的专业化 AI Agent 人格集合，覆盖工程、设计、营销、产品、测试等 9 大领域。每个 Agent 都拥有独特个性、工作流程和可交付成果定义，可一键安装到 Claude Code、Copilot、Cursor 等 10+ 主流 AI 工具中。项目仅用 7 个月即获得近 9 万 Stars，反映了 AI 社区对"即插即用型 Agent 能力"的巨大需求，是降低 AI 工具使用门槛、提升 AI 协作质量的最佳实践之一。
@@ -139,4 +158,4 @@ Agency Agents 是一个**现象级的 AI Agent 人格模板库**，87,800+ Stars
 
 ---
 
-*首次分析：见文件头部 | 最近更新：2026 年 8 月 9 日*
+*首次分析：见文件头部 | 最近更新：2026 年 8 月 10 日*
