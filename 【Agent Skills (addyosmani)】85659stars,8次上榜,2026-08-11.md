@@ -110,9 +110,9 @@ Agent Skills 是由 Google Chrome 团队核心开发者 Addy Osmani 创建的开
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 85,017 |
-| 🍴 总 Forks | 9,149 |
-| 📈 今日新增 | 612 stars today |
+| ⭐ 总 Stars | 85,659 |
+| 🍴 总 Forks | 9,223 |
+| 📈 今日新增 | 642 stars today |
 | 🗓️ 创建时间 | 2026-02-15 |
 | 🏷️ 主要话题 | agent-skills, claude-code, codex, cursor |
 | 💻 主要语言 | JavaScript |
@@ -252,6 +252,27 @@ Agent Skills 是由 Google Chrome 团队核心开发者 Addy Osmani 创建的开
 
 ---
 
+
+
+---
+
+### 更新 7 — 2026 年 8 月 11 日（再次登上 Trending）
+**更新原因**：Agent Skills 连续第八日登上 GitHub Trending，Star 数从 85,017 增长至 85,659（+642），Forks 从 9,149 增至 9,223（+74），连续上榜天数继续刷新本仓库纪录。
+
+**最新动态**：Agent Skills 项目持续迭代，0.6.x 版本线继续推进（最新 0.6.6 于约一周前发布）。社区呼声很高的 Source-driven Development 新技能（#45）持续获得关注——该框架无关技能要求 Agent 在动手编码前以官方文档为基准，强制引用来源、准确识别技术栈并消解冲突信息，进一步补全「先查证再编码」的工程纪律。性能优化大改版同步推进，对技能加载与指令执行路径做了系统性优化，降低对 agent 上下文窗口的占用。0.6.3 版本还强化了代码审查能力，新增两份参考 checklist 与诚实对比文档，并引入防止新技能重复建设的 guardrails；ADR 技能现在会自动检测并匹配既有 ADR 惯例（#402）。项目持续吸收社区贡献，skills 数量与覆盖的 agent 生态（Claude Code、Gemini CLI、Cursor、Codex、OpenCode 等）同步扩展。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 85,017 | 85,659 | +642 |
+| 总 Forks | 9,149 | 9,223 | +74 |
+
+**核心变化概要**：
+- Agent Skills 连续第八日登上 GitHub Trending，Star 数从 85,017 增长至 85,659（+642）
+- Source-driven Development 技能持续获得社区关注，0.6.x 版本线稳步推进
+- 0.6.3 强化代码审查、新增参考 checklist 与防重复 guardrails
+- ADR 技能自动检测既有惯例，社区贡献（#402、#407 等）持续合入
 ## 总结
 
 Agent Skills 是目前 AI 编码代理生态中**最全面、最成熟的工程技能库**之一，由业界知名开发者 Addy Osmani 主导。项目将传统软件工程的精华——从规格驱动开发到质疑驱动审查——系统性地转化为 AI 可执行的技能规范，填补了 AI 编码工具"会写代码但不懂工程"的关键空白。72K+ 的 Stars 和 1,300+ 的今日新增充分说明了开发社区对 AI 编码质量标准化的强烈需求。
@@ -259,4 +280,4 @@ Agent Skills 是目前 AI 编码代理生态中**最全面、最成熟的工程�
 ---
 
 *数据来源：GitHub 仓库 (addyosmani/agent-skills)，2026 年 8 月访问*
-*首次分析：2026 年 7 月 | 最近更新：2026 年 8 月 10 日*
+*首次分析：2026 年 7 月 | 最近更新：2026 年 8 月 11 日*
