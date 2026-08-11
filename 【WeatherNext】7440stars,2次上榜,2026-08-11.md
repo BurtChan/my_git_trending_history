@@ -69,11 +69,36 @@ GenCast 的扩散模型集合预测可输出概率化的极端天气（高温、
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 6,927 |
-| 总 Forks | 913 |
+| 总 Stars | 7,440 |
+| 总 Forks | 959 |
 | 主要语言 | Python |
 | 许可证 | Apache-2.0 |
 | 创建时间 | 2023-07-14 |
+
+---
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 8 月 11 日（再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：WeatherNext 于 8 月 6 日迎来重大里程碑：DeepMind 在 Nature 发表论文《Operational tropical cyclone forecasting with AI》并同步开源 WeatherNext 2、WeatherNext Cyclones 与轻量版 2-mini 全套代码与权重。论文显示其气旋预测平均比现有业务系统多出约一整天的提前量（三天预报精度相当于此前两天的水平），相当于气象领域约十年的进步。模型将集合规模从去年的 50 条预测扩至 1,000 条，单个 15 天预报在 TPU 上不到一分钟即可生成；WeatherNext 2-mini 可在单个 TPU 的免费 Colab 笔记本上运行，大幅降低使用门槛。开源与论文发布带动 Star 数从 6,927 快速攀升至 7,440（+513），连续第二日登上 Trending。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 6,927 | 7,440 | +513 |
+| 总 Forks | 913 | 959 | +46 |
+
+**核心变化概要**：
+
+- Nature 论文发表 + 全套模型开源（WN2 / Cyclones / 2-mini），Stars 6,927 → 7,440（+513）
+- 气旋预测平均多出约一天提前量，相当于气象领域约十年进步
+- 集合规模扩至 1,000 条预测，2-mini 可在免费 Colab 单 TPU 运行
 
 ---
 
@@ -84,3 +109,4 @@ WeatherNext 是 Google DeepMind 将 AI 引入天气预报的标志性开源项�
 ---
 
 *数据来源：GitHub 仓库 (google-deepmind/weathernext)，2026 年 8 月访问*
+*首次分析：2026 年 8 月 | 最近更新：2026 年 8 月*
