@@ -68,9 +68,9 @@ provenance 与 explainable-ai 两个 topic 直接回应监管与合规需求：�
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 4,767 |
-| 🍴 总 Forks | 519 |
-| 今日新增 | +498 |
+| ⭐ 总 Stars | 5,589 |
+| 🍴 总 Forks | 614 |
+| 今日新增 | +822 |
 
 ---
 
@@ -142,6 +142,27 @@ Semantica 连续第二日登上 Trending（今日 +970 Stars），Star 从 8 月
 - 连续第三日登上 Trending，图原生上下文管理赛道持续升温
 
 
+---
+
+### 更新 4 — 2026 年 8 月 13 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：Semantica 连续第四日登上 GitHub Trending，Star 数从 4,767 增至 5,589（+822），Forks 从 519 增至 614（+95），一周内 Star 数较首次分析（2,183）翻倍有余。项目宣布 v0.6.0 Open Source Ready：推出 Polyglot Graph Storage——标签属性图与 RDF 三元组存储可无缝切换，原生支持 Neo4j/Cypher、AWS Neptune/Gremlin、Apache AGE/openCypher、FalkorDB 等后端；并规划 LangGraph、CrewAI、LlamaIndex、AutoGen、OpenAI Agents、Google ADK 等主流 Agent 框架集成。作为 Nereus 的 provenance engine，Semantica 从科学文献中抽取带 DOI 溯源的因果主张、组装为确定性金融推理图，Bridge Axiom 机制让 Agent 可沿可验证图路径从原始传感器读数一路推演到投资决策，透明可审计。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 4,767 | 5,589 | +822 |
+| 总 Forks | 519 | 614 | +95 |
+
+**核心变化概要**：
+- Star 数 4,767 → 5,589（+822），突破 5,500，较首析翻倍
+- v0.6.0 Open Source Ready，Polyglot Graph Storage 多存储后端
+- 主流 Agent 框架集成规划（LangGraph / CrewAI / LlamaIndex 等）
+- 溯源推理图 + Bridge Axiom 机制夯实可审计决策链
+
+
 ## 总结
 Semantica 以图原生架构重构 AI 上下文管理，用知识图谱 + 溯源机制为 Agent 系统提供可问责、可解释的基础设施，是 context engineering 赛道里工程化程度最高的项目之一。
 
@@ -149,4 +170,4 @@ Semantica 以图原生架构重构 AI 上下文管理，用知识图谱 + 溯源
 
 *数据来源：GitHub 仓库 (semantica-agi/semantica)，2026 年 8 月访问*
 
-*首次分析：见文件头部 | 最近更新：2026 年 8 月 12 日*
+*首次分析：见文件头部 | 最近更新：2026 年 8 月 13 日*
