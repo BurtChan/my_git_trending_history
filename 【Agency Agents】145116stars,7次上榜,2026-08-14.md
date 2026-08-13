@@ -96,8 +96,8 @@ MIT 许可证完全开放，68 位贡献者参与，社区不断贡献新的 Age
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 144,452 |
-| **总 Forks** | 23,407 |
+| **总 Stars** | 145,116 |
+| **总 Forks** | 23,479 |
 | **贡献者** | 68 |
 | **许可证** | MIT |
 | **主要语言** | Shell / Markdown |
@@ -213,6 +213,26 @@ MIT 许可证完全开放，68 位贡献者参与，社区不断贡献新的 Age
 - 长期霸榜 Trending，社区 Agent 生态持续扩充
 
 
+---
+
+### 更新 6 — 2026 年 8 月 14 日（再次登上 Trending）
+**更新原因**：Agency Agents 连续第七日登上 GitHub Trending，Star 数从 144,452 增长至 145,116（+664），Forks 从 23,407 增至 23,479（+72），总 Star 数突破 14.5 万。
+
+**最新动态**：Agency Agents 热度持续攀升并突破 14.5 万 Star，连续第七日霸榜 GitHub Trending 日榜，Trendshift 全球排名约第 64 位。分发生态继续扩展：原生桌面 App（macOS/Linux/Windows）仍是主分发渠道，OpenClaw 集成会自动注册 workspace（安装后执行 `openclaw gateway restart` 激活新 Agent）；Qwen Code 新增 SubAgents 支持，安装至项目级 `.qwen/agents/` 目录；CLI 与 npx 安装路径并行保留。社区贡献持续活跃，Agent 库覆盖研发、设计、测试、运营等全职能，安装目标已覆盖 Claude Code、Cursor、Codex、Gemini CLI、OpenCode、Qwen Code、Osaurus 等主流工具。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 144,452 | 145,116 | +664 |
+| 总 Forks | 23,407 | 23,479 | +72 |
+
+**核心变化概要**：
+- Star 数 144,452 → 145,116（+664），突破 14.5 万
+- 连续第七日上榜，长期霸榜 Trending 日榜（全球约 #64）
+- OpenClaw 自动注册 workspace + Qwen Code SubAgents 新集成
+- 原生桌面 App 主分发渠道持续巩固
+
 ## 总结
 
 Agency Agents 是一个**现象级的 AI Agent 人格模板库**，87,800+ Stars。它不是传统软件框架，而是 51+ 个精心设计的专业化 AI Agent 人格集合，覆盖工程、设计、营销、产品、测试等 9 大领域。每个 Agent 都拥有独特个性、工作流程和可交付成果定义，可一键安装到 Claude Code、Copilot、Cursor 等 10+ 主流 AI 工具中。项目仅用 7 个月即获得近 9 万 Stars，反映了 AI 社区对"即插即用型 Agent 能力"的巨大需求，是降低 AI 工具使用门槛、提升 AI 协作质量的最佳实践之一。
@@ -223,4 +243,4 @@ Agency Agents 是一个**现象级的 AI Agent 人格模板库**，87,800+ Stars
 
 ---
 
-*首次分析：见文件头部 | 最近更新：2026 年 8 月 13 日*
+*首次分析：见文件头部 | 最近更新：2026 年 8 月 14 日*

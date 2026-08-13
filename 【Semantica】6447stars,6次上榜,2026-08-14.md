@@ -68,9 +68,9 @@ provenance 与 explainable-ai 两个 topic 直接回应监管与合规需求：�
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 5,589 |
-| 🍴 总 Forks | 614 |
-| 今日新增 | +822 |
+| ⭐ 总 Stars | 6,447 |
+| 🍴 总 Forks | 678 |
+| 今日新增 | +858 |
 
 ---
 
@@ -163,6 +163,26 @@ Semantica 连续第二日登上 Trending（今日 +970 Stars），Star 从 8 月
 - 溯源推理图 + Bridge Axiom 机制夯实可审计决策链
 
 
+---
+
+### 更新 5 — 2026 年 8 月 14 日（再次登上 Trending）
+**更新原因**：项目连续第五日登上 GitHub Trending 榜单
+
+**最新动态**：Semantica 连续第五日登上 GitHub Trending，Star 数从 5,589 增至 6,447（+858），Forks 从 614 增至 678（+64），一周内较首次分析（2,183）增长近 3 倍，是 context engineering 赛道当前最受关注的项目之一。工程侧持续加码：TripletStore 新增嵌入式 Oxigraph 后端，ProvenanceManager 补全 PROV-O 信任与规格完整性校验，并新增 Altair Anzo 三元组存储后端，多后端存储生态进一步扩大。配套站点 getsemantica.ai 平台迭代活跃：StructuralChunker 按文档章节边界切分监管 PDF（一个 chunk 不跨两个 section）、NERExtractor 可识别 12 类监管实体（Revenue Allowances、Capex Programs、RAB 值等），已吸引 BDT & MSD Partners（$50B+ AUM 私人银行）、Ausgrid（400 万+ 客户的能源基建商）、Siemens 等机构关注。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 5,589 | 6,447 | +858 |
+| 总 Forks | 614 | 678 | +64 |
+
+**核心变化概要**：
+- Star 数 5,589 → 6,447（+858），较首析增长近 3 倍
+- TripletStore 新增嵌入式 Oxigraph 后端 + Altair Anzo 后端
+- ProvenanceManager 补全 PROV-O 信任/规格完整性校验
+- 金融/能源/工业机构关注度提升，可审计推理图赛道持续升温
+
 ## 总结
 Semantica 以图原生架构重构 AI 上下文管理，用知识图谱 + 溯源机制为 Agent 系统提供可问责、可解释的基础设施，是 context engineering 赛道里工程化程度最高的项目之一。
 
@@ -170,4 +190,4 @@ Semantica 以图原生架构重构 AI 上下文管理，用知识图谱 + 溯源
 
 *数据来源：GitHub 仓库 (semantica-agi/semantica)，2026 年 8 月访问*
 
-*首次分析：见文件头部 | 最近更新：2026 年 8 月 13 日*
+*首次分析：见文件头部 | 最近更新：2026 年 8 月 14 日*
