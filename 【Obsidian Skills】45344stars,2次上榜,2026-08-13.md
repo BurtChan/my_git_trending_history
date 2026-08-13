@@ -219,8 +219,8 @@ Obsidian Skills 是 Claude Code **Agent Skills 规范** 的官方示范实现：
 
 | 指标 | 数据 |
 |------|------|
-| **总 Star 数** | 4,188 |
-| **Fork 数** | 178 |
+| **总 Star 数** | 45,344 |
+| **Fork 数** | 3,280 |
 | **Watch 数** | 34 |
 | **Open Issues** | 6 |
 | **创建时间** | 2026-01-02 |
@@ -230,6 +230,32 @@ Obsidian Skills 是 Claude Code **Agent Skills 规范** 的官方示范实现：
 
 ---
 
+## 📋 更新记录
+
+### 更新 1 — 2026 年 8 月 13 日（再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：kepano/obsidian-skills 时隔四个月再次登上 GitHub Trending，Star 数从 4 月的 4,188 暴增至 45,344（+41,156），Fork 数从 178 增至 3,280。作为 Obsidian CEO Steph Ango 亲自维护的官方 Agent 技能包，该项目在 2026 年 Agent Skills 浪潮中成为标杆——五个核心技能（Markdown 语法、Bases、JSON Canvas、CLI、Defuddle）自发布起就遵循标准 SKILL.md 规范，在 Claude Code、Codex CLI、OpenCode 等 Agent 工具中自动发现与加载，社区涌现大量二次开发与教程。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 4,188 | 45,344 | +41,156 |
+| 总 Forks | 178 | 3,280 | +3,102 |
+
+**核心变化概要**：
+- Star 数增长逾 10 倍，突破 45K，成为技能生态顶流项目
+- 官方 Agent 技能规范标杆地位确立，生态大量跟进
+- 与 Claude Code、Codex 等工具的集成路径成为社区标配
+
+
+---
+
 ## 总结
 
 Obsidian Skills 是 Obsidian 官方推出的 AI Agent 技能包，由 CEO Steph Ango 亲自维护。它包含五个核心技能，分别覆盖 Obsidian 的 Markdown 语法、Bases 数据库、JSON Canvas 画布、CLI 命令行操作和 Defuddle 网页内容提取。项目遵循 Agent Skills 规范，以标准化的 `SKILL.md` 文件格式组织，支持 Claude Code、Codex CLI、OpenCode 等多种 AI 工具自动发现和加载。每个技能文件都包含完整的语法参考、代码示例和验证规则，确保 AI 能正确理解和操作 Obsidian 的所有核心功能。对于使用 Obsidian 并希望借助 AI 辅助管理笔记库的用户，这是一个必不可少的技能包。
+
+*数据来源：GitHub 仓库 (kepano/obsidian-skills)，2026 年 8 月访问*
+*首次分析：见文件头部 | 最近更新：2026 年 8 月 13 日*
