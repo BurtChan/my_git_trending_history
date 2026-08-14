@@ -63,8 +63,8 @@ Medallion 多层数据存储、Data flow 角色化管道、DP integration 源→
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 13,850 |
-| 总 Forks | 836 |
+| 总 Stars | 16,987 |
+| 总 Forks | 1,010 |
 | 许可证 | MIT |
 | 主要语言 | HTML |
 | 创建时间 | 2026 年 4 月 |
@@ -112,10 +112,30 @@ Medallion 多层数据存储、Data flow 角色化管道、DP integration 源→
 - 图型类型扩展至 29 种，覆盖 Claude Code / Claude Cowork / Codex / 插件市场
 - 品牌注入 + draw.io 重绘流程持续完善，产品化程度进一步加深
 
+---
+
+### 更新 3 — 2026 年 8 月 15 日（再次登上 Trending）
+**更新原因**：连续第三日登上 GitHub Trending 榜单，Star 单日增长 +3,137
+
+**最新动态**：Diagram Design 连续第三日登上 Trending，Star 数从 13,850 增至 16,987（+3,137），Forks 从 836 增至 1,010（+174），热度持续高位运行，8 月 12 日曾登顶 GitHub Trending 日榜 #1。项目持续迭代：v2.0 引入「Loop」飞轮图型——带共享内存中枢的循环系统图，虚线表示回写路径，为反馈类架构提供标准表达；v2.3 新增语义化系统模式（semantic system patterns）与可选无障碍动效，静态输出保持默认；品牌注入流程（onboarding）进一步成熟——Agent 抓取 homepage 提取主色调与字体栈，映射为 paper/ink/muted/accent/link 语义 token 写入 style-guide.md，新生成的每张图表自动沿用网站品牌规范。图型库现覆盖 29 种编辑级图表类型，全部自包含 HTML + SVG，无阴影、无 Mermaid 式杂乱。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 13,850 | 16,987 | +3,137 |
+| 总 Forks | 836 | 1,010 | +174 |
+
+**核心变化概要**：
+- 连续第三日登上 GitHub Trending 榜单，Star 单日增长 +3,137
+- 连续多日登上 Trending，社区关注度持续走高
+
+---
+
 ## 总结
 Diagram Design 把「编辑级设计规范」编译成 AI 可执行的图表生成规则，用品牌注入 + 严格设计系统解决了 AI 图表"能用但丑"的普遍痛点，是 AI 原生设计工具赛道中思路最清晰的 Skill 项目之一。
 
 ---
 
 *数据来源：GitHub 仓库 (cathrynlavery/diagram-design)，2026 年 8 月访问*
-*首次分析：2026 年 8 月 | 最近更新：2026 年 8 月 14 日*
+*首次分析：2026 年 8 月 | 最近更新：2026 年 8 月 15 日*

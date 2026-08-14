@@ -68,9 +68,9 @@ provenance 与 explainable-ai 两个 topic 直接回应监管与合规需求：�
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 6,447 |
-| 🍴 总 Forks | 678 |
-| 今日新增 | +858 |
+| ⭐ 总 Stars | 7,441 |
+| 🍴 总 Forks | 772 |
+| 今日新增 | +994 |
 
 ---
 
@@ -183,6 +183,26 @@ Semantica 连续第二日登上 Trending（今日 +970 Stars），Star 从 8 月
 - ProvenanceManager 补全 PROV-O 信任/规格完整性校验
 - 金融/能源/工业机构关注度提升，可审计推理图赛道持续升温
 
+---
+
+### 更新 6 — 2026 年 8 月 15 日（再次登上 Trending）
+**更新原因**：连续第七日登上 GitHub Trending 榜单，Star 数突破 7.4K
+
+**最新动态**：Semantica 连续第七日登上 Trending，Star 数从 6,447 增至 7,441（+994），Forks 从 678 增至 772（+94），持续霸榜印证图原生 AI 基础设施赛道的关注度。近期重大进展：官方宣布面向企业 AI 部署正式开放（pip install semantica），提供确定性上下文管理、决策智能与全链路审计能力；新增 Databricks（Unity Catalog + Delta Lake）与 Snowflake 原生连接器，湖仓/数仓中的表可直接成为图节点并带溯源，免去额外导入导出；支持多语言图存储——RDF 三要素库（Oxigraph、Blazegraph、Apache Jena、Eclipse RDF4J）与属性图库（Neo4j、FalkorDB、Apache AGE、AWS Neptune）可零代码切换；集成生态包含原生 Agno 支持、完整 MCP server、CLI、REST API 及主流编辑器插件，在现有 LLM/向量库/Agent 框架之上叠加决策记录、因果推理、溯源、本体治理、冲突检测与审计追踪，核心图操作不依赖 LLM 即可完成。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 6,447 | 7,441 | +994 |
+| 总 Forks | 678 | 772 | +94 |
+
+**核心变化概要**：
+- 连续第七日登上 GitHub Trending 榜单，Star 数突破 7.4K
+- 连续多日登上 Trending，社区关注度持续走高
+
+---
+
 ## 总结
 Semantica 以图原生架构重构 AI 上下文管理，用知识图谱 + 溯源机制为 Agent 系统提供可问责、可解释的基础设施，是 context engineering 赛道里工程化程度最高的项目之一。
 
@@ -190,4 +210,4 @@ Semantica 以图原生架构重构 AI 上下文管理，用知识图谱 + 溯源
 
 *数据来源：GitHub 仓库 (semantica-agi/semantica)，2026 年 8 月访问*
 
-*首次分析：见文件头部 | 最近更新：2026 年 8 月 14 日*
+*首次分析：见文件头部 | 最近更新：2026 年 8 月 15 日*
