@@ -63,8 +63,8 @@ Medallion 多层数据存储、Data flow 角色化管道、DP integration 源→
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 16,987 |
-| 总 Forks | 1,010 |
+| 总 Stars | 18,270 |
+| 总 Forks | 1,097 |
 | 许可证 | MIT |
 | 主要语言 | HTML |
 | 创建时间 | 2026 年 4 月 |
@@ -132,10 +132,31 @@ Medallion 多层数据存储、Data flow 角色化管道、DP integration 源→
 
 ---
 
+### 更新 4 — 2026 年 8 月 16 日（再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：Diagram Design 连续第五日登上 GitHub Trending，Star 数从 16,987 增至 18,270（+1,283），Forks 从 1,010 增至 1,097（+87），热度仍在高位运行。8 月 12 日登顶 GitHub Trending 日榜 #1 后，社区传播持续扩散：YouTube 频道 Prism Labs 发布「Claude Code's Best Free Skill? 29 Editorial Diagram Types」深度评测（8 月 11 日），Instagram 上 ai.git 等账号连续多日推荐（「This is a hidden gem…No shadows or sloppy visuals here」），项目 6,000+ Star 里程碑被多家评测引用。产品层面 v2.x 系列持续迭代：v2.0 的「The Loop」飞轮图（共享内存中枢 + 虚线写回路径）、v2.3 的语义化系统模式（semantic system patterns）与可选无障碍动效（accessible motion）构筑了「编辑级图表」的差异化定位，品牌注入（Brand Onboarding）流程、draw.io 导入、多工具分发（Claude Code / Claude Cowork / Codex / 插件市场）让产品化程度进一步提升。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 16,987 | 18,270 | +1,283 |
+| 总 Forks | 1,010 | 1,097 | +87 |
+
+**核心变化概要**：
+- Star 连续第五日增长，累计突破 18K，8 月 12 日登顶日榜 #1 后热度不减
+- 图型库稳定在 29 种编辑级图表类型，全部自包含 HTML + SVG，零依赖
+- 品牌注入、draw.io 导入、无障碍动效等产品化能力持续完善
+- YouTube / Instagram 多支第三方评测助推破圈传播
+---
+
+
 ## 总结
 Diagram Design 把「编辑级设计规范」编译成 AI 可执行的图表生成规则，用品牌注入 + 严格设计系统解决了 AI 图表"能用但丑"的普遍痛点，是 AI 原生设计工具赛道中思路最清晰的 Skill 项目之一。
 
 ---
 
 *数据来源：GitHub 仓库 (cathrynlavery/diagram-design)，2026 年 8 月访问*
-*首次分析：2026 年 8 月 | 最近更新：2026 年 8 月 15 日*
+*首次分析：2026 年 8 月 | 最近更新：2026 年 8 月 16 日*

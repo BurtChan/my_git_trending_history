@@ -95,9 +95,9 @@ FluidVoice 已上架 Homebrew Cask，用户只需一条命令 `brew install --ca
 
 | 指标 | 数值 |
 |------|------|
-| 总 Star 数 | 10,164 |
-| 总 Fork 数 | 688 |
-| 今日新增 Star | 245 |
+| 总 Star 数 | 10,219 |
+| 总 Fork 数 | 691 |
+| 今日新增 Star | 55 |
 | 主要编程语言 | Swift |
 | 创建时间 | 2025-09-21 |
 | 开源 issues | 74 |
@@ -169,6 +169,27 @@ FluidVoice 已上架 Homebrew Cask，用户只需一条命令 `brew install --ca
 
 ---
 
+### 更新 4 — 2026 年 8 月 16 日（再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：FluidVoice 连续第五日登上 GitHub Trending，Star 数从 10,164 增至 10,219（+55），Forks 从 688 增至 691（+3），突破 10K Star 大关后增速放缓，热度趋于平稳。作为「本地 Wispr Flow 替代方案」的定位持续获得隐私敏感用户认可：完全本地运行（转录与可选增强均可在设备端完成，默认 0 字节离开 Mac）、多语音模型支持（NeMo-Tr Speech 3.5、Parakeet Flash、Cohere Transcribe、Apple Speech、Whisper 等）、Fluid Intelligence 本地增强（Fluid-1 模型，约 3.5GB 可选下载，智能格式化/上下文感知大小写/按应用自适应语气）。分发渠道持续扩展：Homebrew cask（`brew install --cask fluidvoice`）一键安装，iOS 与 Windows waitlist 开放中，Linux 版规划中；项目 2026 年 2 月 23 日起转为 GPLv3 许可。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 10,164 | 10,219 | +55 |
+| 总 Forks | 688 | 691 | +3 |
+
+**核心变化概要**：
+- 突破 10K Star 后进入平稳期，连续五日霸榜 Trending
+- 本地优先架构 + Fluid Intelligence 本地增强构筑隐私护城河
+- Homebrew cask 安装、iOS/Windows waitlist 开放扩大分发面
+- GPLv3 许可（2026-02-23 起）持续获得社区讨论
+---
+
+
 ## 总结
 
 FluidVoice 是一款在 macOS 生态中极具竞争力的开源离线语音转文字应用，凭借其完全本地运行的隐私保护架构、对 NVIDIA Nemotron Speech 3.5 等前沿模型的快速集成支持、创新的双模式设计（写作 + 命令），以及开箱即用的 Homebrew 安装体验，在短短 9 个月内获得了超过 3,600 颗 Star 和近 500 颗单日 Star 增长，展现了强大的社区认可度。该项目以"永远免费、永远开源"为承诺，持续快速迭代，已从单纯的听写工具进化为集语音输入、电脑控制、AI 文本增强于一体的综合语音助手，是 macOS 用户值得高度关注的开源项目。
@@ -176,4 +197,4 @@ FluidVoice 是一款在 macOS 生态中极具竞争力的开源离线语音转�
 ---
 
 *数据来源：GitHub 仓库 (altic-dev/FluidVoice)，2026 年 8 月访问*
-*首次分析：见文件头部 | 最近更新：2026 年 8 月 15 日*
+*首次分析：见文件头部 | 最近更新：2026 年 8 月 16 日*
