@@ -83,9 +83,9 @@ Continual Learning 插件基于对话记录对 AGENTS.md 进行增量式记忆�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 2,728 |
-| **总 Forks** | 221 |
-| **今日新增 Stars** | 54 |
+| **总 Stars** | 2,952 |
+| **总 Forks** | 233 |
+| **今日新增 Stars** | 224 |
 | **许可证** | MIT |
 | **主要语言** | TypeScript |
 
@@ -115,6 +115,27 @@ Cursor 母公司 Anysphere 2026 年 2 月宣布 ARR 突破 20 亿美元（三年
 
 ---
 
+### 更新 2 — 2026 年 8 月 16 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+Cursor 官方插件生态持续扩张。8 月 3 日 Cursor 宣布推出 Google Workspace 插件，让编码 Agent 可直接读写 Gmail、Google Drive 与 Calendar；随后超过 30 个新插件加入 Cursor Marketplace，覆盖 Atlassian、Datadog、GitLab、Glean、Hugging Face、monday.com、PlanetScale 等基础设施与生产力工具，插件将 MCP 能力与指导 Agent 使用方式的技能打包，用户反馈比单独使用 MCP 强大得多，团队版/企业版还支持创建私有团队 Marketplace 分发内部插件。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 2,728 | 2,952 | +224 |
+| 总 Forks | 221 | 233 | +12 |
+
+**核心变化概要**：
+- 官方插件仓库 Star 从 2.7K 增至 3.0K（+224），连续第 3 天登上 Trending
+- Google Workspace 插件上线，编码 Agent 触达邮件、云盘与日历
+- 30+ 合作伙伴插件加入 Marketplace，插件+技能组合成为主流分发形态
+
+---
+
+
 ## 总结
 
 Cursor Plugins 仓库是 Cursor AI 编辑器插件生态的核心基础设施，它不仅定义了插件规范标准，还提供了 11 个覆盖代码审查、持续学习、并行编排等关键场景的官方插件。该项目近日在 GitHub 上快速走红（trending），反映了开发者社区对 Cursor 插件生态系统的强烈兴趣。随着 Cursor 从工具向平台的转型，该仓库将成为连接 Cursor AI Agent 与外部开发工具的关键桥梁，有望催生一个类似于 VS Code 扩展市场的新兴 AI-native 插件生态。
@@ -122,4 +143,4 @@ Cursor Plugins 仓库是 Cursor AI 编辑器插件生态的核心基础设施，
 ---
 
 *数据来源：GitHub 仓库 (cursor/plugins)*
-*首次分析：2026 年 5 月 | 最近更新：2026 年 8 月*
+*首次分析：2026 年 5 月 | 最近更新：2026 年 8 月 16 日*
