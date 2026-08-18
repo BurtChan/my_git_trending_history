@@ -84,7 +84,7 @@ AI 代理可直接使用技能执行威胁检测、事件响应、日志分析�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 28,636 |
+| **总 Stars** | 28,935 |
 | **总 Forks** | 3,458 |
 | **今日新增 Stars** | 198 |
 | **许可证** | Apache License 2.0 |
@@ -138,6 +138,24 @@ AI 代理可直接使用技能执行威胁检测、事件响应、日志分析�
 
 ---
 
+---
+
+### 更新 3 — 2026 年 8 月 19 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单。
+
+**最新动态**：项目再次登上 Trending，Stars 从 28,636 增长至 28,935，新增 299。 安全技能库继续覆盖 817 个结构化技能、29 个安全领域，并映射 MITRE ATT&CK、NIST CSF、MITRE ATLAS、D3FEND 等框架，可供 Claude Code、Copilot、Codex CLI、Cursor 等多种 Agent 工具调用。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 28,636 | 28,935 | +299 |
+| 总 Forks | — | 3,476 | — |
+
+**核心变化概要**：
+- GitHub 社区关注度继续增长，项目在今日 Trending 榜单中再次出现。
+- 安全技能库继续覆盖 817 个结构化技能、29 个安全领域，并映射 MITRE ATT&CK、NIST CSF、MITRE ATLAS、D3FEND 等框架，可供 Claude Code、Copilot、Codex CLI、Cursor 等多种 Agent 工具调用。
+
 ## 总结
 
 Anthropic-Cybersecurity-Skills 是目前**最大的 AI 原生网络安全技能库**，以 754 个结构化技能覆盖 26 个安全领域，并将每个技能映射到五大行业框架。项目采用渐进式披露架构优化 AI 代理的 token 效率，支持 26+ AI 编码平台，是 AI + 网络安全交叉领域的重要开源项目，6.9k Stars 反映了社区的高度认可。
@@ -145,4 +163,4 @@ Anthropic-Cybersecurity-Skills 是目前**最大的 AI 原生网络安全技能�
 ---
 
 *数据来源：GitHub 仓库 (mukul975/Anthropic-Cybersecurity-Skills)、Web 搜索结果（2026 年 5 月访问）*
-*首次分析：见文件头部 | 最近更新：2026 年 8 月 18 日*
+*首次分析：见文件头部 | 最近更新：2026 年 8 月 19 日*
