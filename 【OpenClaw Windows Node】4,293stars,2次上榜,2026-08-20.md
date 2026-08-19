@@ -41,5 +41,28 @@ OpenClaw Windows Node 是 OpenClaw AI Agent 平台的 Windows 原生伴侣套件
 | 开发周期 | 约 4 个月 |
 | 开源协议 | MIT |
 
+## 📋 更新记录
+
+### 更新 1 — 2026 年 8 月 20 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+- 项目重新登上 Trending，Stars 较文件记录增长超过一倍。
+- Rust 原生节点形态体现了 OpenClaw 生态向 Windows/本地设备运行时扩展的趋势。
+- 由于原报告较早且无更新记录，本次建立首个更新快照；Fork 数据以当前 GitHub API 为准。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 2,000 | 4,293 | +2,293 |
+| 总 Forks | 182 | 75 | +-107 |
+
+**核心变化概要**：
+1. 项目重新登上 Trending，Stars 较文件记录增长超过一倍。
+2. Rust 原生节点形态体现了 OpenClaw 生态向 Windows/本地设备运行时扩展的趋势。
+3. 由于原报告较早且无更新记录，本次建立首个更新快照；Fork 数据以当前 GitHub API 为准。
+
 ## 总结
 OpenClaw Windows Node 是一个定位清晰、设计精良的 Windows 平台 AI Agent 集成套件。项目以组件化的方式将 OpenClaw Agent 深度嵌入 Windows 桌面生态，特别是与 PowerToys 的集成展现了出色的产品思维。单日 326 Star 的爆发式增长表明该项目正处于快速上升期，市场需求旺盛。对于希望在 Windows 上体验原生 AI Agent 能力的用户和开发者而言，这是一个值得关注和参与的项目。
+*首次分析：见文件头部 | 最近更新：2026 年 8 月 20 日*
