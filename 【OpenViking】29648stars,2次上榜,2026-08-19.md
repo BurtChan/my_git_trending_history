@@ -52,9 +52,32 @@ OpenViking 将 Agent 记忆、知识库 RAG 和技能统一为一种可组织、
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 29,068 |
-| 总 Forks | 2,287 |
+| 总 Stars | 29,648 |
+| 总 Forks | 2,316 |
 | 主要语言 | Python / Rust |
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 8 月 19 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：项目较昨日新增 580 Stars，再次进入 Trending。OpenViking 正从 Agent 记忆组件扩展为统一管理 Memory、Knowledge RAG 与 Skills 的自演进上下文数据库，社区关注度持续上升。
+
+仓库现已形成 Rust 核心 crates、Python SDK/CLI、Web Studio、LangChain 集成、Docker 与 Helm 部署等较完整的工程矩阵，并公开与 deer-flow、NoKV、LoopX、Hermes Agent 等项目的生态合作。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 29,068 | 29,648 | +580 |
+| 总 Forks | 2,287 | 2,316 | +29 |
+
+**核心变化概要**：
+- 统一 Agent 记忆、知识检索与技能资产，减少上下文碎片化
+- 补齐 SDK、CLI、Web Studio、LangChain、Docker 与 Helm 工程链路
+- 通过自演进上下文和伙伴生态增强长周期 Agent 的可维护性
 
 ---
 
@@ -64,4 +87,4 @@ OpenViking 的核心价值是把「面向 AI Agent 的上下文数据库」从�
 ---
 
 *数据来源：GitHub 仓库 (volcengine/OpenViking)，2026 年 8 月 18 日访问*
-*首次分析：2026 年 8 月 18 日 | 最近更新：2026 年 8 月 18 日*
+*首次分析：2026 年 8 月 18 日 | 最近更新：2026 年 8 月 19 日*
