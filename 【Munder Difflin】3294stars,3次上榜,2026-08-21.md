@@ -52,8 +52,8 @@
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 2,271 |
-| 总 Forks | 260 |
+| 总 Stars | 3,294 |
+| 总 Forks | 362 |
 | 主要语言 | TypeScript |
 
 ---
@@ -81,10 +81,33 @@
 
 ---
 
+### 更新 2 — 2026 年 8 月 21 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+- 两天内 Stars 从 2,271 增至 3,294（+1,023），热度持续攀升，第三次登上 Trending。
+- 发布 v0.4.4：修复 Windows 下 Agent 间无法互发消息的关键 Bug（cmd.exe 截断多行命令行导致 Agent 各自沉默）；新安装自动启动消息路由器；暗色模式重做。
+- 新增 Skills 系统（内置 Agent 能力目录 + 可浏览的 227 个技能商店）、Prerequisites 页（一键检测/安装 uv、git、Node、MemPalace、各 Agent CLI）。
+- 内置 Monaco IDE（文件树、编辑器、CHANGES/HISTORY/COMPARE Git 面板）与 Kanban 任务依赖、定时任务心跳、Slack/Webhook 接入、Agent Gallery 共享招聘链接。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 2,271 | 3,294 | +1,023 |
+| 总 Forks | 260 | 362 | +102 |
+
+**核心变化概要**：
+1. Windows 跨平台消息协议修复，三大平台协作能力对齐。
+2. Skills 商店 + Prerequisites 自愈安装，降低上手门槛。
+3. 内置 IDE 与 Command Center 让「本地 Agent 办公室」接近一站式工作台。
+
+---
+
 ## 总结
 Munder Difflin 的核心价值是把「本地多智能体开发工作台」从零散概念整理成可运行、可扩展的工程起点，适合希望快速进入该方向的开发者和研究者。
 
 ---
 
 *数据来源：GitHub 仓库 (chaitanyagiri/munder-difflin)，2026 年 8 月 18 日访问*
-*首次分析：2026 年 8 月 18 日 | 最近更新：2026 年 8 月 19 日*
+*首次分析：2026 年 8 月 18 日 | 最近更新：2026 年 8 月 21 日*
