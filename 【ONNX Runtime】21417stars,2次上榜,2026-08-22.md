@@ -88,7 +88,7 @@ ONNX Runtime GenAI 扩展支持 Phi-3/3.5、DeepSeek、Llama、ChatGLM、ERNIE 4
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 16,000+ |
+| **总 Stars** | 21,417 |
 | **总 Forks** | 3,800+ |
 | **今日新增 Stars** | 持续稳定增长 |
 | **许可证** | MIT |
@@ -99,10 +99,32 @@ ONNX Runtime GenAI 扩展支持 Phi-3/3.5、DeepSeek、Llama、ChatGLM、ERNIE 4
 
 ---
 
+## 📋 更新记录
+
+### 更新 1 — 2026 年 8 月 22 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：微软的高性能 ML 推理引擎时隔四个月再次上榜，Star 从约 16,000 增长至 21,417（+5,417），Fork 达 4,148。ONNX Runtime GenAI 扩展持续成为端侧 LLM 部署的首选方案之一，驱动 Windows ML、Foundry Local 与 VS Code AI Toolkit 等产品；跨 15+ 硬件后端（NVIDIA/Intel/Qualcomm/AMD/Apple/WebGPU）的 Execution Provider 生态保持领先。在生成式 AI 端侧推理需求爆发的大背景下，其基础设施级地位进一步巩固。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 16,000 | 21,417 | +5,417 |
+| 总 Forks | （上次未记录） | 4,148 | — |
+
+**核心变化概要**：
+- Star 四个月增长 +5,417（16K → 21.4K）
+- ONNX Runtime GenAI 扩展成为端侧 LLM 部署主流选择
+- Execution Provider 插件化架构覆盖 15+ 硬件后端
+- 背靠微软产品线（Windows ML / Foundry Local / VS Code AI Toolkit）
+
 ## 总结
 
 ONNX Runtime 是**微软的高性能 ML 推理加速引擎**，16k+ Stars。它用 C++ 编写，支持 15+ 种硬件加速后端（NVIDIA、Intel、Qualcomm、AMD、Apple、WebGPU 等），提供从云端到移动端的全平台覆盖。最新版本 v1.25.0 引入插件式 Execution Provider 架构，ONNX Runtime GenAI 扩展正在成为端侧 LLM 部署的首选方案，驱动 Windows ML、Foundry Local 和 VS Code AI Toolkit 等产品。项目以 MIT 协议开源，是生成式 AI 时代推理优化的基础设施级工具。
 
 ---
 
-*数据来源：GitHub 仓库 (microsoft/onnxruntime)、微软官方文档（2026 年 4 月访问）*
+*数据来源：GitHub 仓库 (microsoft/onnxruntime)、微软官方文档（2026 年 8 月访问）*
+
+*首次分析：2026 年 4 月 | 最近更新：2026 年 8 月*
