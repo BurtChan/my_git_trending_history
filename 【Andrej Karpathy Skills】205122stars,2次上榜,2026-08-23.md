@@ -2,9 +2,9 @@
 
 > **一句话总结** — 将 Andrej Karpathy 对 LLM 编程缺陷的洞察提炼为四条可操作的编码准则，以单个 CLAUDE.md 文件改善 AI 编程助手行为。
 
-- **GitHub**: [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills)
+- **GitHub**: [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
 - **语言**: Markdown（纯配置/指导文件，无编程语言）
-- **Stars**: ~7,700+ | **Forks**: ~547
+- **Stars**: 205,122 | **Forks**: 21,002
 - **许可证**: MIT
 - **创建时间**: 2026-01-27
 
@@ -59,7 +59,7 @@ Andrej Karpathy（前 Tesla AI 总监、OpenAI 联合创始人）在社交媒体
 | `skills/` | Skill 定义目录 |
 
 **安装方式**：
-- **Skills CLI**（推荐）: `npx skills add forrestchang/andrej-karpathy-skills`
+- **Skills CLI**（推荐）: `npx skills add multica-ai/andrej-karpathy-skills`
 - **手动下载**: 通过 curl 将 CLAUDE.md 下载或追加到项目根目录
 
 **兼容性**: 主要面向 Claude Code，但其准则具有通用性，可适配任何接受 system prompt / 自定义指令的 AI 编程工具（Cursor、Windsurf、Copilot Chat 等）。
@@ -73,6 +73,40 @@ Andrej Karpathy（前 Tesla AI 总监、OpenAI 联合创始人）在社交媒体
 5. **教学材料** — EXAMPLES.md 中的正反对比是极好的 AI 辅助编程最佳实践教材，适合用于培训开发者如何更好地与 AI 协作
 6. **项目模板初始化** — 新项目启动时直接引入，从第一天就建立健康的 AI 编程习惯
 
+## 📋 更新记录
+
+### 更新 1 — 2026 年 8 月 23 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+
+- 仓库已完成迁移：由原作者账号 forrestchang/andrej-karpathy-skills 迁移至 multica-ai/andrej-karpathy-skills（GitHub API 返回 Moved Permanently，Star/Fork 历史完整保留），本文所有链接已同步更新。
+- Star 数从 4 月首次分析时的约 7,700 暴涨至 205,122，四个月增长超 19.7 万，与 mattpocock/skills、superpowers 一同成为 Agent Skills 大潮中最热门的项目之一——单个 CLAUDE.md 文件的「行为准则」路线被证明极具传播力。
+- 仓库内容持续扩充：新增 CURSOR.md 与 .cursor/rules 适配 Cursor、.claude-plugin 插件清单、skills/karpathy-guidelines 标准技能目录、README.zh 中文文档，安装方式从单文件扩展到 npx skills / Cursor Rules / Claude 插件多渠道。
+- 作者在 README 中顺势推广其新项目 Multica（开源编码智能体运行平台），本仓库成为其重要的流量入口。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | ~7,700 | 205,122 | +197,422 |
+| 总 Forks | ~547 | 21,002 | +20,455 |
+
+**核心变化概要**：
+
+1. 仓库迁移至 multica-ai 组织，原 forrestchang 地址自动重定向
+2. Star 四个月 +19.7 万，跻身 Agent Skills 赛道头部
+3. 新增 Cursor 支持、中文文档与标准技能目录
+
+---
+
 ## 一句话总结
 
 > 将 Andrej Karpathy 对 LLM 编程缺陷的深刻洞察（隐性假设、过度工程、连带破坏），系统化为四条简洁可操作的行为准则，以单个 Markdown 文件的形式嵌入 AI 编程工具，用最小成本显著提升 AI 辅助编程的代码质量。这不是一个代码库，而是一份"AI 编程行为宪法"。
+
+---
+
+*数据来源：GitHub 仓库 (multica-ai/andrej-karpathy-skills)，2026 年 8 月访问*
+---
+
+*首次分析：2026 年 4 月 | 最近更新：2026 年 8 月 23 日*
