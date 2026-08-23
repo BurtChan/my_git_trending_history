@@ -1,0 +1,73 @@
+# Claude Plugins Community 项目分析
+
+## 项目名称
+**Claude Plugins Community** — Claude Cowork 与 Claude Code 的社区插件市场（官方只读镜像）
+- **GitHub**: [anthropics/claude-plugins-community](https://github.com/anthropics/claude-plugins-community)
+- **许可证**: Apache-2.0
+
+---
+
+## 项目概述
+这是 Anthropic 官方维护的 **Claude 社区插件市场的只读镜像仓库**。Claude 生态近期开放了插件体系（Plugins），分为三条线：官方插件（claude-plugins-official）、知识工作插件（knowledge-work-plugins）和社区插件（本仓库）。
+
+仓库核心是 `.claude-plugin/marketplace.json` 文件——它就是 Claude Cowork 与 Claude Code 中可安装的社区插件完整清单。该清单**每晚从 Anthropic 内部审核流水线自动同步**：所有插件必须通过 clau.de/plugin-directory-submission 提交、经过自动化安全扫描并获人工批准后才会进入市场。直接对本仓库提 PR 会被自动关闭，确保所有分发内容都经过官方安全审核。
+
+仓库虽然只有数百 Star，但提交数高达 2,282 次（几乎全部是自动同步 commit），表明插件生态的入库频率非常高——这实质上是观察 Claude 插件生态扩张速度的一个实时窗口。
+
+---
+
+## 核心功能
+| 功能 | 描述 |
+|------|------|
+| 社区插件清单 | marketplace.json 收录全部可安装的社区插件元数据 |
+| 夜间自动同步 | 每晚从 Anthropic 内部审核流水线镜像更新 |
+| 安全审核背书 | 所有插件经过自动安全扫描 + 人工批准后才可分发 |
+| 插件提交入口 | 统一走 clau.de/plugin-directory-submission 表单，PR 自动关闭 |
+
+---
+
+## 技术栈
+| 组件 | 技术 |
+|------|------|
+| 清单格式 | .claude-plugin/marketplace.json（Claude 插件市场规范） |
+| 同步机制 | CI 定时任务（每晚从内部流水线拉取） |
+| 运行环境 | Claude Cowork（Web）与 Claude Code（CLI） |
+
+---
+
+## 项目亮点
+### Anthropic 官方背书的分发生态
+与野生 awesome 列表不同，这是官方审核管道的公开镜像——插件想上 Claude 生态必须走这条提交路径，具有唯一性和权威性。
+### 安全扫描前置
+自动化安全扫描 + 人工批准的双重门槛，在 Agent 插件可能接触用户代码与数据的背景下，这种审核机制是生态安全的底线设计。
+### 生态观测窗口
+2,282 次同步 commit 的高频更新，使其成为追踪「Claude 插件生态正在长出什么」的最佳实时数据源。
+
+---
+
+## 应用场景
+### 插件开发者分发渠道
+开发者通过官方提交表单上架插件，即可被全部 Claude Cowork / Claude Code 用户发现和安装。
+### 生态研究者跟踪分析
+研究者可拉取 marketplace.json 的版本历史，分析插件品类分布、增长速度与审核通过率。
+### 企业安全团队评估
+企业在允许员工使用 Claude 插件前，可参考官方审核标准评估第三方插件的接入风险。
+
+---
+
+## Star 数据
+| 指标 | 数值 |
+|------|------|
+| 总 Stars | 724 |
+| 总 Forks | 119 |
+| 今日新增 | +190 |
+| 提交数 | 2,282（自动同步为主） |
+
+---
+
+## 总结
+Claude 插件生态的官方社区市场镜像：体量虽小但地位关键——它是 Anthropic 插件审核分发管道的唯一公开出口，高频自动同步使其成为观测 Claude Agent 生态扩张的一手窗口。
+
+---
+
+*数据来源：GitHub 仓库 (anthropics/claude-plugins-community)，2026 年 8 月访问*
