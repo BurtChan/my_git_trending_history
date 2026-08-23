@@ -69,7 +69,7 @@ free-claude-code 是一个轻量级的 API 代理服务器，它拦截 Claude Co
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | ~3,900 |
+| **总 Stars** | ~47,717 |
 | **Forks** | ~740 |
 | **今日新增** | 持续保持增长态势，日均增长数十至上百 Star |
 | **许可证** | MIT License |
@@ -137,3 +137,30 @@ free-claude-code 自首次分析以来实现了惊人的 **10 倍以上增长**�
 Star 增长 256 颗，日增 278 颗（Trending）。Use Claude Code, Codex and Pi for free from your terminal, app, IDE, or phone like OpenClaw (voice supported)
 
 > 更新依据：GitHub Trending 2026-08-04 数据，Star 数由 GitHub API 实时获取
+
+---
+
+### 更新 4 — 2026 年 8 月 24 日（再次登上 Trending）
+**更新原因**：项目时隔 20 天再次登上 GitHub Trending 榜单，Star 持续高速增长
+
+**最新动态**：
+- Star 数从 44,169 增至 47,717（+3,548），今日单日新增 1,040 Stars，免费使用 Claude Code 的需求持续旺盛。
+- 项目已支持从终端、App、IDE、手机多种入口免费使用 Claude Code / Codex / Pi，并支持类 OpenClaw 的语音输入。
+- Fork 数增至 7,852，社区围绕多后端（NVIDIA NIM、OpenRouter、LM Studio、llama.cpp）的部署与定制活跃。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 44,169 | 47,717 | +3,548 |
+| 总 Forks | 7,247 | 7,852 | +605 |
+
+**核心变化概要**：
+1. Star 从 44,169 增至 47,717（+3,548），第 4 次登上 Trending
+2. 支持终端/App/IDE/手机多入口 + 语音输入
+3. Fork 增至 7,852，多后端部署生态活跃
+
+---
+
+*数据来源：GitHub 仓库 (Alishahryar1/free-claude-code)，2026 年 8 月访问*
+*首次分析：2026 年 8 月 | 最近更新：2026 年 8 月 24 日*
