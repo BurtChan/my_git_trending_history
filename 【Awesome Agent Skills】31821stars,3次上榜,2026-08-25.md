@@ -90,9 +90,9 @@ AI 工具开发者和社区贡献者在创建新的 Agent 技能时，参考该�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | ~31,108 |
-| **总 Forks** | ~3,355 |
-| **今日新增 Stars** | 登上 GitHub Trending |
+| **总 Stars** | ~31,821 |
+| **总 Forks** | ~3,393 |
+| **今日新增 Stars** | 713 |
 | **许可证** | MIT |
 | **创建时间** | 2025 年 10 月 |
 | **主要语言** | Markdown / TypeScript |
@@ -123,6 +123,28 @@ AI 工具开发者和社区贡献者在创建新的 Agent 技能时，参考该�
 
 ---
 
+### 更新 2 — 2026 年 8 月 25 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单，今日新增 +713 Stars
+
+**最新动态**：
+- 连续第 3 天登上 GitHub Trending 榜单（8 月 23-25 日，据 SnailDev 归档验证），今日新增 713 Stars，增速显著加快。
+- Star 总数逼近 32,000，与同榜的 Karpathy Skills、Claude Obsidian 等项目共同印证 Agent Skills 生态仍是当前最热方向。
+- 作为 VoltAgent 维护的 Agent 技能权威清单，新增技能条目持续扩充，成为开发者构建 Agent 技能库的首选索引。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 31,108 | 31,821 | +713 |
+| 总 Forks | 3,355 | 3,393 | +38 |
+
+**核心变化概要**：
+- 连续 3 天在榜，今日 +713 Stars 增速显著加快
+- Star 总数逼近 32,000，稳居 Agent Skills 索引类榜首
+- Agent Skills 生态热度持续，同榜项目共振明显
+
+---
+
 ## 总结
 
 **VoltAgent/awesome-agent-skills** 是当前 AI Agent 技能生态中规模最大、质量最高的策展项目，由 VoltAgent 团队发起维护，收录了来自 Anthropic、Google、Vercel、Stripe、Microsoft、OpenAI 等 40+ 顶级工程团队发布的 1100+ 个经过验证的 AI 编码助手技能。项目以"人工精选、而非 AI 堆砌"为核心理念，首创性地为 Claude Code、Codex、Cursor、Gemini CLI 等 8+ 主流 AI 编码工具建立了统一的技能标准，在约 6 个月内斩获近 17,000 Stars，已成为 AI Agent 开发者寻找和使用技能的首要参考。
@@ -130,4 +152,4 @@ AI 工具开发者和社区贡献者在创建新的 Agent 技能时，参考该�
 ---
 
 *数据来源：GitHub 仓库 (VoltAgent/awesome-agent-skills)、officialskills.sh（2026 年 4 月访问）*
-*首次分析：2026 年 4 月 | 最近更新：2026 年 8 月 24 日*
+*首次分析：2026 年 4 月 | 最近更新：2026 年 8 月 25 日*
