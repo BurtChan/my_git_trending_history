@@ -1,0 +1,85 @@
+# 【Claude Obsidian】11517stars,1次上榜,2026-08-24.md
+
+## 项目名称
+**Claude Obsidian** — 基于 Claude Code 与 Obsidian 的本地优先「自组织 AI 第二大脑」知识系统
+- **GitHub**: [AgriciDaniel/claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian)
+- **许可证**: MIT
+- **语言**: Python
+- **创建时间**: 2026-04-07
+
+---
+
+## 项目概述
+
+claude-obsidian 是一个为 Claude Code（及兼容 Agent Skills 规范的宿主）设计的本地优先知识管理系统。它的核心理念是：把任意来源的资料（网页、文档、代码、对话）投递给 Claude，由 AI 自动阅读、建立链接、归档进一个用户完全拥有的 Obsidian 知识图谱——全部是普通的 Markdown 文件，不藏在插件缓存里、不锁在云数据库里、也不会被静默上传。
+
+项目自述为「开源 Notion 替代品」与 Karpathy 的 LLM Wiki 模式的结合。与一般 AI 笔记工具「存完文本就结束」不同，claude-obsidian 围绕一个可复利的知识闭环组织：保留原始来源 → 为每个重要论断标注出处与置信度 → 建立链接页面/索引/内容地图 → 再把已有知识投入查询、研究、检索和健康度维护。当前版本 v2.1.0，同时以 Claude Code 插件和 Agent Skills 两种形态发布。
+
+---
+
+## 核心功能
+
+- **带上下文的捕获（Capture with context）**：本地来源经可视化 inbox 进入，合成前先保存不可变的内容寻址副本
+- **论断溯源（Ground every claim）**：来源账本与论断账本记录权威性、新鲜度、支持/矛盾状态、置信度与复核状态
+- **知识连接**：自动生成链接页面、索引、Maps of Content、Canvas 可视化视图
+- **知识复用**：查询、研究、检索、lint 检查、rollup 汇总，避免每次对话从零开始
+- **15 个技能（Skills）一套系统**：覆盖研究、检索、维护、可视化映射的显式工作流
+- **并行安全**：并行 agent 只产出草稿，由单一 orchestrator 以可恢复事务方式检查并应用，防止写坏 vault
+- **非破坏式接入**：`adopt` 工作流可无损接管已有 Obsidian vault；所有变更命令先预览计划、SHA-256 确认后才执行
+
+---
+
+## 技术栈
+
+| 组件 | 技术 |
+|------|------|
+| 核心语言 | Python |
+| 宿主 | Claude Code 插件 / Agent Skills（agentskills.io 兼容） |
+| 知识库 | Obsidian vault（纯 Markdown + JSON） |
+| 核心脚本 | scripts/claude-obsidian.py（init/adopt 事务式操作） |
+
+---
+
+## 项目亮点
+
+### 本地优先，数据主权
+vault 就是普通目录，网络出访是显式的独立决策。对隐私敏感和长期知识管理用户是根本性优势。
+
+### 来源在摘要之后依然存活
+笔记永远指回持久的来源证据，无依据和互相矛盾的论断保持可见——直接针对 LLM 摘要「幻觉覆盖原文」的痛点。
+
+### 事务式写入 + 并发保护
+所有变更走「预览计划 → SHA-256 确认 → 原子应用」流程，多 agent 并行时不会竞争损坏 vault，工程化程度远超一般笔记工具。
+
+---
+
+## 应用场景
+
+### 个人第二大脑
+把日常积累的阅读、研究、笔记沉淀成可检索、可追溯、可复利的个人知识图谱。
+
+### 研究工作流
+论文/文档批量摄入后，基于 vault 内已有证据做有据可查的问答与综述，而非依赖模型记忆。
+
+### 团队知识库维护
+利用 lint 与健康度工作流持续维护知识库质量，旧知识定期 rollup 归并。
+
+---
+
+## Star 数据
+
+| 指标 | 数值 |
+|------|------|
+| 总 Stars | 11,517 |
+| 总 Forks | 1,314 |
+| 今日新增 | 272 |
+
+---
+
+## 总结
+
+把 Karpathy LLM Wiki 模式工程化到 Obsidian 上的本地优先 AI 知识系统：来源可溯、论断有账本、写入有事务、文件归用户，是「AI 笔记」赛道里少见的严肃工程作品。
+
+---
+
+*数据来源：GitHub 仓库 (AgriciDaniel/claude-obsidian)，2026 年 8 月访问*
