@@ -82,9 +82,9 @@ Claude Plugins Official 是由 Anthropic 官方团队管理和维护的 Claude C
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 19,700+ |
-| Forks | 2,500+ |
-| 今日新增 | Trending 🔥 |
+| 总 Stars | 33,956 |
+| Forks | 3,864 |
+| 今日新增 | 47 |
 | 许可证 | 各插件独立授权 |
 | 主要语言 | Python (31.6%)、TypeScript (28.9%) |
 | Watchers | 146 |
@@ -92,6 +92,35 @@ Claude Plugins Official 是由 Anthropic 官方团队管理和维护的 Claude C
 
 ---
 
+## 📋 更新记录
+
+### 更新 1 — 2026 年 8 月 25 日（再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+
+- Anthropic 官方插件市场仓库时隔三个月再次登上 Trending。Star 从 5 月的约 19,700 增长至 33,956（+14,256，+72%），Fork 从约 2,500 增至 3,864，仓库当日（8 月 25 日）仍有推送，官方投入持续加码。
+- 同期 anthropics/claude-plugins-community（社区插件目录）也在 Trending 榜上（今日 +350），官方 + 社区双仓库联动，显示 Claude 插件生态在 2026 年下半年进入快速扩张期——插件正成为 Claude Code 与桌面端竞争 Cursor 等对手的核心武器。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 19,700 | 33,956 | +14,256 |
+| 总 Forks | 2,500 | 3,864 | +1,364 |
+
+**核心变化概要**：
+
+- 三个月 Star +72%（19,700+ → 33,956），官方插件生态加速
+- Fork +1,364 至 3,864，第三方插件开发活跃
+- 与社区目录 claude-plugins-community 同日双榜联动
+
+---
+
 ## 总结
 
 Claude Plugins Official 是 Anthropic 为 Claude Code 构建的官方插件市场，收录了 50+ 高质量插件，涵盖 12 种编程语言的 LSP 支持、代码审查、安全审计、Git 工作流自动化以及与 GitHub、GitLab、Playwright 等主流工具的深度集成。项目采用标准化的插件架构（Commands + Agents + Skills + Hooks + MCP），既降低了插件开发门槛，又确保了生态的可扩展性。凭借近 2 万 Star 和 2500+ Fork 的社区热度，该项目已成为 AI 编码助手生态中不可或缺的基础设施，标志着 AI 开发工具正从单一产品向开放平台加速演进。
+
+*数据来源：GitHub 仓库 (anthropics/claude-plugins-official)，2026 年 8 月访问*
+*首次分析：见文件头部 | 最近更新：2026 年 8 月 25 日*
