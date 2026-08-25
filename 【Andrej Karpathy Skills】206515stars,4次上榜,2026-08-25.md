@@ -4,7 +4,7 @@
 
 - **GitHub**: [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
 - **语言**: Markdown（纯配置/指导文件，无编程语言）
-- **Stars**: 205,122 | **Forks**: 21,002
+- **Stars**: 206,515 | **Forks**: 21,087
 - **许可证**: MIT
 - **创建时间**: 2026-01-27
 
@@ -126,7 +126,29 @@ Andrej Karpathy（前 Tesla AI 总监、OpenAI 联合创始人）在社交媒体
 
 ---
 
+### 更新 3 — 2026 年 8 月 25 日（连续第三日在榜）
+**更新原因**：项目连续第三日登上 GitHub Trending 榜单（今日 +588）
+
+**最新动态**：
+- 自 8 月 23 日以来连续第三日在榜，迁移至 multica-ai 名下后热度不减，总 Star 数达 206,515，稳居 20 万星俱乐部。
+- 项目形态依旧极简：单个 CLAUDE.md 沉淀 Karpathy 四条 AI 编程行为准则，零依赖、即插即用的「行为宪法」路线在 Agent Skills 大潮中持续走强。
+- npx skills / Cursor Rules / Claude 插件等多渠道安装布局稳定，社区传播以「一条命令接入」为核心卖点。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 206,160 | 206,515 | +355 |
+| 总 Forks | 21,062 | 21,087 | +25 |
+
+**核心变化概要**：
+- 连续第三日在榜（8/23-8/25），总星数 206,515，与 mattpocock/skills、superpowers 同处 Agent Skills 赛道头部
+- 单文件「行为准则」形态零迭代成本，迁移后增长动能未受影响
+- Fork 增速放缓（+25），传播以直接引用与安装为主
+
+---
+
 *数据来源：GitHub 仓库 (multica-ai/andrej-karpathy-skills)，2026 年 8 月访问*
 ---
 
-*首次分析：2026 年 4 月 | 最近更新：2026 年 8 月 24 日*
+*首次分析：2026 年 4 月 | 最近更新：2026 年 8 月 25 日*
