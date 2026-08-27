@@ -79,8 +79,8 @@ Claude Skills 是 Anthropic 推出的开放标准，已被 Claude Code、Claude.
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 68,789 |
-| **总 Forks** | 7,805 |
+| **总 Stars** | 73,411 |
+| **总 Forks** | 8,423 |
 | **主要语言** | Python、JavaScript、Shell |
 | **许可证** | Apache-2.0 |
 | **Watch** | 430+ |
@@ -137,7 +137,7 @@ Awesome Claude Skills 是 Claude Skills 生态系统中规模最大、分类最�
 
 *数据来源：GitHub 仓库 (ComposioHQ/awesome-claude-skills)，2026 年 7 月 28 日访问*
 *首次分析：2026 年 7 月 23 日*
-*最近更新：2026 年 7 月 31 日*
+*最近更新：2026 年 8 月 27 日*
 
 ### 更新 3 — 2026 年 7 月 31 日（再次登上 Trending）
 **更新原因**：项目再次登上 GitHub Trending 榜单
@@ -160,3 +160,29 @@ Awesome Claude Skills 再次登上 GitHub Trending 榜单，今日新增 636 Sta
 - LobeHub（169K+ Skills）、SkillsMP（800K+）等市场持续扩展
 - 跨平台兼容（Claude Code、Codex、Cursor、Gemini CLI）推动广泛采用
 - 每周安装量 117K+，connect-apps 插件连接 500+ 应用
+
+---
+
+### 更新 4 — 2026 年 8 月 27 日（再次登上 Trending）
+**更新原因**：项目时隔近一个月再次登上 GitHub Trending 榜单，今日新增 +125 Stars
+
+**最新动态**：
+Awesome Claude Skills 在 7 月 31 日后时隔近一个月重返 GitHub Trending 榜单，总 Star 数从 71,300 增长至 73,411（+2,111），总 Fork 数达到 8,423。作为 Composio 维护的 Claude Skills 精选目录，该项目在 Agent Skills 生态持续扩张的背景下保持稳定增长，是技能标准生态的核心参考入口之一。
+
+Agent Skills 开放标准在 2026 年下半年进一步巩固主流地位，Claude Code、OpenAI Codex、Cursor、Gemini CLI 等平台的技能生态均处于快速扩展期。精选目录类项目作为生态导航入口的价值随之提升，Awesome Claude Skills 的持续上榜反映了开发者对高质量技能索引的刚性需求。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 71,300 | 73,411 | +2,111 |
+| 总 Forks | 8,000 | 8,423 | +423 |
+
+**核心变化概要**：
+- 时隔近一个月重返 Trending，Star 数从 71,300 增至 73,411
+- Agent Skills 开放标准生态持续扩张，目录入口价值凸显
+- 总 Fork 数突破 8,400，社区贡献活跃度保持高位
+
+---
+
+*首次分析：2026 年 7 月 23 日 | 最近更新：2026 年 8 月 27 日*
