@@ -1,0 +1,77 @@
+# Screenshot to Code 项目分析
+
+## 项目名称
+**Screenshot to Code** — 丢入截图，生成干净的前端代码（HTML/Tailwind/React/Vue）
+- **GitHub**: [abi/screenshot-to-code](https://github.com/abi/screenshot-to-code)
+- **许可证**: MIT
+
+---
+
+## 项目概述
+Screenshot to Code 是「截图转代码」赛道的开山之作，由 abi（Twitter 上知名的独立开发者）于 2023 年 11 月创建。用户拖入一张网页截图（或用内置截图工具截取屏幕区域），后端调用多模态大模型（支持 GPT-4o、Claude 等多种模型）生成对应的前端代码，前端实时以预览方式对照原图与生成结果，支持 HTML+Tailwind、React、Vue 等多种输出栈，还可输入 URL 直接抓取网页复刻。
+
+项目结构为 FastAPI 后端 + React/Vite 前端，提供 docker-compose 一键部署。经过近三年、1,455 次提交的持续维护，它已成为该品类的标杆项目与大量「vibe coding」演示的原型，累计 75K+ Stars，今日以 +309 的日增重回 Trending。
+
+---
+
+## 核心功能
+| 功能 | 描述 |
+|------|------|
+| 截图转代码 | 拖入截图生成 HTML/Tailwind、React、Vue 代码，实时预览对照 |
+| 视频/动态截图 | 支持屏幕动态截取（视频捕获），逐步迭代生成 |
+| URL 复刻 | 输入网页地址直接抓取并生成复刻代码 |
+| 多模型支持 | 可配置 OpenAI/Anthropic/Gemini 等多种多模态模型及代理 |
+| 一键部署 | docker-compose 完整前后端编排，`.env` 配置 API Key 即可运行 |
+
+---
+
+## 技术栈
+| 组件 | 技术 |
+|------|------|
+| 后端 | Python / FastAPI |
+| 前端 | React / Vite |
+| 部署 | Docker / docker-compose |
+| 模型层 | GPT-4o / Claude 等多模态 LLM（可配置 base URL 代理） |
+
+---
+
+## 项目亮点
+### 品类开创者与长期维护
+2023 年底发布即引爆全网，是「screenshot-to-code」这个名字的来源。此后近三年持续迭代（1,455 commits），没有沦为一波流 demo， Evaluation.md、QA.md、Troubleshooting.md 等工程化文档齐备。
+
+### 生成-预览对照的交互范式
+原图与生成页并排实时渲染，配合 WebSocket 流式更新，用户体验成为后来大量仿品的参考标准。
+
+### 完全开放的自托管方案
+MIT 许可 + docker-compose 自部署，用户可用自己的 API Key 在内网运行，适合作为企业内部「设计稿转页面」的原型工具。
+
+---
+
+## 应用场景
+### 设计稿快速落地
+设计师出图后，前端拖入截图获得可运行的 Tailwind/React 骨架代码，再人工精修，大幅减少重复布局工作。
+
+### 旧站迁移与竞品分析
+输入旧站 URL 或截图快速得到现代技术栈的复刻版本，作为迁移改造的起点。
+
+### LLM 多模态能力教学
+项目结构简单清晰，是学习「多模态模型 + 流式前端渲染」工程实践的经典入门样本。
+
+---
+
+## Star 数据
+| 指标 | 数值 |
+|------|------|
+| 总 Stars | 75,295 |
+| 总 Forks | 9,201 |
+| 今日新增 | +309 |
+| 创建时间 | 2023-11-14 |
+
+---
+
+## 总结
+Screenshot to Code 是截图转代码品类的定义者，凭借近三年的持续维护和开放的自托管体验，仍是前端 AI 辅助开发中最经典的工具之一。
+
+---
+
+*数据来源：GitHub 仓库 (abi/screenshot-to-code)，2026 年 8 月访问*
