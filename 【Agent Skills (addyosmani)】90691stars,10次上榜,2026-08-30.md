@@ -110,9 +110,9 @@ Agent Skills 是由 Google Chrome 团队核心开发者 Addy Osmani 创建的开
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 86,151 |
-| 🍴 总 Forks | 9,262 |
-| 📈 今日新增 | 492 stars today |
+| ⭐ 总 Stars | 90,691 |
+| 🍴 总 Forks | 9,706 |
+| 📈 今日新增 | 188 stars today |
 | 🗓️ 创建时间 | 2026-02-15 |
 | 🏷️ 主要话题 | agent-skills, claude-code, codex, cursor |
 | 💻 主要语言 | JavaScript |
@@ -295,6 +295,27 @@ Agent Skills 是由 Google Chrome 团队核心开发者 Addy Osmani 创建的开
 - 代码审查能力与防重复 guardrails 持续强化
 
 
+---
+
+### 更新 9 — 2026 年 8 月 30 日（再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：addyosmani/agent-skills 时隔 18 天再次登上 Trending，Star 数从 86,151 增长至 90,691（+4,540），向 10 万里程碑逼近。作为 Chrome/性能领域知名工程师 Addy Osmani 维护的 Agent 技能合集，项目在 Claude Skills 生态扩张的浪潮中持续吸纳前端工程方向的技能定义，与 ComposioHQ/awesome-claude-skills 等清单形成互补——本仓库以「可直接装进工程工作流的技能实现」而非纯链接清单为定位，成为前端工程师接入 Agent 工作流的主要入口之一。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 86,151 | 90,691 | +4,540 |
+| 总 Forks | 9,262 | 9,706 | +444 |
+
+**核心变化概要**：
+
+- 18 天 +4,540 Stars，总量 90.7K 逼近 10 万里程碑
+- Forks 9,262→9,706，技能被 fork 定制的比例持续走高
+- 第 10 次登上 Trending，是本轮 Skills 生态热潮中上榜最频繁的仓库之一
+
 ## 总结
 
 Agent Skills 是目前 AI 编码代理生态中**最全面、最成熟的工程技能库**之一，由业界知名开发者 Addy Osmani 主导。项目将传统软件工程的精华——从规格驱动开发到质疑驱动审查——系统性地转化为 AI 可执行的技能规范，填补了 AI 编码工具"会写代码但不懂工程"的关键空白。72K+ 的 Stars 和 1,300+ 的今日新增充分说明了开发社区对 AI 编码质量标准化的强烈需求。
@@ -302,4 +323,4 @@ Agent Skills 是目前 AI 编码代理生态中**最全面、最成熟的工程�
 ---
 
 *数据来源：GitHub 仓库 (addyosmani/agent-skills)，2026 年 8 月访问*
-*首次分析：2026 年 7 月 | 最近更新：2026 年 8 月 12 日*
+*首次分析：2026 年 7 月 | 最近更新：2026 年 8 月 30 日*
