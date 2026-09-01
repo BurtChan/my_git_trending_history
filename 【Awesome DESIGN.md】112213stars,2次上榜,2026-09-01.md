@@ -96,10 +96,33 @@ Awesome DESIGN.md 是由 VoltAgent（AI Agent 工程平台）维护的一个开�
 
 | 指标 | 数值 |
 |------|------|
-| 总 Star 数 | ⭐ 103,000 |
-| 总 Fork 数 | 🍴 11,900 |
+| 总 Star 数 | ⭐ 112,213 |
+| 总 Fork 数 | 🍴 12,744 |
 | 总 Commits | 📝 60 |
 | 许可证 | MIT |
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 9 月 1 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：项目时隔一个多月再次登上 GitHub Trending 榜单。Star 数从 103,000 增长至 112,213（+9,213），Fork 数从 11,900 增长至 12,744（+844）。「让 AI 看懂设计」的需求在 Vibe Coding 浪潮中持续放大，DESIGN.md 作为 AI 编码智能体的设计系统输入格式正在成为开发者基础设施，VoltAgent 团队持续扩充品牌设计系统收录，项目稳居十万星级俱乐部并保持增长动能。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 103,000 | 112,213 | +9,213 |
+| 总 Forks | 11,900 | 12,744 | +844 |
+
+**核心变化概要**：
+1. 累计突破 112K Star，Vibe Coding 设计系统需求持续爆发
+2. Fork 数增至 12,744，AI 前端工作流采用面扩大
+3. DESIGN.md 格式正在成为 AI 编码智能体的标准设计输入
+
+> 更新依据：GitHub Trending 2026-09-01 数据，Star 数由 GitHub API 实时获取
 
 ## 总结
 
@@ -107,4 +130,5 @@ Awesome DESIGN.md 是 Vibe Coding 浪潮下的标杆性项目，它站在 Google
 
 ---
 
-*数据来源：GitHub 仓库 (VoltAgent/awesome-design-md)，2026 年 7 月访问*
+*数据来源：GitHub 仓库 (VoltAgent/awesome-design-md)，2026 年 9 月访问*
+*首次分析：2026 年 7 月 | 最近更新：2026 年 9 月 1 日*
