@@ -1,0 +1,87 @@
+# Magnitude 项目分析
+
+## 项目名称
+**Magnitude** — 开源本地推理服务器：自动检测硬件、推荐最适合的模型并调优运行，面向 Agent 工作负载，完全私有离线
+- **GitHub**: [magnitudedev/magnitude](https://github.com/magnitudedev/magnitude)
+- **许可证**: Apache-2.0
+
+---
+
+## 项目概述
+Magnitude 是一个开源推理服务器，核心思路是「让本地模型跑得好这件事不再靠猜」。它首先对用户的硬件（芯片、内存、带宽）做画像分析，然后推荐最适合该机器的模型（附带预估 tok/s 吞吐），选定后自动下载、调优并运行。用户既可以用它内置的 Agent harness（内置 OpenAI 兼容 API），也可以把 Pi、OpenCode、Hermes、OpenClaw、Codex、Claude Code、Cline 等主流编码 Agent 直接连上来，模型已经预加载好。
+
+与 Ollama / LM Studio 的本质区别在于：后者运行「你指定的模型」，选哪个模型、哪个量化版本、能不能跑得动、跑多快全靠用户自己判断；Magnitude 把这套 guesswork 全部自动化——硬件画像 → 模型推荐 → 端到端调优（投机解码、并发参数），并且为 Agent 负载特性做了专门优化：模型按请求即时加载，空闲或内存吃紧时自动卸载。
+
+项目支持 macOS 和 Linux（Windows 通过 WSL），一条命令完成安装与配置（`npm i -g @magnitudedev/cli && magnitude setup`）。完全离线运行，无 token 费用、无 API Key、无限流。今日新增 130 星（总量 1,731），登上 Trending 说明「本地 Agent 推理」这一方向正获得越来越多关注。
+
+---
+
+## 核心功能
+
+| 功能 | 描述 |
+|------|------|
+| 硬件画像 | 自动检测芯片、内存、内存带宽，评估机器真实承载能力 |
+| 模型推荐 | 按硬件推荐最合适的模型，附带预估 tok/s，支持从 Hugging Face 下载目录外 GGUF 模型 |
+| 内置推理引擎 | 自研推理引擎，针对 Agent 工作负载优化，无需单独起 server |
+| 按需加载/卸载 | 模型随请求即时加载，空闲或内存紧张时自动卸载 |
+| 端到端调优 | 投机解码、并发等参数按机器自动配置 |
+| 多 harness 接入 | 支持 Pi、OpenCode、Hermes、OpenClaw、Codex、Claude Code、Oh My Pi、Cline |
+| 完全离线 | 模型、Prompt、文件全部留在本机，下载后可断网使用 |
+
+---
+
+## 技术栈
+
+| 组件 | 技术 |
+|------|------|
+| 仓库结构 | monorepo（turbo.json + bun workspace），CLI / desktop / web / inference / packages 多包 |
+| CLI 分发 | npm（@magnitudedev/cli） |
+| 平台 | macOS / Linux（Windows via WSL） |
+| 模型格式 | GGUF |
+| 许可证 | Apache-2.0 |
+
+---
+
+## 项目亮点
+
+### 「不猜模型」的差异化定位
+Ollama 和 LM Studio 解决的是「运行模型」，Magnitude 解决的是「选对模型并跑好」。硬件画像 + 推荐带预估吞吐 + 自动调优的组合，把本地推理的门槛从「懂量化的工程师」降到「任何开发者一条命令」。
+
+### 为 Agent 负载而生
+Agent 编码场景的请求模式（高频短上下文、间歇性并发）与传统聊天负载不同。Magnitude 的按需加载/卸载与并发调优正是针对这一模式，且直接与 Claude Code、Codex、Cline 等主流编码 Agent 打通。
+
+### 隐私与零成本
+模型、Prompt、文件全部本地化，可完全离线运行；无 token 费用、无 API Key、无限流。对隐私敏感企业和个人用户是云 API 的直接替代。
+
+---
+
+## 应用场景
+
+### 本地编码 Agent 后端
+用 Claude Code / Codex / Cline 等工具但不想付 API 费用、不想数据出网的开发者，用 Magnitude 做本地推理后端，一条命令完成「选模型 + 跑起来」。
+
+### 低配硬件跑本地模型
+不确定自己的机器能跑多大的模型、什么量化版本的用户，靠硬件画像与推荐直接获得可行方案。
+
+### 企业内网私有部署
+完全离线 + Apache-2.0 开源，适合对数据合规要求高的组织在内网为团队提供本地模型服务。
+
+---
+
+## Star 数据
+
+| 指标 | 数值 |
+|------|------|
+| 总 Stars | 1,731 |
+| 总 Forks | 112 |
+| 今日新增 | 130 stars |
+| 提交数 | 545+ |
+
+---
+
+## 总结
+Magnitude 把「本地跑模型」从经验活变成自动化流程——硬件画像、模型推荐、端到端调优一条龙，且专为 Agent 编码负载设计并与主流编码 Agent 无缝衔接，是本地推理赛道中对 Ollama/LM Studio 定位差异明确的挑战者。
+
+---
+
+*数据来源：GitHub 仓库 (magnitudedev/magnitude)，2026 年 9 月访问*
