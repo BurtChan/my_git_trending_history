@@ -63,8 +63,8 @@ Medallion 多层数据存储、Data flow 角色化管道、DP integration 源→
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 30,483 |
-| 总 Forks | 1,959 |
+| 总 Stars | 31,046 |
+| 总 Forks | 1,997 |
 | 许可证 | MIT |
 | 主要语言 | HTML |
 | 创建时间 | 2026 年 4 月 |
@@ -170,6 +170,25 @@ Medallion 多层数据存储、Data flow 角色化管道、DP integration 源→
 - 多工具分发（Claude Code / Codex / Pi / 插件市场）布局成效显现
 ---
 
+### 更新 6 — 2026 年 9 月 5 日（再次登上 Trending）
+**更新原因**：项目再次登上 GitHub Trending 榜单（437 stars today）
+
+**最新动态**：连续第二日在榜，Star 数从 30,483 增至 31,046（+563），Forks 从 1,959 增至 1,997（+38）。功能演进继续加速：v2.5.10 新增十种布局语法——Sankey 桑基图、fishbone 鱼骨图、Wardley map、kanban 看板、user journey 用户旅程、deployment 部署图、dependency graph 依赖图、UML class 类图、story map 故事地图、database schema 数据库模式，图型谱系进一步拉开与 Mermaid 类工具的差距；v2.3 引入语义系统模式（semantic system patterns）与可选无障碍动效（默认仍为静态输出，兼顾可访问性）。据 skills.sh registry 统计，该 skill 累计安装已达 3,901 次，仓库 9 月 2 日仍在持续更新，是 AI 图表生成赛道中商业化潜力与社区热度兼备的头部 skill。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 30,483 | 31,046 | +563 |
+| 总 Forks | 1,959 | 1,997 | +38 |
+
+**核心变化概要**：
+- v2.5.10 新增 10 种布局语法，覆盖 Sankey/鱼骨图/Wardley map/UML 等
+- v2.3 语义系统模式 + 可选无障碍动效，静态输出仍为默认
+- skills.sh registry 累计安装破 3,900 次，9 月 2 日仓库仍在更新
+
+---
+
 
 ## 总结
 Diagram Design 把「编辑级设计规范」编译成 AI 可执行的图表生成规则，用品牌注入 + 严格设计系统解决了 AI 图表"能用但丑"的普遍痛点，是 AI 原生设计工具赛道中思路最清晰的 Skill 项目之一。
@@ -177,4 +196,4 @@ Diagram Design 把「编辑级设计规范」编译成 AI 可执行的图表生�
 ---
 
 *数据来源：GitHub 仓库 (cathrynlavery/diagram-design)，2026 年 8 月访问*
-*首次分析：2026 年 8 月 | 最近更新：2026 年 9 月 4 日*
+*首次分析：2026 年 8 月 | 最近更新：2026 年 9 月 5 日*
