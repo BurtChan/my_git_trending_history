@@ -67,12 +67,36 @@ Everything Claude Code 是作者 affaanmustafa（Anthropic × Forum Ventures 黑
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 2,145 |
-| 总 Forks | 349 |
-| 今日新增 Stars | 87 |
+| 总 Stars | 2,318 |
+| 总 Forks | 361 |
+| 今日新增 Stars | 173 |
 | 主要语言 | —（配置仓库） |
 | 许可证 | 未标明（README 注明 MIT） |
 | 创建时间 | 2026-01-23 |
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 9 月 6 日（再次登上 Trending）
+**更新原因**：再次登上 GitHub Trending，单日新增 +173 Stars
+
+**最新动态**：
+- 连续第 2 日登上 Trending，单日新增 +173 Stars，两日累计 +260，增速较昨日（+87）翻倍
+- Claude Code 生态资源汇总类项目持续吃到 Agent 工具链热度红利，sabotage-scores 等专项清单是差异化亮点
+- Forks 349 → 361，作为 cheat sheet 型资源库，Fork/Star 比高达 15%，工具链从业者收藏刚需明显
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 2,145 | 2,318 | +173 |
+| 总 Forks | 349 | 361 | +12 |
+
+**核心变化概要**：
+- 连续第 2 日在榜，Star 2,145 → 2,318（+173），Forks 349 → 361（+12）
+- 日增量翻倍（+87 → +173），Claude Code 生态热度仍在扩散
+- 资源汇总型项目的高 Fork 比印证其工具书属性
 
 ---
 
@@ -82,3 +106,4 @@ Everything Claude Code 把一位黑客松冠军的 Claude Code 使用体系完�
 ---
 
 *数据来源：GitHub 仓库 (WorldFlowAI/everything-claude-code)，2026 年 9 月访问*
+*首次分析：2026 年 9 月 | 最近更新：2026 年 9 月 6 日*
