@@ -66,9 +66,9 @@ narrow-react-prop-types 识别出一个被广泛忽视的问题：TypeScript 类
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 2,627 |
-| 总 Forks | 73 |
-| 今日新增 Stars | 186 |
+| 总 Stars | 3,061 |
+| 总 Forks | 88 |
+| 今日新增 Stars | 434 |
 | 主要语言 | — |
 | 许可证 | MIT |
 | 创建时间 | 2026-03-18 |
@@ -98,10 +98,30 @@ narrow-react-prop-types 识别出一个被广泛忽视的问题：TypeScript 类
 
 ---
 
+### 更新 2 — 2026 年 9 月 7 日（连续第 3 天登上 Trending）
+
+**更新原因**：连续第 3 天登上 GitHub Trending 榜单（满足连续 3 天特例），今日新增 +434 Stars
+
+**最新动态**：HumanLayer Skills 连续第三日在榜，Star 数从 2,627 增至 3,061（+434），Forks 从 73 增至 88（+15），日增较昨日（+186）翻倍以上，热度仍在上升期。这款仅 12 个 commit 的精简技能合集凭 6 个高质量技能（build-iterated-agentic-loop、design-control-loop、narrow-react-prop-types 等）持续吸星，「控制论 × 上下文工程」的工程方法论在 Agent Skills 生态中辨识度极高。安装方式 `npx skills add humanlayer/skills --skill <名称>`，适用于 Claude Code。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 2,627 | 3,061 | +434 |
+| 总 Forks | 73 | 88 | +15 |
+
+**核心变化概要**：
+- 连续 3 天在榜，日增 +434 较昨日翻倍，热度上升
+- Star 总量突破 3,000
+- 「少而精」技能合集路线在 Skills 大全类仓库混战中站稳脚跟
+
+---
+
 ## 总结
 HumanLayer Skills 是一份「控制论 × 上下文工程」的浓缩实践样本：技能数量不多，但每个都瞄准编码智能体的真实工程痛点，加上 HumanLayer 的品牌背书，首日即爆红。对构建自有技能体系的开发者而言，它是学习「如何设计可迭代的智能体工作流」的优质参考。
 
 ---
 
 *数据来源：GitHub 仓库 (humanlayer/skills)，2026 年 9 月访问*
-*首次分析：见文件头部 | 最近更新：2026 年 9 月 6 日*
+*首次分析：见文件头部 | 最近更新：2026 年 9 月 7 日*
