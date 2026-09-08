@@ -90,14 +90,43 @@ Netlify 插件支持自动化部署流水线；Remotion 插件支持用代码生
 
 | 指标 | 数值 |
 |------|------|
-| GitHub Stars | 1,949 |
-| Forks | 267 |
-| 今日新增 Stars | 262 |
+| GitHub Stars | 5,529 |
+| Forks | 791 |
+| 今日新增 Stars | 45 |
 | 主语言 | JavaScript |
 | 许可证 | 未声明 |
 | 创建时间 | 2026-03-04 |
 | 仓库地址 | https://github.com/openai/plugins |
 
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026年9月8日（再次登上 Trending）
+
+**更新原因**：时隔 3 个月再次登上 GitHub Trending 榜单（45 stars today）
+
+**最新动态**：
+- Star 数 1,949 → 5,529（+3,580，约 +184%），三个月内接近三倍增长；今日新增 45 Stars，重回性榜
+- 作为 OpenAI 官方的 Codex 插件生态参考实现，收录 Figma、Notion、Expo、Netlify、Remotion、Google Slides 等场景的插件示例，持续扩充
+- 许可证仍未声明（API license 字段为空），但作为官方仓库对理解 AI 代理插件化方向具有权威参考价值
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| GitHub Stars | 1,949 | 5,529 | +3,580 |
+| Forks | 267 | 791 | +524 |
+
+**核心变化概要**：
+- Star 增长 3,580，第 2 次登上 Trending
+- 插件示例持续丰富，覆盖设计/协作/部署/演示全场景
+- Codex 插件化是 OpenAI 将编码代理推向知识工作领域的核心路线
+
+
 ## 总结
 
 OpenAI Plugins 仓库是 Codex AI 编码代理插件生态的官方参考实现，标志着 OpenAI 将 Codex 从编码工具推向更广阔的知识工作领域。插件系统的设计理念强调模块化、可组合和可复用——通过清单文件、技能工作流、MCP 集成和子代理等组件，开发者可以为 Codex 定制专属能力。当前仓库已收录涵盖 Figma 设计、Notion 协作、iOS/macOS/Web 全平台开发、Expo 跨平台、Netlify 部署、Remotion 视频和 Google Slides 演示等场景的插件示例，单日新增 262 Star 的高热度反映出社区对 AI 代理插件化趋势的强烈关注。尽管许可证尚未声明，但作为 OpenAI 官方出品，该仓库对理解 AI 编码代理的未来发展方向具有重要的参考价值。
+
+*数据来源：GitHub 仓库 (openai/plugins)，2026 年 9 月 8 日访问*
+*首次分析：2026 年 6 月 | 最近更新：2026 年 9 月 8 日*
