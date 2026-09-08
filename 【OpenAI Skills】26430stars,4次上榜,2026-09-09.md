@@ -71,9 +71,9 @@ openai/skills 是 OpenAI 官方维护的 **Skills Catalog for Codex**——Codex
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ Stars | 25,947 |
-| 🍴 Forks | 1,745 |
-| 📈 今日新增 | 159 stars |
+| ⭐ Stars | 26,430 |
+| 🍴 Forks | 1,773 |
+| 📈 今日新增 | 483 stars |
 | 💬 主要语言 | Python |
 | 📅 创建时间 | 2025-11-25 |
 
@@ -128,10 +128,29 @@ openai/skills 是 OpenAI 官方维护的 **Skills Catalog for Codex**——Codex
 
 ---
 
+### 更新 3 — 2026 年 9 月 9 日（连续第四日在榜（streak 特例更新））
+
+**更新原因**：连续第 4 日在榜，Star 单日增长 +483（streak 特例）。
+
+**最新动态**：OpenAI Skills 连续第四日在榜，Star 从 25,947 增长至 26,430（+483），Forks 从 1,745 增至 1,773（+28）。作为 OpenAI 官方的 Agent Skills 仓库，处于「skills 生态取代 plugins 生态」讨论的中心——榜单上 Marketing Skills、Andrej Karpathy Skills、Superpowers 等多个 skills 类项目同时高频在榜，整个 Agent Skills 赛道正在形成集体爆发。
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|---|---|---|---|
+| 总 Stars | 25,947 | 26,430 | +483 |
+| 总 Forks | 1,745 | 1,773 | +28 |
+| 今日新增 | — | 483 stars | — |
+
+**核心变化**：
+- Star 25,947 → 26,430（+483），Forks 1,745 → 1,773（+28）
+- 连续第四日在榜（streak 特例更新），持续保持 Trending 曝光
+
+
+---
+
 ## 总结
 OpenAI 官方 Codex 技能目录仓库，Agent Skills 浪潮在 OpenAI 阵营的起点；虽已宣布迁移至 openai/plugins，仍是理解官方技能组织范式与生态演进的关键样本。
 
 ---
 
 *数据来源：GitHub 仓库 (openai/skills)，2026 年 9 月访问*
-*首次分析：2026 年 9 月 7 日 | 最近更新：2026 年 9 月 8 日*
+*首次分析：2026 年 9 月 7 日 | 最近更新：2026 年 9 月 9 日*
