@@ -15,8 +15,8 @@ Pascal Editor 是一款基于 React Three Fiber 和 WebGPU 构建的开源 3D �
 | **项目名称** | Pascal Editor |
 | **GitHub 地址** | https://github.com/pascalorg/editor |
 | **官方站点** | https://editor.pascal.app |
-| **Stars** | 22,697 |
-| **Forks** | 2,885 |
+| **Stars** | 22,822 |
+| **Forks** | 2,892 |
 | **许可证** | MIT License |
 | **主要语言** | TypeScript |
 | **作者** | Aymeric Rabot, Wassim Samad |
@@ -257,5 +257,21 @@ Site
 
 ---
 
+### 更新 5 — 2026 年 9 月 10 日（连续第四天登上 Trending（9/7-9/10））
+
+**连续第四天在榜**（9/7-9/10），项目热度进入平台期但曝光持续：
+
+- Star 从 22,697 增至 22,822（+125），Forks 增至 2,892（+7）
+- 浏览器端 3D 建筑编辑器在连续四天 Trending 曝光后增速自然回落，但社区基本盘持续扩大
+- 头部基本信息表中的 Star/Fork 数据同步刷新
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|---------|---------|------|
+| 总 Stars | 22,697 | 22,822 | +125 |
+| 总 Forks | 2,885 | 2,892 | +7 |
+| 今日新增 | — | 125 stars | — |
+
+---
+
 *数据来源：GitHub 仓库 README 及 API（2026 年 4 月访问）*
-*首次分析：见文件头部 | 最近更新：2026 年 9 月 9 日*
+*首次分析：见文件头部 | 最近更新：2026 年 9 月 10 日*
