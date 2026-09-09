@@ -4,7 +4,7 @@
 
 - **GitHub**: [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
 - **语言**: Markdown（纯配置/指导文件，无编程语言）
-- **Stars**: 211,046 | **Forks**: 21,441
+- **Stars**: 211,556 | **Forks**: 21,476
 - **许可证**: MIT
 - **创建时间**: 2026-01-27
 
@@ -198,4 +198,26 @@ Andrej Karpathy（前 Tesla AI 总监、OpenAI 联合创始人）在社交媒体
 - 稳居 20 万星俱乐部，单文件 CLAUDE.md 路线持续被验证
 
 
-*首次分析：2026 年 4 月 | 最近更新：2026 年 9 月 8 日*
+*首次分析：2026 年 4 月 | 最近更新：2026年9月9日*
+
+### 更新 6 — 2026年9月9日（再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单（333 stars today）
+
+**最新动态**：
+- 连续第二日在榜，Star 数 211,046 → 211,556（+510），稳居 20 万星俱乐部
+- 今日新增 333 Stars；与 ECC、Marketing Skills、Superpowers 等 Skills 生态项目同日霸榜
+- 仓库自 4 月 20 日以来无代码更新，增长完全由 Karpathy 个人影响力和社区口碑驱动
+- 总 Forks 增至 21,476，Fork/Star 比保持约 10%，团队规范模板分发属性不变
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 211,046 | 211,556 | +510 |
+| 总 Forks | 21,441 | 21,476 | +35 |
+
+**核心变化概要**：
+- Star 增长 510，第 7 次登上 Trending
+- 连续两日在榜，四条编码准则持续传播
+- 无代码更新纯口碑驱动增长
