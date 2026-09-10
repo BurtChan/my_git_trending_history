@@ -66,9 +66,9 @@ System Design Notes 是开发者 liquidslr 对 Alex Xu（《System Design Interv
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 17,865 |
-| 总 Forks | 3,391 |
-| 今日新增 | +424 |
+| 总 Stars | 18,546 |
+| 总 Forks | 3,462 |
+| 今日新增 | +891 |
 | 创建时间 | 2024-12-24 |
 
 ---
@@ -99,11 +99,32 @@ System Design Notes 是开发者 liquidslr 对 Alex Xu（《System Design Interv
 
 ---
 
+### 更新 2 — 2026 年 9 月 11 日（连续第三日登上 Trending）
+
+**更新原因**：连续第三日登上 GitHub Trending 榜单，单日新增 891 Stars，热度不降反升。
+
+**最新动态**：System Design Notes 覆盖 Alex Xu《System Design Interview》Vol 1 + Vol 2 全部 28 章——从扩展性、估算、一致性哈希等基础，到 YouTube、Google Drive、Google Maps、分布式消息队列、S3 类对象存储、支付系统、数字钱包、证券交易所等大型案例，每章附论文与工程博客延伸阅读（Dynamo、BigTable、Maglev、Snowflake、Discord/Slack/Dropbox 工程实践等）。配套在线阅读站 pagefy.io 提供完整笔记网页版，纯内容型仓库的持续走红印证了面试准备刚需。
+
+**Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|:---:|:---:|:---:|:---:|
+| 总 Stars | 17,865 | 18,546 | +681 |
+| 总 Forks | 3,391 | 3,462 | +71 |
+| 今日新增 | — | 891 stars | — |
+
+**核心变化概要**：
+- Star 增长 681 至 18,546，连续第 3 日在榜，累计第 3 次登上 Trending
+- Forks 达 3,462，收藏/引用型学习资料的典型传播特征
+- 单日增量 891 高于昨日的 424，热度仍在爬坡
+
+---
+
 ## 总结
 
 一套把 Alex Xu 系统设计面试经典「要点化 + 资料索引化」的中文学习笔记：17K Star 验证了其作为面试复习效率工具的价值，对中文后端工程师而言是最实用的系统设计速成路径之一。
 
 ---
 
-*数据来源：GitHub 仓库 (liquidslr/system-design-notes)，2026 年 9 月 10 日访问*
-*首次分析：2026 年 9 月 9 日 | 最近更新：2026 年 9 月 10 日*
+*数据来源：GitHub 仓库 (liquidslr/system-design-notes)，2026 年 9 月 11 日访问*
+*首次分析：2026 年 9 月 9 日 | 最近更新：2026 年 9 月 11 日*

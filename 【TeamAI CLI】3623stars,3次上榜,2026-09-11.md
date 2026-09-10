@@ -71,9 +71,9 @@ TeamAI CLI 是腾讯开源的团队 AI 协作基础设施，核心理念是「Ma
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 2,870 |
-| 总 Forks | 180 |
-| 今日新增 | +258 |
+| 总 Stars | 3,623 |
+| 总 Forks | 231 |
+| 今日新增 | +837 |
 | 创建时间 | 2026-04-27 |
 
 ---
@@ -104,11 +104,33 @@ TeamAI CLI 是腾讯开源的团队 AI 协作基础设施，核心理念是「Ma
 
 ---
 
+### 更新 2 — 2026 年 9 月 11 日（连续第三日登上 Trending）
+
+**更新原因**：连续第三日登上 GitHub Trending 榜单，单日新增 837 Stars，增速较昨日进一步放大。
+
+**最新动态**：TeamAI 迭代极为活跃，仓库提交数已达 577 次。分发管控体系上线：`teamai roles` 按角色映射命名空间让成员只同步本职技能，`teamai tags` 以标签订阅过滤，`teamai source` 可订阅其他团队或组织共享技能仓库并随 pull 自动同步。知识库能力显著增强：知识图谱提取采用 AST + 启发式双轨（tree-sitter WASM 解析 TS/JS/Python/Go 的 import 与调用关系，失败自动回退正则），Dashboard 新增 KB Health 页面展示覆盖率、高频召回、沉默条目与维护台；适配矩阵扩展至 Claude Code、Codex、Cursor、CodeBuddy、OpenCode、WorkBuddy、OpenClaw、Hermes、DeepSeek Harness 九类宿主。
+
+**Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|:---:|:---:|:---:|:---:|
+| 总 Stars | 2,870 | 3,623 | +753 |
+| 总 Forks | 180 | 231 | +51 |
+| 今日新增 | — | 837 stars | — |
+
+**核心变化概要**：
+- roles/tags/source 三级分发管控上线，团队技能订阅粒度更细
+- 知识图谱 AST+启发式双轨提取，Dashboard 新增 KB Health 健康页
+- 适配矩阵扩至九类宿主（含 Hermes、DeepSeek Harness）
+- Star 增长 753 至 3,623，连续第 3 日在榜，累计第 3 次登上 Trending
+
+---
+
 ## 总结
 
 腾讯 TeamAI CLI 把「团队 AI 工作流配置」当成代码资产来管理：Git 评审式分发 + 角色标签精细管控 + 使用度量闭环，是国内大厂对「AI 代理团队化治理」这一新命题给出的最完整开源答案，首日上榜即 +1,083 Star 说明切中了团队标准化痛点。
 
 ---
 
-*数据来源：GitHub 仓库 (Tencent/teamai-cli)，2026 年 9 月 10 日访问*
-*首次分析：2026 年 9 月 9 日 | 最近更新：2026 年 9 月 10 日*
+*数据来源：GitHub 仓库 (Tencent/teamai-cli)，2026 年 9 月 11 日访问*
+*首次分析：2026 年 9 月 9 日 | 最近更新：2026 年 9 月 11 日*

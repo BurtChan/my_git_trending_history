@@ -63,8 +63,8 @@ Medallion 多层数据存储、Data flow 角色化管道、DP integration 源→
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 36,255 |
-| 总 Forks | 2,285 |
+| 总 Stars | 37,453 |
+| 总 Forks | 2,377 |
 | 许可证 | MIT |
 | 主要语言 | HTML |
 | 创建时间 | 2026 年 4 月 |
@@ -288,10 +288,31 @@ Medallion 多层数据存储、Data flow 角色化管道、DP integration 源→
 
 ---
 
+### 更新 12 — 2026 年 9 月 11 日（连续第 8 日登上 Trending）
+
+**更新原因**：连续第八日登上 GitHub Trending 榜单，单日新增 1,287 Stars，长尾热度依旧强劲。
+
+**最新动态**：Diagram Design 发布 v2.5.10，一次性新增十种布局语法——Sankey（桑基图）、Fishbone（鱼骨图）、Wardley Map（价值链演化图）、Kanban（看板）、User Journey（用户旅程）、Deployment（部署图）、Dependency Graph（依赖图）、UML Class（类图）、Story Map（故事地图）与 Database Schema（数据库模式图），图型总数扩至 39 种，并新增对 Factory Droid 宿主的支持。语义模式（semantic patterns）进一步成熟：队列、策略追踪、信任边界等行为语义可复用最接近的既有图型而无需膨胀类型数量，静态 HTML 输出保持默认、可选无障碍动效的产品哲学不变。
+
+**Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|:---:|:---:|:---:|:---:|
+| 总 Stars | 36,255 | 37,453 | +1,198 |
+| 总 Forks | 2,285 | 2,377 | +92 |
+| 今日新增 | — | 1,287 stars | — |
+
+**核心变化概要**：
+- v2.5.10 新增 10 种布局语法，图型总数达 39 种
+- 新增 Factory Droid 宿主支持，分发渠道进一步拓宽
+- Star 增长 1,198 至 37,453，连续第 8 日在榜，累计第 13 次登上 Trending
+
+---
+
 ## 总结
 Diagram Design 把「编辑级设计规范」编译成 AI 可执行的图表生成规则，用品牌注入 + 严格设计系统解决了 AI 图表"能用但丑"的普遍痛点，是 AI 原生设计工具赛道中思路最清晰的 Skill 项目之一。
 
 ---
 
 *数据来源：GitHub 仓库 (cathrynlavery/diagram-design)，2026 年 8 月访问*
-*首次分析：2026 年 8 月 | 最近更新：2026 年 9 月 10 日*
+*首次分析：2026 年 8 月 | 最近更新：2026 年 9 月 11 日*
