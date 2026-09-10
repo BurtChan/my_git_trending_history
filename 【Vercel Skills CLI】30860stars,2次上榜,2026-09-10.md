@@ -97,11 +97,33 @@ Skills 开创了 AI Agent 指令的包管理模式——安装一次、按需加
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 15,161 |
-| **总 Forks** | 1,255 |
-| **今日新增 Stars** | ~317 |
+| **总 Stars** | 30,860 |
+| **总 Forks** | 2,643 |
+| **今日新增 Stars** | 125 |
 | **许可证** | MIT |
 | **主要语言** | TypeScript |
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 9 月 10 日（时隔近 5 个月重返 Trending，Star 翻倍）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单，Star 数较首次分析时翻倍。
+
+**最新动态**：Vercel Skills CLI（`npx skills`）自 4 月 22 日首次上榜后，伴随「Agent Skills」生态的爆发式成长，时隔近 5 个月重返 Trending。Star 从 15,161 增至 30,860（+15,699，增幅 103%），Forks 从 1,255 增至 2,643，提交数增至 477 次。支持的编码 Agent 从 40+ 扩展到 **77 个**（OpenCode、Claude Code、Codex、Cursor 等），新增 `npx skills create` 免安装直接使用技能的交互模式。skills.sh 技能目录与排行榜持续运营，配合 Anthropic 官方 Skills 规范的落地，「Context 的 npm 时刻」叙事正在成为行业标准。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 15,161 | 30,860 | +15,699 |
+| 总 Forks | 1,255 | 2,643 | +1,388 |
+| 今日新增 | ~317 | 125 | — |
+
+**核心变化概要**：
+- Star 近 5 个月翻倍，突破 3 万
+- 支持的编码 Agent 从 40+ 扩展至 77 个
+- 新增免安装 `skills create` 交互式技能使用模式
+- Agent Skills 从 Vercel 单方倡议演进为行业生态标准
 
 ---
 
@@ -112,3 +134,4 @@ Vercel Skills CLI 是**AI 编码 Agent 技能管理的开创性工具**，15k+ S
 ---
 
 *数据来源：GitHub 仓库 (vercel-labs/skills)、vercel.com/blog（2026 年 4 月访问）*
+*首次分析：2026 年 4 月 | 最近更新：2026 年 9 月 10 日*
