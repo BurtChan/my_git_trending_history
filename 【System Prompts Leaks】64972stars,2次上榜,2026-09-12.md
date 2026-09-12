@@ -85,15 +85,34 @@ System Prompts Leaks 是一个开源的 GitHub 仓库，致力于收集并公开
 
 | 指标 | 数值 |
 |------|------|
-| 总 Star | 44,250 |
-| 今日新增 | 366 |
-| Fork | 7,318 |
+| 总 Star | 64,972 |
+| 今日新增 | 216 |
+| Fork | 10,681 |
 | Watchers | 537 |
 | 总 Commits | 583+ |
 | 创建时间 | 2025-05-03 |
 | 主要语言 | JavaScript |
 | 许可证 | CC0-1.0 |
 | 标签 | ai, ai-agents, anthropic, chatbot, chatgpt, claude, claude-code, codex, deep-learning, education, gemini, generative-ai, google, llm, machine-learning, nlp, open-source, openai, prompt-engineering |
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 9 月 12 日（再次登上 Trending）
+
+时隔近三个月再次登上 Trending，Star 从 44,250 大涨至 64,972（+20,722，增长约 47%），Fork 从 7,318 增至 10,681，规模接近翻倍。仓库描述显示其覆盖范围已扩展至 Anthropic Claude Fable 5.1、Opus 5、Claude Design、Claude Code，OpenAI ChatGPT GPT-6-Astra、Codex，Google Gemini 3.8 Flash、3.1 Pro、Antigravity，以及 xAI Grok、Cursor、Kimi 等最新一代产品，并保持定期更新。本期上榜单日新增 216 Star，说明社区对系统提示词透明度的关注度持续走高。
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Star | 44,250 | 64,972 | +20,722 |
+| Fork | 7,318 | 10,681 | +3,363 |
+
+**核心变化概要**：
+
+- Star +20,722 至 64,972，三个月增长约 47%
+- 覆盖范围扩展至 GPT-6-Astra、Gemini 3.8 Flash、Claude Fable 5.1 等最新模型
+- Watchers/Fork 规模接近翻倍，社区引用度大幅提升
 
 ---
 
@@ -104,3 +123,4 @@ System Prompts Leaks 是 2025-2026 年 AI 开源社区中最具影响力的透�
 ---
 
 *数据来源：GitHub 仓库 (asgeirtj/system_prompts_leaks)，2026 年 6 月访问*
+*首次分析：见文件头部 | 最近更新：2026 年 9 月 12 日*
