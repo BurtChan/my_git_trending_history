@@ -63,9 +63,9 @@ Agent Reach 是一款专为 AI 代理设计的互联网信息获取脚手架工�
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Star 数 | **64,901** |
-| 🍴 总 Fork 数 | **5,364** |
-| 📈 今日新增 Star | **659** |
+| ⭐ 总 Star 数 | **80,710** |
+| 🍴 总 Fork 数 | **7,031** |
+| 📈 今日新增 Star | **640** |
 | 📅 创建时间 | 2026 年 2 月 24 日 |
 | 📄 开源协议 | MIT |
 | 🏷️ 主要标签 | ai-agent, claude-code, web-scraper, cli, python |
@@ -160,3 +160,22 @@ Agent Reach 是一个设计理念清晰、实用性极强的 AI 代理基础设�
 - 多后端路由架构（Multi-Backend Routing）持续优化，平台路径失效时自动切换至备用后端
 - MCP 协议零配置接入（Exa 语义搜索）和 OpenClaw 集成进一步扩展 Agent 生态
 - 被社区广泛采用为 Claude Code / Codex / ChatGPT 等 AI 编码代理的标配互联网访问方案
+
+---
+
+### 更新 5 — 2026年9月14日（时隔四十天再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单（+640 stars today），Star 从 65,645 增长至 80,710
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 65,645 | 80,710 | +15,065 |
+| 总 Forks | 5,452 | 7,031 | +1,579 |
+
+**更新亮点**：
+- 时隔约 40 天重回 Trending，期间累计新增 +15,065 Stars（+23%），总星数突破 80,000 大关
+- 覆盖 17+ 互联网平台（Twitter/X、Reddit、YouTube、GitHub、Bilibili、小红书、LinkedIn、Instagram、Facebook、V2EX、Boss直聘、雪球、小宇宙等），全球最全面的多平台 AI 代理信息获取工具
+- 多后端路由架构与 MCP 协议零配置接入持续巩固其作为 Claude Code / Codex 等 AI 编码代理标配互联网访问方案的定位
+
