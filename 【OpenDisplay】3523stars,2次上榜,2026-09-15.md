@@ -77,12 +77,33 @@ README 首屏的价格/能力对比表（对 Sidecar、Duet、Luna）逐项列�
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 3,318 |
-| 🍴 总 Forks | 239 |
-| 📈 今日新增 | +314 |
+| ⭐ 总 Stars | 3,523 |
+| 🍴 总 Forks | 246 |
+| 📈 今日新增 | +205 |
 | 📅 创建时间 | 2026 年 6 月 10 日 |
 | 📄 开源协议 | GPL-3.0（≤v0.4.x 为 MIT） |
 | 🏷️ 主要标签 | macos, iphone, ipad, swift, virtual-display, second-monitor, sidecar, duet-display |
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 9 月 15 日（连续第二天登上 Trending）
+
+OpenDisplay 连续第二天登上 Trending：Star 从 3,318 增至 3,523（+205），Fork 从 239 增至 246（+7）。基于 CGVirtualDisplay 私有 API + 硬件 H.264 编码的极简自托管架构，使其作为「免费的 iPad 第二屏」方案持续吸引 macOS/iOS 用户的关注，三天内两度在榜。
+
+**Star 数据**
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|------|------|------|
+| 总 Stars | 3,318 | 3,523 | +205 |
+| 总 Forks | 239 | 246 | +7 |
+| 今日新增 | — | 258 | — |
+
+**核心变化**
+
+- Star 3,318 → 3,523（+205），两日在榜累计 +519
+- Fork 239 → 246（+7），自托管部署实践稳步增长
 
 ---
 
@@ -92,4 +113,5 @@ OpenDisplay 用 CGVirtualDisplay 私有 API + 硬件 H.264 + 一条 TCP 连接�
 
 ---
 
-*数据来源：GitHub 仓库 (peetzweg/opendisplay)，2026 年 9 月 14 日访问*
+*数据来源：GitHub 仓库 (peetzweg/opendisplay)，2026 年 9 月 15 日访问*
+*首次分析：见文件头部 | 最近更新：2026 年 9 月 15 日*
