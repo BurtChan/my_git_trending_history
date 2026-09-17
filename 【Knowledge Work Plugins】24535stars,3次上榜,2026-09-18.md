@@ -91,9 +91,9 @@ Knowledge Work Plugins 是 Anthropic 于 2026 年 1 月随 Claude Cowork 插件�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 24,129+ |
-| **总 Forks** | 2,913+ |
-| **今日新增 Stars** | ~100+ |
+| **总 Stars** | 24,535+ |
+| **总 Forks** | 2,939+ |
+| **今日新增 Stars** | +406 |
 | **许可证** | Apache License 2.0 |
 | **创建时间** | 2026 年 1 月 |
 | **主要语言** | Python |
@@ -118,6 +118,20 @@ Knowledge Work Plugins 是 Anthropic 于 2026 年 1 月随 Claude Cowork 插件�
 > 更新依据：GitHub Trending 2026-09-16 数据，Star 数由 GitHub API 实时获取
 
 
+### 更新 2 — 2026年9月18日（连续第二日在榜）
+
+**更新原因**：登上 GitHub Trending（2026 年 9 月 18 日），企业职能插件集热度延续。
+
+**最新 Star 数据**：
+
+| 总 Stars | 24,129 | 24,535 | +406 |
+| 总 Forks | 2,913 | 2,939 | +26 |
+
+- Star 数 24,129 → 24,535（+406），连续第二日在榜
+- Anthropic 面向 Claude Cowork 的企业职能插件集持续扩充，仓库 9/17 仍有推送
+
+> 更新依据：GitHub Trending 2026-09-18 数据，Star 数由 GitHub API 实时获取
+
 ---
 
 ## 总结
@@ -127,4 +141,4 @@ Knowledge Work Plugins 是 **Anthropic 在 AI 助手企业化方向上的核心�
 ---
 
 *数据来源：GitHub 仓库 (anthropics/knowledge-work-plugins)，2026 年 5 月访问*
-*首次分析：2026 年 5 月 28 日 | 最近更新：2026 年 9 月 16 日*
+*首次分析：2026 年 5 月 28 日 | 最近更新：2026 年 9 月 18 日*
