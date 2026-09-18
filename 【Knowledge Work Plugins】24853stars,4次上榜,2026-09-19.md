@@ -91,9 +91,9 @@ Knowledge Work Plugins 是 Anthropic 于 2026 年 1 月随 Claude Cowork 插件�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 24,535+ |
-| **总 Forks** | 2,939+ |
-| **今日新增 Stars** | +406 |
+| **总 Stars** | 24,853+ |
+| **总 Forks** | 2,967+ |
+| **今日新增 Stars** | +318 |
 | **许可证** | Apache License 2.0 |
 | **创建时间** | 2026 年 1 月 |
 | **主要语言** | Python |
@@ -132,13 +132,24 @@ Knowledge Work Plugins 是 Anthropic 于 2026 年 1 月随 Claude Cowork 插件�
 
 > 更新依据：GitHub Trending 2026-09-18 数据，Star 数由 GitHub API 实时获取
 
+### 更新 3 — 2026年9月19日（连续第三日在榜，豁免单日阈值）
+
+**更新原因**：连续第三天登上 GitHub Trending（9 月 16 日至今），按连续在榜 ≥3 天规则豁免单日 500 stars 阈值。Star 数保持稳定增长；仓库近期高频迭代——9 月 18 日新增 Wingspan 插件、更新 Qodo 与 Airwallex 合作伙伴元数据，并批量 bump Leadfeeder、Modern Web Guidance、Signoz 等多个插件版本，企业插件生态持续扩张。
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 24,535 | 24,853 | +318 |
+| 总 Forks | 2,939 | 2,967 | +28 |
+| Open Issues | — | 80 | — |
+
+
 ---
 
 ## 总结
 
-Knowledge Work Plugins 是 **Anthropic 在 AI 助手企业化方向上的核心布局**，16.5k+ Stars。它通过插件化架构将 Claude 从通用 AI 变为各职能领域的专家助手，采用零代码的 Markdown/JSON 文件格式极大降低企业定制门槛，通过 MCP 协议打通 40+ 企业工具。项目代表了 AI 助手从"对话工具"向"领域专家工作平台"演进的重要趋势。
+Knowledge Work Plugins 是 **Anthropic 在 AI 助手企业化方向上的核心布局**，24.8k+ Stars。它通过插件化架构将 Claude 从通用 AI 变为各职能领域的专家助手，采用零代码的 Markdown/JSON 文件格式极大降低企业定制门槛，通过 MCP 协议打通 40+ 企业工具。项目代表了 AI 助手从"对话工具"向"领域专家工作平台"演进的重要趋势。
 
 ---
 
 *数据来源：GitHub 仓库 (anthropics/knowledge-work-plugins)，2026 年 5 月访问*
-*首次分析：2026 年 5 月 28 日 | 最近更新：2026 年 9 月 18 日*
+*首次分析：2026 年 5 月 28 日 | 最近更新：2026 年 9 月 19 日*
