@@ -107,9 +107,9 @@ Claude Opus 4.7 在 Vals AI 的 Finance Agent 基准测试中得分 64.37%，领
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 35,174 |
-| **总 Forks** | 5,232 |
-| **今日新增 Stars** | 236 |
+| **总 Stars** | 35,447 |
+| **总 Forks** | 5,253 |
+| **今日新增 Stars** | 260 |
 | **许可证** | Apache License 2.0 |
 | **主要语言** | Python |
 | **贡献者** | 7 |
@@ -134,6 +134,23 @@ Claude Opus 4.7 在 Vals AI 的 Finance Agent 基准测试中得分 64.37%，领
 
 > 更新依据：GitHub API 2026-09-20 数据
 
+### 更新 2 — 2026年9月21日（连续第二日在榜）
+
+**更新原因**：项目连续第二天登上 GitHub Trending，Star 数从 35,174 增长至 35,447（+273，其中今日 +260），Fork 数从 5,232 增长至 5,253（+21），稳居 Trending 榜首附近。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|------|------|------|
+| 总 Stars | 35,174 | 35,447 | +273 |
+| 总 Forks | 5,232 | 5,253 | +21 |
+
+- Star 数 35,174 → 35,447（+273），连续两日在榜累计约 +3,900，金融行业 Agent 参考架构关注度持续走高
+- 9 月 14 日上线 Claude for Financial Advisors（财富顾问场景，#350），随后精简了 marketplace 条目（#351）与 wealth-management 插件（#349）
+- 安全加固：build-manifest 凭据改放 URL fragment 而非 query string（#356），access_policies 增加 file_path 标识的文档与校验（#352）
+
+> 更新依据：GitHub API 2026-09-21 数据
+
 ---
 
 ## 总结
@@ -146,4 +163,4 @@ Claude Financial Services 是 **Anthropic 官方推出的金融行业 AI Agent �
 
 ---
 
-*首次分析：2026 年 5 月 | 最近更新：2026 年 9 月 20 日*
+*首次分析：2026 年 5 月 | 最近更新：2026 年 9 月 21 日*
