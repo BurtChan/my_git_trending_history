@@ -13,7 +13,7 @@
 
 ## 项目概述
 
-Claude Code Templates 是一个功能全面的开源 CLI 工具，旨在为 Anthropic 的 Claude Code 提供即用型配置模板。该项目由开发者 Daniel Avila 创建和维护，汇集了社区贡献的 AI 代理、自定义命令、设置、钩子、外部集成（MCP）以及项目模板，帮助开发者快速搭建和优化 AI 驱动的工作流。截至目前，该项目已累计获得超过 21,000 个 Stars 和 2,000+ Forks，拥有超过 500K+ 的 npm 下载量，是 Claude Code 生态中最受欢迎的社区项目之一。
+Claude Code Templates 是一个功能全面的开源 CLI 工具，旨在为 Anthropic 的 Claude Code 提供即用型配置模板。该项目由开发者 Daniel Avila 创建和维护，汇集了社区贡献的 AI 代理、自定义命令、设置、钩子、外部集成（MCP）以及项目模板，帮助开发者快速搭建和优化 AI 驱动的工作流。截至目前，该项目已累计获得 30,908 个 Stars 和 3,522 Forks，拥有超过 500K+ 的 npm 下载量，是 Claude Code 生态中最受欢迎的社区项目之一。
 
 项目提供六大类组件：🤖 Agents（AI 专家代理）、⚡ Commands（自定义斜杠命令）、🔌 MCPs（外部服务集成）、⚙️ Settings（配置文件）、🪝 Hooks（自动化触发器）和 🎨 Skills（可复用技能）。所有组件均可通过 `npx claude-code-templates@latest` 一键安装，支持交互式选择和 YAML 工作流批量配置，极大降低了 Claude Code 的上手门槛。
 
@@ -65,7 +65,7 @@ Claude Code Templates 是一个功能全面的开源 CLI 工具，旨在为 Anth
 | 包管理 | npm (claude-code-templates) |
 | 文档站点 | docs.aitmpl.com |
 | 许可证 | MIT |
-| 版本管理 | 语义化版本 (当前 v1.28.x) |
+| 版本管理 | 语义化版本 (当前 v1.29.6) |
 
 ---
 
@@ -97,14 +97,36 @@ Claude Code Templates 是一个功能全面的开源 CLI 工具，旨在为 Anth
 
 | 指标 | 数据 |
 |---|---|
-| 总 Stars | 21,000+ |
-| Forks | 2,000+ |
+| 总 Stars | 30,908 |
+| Forks | 3,522 |
 | 今日新增 | GitHub Trending 日榜 |
 | 许可证 | MIT |
 | 主语言 | JavaScript (Node.js CLI) |
 | npm 下载量 | 500K+ |
-| 最新版本 | v1.28.x |
+| 最新版本 | v1.29.6 |
 | 组件数量 | 100+ |
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 9 月 22 日（时隔近五个月再次登上 Trending）
+
+Claude Code Templates 在 2026 年 4 月末首登 Trending 后，经过近五个月的持续迭代再度上榜。项目已从 21,000 stars 增长至 30,908 stars，增长近 50%，稳居 Claude Code 生态最热门社区项目的位置。
+
+**近期动态**：项目保持高频发版——v1.29.5（9 月 9 日）引入 Function Hooks（从社区安装 TypeScript 钩子）；v1.29.6（9 月 17 日）带来 Claude Mods：`--mod` 参数可安装 Anthropic 官方布局的插件。CLI（npm 包 `claude-code-templates`）持续演进为集模板、会话监控、沙箱执行、技能市场于一体的全栈管理平台。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|------|------|------|
+| 总 Stars | 21,000 | 30,908 | +9,908 |
+| Forks | 2,000 | 3,522 | +1,522 |
+| 未关闭 Issue | — | 262 | — |
+
+**核心变化概要**：
+1. Star 数增长近 50%（+9,908），npm 生态持续扩张，龙头地位稳固
+2. v1.29.x 引入 Claude Mods 与 Function Hooks 两大新机制
+3. 项目组件数量持续增长，覆盖 Claude Code 配置管理全生命周期
+
 
 ---
 

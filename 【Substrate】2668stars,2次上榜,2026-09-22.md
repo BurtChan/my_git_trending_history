@@ -65,11 +65,34 @@ Apache-2.0 + REUSE 规范的 LICENSES 目录 + 安全策略 + 行为准则，从
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 1,480 |
-| 🍴 总 Forks | 254 |
-| 📈 今日新增 | 22 stars |
+| ⭐ 总 Stars | 2,668 |
+| 🍴 总 Forks | 366 |
+| 📈 今日新增 | 498 stars |
 | 📝 Commits | 589 |
 | 📅 许可证 | Apache-2.0 |
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 9 月 22 日（时隔一月再次登上 Trending）
+
+Agent Substrate 一个月后重回 Trending，且这次是带着重要背景回来的：**Google 同日开源的 agentic 编排运行时 google/ax 明确构建在 Agent Substrate 之上**（沙箱执行层），ax 今日 +2,324 stars 的爆发直接带火了其底座项目，Substrate 本身 Star 数也从 1,480 增至 2,668（+80%）。
+
+**近期动态**：项目于 9 月 10 日发布了 **v0.1.0 — The First Release**，从 v0.0.0（5 月）的初始提交走向首个正式版本；仓库保持高频推送（最近推送 2026-09-22），未关闭 Issue 513 个显示社区活跃度与工程强度同步上升。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|------|------|------|
+| ⭐ 总 Stars | 1,480 | 2,668 | +1,188 |
+| 🍴 总 Forks | 254 | 366 | +112 |
+| 📝 Commits | 589 | — | 持续增长 |
+| 未关闭 Issue | — | 513 | — |
+
+**核心变化概要**：
+1. Star 增长 80%，主要受 Google ax 开源（构建于 substrate 之上）带动
+2. v0.1.0 首个正式版本发布（9 月 10 日）
+3. 与 google/ax 构成「沙箱内核 + 编排层」组合，Agent Infra 赛道卡位清晰
+
 
 ---
 
@@ -78,4 +101,5 @@ Agent Substrate 是 Agent 基础设施赛道的一个早期但治理规范的尝
 
 ---
 
-*数据来源：GitHub 仓库 (agent-substrate/substrate)，2026 年 8 月访问*
+*数据来源：GitHub 仓库 (agent-substrate/substrate)，2026 年 9 月访问*
+*首次分析：2026 年 8 月 21 日 | 最近更新：2026 年 9 月 22 日*
