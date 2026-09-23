@@ -70,9 +70,9 @@ CLI-Anything 还提供了 CLI-Hub 注册中心，用户可以通过 `pip install
 
 | 指标 | 数据 |
 |------|------|
-| **总 Stars** | 47,361 |
-| **Forks** | 4,392 |
-| **今日新增 Stars** | +201 |
+| **总 Stars** | 49,721 |
+| **Forks** | 4,591 |
+| **今日新增 Stars** | +43 |
 | **许可证** | Apache License 2.0 |
 | **主要语言** | Python |
 
@@ -117,6 +117,27 @@ CLI-Anything 连续第 3 天登上 GitHub Trending，Star 数从 47,160 增至 4
 - arXiv 论文发布，Agent-Native Computer Use 理论体系成型
 - 61 个配套 CLI 技能 + 18 个生产级应用测试，生态持续完善
 
+### 更新 3 — 2026 年 9 月 23 日（时隔 5 周再次登上 Trending）
+
+**更新原因**：时隔 5 周（8/16 后）再次登上 GitHub Trending，Star 从 47,361 增至 49,721（+2,360），Forks 从 4,392 增至 4,591（+199）。
+
+**最新动态**：
+CLI-Anything（CLI-Hub）作为「Agent-Native 软件」范式的基础设施，近 5 周保持周均 +470 的稳定增长。随着多 Agent 系统对传统软件调用能力的依赖加深，把命令行工具自动封装为 Agent 可调用接口的 CLI-Hub 路线，正获得越来越多 Agent 框架的接入。
+
+同榜的 strands-agents/harness-sdk（AWS 系 Agent SDK）、BuilderIO/agent-native 等项目均指向同一趋势：Agent 与既有软件生态的桥接层是当前 infra 热点。
+
+**Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|:---:|:---:|:---:|:---:|
+| 总 Stars | 47,361 | 49,721 | +2,360 |
+| 总 Forks | 4,392 | 4,591 | +199 |
+
+**核心变化概要**：
+- Star 从 47,361 增至 49,721（+2,360），周均 +470 稳步增长
+- Forks 从 4,392 增至 4,591（+199），生态接入持续
+- Agent-Native 软件范式与同榜 harness 类项目形成趋势共振
+
 ---
 
 
@@ -127,4 +148,4 @@ CLI-Anything 是一个极具前瞻性的开源项目，由香港大学数据科�
 ---
 
 *数据来源：GitHub 仓库 (HKUDS/CLI-Anything)，2026 年 8 月访问*
-*首次分析：见文件头部 | 最近更新：2026 年 8 月 16 日*
+*首次分析：见文件头部 | 最近更新：2026 年 9 月 23 日*
