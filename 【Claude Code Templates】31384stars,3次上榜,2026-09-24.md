@@ -97,8 +97,8 @@ Claude Code Templates 是一个功能全面的开源 CLI 工具，旨在为 Anth
 
 | 指标 | 数据 |
 |---|---|
-| 总 Stars | 30,908 |
-| Forks | 3,522 |
+| 总 Stars | 31,384 |
+| Forks | 3,559 |
 | 今日新增 | GitHub Trending 日榜 |
 | 许可证 | MIT |
 | 主语言 | JavaScript (Node.js CLI) |
@@ -128,8 +128,30 @@ Claude Code Templates 在 2026 年 4 月末首登 Trending 后，经过近五个
 3. 项目组件数量持续增长，覆盖 Claude Code 配置管理全生命周期
 
 
+### 更新 2 — 2026 年 9 月 24 日（连续第三日在榜）
+
+**更新原因**：Claude Code Templates 连续第三天登上 GitHub Trending，Star 数从 30,908 增长至 31,384（+476），Fork 数从 3,522 增长至 3,559（+37）。时隔五个月回榜后热度延续。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|------|------|------|
+| 总 Stars | 30,908 | 31,384 | +476 |
+| 总 Forks | 3,522 | 3,559 | +37 |
+
+- 回榜两日累计增长约 +384（注：含此前静默增长），31K stars 稳居 Claude Code 生态社区项目龙头
+- v1.29.x 的 Claude Mods 与 Function Hooks 两大新机制持续吸引存量用户更新
+- CLI（npm 包 claude-code-templates）向全栈管理平台演进，覆盖配置管理全生命周期
+
+> 更新依据：GitHub Trending 快照 2026-09-24 数据
+
 ---
 
 ## 总结
 
 Claude Code Templates 是目前 Claude Code 生态中最全面、最活跃的开源配置模板项目，通过提供 100+ 即用型组件和强大的 CLI/Web 管理工具，大幅降低了 Claude Code 的使用门槛并拓展了其能力边界。项目以 MIT 许可证开源，社区驱动、迭代迅速，已从简单的模板集合发展为集配置管理、会话监控、沙箱执行、技能市场和数据分析于一体的 Claude Code 全栈管理平台，是任何 Claude Code 用户都值得关注的必装工具。
+
+---
+
+*数据来源：GitHub 仓库 (davila7/claude-code-templates)，2026 年 9 月访问*
+*首次分析：2026 年 4 月 | 最近更新：2026 年 9 月 24 日*
