@@ -11,7 +11,7 @@
 
 Model Optimizer 是 NVIDIA 开源的模型压缩与推理加速库，把当前 SOTA 的优化技术——量化（PTQ/QAT）、量化感知蒸馏（QAD）、剪枝、神经架构搜索（NAS）、蒸馏、投机解码、稀疏化——统一到一套 Python API 中。输入支持 Hugging Face、PyTorch、ONNX 模型，产出的量化 checkpoint 可直接部署到 TensorRT-LLM、TensorRT、vLLM、SGLang 等主流推理框架，统一的 HF 导出 API 同时覆盖 transformers 与 diffusers 模型。
 
-项目与 NVIDIA 自家训练生态深度联动：集成 Megatron-Bridge、Megatron-LM 与 Hugging Face Accelerate，用于执行需要训练的优化技术（QAT、蒸馏）。近期动态密集：2026 年 9 月发布 Qwen3.6-35B-A3B 的 NVFP4 W4A4 端到端教程（vLLM 吞吐 1.30x、checkpoint 缩小 3.1x）；Nemotron 3 Ultra（550B）的官方 NVFP4 checkpoint 即由 ModelOpt 产出，decode 密集型推理吞吐比 GLM-5.1 754B FP4 高 5.9 倍。作为 2024 年开源的老牌项目（1,261 commits），今天以 3.9K Stars 重回 Trending。
+项目与 NVIDIA 自家训练生态深度联动：集成 Megatron-Bridge、Megatron-LM 与 Hugging Face Accelerate，用于执行需要训练的优化技术（QAT、蒸馏）。近期动态密集：2026 年 9 月发布 Qwen3.6-35B-A3B 的 NVFP4 W4A4 端到端教程（vLLM 吞吐 1.30x、checkpoint 缩小 3.1x）；Nemotron 3 Ultra（550B）的官方 NVFP4 checkpoint 即由 ModelOpt 产出，decode 密集型推理吞吐比 GLM-5.1 754B FP4 高 5.9 倍。作为 2024 年开源的老牌项目（1,261 commits），今天以 4.0K Stars 连续第二日登上 Trending。
 
 ## 核心功能
 
@@ -59,10 +59,35 @@ Model Optimizer 是 NVIDIA 开源的模型压缩与推理加速库，把当前 S
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 3,902 |
-| 总 Forks | 621 |
-| 今日新增 | +22 |
+| 总 Stars | 4,041 |
+| 总 Forks | 628 |
+| 今日新增 | +139 |
 | 创建时间 | 2024 年 4 月 |
+
+## 📋 更新记录
+
+### 更新 1 — 2026年9月25日（连续第二日登上 Trending）
+
+**更新原因**：连续第二日登上 GitHub Trending（今日 +139 Stars，API 精确数据），ModelOpt 0.47.0 正式版于 9 月 23 日发布。
+
+**最新动态**：
+ModelOpt 0.47.0 正式版发布（此前 9/9 rc1、9/22 rc2 连续迭代）：新增 Aumann-Shapley 敏感度评分方法用于 auto_quantize（#2183），修复 grouped expert 量化器 checkpoint 副本问题（#2500）；GGML IQ 格式注册派发与导出（#2525）、layerwise export 显存卸载下的逐层专家权重释放（#2466）、KDTrainer 蒸馏示例文档（#2524）相继合入。
+
+9 月 24 日仍有两条新 commit 合入，开发节奏密集；连续两日在榜说明 NVFP4/W4A4 量化教程（Qwen3.6-35B-A3B 端到端）正持续吸引推理优化人群关注。
+
+**Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|:---:|:---:|:---:|:---:|
+| 总 Stars | 3,902 | 4,041 | +139 |
+| 总 Forks | 621 | 628 | +7 |
+
+**核心变化概要**：
+- Star 从 3,902 增至 4,041（+139），连续第二日上榜
+- 0.47.0 正式版发布：Aumann-Shapley 敏感度评分、GGML IQ 导出、蒸馏文档
+- 与 Megatron/vLLM 生态联动持续加深
+
+---
 
 ## 总结
 
@@ -70,4 +95,5 @@ ModelOpt 是 NVIDIA 硬件上做模型压缩的官方统一入口：量化/蒸�
 
 ---
 
-*数据来源：GitHub 仓库 (NVIDIA/Model-Optimizer)，2026 年 9 月 24 日访问*
+*数据来源：GitHub 仓库 (NVIDIA/Model-Optimizer)，2026 年 9 月 25 日访问*
+*首次分析：见文件头部 | 最近更新：2026年9月25日*
