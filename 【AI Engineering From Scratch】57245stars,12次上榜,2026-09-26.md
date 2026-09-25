@@ -87,9 +87,9 @@ AI Engineering From Scratch 是一个**全面、免费、开源的 AI 工程课�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 56,558 |
-| **总 Forks** | 9,930 |
-| **今日新增 Stars** | +588/日 |
+| **总 Stars** | 57,245 |
+| **总 Forks** | 10,007 |
+| **今日新增 Stars** | +687/日 |
 | **许可证** | MIT |
 | **创建时间** | 2025 年 |
 | **主要语言** | Python、TypeScript、Rust、Julia |
@@ -317,14 +317,31 @@ AI Engineering From Scratch 在过去数月经历了爆发式增长，Stars 从�
 - Forks +54，动手完成率稳定
 - 第 11 次上榜，开源 AI 工程课程标杆地位稳固
 
+### 更新 11 — 2026 年 9 月 26 日（连续第三日在榜）
+
+**更新原因**：连续第三日登上 GitHub Trending，Star 56,558 → 57,245（+687），Fork 9,930 → 10,007（+77），第 12 次上榜。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 56,558 | 57,245 | +687 |
+| 总 Forks | 9,930 | 10,007 | +77 |
+
+- 三日在榜 Star 从 55,970 累计增至 57,245（+1,275），增速平稳，第 12 次上榜验证课程长尾吸引力
+- 9 月版（v2026.09，9 月 7 日）课程已达 523 节 / 20 阶段，较 8 月版新增 20 节课程与 21 篇修订，新增真实工程学习路径并扩展 Agent Skills / MCP 实践
+- 近期提交集中在认证板块体验：认证卡片展示考试事实、MCPA 与 Claude 认证配图动画
+
+> 更新依据：GitHub API 2026-09-26 数据
+
 ---
 
 ## 总结
 
-AI Engineering From Scratch 是**目前最全面的免费 AI 工程开源课程之一**，8k+ Stars。它由 Rohit Ghumare 创建，包含 428 节动手课程和 20 个结构化阶段，从数学基础到生产级 AI 系统部署全程覆盖。项目坚持"Build, Don't Import"理念，要求学习者从原始数学开始实现每个算法，确保对底层原理的深度理解。支持 Python、TypeScript、Rust、Julia 四种语言，并内置评估工具和 SkillKit 集成，是自学者和转型开发者进入 AI 工程领域的优质资源。
+AI Engineering From Scratch 是**目前最全面的免费 AI 工程开源课程之一**，57K+ Stars。它由 Rohit Ghumare 创建，包含 428 节动手课程和 20 个结构化阶段，从数学基础到生产级 AI 系统部署全程覆盖。项目坚持"Build, Don't Import"理念，要求学习者从原始数学开始实现每个算法，确保对底层原理的深度理解。支持 Python、TypeScript、Rust、Julia 四种语言，并内置评估工具和 SkillKit 集成，是自学者和转型开发者进入 AI 工程领域的优质资源。
 
 ---
 
 *数据来源：GitHub 仓库 (rohitg00/ai-engineering-from-scratch)、项目官网 (aiengineeringfromscratch.com)、Reddit、Trendshift（2026 年 5 月访问）*
 
-*首次分析：2026 年 5 月 | 最近更新：2026 年 9 月 25 日*
+*首次分析：2026 年 5 月 | 最近更新：2026 年 9 月 26 日*
