@@ -13,7 +13,7 @@
 
 ## 项目概述
 
-Mobile MCP 是 Mobile Next 团队开源的 Model Context Protocol 服务器，让 AI Agent 通过标准 MCP 接口直接操控移动设备：在真机、模拟器（Android Emulator / iOS Simulator）上执行 UI 操作、截屏、抓取应用数据。2025 年 3 月创建以来已获得 7,042 stars，是移动端 Agent 化工具链中的热门项目。
+Mobile MCP 是 Mobile Next 团队开源的 Model Context Protocol 服务器，让 AI Agent 通过标准 MCP 接口直接操控移动设备：在真机、模拟器（Android Emulator / iOS Simulator）上执行 UI 操作、截屏、抓取应用数据。2025 年 3 月创建以来已获得 7,243 stars，是移动端 Agent 化工具链中的热门项目。
 
 它的核心理念是把「移动设备驱动能力」抽象为一组 MCP 工具——Agent 调用 open-app、tap、swipe、screenshot 等原子操作，即可完成「打开 App→搜索→下单→截图汇报」这类跨应用自动化流程，无需为每个 App 编写专用脚本。仓库提供 Docker 部署、多语言 README（含中文）、ROADMAP 公开演进计划，并内置 skills/mobile-automation 技能目录，可被 Claude 等支持 Skills 的 Agent 直接装载。作为 Mobile Next 工具链的一部分，它还能与云端远程真机服务联动。
 
@@ -74,10 +74,28 @@ ROADMAP 公开、社区反馈驱动优先级；隐私政策明确「本地运行
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 7,042 |
-| 总 Forks | 626 |
-| 今日新增 | +143 |
+| 总 Stars | 7,243 |
+| 总 Forks | 635 |
+| 今日新增 | +201 |
 | Open Issues | 43 |
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 9 月 27 日
+
+连续第二日登上 GitHub Trending（日增 +201 stars），总星数突破 7,200。本次无新版本发布（最新仍为 9 月 13 日的 1.0.4），增长动力主要来自 Agent 移动自动化场景的持续关注度积累。
+
+近两周的版本脉络显示项目处于活跃迭代期：1.0.3（9 月 8 日）新增 `mobile_batch_commands` 批量命令工具，一次调用执行多个工具、显著提升自动化吞吐，并在命令结束后自动刷新元素列表同步状态；1.0.4（9 月 13 日）将 Streamable HTTP 服务迁至 `--listen` 的 `/mcp` 端点（旧 `/sse` 返回 410 并附迁移说明），同时修复了缩放截图坐标换算导致的点击偏移问题。1.0.0 起底层已切换为 mobilecli 后端。
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 7,042 | 7,243 | +201 |
+| 总 Forks | 626 | 635 | +9 |
+| 今日新增 | +143 | +201 | — |
+
+- 连续 2 天在榜，日增稳定在 +200 量级，在 MCP 工具类项目中热度居前
+- `mobile_batch_commands` 与 Streamable HTTP 迁移是 9 月两大核心改进
+- 移动端 Agent 化浪潮（真机/模拟器统一 MCP 接口）持续为其导流
 
 ---
 
@@ -87,4 +105,6 @@ ROADMAP 公开、社区反馈驱动优先级；隐私政策明确「本地运行
 
 ---
 
-*数据来源：GitHub 仓库 (mobile-next/mobile-mcp)，2026 年 9 月访问*
+*数据来源：GitHub 仓库 (mobile-next/mobile-mcp)，2026 年 9 月 27 日访问*
+
+*首次分析：2026 年 9 月 26 日 | 最近更新：2026 年 9 月 27 日*
