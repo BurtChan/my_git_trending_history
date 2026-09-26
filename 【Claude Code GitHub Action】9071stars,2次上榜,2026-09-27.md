@@ -15,7 +15,7 @@
 
 Claude Code GitHub Action 是 Anthropic 官方维护的 GitHub 集成组件，让 Claude Code（Anthropic 的终端 AI 编码 Agent）直接运行在 GitHub Actions 工作流中。安装后，Claude 会以 @claude 评论 Mention 的方式被唤起，在 PR 和 issue 中执行代码审查、回答仓库问题、按指令修改代码并提交 commit。
 
-项目在 2025 年 5 月创建，一年多时间即获得 8,955 stars。其定位是「CI 内的原生 Agent」：区别于仅做静态检查的传统 Action，它能真正理解整个代码库上下文，执行多步骤任务（定位文件→修改→跑测试→提交），并遵循 CLAUDE.md 中定义的仓库规范。v1.0 版本已发布，提供从 v0.x 迁移的官方指南，配置大幅简化。
+项目在 2025 年 5 月创建，一年多时间即获得 9,071 stars。其定位是「CI 内的原生 Agent」：区别于仅做静态检查的传统 Action，它能真正理解整个代码库上下文，执行多步骤任务（定位文件→修改→跑测试→提交），并遵循 CLAUDE.md 中定义的仓库规范。v1.0 版本已发布，提供从 v0.x 迁移的官方指南，配置大幅简化。
 
 仓库本身也是 Agent 工程实践的范本：包含 base-action、agent-approval-check（Agent 审批链）等子模块，用 Bun 构建，配套 Solutions Guide 覆盖常见自动化模式。
 
@@ -75,11 +75,28 @@ v1.0 引入 agent-approval-check 审批链，Agent 的高危操作可被拦截�
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 8,955 |
-| 总 Forks | 2,155 |
-| 今日新增 | +15 |
+| 总 Stars | 9,071 |
+| 总 Forks | 2,162 |
+| 今日新增 | +116 |
 | Open Issues | 805 |
 
+## 📋 更新记录
+
+### 更新 1 — 2026年9月27日
+
+上榜第 2 次。项目保持高频迭代节奏：9 月 23-25 日连续发布 v1.0.232/v1.0.233/v1.0.234/v1.0.235 四个版本，核心是 Claude Code CLI 与 Agent SDK 的同步升级（9 月 25 日 bump 到 2.1.283/0.3.283），集成测试已固定到 claude-opus-5 模型。Star 数持续攀升，社区对「CI 内原生 Agent」的定位认可度不断提升。
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|------|------|------|
+| 总 Stars | 8,955 | 9,071 | +116 |
+| 总 Forks | 2,155 | 2,162 | +7 |
+| 今日新增 | +15 | +116 | — |
+| Open Issues | 805 | 805 | +0 |
+
+**核心变化**：
+- 持续日更版本：v1.0.232→v1.0.235 密集发布，Claude Code CLI 2.1.283 + Agent SDK 0.3.283
+- 集成测试 pin 到 claude-opus-5，保证 CI 环境行为一致性
+- 连续两日登上 Trending，重回增长轨道
 ---
 
 ## 总结
@@ -88,4 +105,5 @@ Anthropic 官方把 Claude Code 装进 CI 的标准组件——@claude 一下就
 
 ---
 
-*数据来源：GitHub 仓库 (anthropics/claude-code-action)，2026 年 9 月访问*
+*数据来源：GitHub 仓库 (anthropics/claude-code-action)，2026 年 9 月 27 日访问*
+*首次分析：2026 年 9 月 26 日 | 最近更新：2026 年 9 月 27 日*
