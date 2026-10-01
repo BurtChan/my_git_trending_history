@@ -7,7 +7,7 @@
 - **GitHub**: [firebase/firebase-ios-sdk](https://github.com/firebase/firebase-ios-sdk)
 - **许可证**: Apache-2.0
 - **开发语言**: Swift / Objective-C
-- **Star 数**: 6,709（Trending 当日 +4）
+- **Star 数**: 6,812（Trending 当日 +103）
 
 ---
 
@@ -78,14 +78,38 @@ Google 官方团队持续维护，8,696 次提交、模块化目录结构（每�
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 6,709 |
-| 🍴 Forks | 1,797 |
-| 📈 Trending 当日新增 | +4 |
+| ⭐ 总 Stars | 6,812 |
+| 🍴 Forks | 1,801 |
+| 📈 Trending 当日新增 | +103 |
 | 历史提交数 | 8,696+ |
 
 > 注：作为发布多年的官方 SDK，Star 绝对值不高但使用量极大（Firebase 移动端装机量以十亿计）；本次上榜主要缘于 AI（Gemini）集成带来的关注度回升。
 
 ---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 10 月 1 日（连续第二日登上 Trending）
+
+**更新原因**：项目再度登上 GitHub Trending 日榜，Star 6,709 → 6,812（+103，GitHub API 口径，下同）。
+
+**最新动态**：
+- 时隔一日再度上榜，单日净增 103 Stars，Gemini 原生集成带来的关注度回升仍在延续。
+- Forks 1,797 → 1,801（+4），FirebaseAI / GeminiLanguageModel 的端侧 AI 能力持续吸引 iOS 开发者。
+- 作为发布多年的官方 SDK，装机量以十亿计，连日上榜反映「移动 BaaS + 端侧 AI」合流趋势确认。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 6,709 | 6,812 | +103 |
+| 总 Forks | 1,797 | 1,801 | +4 |
+
+**核心变化概要**：
+- Star 6,812（+103），连续两日在榜
+- AI 能力原生下沉客户端是本轮关注核心
+- 官方长期维护 + 多分发渠道的基本盘未变
+
 
 ## 总结
 
@@ -93,4 +117,5 @@ Firebase Apple SDK 是苹果生态后端服务的事实标准之一，此次借 
 
 ---
 
-*数据来源：GitHub 仓库 (firebase/firebase-ios-sdk)，2026 年 9 月 30 日访问*
+*数据来源：GitHub 仓库 (firebase/firebase-ios-sdk)，2026 年 10 月 1 日访问*
+*首次分析：见文件头部 | 最近更新：2026 年 10 月 1 日*
