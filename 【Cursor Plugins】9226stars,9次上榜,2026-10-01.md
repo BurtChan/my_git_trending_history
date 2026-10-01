@@ -83,9 +83,9 @@ Continual Learning 插件基于对话记录对 AGENTS.md 进行增量式记忆�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 6,059 |
-| **总 Forks** | 481 |
-| **今日新增 Stars** | 229 |
+| **总 Stars** | 9,226 |
+| **总 Forks** | 869 |
+| **今日新增 Stars** | 157 |
 | **许可证** | MIT |
 | **主要语言** | TypeScript |
 
@@ -238,6 +238,28 @@ Cursor 官方插件生态持续扩张。8 月 3 日 Cursor 宣布推出 Google W
 - 今日 +246 stars，Trending 增速回落至常态区间，连续多日上榜后热度趋稳
 
 
+### 更新 9 — 2026 年 10 月 1 日（再次登上 Trending）
+
+**更新原因**：时隔 33 天再次登上 GitHub Trending，Star 6,059 → 9,226（+3,167），涨幅超 52%。
+
+**最新动态**：
+- 官方插件目录大幅扩张：新增 thermos（分支深度安全审计）、teaching、continual-learning（AGENTS.md 增量记忆）、cursor-team-kit、orchestrate（多云 Agent 编排）、pstack、advisor、grok-voice、cli-for-agent 等插件
+- third_party 生态集成爆发：Gmail、Google 全家桶（Drive/Calendar/Docs/Sheets/Slides）、Salesforce、GitHub、X、Playwright、Interactive Brokers、Statsig 等数十个 SaaS 插件上线
+- Forks 481 → 869（+388），社区插件开发者加速入场，marketplace.json 多插件仓库结构成熟
+
+**Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|---|---|---|---|
+| 总 Stars | 6,059 | 9,226 | +3,167 |
+| 总 Forks | 481 | 869 | +388 |
+| 今日新增 | — | +157 | — |
+
+**核心变化概要**：
+- Star 6,059 → 9,226（+3,167），Cursor 插件生态进入爆发期
+- 官方 + 第三方插件目录翻倍扩张，覆盖开发工具与企业 SaaS 集成
+- Forks +388，AI-native 插件市场雏形成形
+
 ---
 
 ## 总结
@@ -247,4 +269,4 @@ Cursor Plugins 仓库是 Cursor AI 编辑器插件生态的核心基础设施，
 ---
 
 *数据来源：GitHub 仓库 (cursor/plugins)*
-*首次分析：2026 年 5 月 | 最近更新：2026 年 8 月 29 日*
+*首次分析：2026 年 5 月 | 最近更新：2026 年 10 月 1 日*

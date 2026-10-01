@@ -108,9 +108,9 @@ Beta 功能，实时检测浏览器中的页面变化并自动触发设计优化
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 71,203 |
-| **总 Forks** | 4,310 |
-| **今日新增 Stars** | +306 |
+| **总 Stars** | 73,239 |
+| **总 Forks** | 4,423 |
+| **今日新增 Stars** | +463 |
 | **许可证** | Apache 2.0 |
 | **主要语言** | JavaScript / Markdown |
 | **提交数** | 704+ |
@@ -179,6 +179,28 @@ Forks 从 84+ 激增至 4,259，说明大量开发者正在 fork 定制自己的
 - engine v0.1.6 二进制发布，4.4.0 准备中
 - 前端设计技能标杆地位稳固，AI 编码技能生态行情延续
 
+### 更新 4 — 2026 年 10 月 1 日（时隔 5 天再次登上 Trending）
+
+**更新原因**：时隔 5 天重回榜单，Star 71,203 → 73,239（+2,036）。
+
+**最新动态**：
+- 支持的 AI 编码工具适配面扩大至 17 个 harness：README 现列出 Cursor、Claude Code、GitHub Copilot、Gemini CLI、Codex、Hermes Agent、Google Antigravity、Mistral Vibe、Rovo Dev、Qoder 等，前端设计语言成为跨 harness 事实标准
+- 新增 inline ignore 机制：`impeccable-disable` 注释支持文件级 / 行级（`-line` / `-next-line`）作用域，可随单个文件迁移，配合 `--no-inline-ignores` 可关闭
+- detector 文档站（impeccable.style/docs/detector）完善，4.4.0 版本持续准备中
+
+**Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|:---:|:---:|:---:|:---:|
+| 总 Stars | 71,203 | 73,239 | +2,036 |
+| 总 Forks | 4,310 | 4,423 | +113 |
+| 今日新增 | — | +463 | — |
+
+**核心变化概要**：
+- Star 71,203 → 73,239（+2,036），五日增速较前三日明显回升
+- harness 适配扩至 17 个，inline ignore 机制落地
+- 前端设计技能标杆地位持续巩固
+
 ---
 
 ## 总结
@@ -187,5 +209,5 @@ Impeccable 是目前 AI 编码工具生态中最专业的**前端设计技能语
 
 ---
 
-*数据来源：GitHub 仓库 (pbakaus/impeccable)、impeccable.style 官网（2026 年 6 月访问）*
-*首次分析：见文件头部 | 最近更新：2026 年 9 月 26 日*
+*数据来源：GitHub 仓库 (pbakaus/impeccable)、impeccable.style 官网（2026 年 10 月访问）*
+*首次分析：见文件头部 | 最近更新：2026 年 10 月 1 日*
