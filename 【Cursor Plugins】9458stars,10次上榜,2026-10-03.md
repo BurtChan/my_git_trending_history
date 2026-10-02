@@ -83,9 +83,9 @@ Continual Learning 插件基于对话记录对 AGENTS.md 进行增量式记忆�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 9,226 |
-| **总 Forks** | 869 |
-| **今日新增 Stars** | 157 |
+| **总 Stars** | 9,458 |
+| **总 Forks** | 896 |
+| **今日新增 Stars** | 232 |
 | **许可证** | MIT |
 | **主要语言** | TypeScript |
 
@@ -262,6 +262,26 @@ Cursor 官方插件生态持续扩张。8 月 3 日 Cursor 宣布推出 Google W
 
 ---
 
+### 更新 10 — 2026 年 10 月 3 日（时隔两天再次登上 Trending）
+
+**更新原因**：时隔两天再次登上 GitHub Trending，Stars 9,226 → 9,458（+232），插件目录持续扩张。
+
+**最新动态**：
+- Todoist 官方插件升至 1.0.1，启用 todoist.com 官方红色 Logo（#490）
+- eToro 交易插件显示名规范化为小写 etoro（#479）
+- third_party 金融与数据类集成持续加码：Interactive Brokers、Webull、S&P Global、Daloopa、Meltwater、Statsig 等已上架，Cursor 插件市场向企业级工作流延伸
+
+**Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|---|---|---|---|
+| 总 Stars | 9,226 | 9,458 | +232 |
+| 总 Forks | 869 | 896 | +27 |
+| 今日新增 | 157 | 232 | — |
+
+
+---
+
 ## 总结
 
 Cursor Plugins 仓库是 Cursor AI 编辑器插件生态的核心基础设施，它不仅定义了插件规范标准，还提供了 11 个覆盖代码审查、持续学习、并行编排等关键场景的官方插件。该项目近日在 GitHub 上快速走红（trending），反映了开发者社区对 Cursor 插件生态系统的强烈兴趣。随着 Cursor 从工具向平台的转型，该仓库将成为连接 Cursor AI Agent 与外部开发工具的关键桥梁，有望催生一个类似于 VS Code 扩展市场的新兴 AI-native 插件生态。
@@ -269,4 +289,4 @@ Cursor Plugins 仓库是 Cursor AI 编辑器插件生态的核心基础设施，
 ---
 
 *数据来源：GitHub 仓库 (cursor/plugins)*
-*首次分析：2026 年 5 月 | 最近更新：2026 年 10 月 1 日*
+*首次分析：2026 年 5 月 | 最近更新：2026 年 10 月 3 日*
