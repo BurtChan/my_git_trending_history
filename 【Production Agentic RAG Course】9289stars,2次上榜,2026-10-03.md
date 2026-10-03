@@ -99,13 +99,37 @@ Production Agentic RAG Course 是由 jamwithai 团队打造的**高质量实战�
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Star 数 | 6,231 |
-| 🍴 Fork 数 | 1,477 |
-| 📈 今日新增 Star | 31 |
+| ⭐ 总 Star 数 | 9,289 |
+| 🍴 Fork 数 | 2,057 |
+| 📈 今日新增 Star | 192 |
 | 📅 创建时间 | 2025-04-08 |
 | 📝 主要语言 | Python |
 | 📄 许可证 | MIT |
 | 🏷️ 标签 | agentic-rag, ai-agents, llm, rag |
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 10 月 3 日（时隔 4 个月再次登上 Trending）
+
+**更新原因**：时隔 4 个月重回 Trending，Star 数从 6,231 增长至 9,289（+3,058，+49%）；Forks 从 1,477 增长至 2,057（+580）。
+
+**最新动态**：
+- 课程更新至 Week 7「Agentic RAG 与 Telegram Bot 集成」：LangGraph 工作流实现决策节点、文档评分与自适应检索
+- 完整学习路径 Week 0-7 覆盖基础设施、数据摄取、BM25 关键词检索、分块与混合检索、完整 RAG、生产监控缓存到 Agentic RAG
+- 技术栈 FastAPI + OpenSearch + Docker Compose + Airflow，配套每周 blog 与可按周克隆的 release
+
+**Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|---|---|---|---|
+| ⭐ 总 Star 数 | 6,231 | 9,289 | +3,058 |
+| 🍴 Fork 数 | 1,477 | 2,057 | +580 |
+| 📈 今日新增 Star | 31 | 192 | +161 |
+
+**核心变化概要**：
+- Star 6,231 → 9,289（+3,058），4 个月增长 49%，Agentic RAG 热潮带动课程回榜
+- Week 7 的 LangGraph Agentic RAG + Telegram Bot 是当前最大增量看点
+- 生产化路径（监控、缓存、测试、CI）仍是课程区别于普通教程的核心差异化
 
 ---
 
@@ -115,4 +139,5 @@ Production Agentic RAG Course 是目前 GitHub 上最全面、最贴近实战的
 
 ---
 
-*数据来源：GitHub 仓库 (jamwithai/production-agentic-rag-course)，2026 年 6 月访问*
+*数据来源：GitHub 仓库 (jamwithai/production-agentic-rag-course)，2026 年 10 月访问*
+*首次分析：2026 年 6 月 | 最近更新：2026 年 10 月 3 日*
