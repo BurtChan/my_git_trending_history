@@ -91,9 +91,9 @@ Knowledge Work Plugins 是 Anthropic 于 2026 年 1 月随 Claude Cowork 插件�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 27,944+ |
-| **总 Forks** | 3,225+ |
-| **今日新增 Stars** | +392 |
+| **总 Stars** | 28,127+ |
+| **总 Forks** | 3,238+ |
+| **今日新增 Stars** | +183 |
 | **许可证** | Apache License 2.0 |
 | **创建时间** | 2026 年 1 月 |
 | **主要语言** | Python |
@@ -202,11 +202,30 @@ Knowledge Work Plugins 是 Anthropic 于 2026 年 1 月随 Claude Cowork 插件�
 
 
 
+---
+
+### 更新 7 — 2026年10月10日（连续第三日在榜）
+
+**更新原因**：Knowledge Work Plugins 连续第三日登上 GitHub Trending（第 8 次上榜），总 Stars 从 27,944 增至 28,127（+183，API 精确数据），突破 28K 里程碑。
+
+**最新动态**：Knowledge Work Plugins 总 Stars 从 27,944 增至 28,127（+183），Forks 从 3,225 增至 3,238（+13）。三日在榜增量维持自然增速区间（+695 → +183），10 月 8 日脉冲增长的影响已完全消化。代码侧最近提交为 10 月 7 日 Figma 插件版本号 bump（#1287），10 月 1 日新增 Vanguard Advisor Tools 与 GovTribe 两个企业插件，11 个职能插件 + 40+ MCP 连接器的企业知识工作生态继续按节奏扩张。
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|---------|---------|------|
+| 总 Stars | 27,944 | 28,127 | +183 |
+| 总 Forks | 3,225 | 3,238 | +13 |
+| 今日新增 | — | +183 | — |
+
+**核心变化概要**：
+- 总 Stars 27,944 → 28,127（+183），连续第三日在榜，第 8 次上榜，突破 28K
+- 单日增量回落至 +183，10 月 8 日事件驱动脉冲已完全消化
+- 插件生态持续扩张：Vanguard Advisor Tools / GovTribe 新增，Figma 连接器更新
+
 ## 总结
 
-Knowledge Work Plugins 是 **Anthropic 在 AI 助手企业化方向上的核心布局**，27.9k+ Stars。它通过插件化架构将 Claude 从通用 AI 变为各职能领域的专家助手，采用零代码的 Markdown/JSON 文件格式极大降低企业定制门槛，通过 MCP 协议打通 40+ 企业工具。项目代表了 AI 助手从"对话工具"向"领域专家工作平台"演进的重要趋势。
+Knowledge Work Plugins 是 **Anthropic 在 AI 助手企业化方向上的核心布局**，28.1k+ Stars。它通过插件化架构将 Claude 从通用 AI 变为各职能领域的专家助手，采用零代码的 Markdown/JSON 文件格式极大降低企业定制门槛，通过 MCP 协议打通 40+ 企业工具。项目代表了 AI 助手从"对话工具"向"领域专家工作平台"演进的重要趋势。
 
 ---
 
 *数据来源：GitHub 仓库 (anthropics/knowledge-work-plugins)，2026 年 5 月访问*
-*首次分析：2026 年 5 月 28 日 | 最近更新：2026 年 10 月 9 日*
+*首次分析：2026 年 5 月 28 日 | 最近更新：2026 年 10 月 10 日*

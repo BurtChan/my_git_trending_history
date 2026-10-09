@@ -79,9 +79,9 @@ SwiftUI/SwiftData/Concurrency/Testing 四件套形成「Apple 开发 Agent Skill
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 5,203 |
-| 总 Forks | 191 |
-| 今日新增 Star | 88 |
+| 总 Stars | 5,348 |
+| 总 Forks | 190 |
+| 今日新增 Star | 145 |
 | 主要编程语言 | Markdown（Agent Skill 文件） |
 | 开源许可证 | MIT |
 | 仓库创建时间 | 2026-03-05 |
@@ -89,10 +89,30 @@ SwiftUI/SwiftData/Concurrency/Testing 四件套形成「Apple 开发 Agent Skill
 
 ---
 
+## 📋 更新记录
+
+### 更新 1 — 2026年10月10日（第 2 次上榜）
+
+**更新原因**：SwiftUI Agent Skill 第 2 次登上 GitHub Trending，总 Stars 从 5,203 增至 5,348（+145，API 精确数据），上榜次日热度延续。
+
+**最新动态**：项目于 10 月 9 日发布 2.0.0 版本——这是自 4 月 v1.1 以来时隔半年的大版本更新，内容同步至 Xcode 27.2 与 iPhone Duo（10 月 7 日提交）。2.0.0 发布与再次上榜时间高度吻合，显示版本发布是本轮热度回归的直接催化剂。技能主体仍保持极轻量（纯 Markdown 技能文件，11 个未解决 Issues），安装链路 npx skills add 不变。
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|---------|---------|------|
+| 总 Stars | 5,203 | 5,348 | +145 |
+| 总 Forks | 191 | 190 | -1 |
+| 今日新增 | — | +145 | — |
+
+**核心变化概要**：
+- 总 Stars 5,203 → 5,348（+145），第 2 次上榜
+- 2.0.0 大版本发布（10 月 9 日）：同步 Xcode 27.2 / iPhone Duo，时隔半年更新
+- Forks 持平（191 → 190），轻量技能文件以消费侧使用为主
+
 ## 总结
 
 SwiftUI Agent Skill 是「专家知识 × AI 编程助手」品类的标杆案例：Paul Hudson 把二十年 Swift 教学经验提炼成一份精准纠偏 LLM SwiftUI 错误的开放技能文件，以 Agent Skills 标准格式实现全主流编码 agent 的一键分发——5K+ Stars 的热度印证了「给 AI 补领域常识」正在成为继框架和库之后开发者生态的全新基础设施品类。
 
 ---
 
-*数据来源：GitHub 仓库 (twostraws/SwiftUI-Agent-Skill)，2026 年 10 月访问*
+*数据来源：GitHub 仓库 (twostraws/SwiftUI-Agent-Skill)，2026 年 10 月 10 日访问*
+*首次分析：2026 年 10 月 9 日 | 最近更新：2026 年 10 月 10 日*
