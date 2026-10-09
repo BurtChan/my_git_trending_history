@@ -91,9 +91,9 @@ Knowledge Work Plugins 是 Anthropic 于 2026 年 1 月随 Claude Cowork 插件�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 27,249+ |
-| **总 Forks** | 3,182+ |
-| **今日新增 Stars** | +2,215 |
+| **总 Stars** | 27,944+ |
+| **总 Forks** | 3,225+ |
+| **今日新增 Stars** | +392 |
 | **许可证** | Apache License 2.0 |
 | **创建时间** | 2026 年 1 月 |
 | **主要语言** | Python |
@@ -180,11 +180,33 @@ Knowledge Work Plugins 是 Anthropic 于 2026 年 1 月随 Claude Cowork 插件�
 - 单日增量 2,215，为 9 月连榜期间峰值（406）的 5 倍以上，增速显著放大
 - Forks 从 2,984 增至 3,182，第 6 次上榜
 
+
+---
+
+### 更新 6 — 2026年10月9日（连续第二日在榜）
+
+**更新原因**：Knowledge Work Plugins 连续第二日登上 GitHub Trending（第 7 次上榜），总 Stars 从 27,249 增至 27,944（+695，API 精确数据），连续在榜确认增长动能为真实需求而非单日脉冲。
+
+**最新动态**：Knowledge Work Plugins 总 Stars 从 27,249 增至 27,944（+695），Forks 从 3,182 增至 3,225（+43）。10 月 8 日单日 +2,215 的脉冲式增长次日回落至常规量级，符合「被外部事件（如 Cowork 功能发布/媒体报道）拉动后回归自然增速」的典型曲线。仓库保持高频迭代（1,068 commits），11 个职能插件（productivity / sales / customer-support / product-management / marketing / legal / finance / data / enterprise-search / bio-research / cowork-plugin-management）+ 40+ MCP 连接器的企业知识工作插件生态格局稳定。
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|---------|---------|------|
+| 总 Stars | 27,249 | 27,944 | +695 |
+| 总 Forks | 3,182 | 3,225 | +43 |
+| 今日新增 | — | +392 | — |
+
+**核心变化概要**：
+- 总 Stars 27,249 → 27,944（+695），连续第二日在榜，第 7 次上榜
+- 单日增量从 +2,215 回落至 +695，确认 10 月 8 日为事件驱动脉冲
+- Forks 从 3,182 增至 3,225（+43），仓库持续高频迭代（1,068 commits）
+
+
+
 ## 总结
 
-Knowledge Work Plugins 是 **Anthropic 在 AI 助手企业化方向上的核心布局**，27.2k+ Stars。它通过插件化架构将 Claude 从通用 AI 变为各职能领域的专家助手，采用零代码的 Markdown/JSON 文件格式极大降低企业定制门槛，通过 MCP 协议打通 40+ 企业工具。项目代表了 AI 助手从"对话工具"向"领域专家工作平台"演进的重要趋势。
+Knowledge Work Plugins 是 **Anthropic 在 AI 助手企业化方向上的核心布局**，27.9k+ Stars。它通过插件化架构将 Claude 从通用 AI 变为各职能领域的专家助手，采用零代码的 Markdown/JSON 文件格式极大降低企业定制门槛，通过 MCP 协议打通 40+ 企业工具。项目代表了 AI 助手从"对话工具"向"领域专家工作平台"演进的重要趋势。
 
 ---
 
 *数据来源：GitHub 仓库 (anthropics/knowledge-work-plugins)，2026 年 5 月访问*
-*首次分析：2026 年 5 月 28 日 | 最近更新：2026 年 10 月 8 日*
+*首次分析：2026 年 5 月 28 日 | 最近更新：2026 年 10 月 9 日*

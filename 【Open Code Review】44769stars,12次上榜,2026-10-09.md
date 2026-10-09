@@ -91,8 +91,8 @@ Open Code Review 是阿里巴巴集团开源的 AI 驱动代码审查 CLI 工具
 
 | 指标 | 数值 |
 |------|------|
-| Stars | ⭐ 36,365 |
-| Forks | 🔱 2,591 |
+| Stars | ⭐ 44,769 |
+| Forks | 🔱 3,242 |
 | 核心语言 | Go |
 | 创建时间 | 2026-05-18 |
 | 许可证 | Apache-2.0 |
@@ -105,6 +105,29 @@ Open Code Review 是阿里巴巴集团开源的 AI 驱动代码审查 CLI 工具
 ---
 
 ## 📋 更新记录
+
+
+
+
+---
+
+### 更新 12 — 2026 年 10 月 9 日（时隔 20 天再次登上 Trending）
+
+**更新原因**：Open Code Review 时隔 20 天再次登上 GitHub Trending（第 12 次上榜），总 Stars 从 36,365 增至 44,769（+8,404，API 精确数据），离榜期间保持高速自然增长。
+
+**最新动态**：Open Code Review 离榜三周内总 Stars 从 36,365 增至 44,769（+8,404），Forks 从 2,591 增至 3,242（+651）。9 月 20 日 InfoQ 报道了阿里开源 OpenCodeReview 的消息；学术界同期发布 arXiv 论文（2608.09290），给出 SEM-F1 指标：在 AACR-Bench（200 个真实 PR、1,505 条专家标注）上，OpenCodeReview 最高 SEM-F1 达 25.10%（Claude-4.6-Opus 后端），是同模型 Claude Code（11.57%）的 2.17 倍，同时 token 消耗降低 5-15 倍——「确定性流水线 + LLM Agent」混合架构的精确率优势获得量化验证。产品侧，工具已提供 Claude Code / Codex / Cursor / Kimi Code / OpenCode 全套插件集成、Delegation Mode（宿主 agent 用自己的 LLM 执行审查，无需 OCR API key）、GitHub Actions / GitLab CI / Gerrit CI 集成与 Session Viewer。
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|---------|---------|------|
+| 总 Stars | 36,365 | 44,769 | +8,404 |
+| 总 Forks | 2,591 | 3,242 | +651 |
+| 今日新增 | — | +323 | — |
+
+**核心变化概要**：
+- 总 Stars 36,365 → 44,769（+8,404），离榜三周保持 8K+ 增长，第 12 次上榜
+- arXiv 论文量化验证：SEM-F1 为同模型 Claude Code 的 2.17 倍，token 消耗降低 5-15 倍
+- Forks 从 2,591 增至 3,242（+651），企业采纳面持续扩大
+- InfoQ 9 月 20 日报道开源消息，生态集成（CI/CD、多 agent 插件）已成型
 
 
 ### 更新 11 — 2026 年 9 月 19 日（连续第七日在榜）
@@ -323,8 +346,8 @@ Open Code Review 是阿里巴巴将内部经过两年大规模验证的 AI 代�
 
 ---
 
-*数据来源：GitHub 仓库 (alibaba/open-code-review)，2026 年 9 月访问*
-*首次分析：2026 年 7 月 | 最近更新：2026 年 9 月 19 日*
+*数据来源：GitHub 仓库 (alibaba/open-code-review)，2026 年 10 月访问*
+*首次分析：2026 年 7 月 | 最近更新：2026 年 10 月 9 日*
 
 ---
 

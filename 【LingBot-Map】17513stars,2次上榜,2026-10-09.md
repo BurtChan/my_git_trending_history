@@ -86,13 +86,13 @@ LingBot-Map 的实时 3D 重建能力可以支撑 AR/VR 应用中对物理环境
 
 | 指标 | 数值 |
 |------|------|
-| 总 Star 数 | 8,171 |
-| 总 Fork 数 | 798 |
-| 今日新增 Star | 372 |
+| 总 Star 数 | 17,513 |
+| 总 Fork 数 | 1,941 |
+| 今日新增 Star | 109 |
 | 主要编程语言 | Python |
 | 开源许可证 | Apache-2.0 |
 | 仓库创建时间 | 2026-04-15 |
-| 未解决 Issues | 57 |
+| 未解决 Issues | 81 |
 
 ---
 
@@ -102,4 +102,28 @@ LingBot-Map 是蚂蚁集团 Robbyant 团队推出的一款具有里程碑意义�
 
 ---
 
-*数据来源：GitHub 仓库 (Robbyant/lingbot-map)，2026 年 6 月访问*
+## 📋 更新记录
+
+### 更新 1 — 2026年10月9日（时隔 3 个多月再次登上 Trending）
+
+**更新原因**：LingBot-Map 时隔 3 个多月再次登上 GitHub Trending（第 2 次上榜），总 Stars 从 8,171 增至 17,513（+9,342，API 精确数据），ECCV 2026 会议临近带动学术热度回归。
+
+**最新动态**：LingBot-Map 总 Stars 从 8,171 增至 17,513（+9,342，三个多月累计），Forks 从 798 增至 1,941（+1,143）。仓库 README 标题已更新为「ECCV 2026 Best Paper Award Candidate」（最佳论文奖候选），论文正式发表于 ECCV 2026（Springer, pages 293-314）。6 月底以来持续迭代：6 月 28 日修复 SDPA KV cache 长序列 bug，5 月 25 日发布 KITTI / Oxford Spires 评测基准，4 月底发布 25,000 帧长视频 demo 并通过 `--compile` 加速。评测基准覆盖已从 2 个数据集扩展到 10 个（VBR / Droid-W / TUM-D / 7-scenes / ETH3D / Tanks and Temples / NRGBD 等），模型权重在 HuggingFace 与 ModelScope 双平台分发。
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|---------|---------|------|
+| 总 Stars | 8,171 | 17,513 | +9,342 |
+| 总 Forks | 798 | 1,941 | +1,143 |
+| 今日新增 | — | +109 | — |
+
+**核心变化概要**：
+- 总 Stars 8,171 → 17,513（+9,342），时隔 3 个多月回榜，3 个多月翻倍再翻倍
+- 论文入选 ECCV 2026 Best Paper Award Candidate，正式发表于 ECCV 2026
+- 评测基准从 2 个数据集扩展至 10 个，SDPA/FlashInfer KV cache bug 相继修复
+- Forks 从 798 增至 1,941（+1,143），二次研究与应用采纳显著加速
+
+
+---
+
+*数据来源：GitHub 仓库 (Robbyant/lingbot-map)，2026 年 10 月访问*
+*首次分析：2026 年 6 月 29 日 | 最近更新：2026 年 10 月 9 日*
