@@ -91,9 +91,9 @@ Knowledge Work Plugins 是 Anthropic 于 2026 年 1 月随 Claude Cowork 插件�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 28,127+ |
-| **总 Forks** | 3,238+ |
-| **今日新增 Stars** | +183 |
+| **总 Stars** | 28,704+ |
+| **总 Forks** | 3,270+ |
+| **今日新增 Stars** | +577 |
 | **许可证** | Apache License 2.0 |
 | **创建时间** | 2026 年 1 月 |
 | **主要语言** | Python |
@@ -220,12 +220,31 @@ Knowledge Work Plugins 是 Anthropic 于 2026 年 1 月随 Claude Cowork 插件�
 - 总 Stars 27,944 → 28,127（+183），连续第三日在榜，第 8 次上榜，突破 28K
 - 单日增量回落至 +183，10 月 8 日事件驱动脉冲已完全消化
 - 插件生态持续扩张：Vanguard Advisor Tools / GovTribe 新增，Figma 连接器更新
+---
+
+### 更新 8 — 2026年10月11日（连续第四日在榜）
+
+**更新原因**：Knowledge Work Plugins 连续第四日登上 GitHub Trending（第 9 次上榜），总 Stars 从 28,127 增至 28,704（+577，API 精确数据）。
+
+**最新动态**：Knowledge Work Plugins 单日增量从 +183 反弹至 +577，三日（10/9-10/11）累计 +1,455，在榜动能不减反增。代码侧 10 月 9 日连续合并 qodo/qodo-standards（#1290）与 carta-cap-table/carta-crm（#1289）两组插件版本 bump，叠加此前 Figma 连接器更新（#1287），企业插件矩阵保持每周节奏的维护活跃度。28K 站稳后向 29K 推进，Anthropic 企业知识工作生态的榜内曝光仍在爬坡。
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|---------|---------|------|
+| 总 Stars | 28,127 | 28,704 | +577 |
+| 总 Forks | 3,238 | 3,270 | +32 |
+| 今日新增 | +183 | +577 | — |
+
+**核心变化概要**：
+- 总 Stars 28,127 → 28,704（+577），连续第四日在榜，第 9 次上榜
+- 单日增量 +183 → +577 反弹，三日累计 +1,455，动能走强
+- 插件维护活跃：qodo / carta 系列版本 bump（#1290/#1289）
+
 
 ## 总结
 
-Knowledge Work Plugins 是 **Anthropic 在 AI 助手企业化方向上的核心布局**，28.1k+ Stars。它通过插件化架构将 Claude 从通用 AI 变为各职能领域的专家助手，采用零代码的 Markdown/JSON 文件格式极大降低企业定制门槛，通过 MCP 协议打通 40+ 企业工具。项目代表了 AI 助手从"对话工具"向"领域专家工作平台"演进的重要趋势。
+Knowledge Work Plugins 是 **Anthropic 在 AI 助手企业化方向上的核心布局**，28.7k+ Stars。它通过插件化架构将 Claude 从通用 AI 变为各职能领域的专家助手，采用零代码的 Markdown/JSON 文件格式极大降低企业定制门槛，通过 MCP 协议打通 40+ 企业工具。项目代表了 AI 助手从"对话工具"向"领域专家工作平台"演进的重要趋势。
 
 ---
 
-*数据来源：GitHub 仓库 (anthropics/knowledge-work-plugins)，2026 年 5 月访问*
-*首次分析：2026 年 5 月 28 日 | 最近更新：2026 年 10 月 10 日*
+*数据来源：GitHub 仓库 (anthropics/knowledge-work-plugins)，2026 年 10 月访问*
+*首次分析：2026 年 5 月 28 日 | 最近更新：2026 年 10 月 11 日*
