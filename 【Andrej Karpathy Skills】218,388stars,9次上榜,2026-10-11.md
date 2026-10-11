@@ -4,7 +4,7 @@
 
 - **GitHub**: [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
 - **语言**: Markdown（纯配置/指导文件，无编程语言）
-- **Stars**: 211,556 | **Forks**: 21,476
+- **Stars**: 218,388 | **Forks**: 21,989
 - **许可证**: MIT
 - **创建时间**: 2026-01-27
 
@@ -198,7 +198,7 @@ Andrej Karpathy（前 Tesla AI 总监、OpenAI 联合创始人）在社交媒体
 - 稳居 20 万星俱乐部，单文件 CLAUDE.md 路线持续被验证
 
 
-*首次分析：2026 年 4 月 | 最近更新：2026年9月9日*
+*首次分析：2026 年 4 月 | 最近更新：2026年10月11日*
 
 ### 更新 6 — 2026年9月9日（再次登上 Trending）
 
@@ -243,3 +243,24 @@ Andrej Karpathy（前 Tesla AI 总监、OpenAI 联合创始人）在社交媒体
 - 距上次分析一个月 +6,325 Stars（约 3%），趋势平稳增长
 - 新增 Cursor 官方规则文件 .cursor/rules/karpathy-guidelines.mdc，同一套四原则指南覆盖 Claude Code 与 Cursor 双工具链
 - 作者导流新项目 Multica（开源 coding agent 管理平台，支持可复用 skills）
+
+
+### 更新 8 — 2026 年 10 月 11 日
+
+**更新原因**：再次登上 GitHub Trending，今日新增 +507 Stars（第 9 次上榜）。
+
+**最新动态**：
+
+仓库本体自 4 月 20 日后无代码推送，本轮增长仍为纯口碑驱动；README 的 Multica 平台导流与 Cursor 规则文件（.cursor/rules/karpathy-guidelines.mdc）持续为 CLAUDE.md 四原则（先思考、简洁至上、外科手术式修改、目标驱动执行）带来新读者。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 217,881 | 218,388 | +507 |
+| 总 Forks | 21,963 | 21,989 | +26 |
+
+**核心变化概要**：
+
+- Stars 217,881 → 218,388（+507），第 9 次登上 Trending
+- Forks 21,963 → 21,989（+26）
