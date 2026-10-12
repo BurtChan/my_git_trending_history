@@ -63,8 +63,8 @@ Medallion 多层数据存储、Data flow 角色化管道、DP integration 源→
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 49,856 |
-| 总 Forks | 3,160 |
+| 总 Stars | 52,062 |
+| 总 Forks | 3,280 |
 | 许可证 | MIT |
 | 主要语言 | HTML |
 | 创建时间 | 2026 年 4 月 |
@@ -459,10 +459,32 @@ Diagram Design 单日 +1,237 Stars，总星数逼近 5 万里程碑。v2.5.10 �
 - 支持重绘 draw.io/Mermaid/Excalidraw 源文件
 
 
+### 更新 20 — 2026 年 10 月 13 日（连续第八日在榜）
+
+**更新原因**：项目连续第八日登上 GitHub Trending 榜单，Star 数从 49,856 增长至 52,062（+2,206），Forks 从 3,220 增至 3,280（+60），Open Issues 从 64 增至 70
+
+**最新动态**：
+- README 新增 v2.5.10 发布说明：图型库再扩 10 种布局语法——Sankey（桑基图）、Fishbone（鱼骨图）、Wardley Map、Kanban、User Journey、Deployment、Dependency Graph、UML Class、Story Map、Database Schema，总量达 42 种编辑级图表类型
+- v2.0「The Loop」飞轮图（共享内存中枢 + 虚线写回路径）与 v2.3 语义化系统模式（semantic system patterns）+ 可选无障碍动效持续作为差异化卖点；静态 HTML + SVG 输出保持默认，零构建零依赖
+- 支持工具面覆盖 Claude Code、Codex、GitHub Copilot、Factory Droid 与 Pi 五款 Agent 工具，并支持将 draw.io / Mermaid / Excalidraw 源图按目标格式、尺寸与细节级别重绘
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 49,856 | 52,062 | +2,206 |
+| 总 Forks | 3,220 | 3,280 | +60 |
+| Open Issues | 64 | 70 | +6 |
+
+**核心变化概要**：
+- 连续第八日在榜（49,856 → 52,062），v2.5.10 将图型库扩至 42 种
+- 新增 Sankey / 鱼骨图 / Wardley Map / UML 类图 / 数据库 Schema 等 10 种布局语法
+- 支持面扩至 Claude Code / Codex / Copilot / Factory Droid / Pi 五款工具
+
 ## 总结
 Diagram Design 把「编辑级设计规范」编译成 AI 可执行的图表生成规则，用品牌注入 + 严格设计系统解决了 AI 图表"能用但丑"的普遍痛点，是 AI 原生设计工具赛道中思路最清晰的 Skill 项目之一。
 
 ---
 
 *数据来源：GitHub 仓库 (cathrynlavery/diagram-design)，2026 年 10 月访问*
-*首次分析：2026 年 8 月 | 最近更新：2026 年 10 月 12 日*
+*首次分析：2026 年 8 月 | 最近更新：2026 年 10 月 13 日*
