@@ -97,9 +97,9 @@ Skills 开创了 AI Agent 指令的包管理模式——安装一次、按需加
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 34,102 |
-| **总 Forks** | 3,374 |
-| **今日新增 Stars** | 187 |
+| **总 Stars** | 34,649 |
+| **总 Forks** | 2,954 |
+| **今日新增 Stars** | 547 |
 | **许可证** | MIT |
 | **主要语言** | TypeScript |
 
@@ -150,6 +150,31 @@ Skills 开创了 AI Agent 指令的包管理模式——安装一次、按需加
 - 数据口径：GitHub API 限额窗口内，本次以 Trending 页快照为基准（今日快照增量 +187）
 
 ---
+
+### 更新 3 — 2026 年 10 月 14 日（连续第二天在榜）
+
+**更新原因**：项目连续第二天登上 GitHub Trending 日榜，累计第 4 次上榜。
+
+**最新动态**：
+- Star 从 34,102 增至 34,649（+547），连续第二日维持 500+ 增量
+- v1.7.2（10 月 9 日）发布：skills sync 大幅增强，新增 `--recursive` workspace 包递归同步、读取 optional/peer 依赖、`--include`/`--exclude` 过滤，skills 改为链接至 node_modules 而非复制
+- v1.7.1（10 月 6 日）将 skills CLI 接入 Vercel Agent Factory，修复 `skills update` 跳过未变更项目技能等问题
+- Forks 计数从 3,374 回落至 2,954（网络分叉被删除后的正常回落，以 API 实时值为准）
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 34,102 | 34,649 | +547 |
+| 总 Forks | 3,374 | 2,954 | -420 |
+| 今日新增 | 187 | 547 | — |
+
+**核心变化概要**：
+- Star 34,102 → 34,649（+547），Agent Skills 生态扩张势头延续
+- sync 子命令成为 v1.7.x 主线：package.json skills 字段支持 npm:/git 来源，依赖不再随行的 skills 自动移除
+- 数据口径：GitHub API（2026-10-14 12:00 CST），今日新增按 API 增量 +547 计
+
+---
 ## 总结
 
 Vercel Skills CLI 是**AI 编码 Agent 技能管理的开创性工具**，34k+ Stars。它用 TypeScript 构建，定义了「Agent Skills」标准格式，通过 `npx skills add` 一行命令为 40+ 编码 Agent 安装可按需加载的行为指令包。项目被誉为「Context 的 npm 时刻」，将 Agent 指令从零散的配置文件升级为可安装、可共享、可发现的包管理体系，是 AI 编码工作流的基础设施级创新。
@@ -157,4 +182,4 @@ Vercel Skills CLI 是**AI 编码 Agent 技能管理的开创性工具**，34k+ S
 ---
 
 *数据来源：GitHub 仓库 (vercel-labs/skills)、vercel.com/blog（2026 年 10 月访问）*
-*首次分析：2026 年 4 月 | 最近更新：2026 年 10 月 13 日*
+*首次分析：2026 年 4 月 | 最近更新：2026 年 10 月 14 日*
