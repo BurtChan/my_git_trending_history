@@ -15,7 +15,7 @@ Claude Plugins Official 是由 Anthropic 官方团队管理和维护的 Claude C
 
 该项目的核心价值在于为 Claude Code 这个终端中的智能编码工具提供了可扩展的插件体系。通过标准化的插件结构（包含 plugin.json 元数据、MCP 服务器配置、命令、代理和技能定义等），开发者可以为 Claude Code 添加特定领域的专业知识、自动化工作流和外部工具集成能力。截至目前，仓库已收录超过 35 个内部插件和 15 个以上的外部插件，涵盖代码审查、安全扫描、多语言 LSP 支持、前端设计、Git 工作流等众多领域。
 
-作为 GitHub 上快速崛起的热门项目（近 2 万 Star），Claude Plugins Official 标志着 AI 编码助手从单一工具向可扩展平台演进的重要趋势。它不仅降低了开发者定制 Claude Code 能力的门槛，也为第三方服务商（如 GitHub、GitLab、Linear、Playwright 等）提供了与 Claude 深度集成的官方渠道。
+作为 GitHub 上快速崛起的热门项目（38.8K+ Star），Claude Plugins Official 标志着 AI 编码助手从单一工具向可扩展平台演进的重要趋势。它不仅降低了开发者定制 Claude Code 能力的门槛，也为第三方服务商（如 GitHub、GitLab、Linear、Playwright 等）提供了与 Claude 深度集成的官方渠道。
 
 ---
 
@@ -82,9 +82,9 @@ Claude Plugins Official 是由 Anthropic 官方团队管理和维护的 Claude C
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 38,215 |
-| Forks | 4,284 |
-| 今日新增 | 181 |
+| 总 Stars | 38,808 |
+| Forks | 4,310 |
+| 今日新增 | 593（API 口径） |
 | 许可证 | 各插件独立授权 |
 | 主要语言 | Python (31.6%)、TypeScript (28.9%) |
 | Watchers | 146 |
@@ -242,10 +242,34 @@ Claude Plugins Official 连续第 3 天在榜，总 Star 达 34,308。前一轮�
 - Forks 4,147 → 4,284（+137）
 
 > 更新依据：GitHub API 2026-10-15 数据
+---
+
+### 更新 8 — 2026 年 10 月 16 日（连续第二日在榜）
+
+**更新原因**：连续第二日在榜（昨日时隔 20 天回榜），Star 38,215 → 38,808（+593，API 口径），累计 9 次上榜。
+
+**最新动态**：回榜次日增速不降反升（+593 vs 昨日 +181）。10 月 15 日连续合并三个外部插件更新 PR（Carta 系：cap-table 股权表、crm 客户管理、investors 投资人关系），股权管理平台 Carta 成为新的官方合作伙伴插件提供方，财务/法务工作流正式进入 Claude 插件生态——延续此前 GitHub、Playwright、Figma、Vercel 等伙伴接入的平台化扩张路线。Forks 4,284 → 4,310（+26），第三方插件开发者生态稳步扩大。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 38,215 | 38,808 | +593 |
+| 总 Forks | 4,284 | 4,310 | +26 |
+| 今日新增 | 181 | 593（API 口径） | — |
+
+**核心变化概要**：
+
+- Star 38,215 → 38,808（+593），连续第二日在榜，累计 9 次上榜
+- Carta 系 3 个插件（cap-table/crm/investors）合入，财务工作流进入生态
+- Forks 4,284 → 4,310（+26）
+
+> 更新依据：GitHub API 2026-10-16 数据
+
 
 ## 总结
 
-Claude Plugins Official 是 Anthropic 为 Claude Code 构建的官方插件市场，收录了 50+ 高质量插件，涵盖 12 种编程语言的 LSP 支持、代码审查、安全审计、Git 工作流自动化以及与 GitHub、GitLab、Playwright 等主流工具的深度集成。项目采用标准化的插件架构（Commands + Agents + Skills + Hooks + MCP），既降低了插件开发门槛，又确保了生态的可扩展性。凭借近 2 万 Star 和 2500+ Fork 的社区热度，该项目已成为 AI 编码助手生态中不可或缺的基础设施，标志着 AI 开发工具正从单一产品向开放平台加速演进。
+Claude Plugins Official 是 Anthropic 为 Claude Code 构建的官方插件市场，收录了 50+ 高质量插件，涵盖 12 种编程语言的 LSP 支持、代码审查、安全审计、Git 工作流自动化以及与 GitHub、GitLab、Playwright 等主流工具的深度集成。项目采用标准化的插件架构（Commands + Agents + Skills + Hooks + MCP），既降低了插件开发门槛，又确保了生态的可扩展性。凭借近 3.9 万 Star 和 4300+ Fork 的社区热度，该项目已成为 AI 编码助手生态中不可或缺的基础设施，标志着 AI 开发工具正从单一产品向开放平台加速演进。
 
 *数据来源：GitHub 仓库 (anthropics/claude-plugins-official)，2026 年 10 月访问*
-*首次分析：见文件头部 | 最近更新：2026 年 10 月 15 日*
+*首次分析：见文件头部 | 最近更新：2026 年 10 月 16 日*
