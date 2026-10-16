@@ -83,9 +83,9 @@ Continual Learning 插件基于对话记录对 AGENTS.md 进行增量式记忆�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 9,458 |
-| **总 Forks** | 896 |
-| **今日新增 Stars** | 232 |
+| **总 Stars** | 11,763 |
+| **总 Forks** | 1,142 |
+| **今日新增 Stars** | 214 |
 | **许可证** | MIT |
 | **主要语言** | TypeScript |
 
@@ -286,7 +286,28 @@ Cursor 官方插件生态持续扩张。8 月 3 日 Cursor 宣布推出 Google W
 
 Cursor Plugins 仓库是 Cursor AI 编辑器插件生态的核心基础设施，它不仅定义了插件规范标准，还提供了 11 个覆盖代码审查、持续学习、并行编排等关键场景的官方插件。该项目近日在 GitHub 上快速走红（trending），反映了开发者社区对 Cursor 插件生态系统的强烈兴趣。随着 Cursor 从工具向平台的转型，该仓库将成为连接 Cursor AI Agent 与外部开发工具的关键桥梁，有望催生一个类似于 VS Code 扩展市场的新兴 AI-native 插件生态。
 
+### 更新 11 — 2026 年 10 月 16 日（时隔 13 天再次登上 Trending）
+
+**更新原因**：时隔 13 天再次登上 GitHub Trending，Star 9,458 → 11,763（+2,305，API 精确数据）
+
+**最新动态**：Cursor Plugins 离榜两周内净增 2,305 Star（增速较 10 月初明显抬升），Forks 从 1,142 增至 896+246=1,142→ API 显示 1,142。插件目录继续向金融与生产力纵深扩张：新增 X Money（X 支付卡与转账）、QuickBooks Online（发票/账单/财务报表）、Amplemarket（销售线索富化与序列）、Klaviyo 与 Customer.io（邮件营销自动化）、Mailchimp 系 MailerLite 等营销类集成，连同此前上架的 Interactive Brokers、Webull、S&P Global、Calendly、Smartsheet，官方插件市场已覆盖开发、金融、营销、协作四大企业工作流版图。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 9,458 | 11,763 | +2,305 |
+| 总 Forks | 896 | 1,142 | +246 |
+| 今日新增 | 232 | 214 | — |
+
+**核心变化概要**：
+- Star 9,458 → 11,763（+2,305），13 天增速创近期新高
+- 插件目录扩张至金融支付（X Money/QuickBooks）与营销自动化（Klaviyo/Customer.io/MailerLite/Amplemarket）
+- Fork +246 至 1,142，第三方集成贡献持续活跃
+
+
+
 ---
 
 *数据来源：GitHub 仓库 (cursor/plugins)*
-*首次分析：2026 年 5 月 | 最近更新：2026 年 10 月 3 日*
+*首次分析：2026 年 5 月 | 最近更新：2026 年 10 月 16 日*
