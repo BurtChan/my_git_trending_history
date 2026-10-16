@@ -92,11 +92,11 @@ AI Job Search 是一个由丹麦地球物理学博士 Mads Lorentzen 开发的�
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ Stars | 47,733 |
-| 🍴 Forks | 16,483 |
+| ⭐ Stars | 48,383 |
+| 🍴 Forks | 16,619 |
 | 📅 创建时间 | 2026-03-18 |
 | 📄 许可证 | MIT |
-| 💻 主要语言 | TypeScript |
+| 💻 主要语言 | Python |
 | 📈 今日新增 | 879 stars |
 
 ---
@@ -211,9 +211,28 @@ AI Job Search 是一个将 Claude Code 的能力发挥到极致的实用框架�
 - 8 月 The Next New Thing 演示视频发布（3.8 万播放），曝光持续外溢
 
 
+### 更新 6 — 2026 年 10 月 17 日（连续第二日在榜）
+**更新原因**：项目连续第二日登上 GitHub Trending（今日 +879）
+
+**最新动态**：AI Job Search 热度延续，总 Stars 从 47,733 增至 48,383（+650），Forks 从 16,483 增至 16,619（+136）。仓库持续活跃（232 commits，master 分支），README 强调跨 Agent 工具兼容——除 Claude Code 外，Codex、Antigravity、Gemini CLI 用户可经 AGENTS.md 直接使用岗位搜索技能，社区 Fork（Discussion #78）覆盖完整工作流适配。项目同时澄清无关联加密货币/代币/付费赞助计划，防诈骗声明写入 README。新增 upskill/ 与 company_research/ 目录，框架从「投递自动化」向「技能提升 + 公司调研」两端延伸。作者以身示范的求职叙事（69 份定制投递 → 20 场初面 → 2026 年 6 月入职 AI 工程师）继续成为项目传播的核心引擎。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 47,733 | 48,383 | +650 |
+| 总 Forks | 16,483 | 16,619 | +136 |
+
+**核心变化概要**：
+- Star 47,733 → 48,383（+650），连续第二日在榜
+- Fork 16,483 → 16,619（+136），Fork/Star 比维持 0.34 高位
+- README 新增防诈骗声明（无加密代币/付费赞助），并强化多 Agent CLI（Codex/Gemini CLI）兼容指引
+- 仓库新增 upskill/、company_research/ 模块，功能面从投递扩展到职业成长
+- 数据勘误：主表主要语言由 TypeScript 修正为 Python（API 实测）
+
 
 ---
 
 *数据来源：GitHub 仓库 (MadsLorentzen/ai-job-search)，2026 年 10 月访问*
 
-*首次分析：2026 年 7 月 | 最近更新：2026 年 10 月 16 日*
+*首次分析：2026 年 7 月 | 最近更新：2026 年 10 月 17 日*
