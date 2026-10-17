@@ -70,9 +70,9 @@ CLI-Anything 还提供了 CLI-Hub 注册中心，用户可以通过 `pip install
 
 | 指标 | 数据 |
 |------|------|
-| **总 Stars** | 53,174 |
-| **Forks** | 4,821 |
-| **今日新增 Stars** | +716 |
+| **总 Stars** | 53,734 |
+| **Forks** | 4,880 |
+| **今日新增 Stars** | +281 |
 | **许可证** | Apache License 2.0 |
 | **主要语言** | Python |
 
@@ -229,4 +229,24 @@ CLI-Hub 收录的 CLI 工具与 SKILL.md 技能文件持续增加，Agent-Native
 ---
 
 *数据来源：GitHub 仓库 (HKUDS/CLI-Anything)，2026 年 10 月访问*
-*首次分析：见文件头部 | 最近更新：2026 年 10 月 16 日*
+*首次分析：见文件头部 | 最近更新：2026 年 10 月 17 日*
+### 更新 8 — 2026 年 10 月 17 日（连续多日在榜）
+
+**更新原因**：连续多日稳居 GitHub Trending，总 Stars 从 53,174 增长至 53,734（+560），今日单日新增 +281 Stars，「让所有软件 Agent 原生」的方法论叙事保持热度。
+
+**最新动态**：
+- CLI-Hub（clianything.cc）作为 Agent 与 CLI 工具注册中心持续扩充，仓库内 agent-harness 覆盖 Blender、GIMP、Godot、QGIS、FreeCAD 等数十款专业软件，3MF/agent-harness 等新领域 harness 持续合入
+- 工程指标升级：「18 个专业软件 Demo + 2,280 项通过测试」的基准叙事延续，arXiv 技术报告（2606.03854）为 Agent-Native Computer Use 定位提供学术背书
+- 多 Agent 框架适配扩展：除 Claude Code 插件外，新增 Cursor 插件、Codex skill、pi-extension 与 Hermes skill 等接入方式
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 53,174 | 53,734 | +560 |
+| 总 Forks | 4,821 | 4,880 | +59 |
+| 今日新增 | — | +281 | — |
+
+**核心变化概要**：
+- 总 Stars 达 53,734（+560），连续多日在榜、日均增速稳定在数百量级
+- CLI-Hub 生态聚合 + 多框架插件（Cursor/Codex/Hermes）扩展是本轮主要进展
+- 方法论型项目（非单一工具）的长尾热度罕见地持续超过两周
+
