@@ -78,9 +78,9 @@ Android Skills 是 Google Android 官方团队推出的 AI Agent 技能（Skills
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 7,987 |
-| 总 Forks | 530 |
-| 今日新增 | 127 |
+| 总 Stars | 8,592 |
+| 总 Forks | 560 |
+| 今日新增 | 605 |
 | 许可证 | Apache-2.0 |
 | 主要语言 | Markdown (SKILL.md) |
 
@@ -111,6 +111,28 @@ Android Skills 回榜次日继续在榜，单日 +127，总星逼近 8 千。Goo
 
 ---
 
+### 更新 2 — 2026年10月18日（连续第三日在榜）
+
+**更新原因**：Android Skills 连续第三日登上 GitHub Trending（第 3 次上榜），API 口径总 Stars 从 7,987 增至 8,592（+605），单日增量较昨日（+127）明显放大，突破 8 千关口。
+
+**最新动态**：
+
+Android Skills 回榜第三日增速显著抬升，单日 +605（前两日分别为 +35、+127），总星正式突破 8 千。仓库保持高更新频率：latest release 仍为 v1.0.15（10/14），技能目录覆盖 build-system、camera、device-ai、jetpack-compose、media、navigation、performance、play、security、testing、tv、wear、xr 等 20+ 个 Android 开发领域，Forks 同步增至 560。在 Skills 生态多项目同榜的格局下，Google 官方 Android 技能库已成为开发者安装 Agent 技能的确定性入口之一。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 7,987 | 8,592 | +605 |
+| 总 Forks | 530 | 560 | +30 |
+| 今日新增 | 127 | 605 | — |
+
+**核心变化概要**：
+
+- Stars 7,987 → 8,592（+605），连续第三日在榜，累计 3 次上榜，突破 8 千
+- Forks 530 → 560（+30）
+- 单日增量 +605 为上榜以来最大，评估驱动补短板的官方技能集需求持续放量
+
 ## 总结
 
 Android Skills 是 Google 官方进军 Agent 技能生态的标志性项目：以评估驱动只补 LLM 短板、一次安装覆盖全部主流 Agent，标志着 Android 开发工具链正式拥抱 Agentic AI 工作流。
@@ -118,4 +140,4 @@ Android Skills 是 Google 官方进军 Agent 技能生态的标志性项目：�
 ---
 
 *数据来源：GitHub 仓库 (android/skills)，2026 年 10 月访问*
-*首次分析：见文件头部 | 最近更新：2026 年 10 月 17 日*
+*首次分析：见文件头部 | 最近更新：2026 年 10 月 18 日*
