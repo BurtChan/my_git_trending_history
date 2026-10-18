@@ -78,9 +78,9 @@ Android Skills 是 Google Android 官方团队推出的 AI Agent 技能（Skills
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 8,592 |
-| 总 Forks | 560 |
-| 今日新增 | 605 |
+| 总 Stars | 8,732 |
+| 总 Forks | 567 |
+| 今日新增 | 140 |
 | 许可证 | Apache-2.0 |
 | 主要语言 | Markdown (SKILL.md) |
 
@@ -133,6 +133,31 @@ Android Skills 回榜第三日增速显著抬升，单日 +605（前两日分别
 - Forks 530 → 560（+30）
 - 单日增量 +605 为上榜以来最大，评估驱动补短板的官方技能集需求持续放量
 
+---
+
+### 更新 3 — 2026年10月19日（连续第四日在榜）
+
+**更新原因**：Android Skills 连续第四日登上 GitHub Trending（第 4 次上榜），API 口径总 Stars 从 8,592 增至 8,732（+140），单日增量较昨日（+605）明显回落，进入稳定放量阶段。
+
+**最新动态**：
+
+Android Skills 回榜第四日增速回落至 +140，属于连续在榜后段的自然衰减。仓库保持活跃迭代：提交数增至 76 commits，技能目录在既有 build-system、camera、device-ai、jetpack-compose、media、navigation、performance、play、security、testing、tv、wear、xr 等领域之外，新增 identity（身份认证）、system/edge-to-edge（沉浸式 UI）、profilers/android-profiler（性能剖析）等目录，覆盖面继续扩展。Forks 同步增至 567。README 中的安装路径显示，无既有 Agent 目录时技能默认安装给 Gemini 与 Antigravity（~/.gemini/antigravity/skills），反映出 Google 在自家 Agent 生态与第三方 Agent（Claude Code、Codex）之间双向兼容的定位。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 8,592 | 8,732 | +140 |
+| 总 Forks | 560 | 567 | +7 |
+| 今日新增 | 605 | 140 | — |
+
+**核心变化概要**：
+
+- Stars 8,592 → 8,732（+140），连续第四日在榜，累计 4 次上榜
+- Forks 560 → 567（+7）
+- 技能目录新增 identity、system/edge-to-edge、profilers/android-profiler 等领域，提交数增至 76
+
+
 ## 总结
 
 Android Skills 是 Google 官方进军 Agent 技能生态的标志性项目：以评估驱动只补 LLM 短板、一次安装覆盖全部主流 Agent，标志着 Android 开发工具链正式拥抱 Agentic AI 工作流。
@@ -140,4 +165,4 @@ Android Skills 是 Google 官方进军 Agent 技能生态的标志性项目：�
 ---
 
 *数据来源：GitHub 仓库 (android/skills)，2026 年 10 月访问*
-*首次分析：见文件头部 | 最近更新：2026 年 10 月 18 日*
+*首次分析：见文件头部 | 最近更新：2026 年 10 月 19 日*
