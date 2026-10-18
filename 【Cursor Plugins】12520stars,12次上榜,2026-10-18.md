@@ -83,9 +83,9 @@ Continual Learning 插件基于对话记录对 AGENTS.md 进行增量式记忆�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 11,763 |
-| **总 Forks** | 1,142 |
-| **今日新增 Stars** | 214 |
+| **总 Stars** | 12,520 |
+| **总 Forks** | 1,228 |
+| **今日新增 Stars** | 351 |
 | **许可证** | MIT |
 | **主要语言** | TypeScript |
 
@@ -306,8 +306,25 @@ Cursor Plugins 仓库是 Cursor AI 编辑器插件生态的核心基础设施，
 - Fork +246 至 1,142，第三方集成贡献持续活跃
 
 
+### 更新 12 — 2026 年 10 月 18 日（时隔两天再次登上 Trending）
+**更新原因**：时隔两天再次登上 GitHub Trending，Star 11,763 → 12,520（+757，API 精确数据）
+
+**最新动态**：两天净增 757 Star，总量突破 1.2 万。插件目录继续向企业工作流纵深扩张：GitHub、Playwright、Salesforce（含 Headless 360 Beta）、Gong、Docusign、Zoom 等集成类插件上架，Brex、Mercury、Square、Robinhood、Coinbase、X Money 等支付金融类插件持续扩充，官方插件总数已超过 80 个，覆盖开发、金融、营销、协作四大版图。Forks 增至 1,228，第三方集成贡献持续活跃。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 11,763 | 12,520 | +757 |
+| 总 Forks | 1,142 | 1,228 | +86 |
+| 今日新增 | 214 | 351 | — |
+
+**核心变化概要**：
+- Star 11,763 → 12,520（+757），总量突破 1.2 万
+- 插件目录扩张：GitHub/Playwright/Salesforce 企业集成 + Brex/Mercury/Robinhood 金融支付
+- Fork +86 至 1,228
 
 ---
 
 *数据来源：GitHub 仓库 (cursor/plugins)*
-*首次分析：2026 年 5 月 | 最近更新：2026 年 10 月 16 日*
+*首次分析：2026 年 5 月 | 最近更新：2026 年 10 月 18 日*
