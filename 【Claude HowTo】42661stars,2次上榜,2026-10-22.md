@@ -4,8 +4,8 @@
 
 - **项目名称**: Claude HowTo
 - **GitHub**: [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto)
-- **Stars**: 5,900+
-- **Forks**: 690+
+- **Stars**: 42,661（2026-10-22）
+- **Forks**: 5,352
 - **许可证**: MIT
 - **语言**: Markdown（教程内容）+ Python（脚本/测试）+ Shell（Hooks）
 - **作者**: luongnv89（Luong Nguyen）
@@ -553,3 +553,27 @@ Claude 自动执行:
 ## 一句话总结
 
 > Claude HowTo 是一份**结构化、可视化、示例驱动的 Claude Code 完全指南**，覆盖从 Slash Commands 到 Plugin 的全部 10 大特性，通过 Mermaid 图解理解底层原理、生产级即用模板实现即时价值、渐进式学习路径在 11-13 小时内将用户从入门带到精通——让 Claude Code 用户真正释放 100% 的能力。
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026年10月22日（时隔半年再次登上 Trending）
+
+**更新原因**：Claude HowTo 时隔约半年（上次分析 2026 年 4 月 10 日）再次登上 GitHub Trending，总 Stars 从 5,900 增至 42,661（+36,761，半年累计），突破 42K 关口。
+
+**最新动态**：半年内项目完成从「个人教程仓库」到「Claude Code 学习事实标准」的跃迁：内容覆盖从 Slash Commands 到 Plugin 的 10 大特性章节持续更新（252 commits，Last Updated 2026-10-10，适配 Claude Code 2.1.296），新增日语（ja）、乌克兰语（uk）、越南语（vi）、中文（zh）等 8+ 语言翻译，并提供在线站点（luongnv.com/claude-howto）、slides 讲义与 local-progress 本地进度追踪。配套的 Skills 仓库与 Hooks 脚本使其不仅是文档，更是可上手的工程化学习套件。今日页面增量 +428，随着 Claude Code 用户基数扩大，教程类基建项目的长尾需求旺盛。
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|---------|---------|------|
+| 总 Stars | 5,900 | 42,661 | +36,761 |
+| 总 Forks | 690 | 5,352 | +4,662 |
+| 今日新增 | — | +428 | — |
+
+**核心变化概要**：
+- 总 Stars 半年 7.2 倍增长（5,900 → 42,661，+36,761），第 2 次上榜
+- Forks 690 → 5,352（+4,662），翻译/PR 社区贡献活跃
+- 内容同步 Claude Code 2.1.296，多语言版本与在线站点齐备
+
+*数据来源：GitHub 仓库 (luongnv89/claude-howto)，2026 年 10 月访问*
+*首次分析：2026 年 4 月 10 日 | 最近更新：2026 年 10 月 22 日*
