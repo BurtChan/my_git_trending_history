@@ -4,7 +4,7 @@
 
 **Microduck RL** — 800 克双足机器人 Microduck 的强化学习训练环境集
 
-- **GitHub**: [pollen-robotics/microduck_rl](https://github.com/pollen-robotics/microduck_rl)
+- **GitHub**: [pollen-robotics/microduck](https://github.com/pollen-robotics/microduck)
 - **许可证**: Apache-2.0（3D 模型 CC BY-SA-NC）
 
 ---
@@ -80,9 +80,9 @@ AGENTS.md 同时写给人类与 AI 编码代理，把环境构建工作流与奖
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 1,103 |
-| 总 Forks | 191 |
-| 今日新增 Stars | +334 |
+| 总 Stars | 10,651 |
+| 总 Forks | 1,381 |
+| 今日新增 Stars | +421 |
 | 主要语言 | Python |
 | 许可证 | Apache-2.0 |
 | 创建时间 | 2025-12-06 |
@@ -129,11 +129,35 @@ AGENTS.md 同时写给人类与 AI 编码代理，把环境构建工作流与奖
 
 ---
 
+### 更新 3 — 2026 年 10 月 24 日（时隔近 2 个月再次登上 Trending）
+**更新原因**：项目时隔近 2 个月再次登上 GitHub Trending，Stars 从 1,103 增长至 10,651（+9,548，累计口径），约 10 倍增长。仓库已由 microduck_rl 更名演进为 microduck，从单一 RL 训练环境扩展为完整机器人主仓库（主力语言切换为 Rust）。
+
+**最新动态**：
+Microduck 仓库在过去近两个月发生了结构性变化：项目从基于 mjlab 的 RL 训练环境升级为覆盖整只双足轮滑机器人的完整开源仓库，新增 Rust 编写的 daemon 守护进程体系（mediad、udp-pad 等子系统），10 月 19 日至 24 日密集发布 0.17.7、0.17.8 及多个 dev 构建。一个有趣的细节：udp-pad 子系统实现了「鸭子张嘴时笔记本电脑发声」的联动效果，工程趣味性与技术深度并存。
+
+Star 从 9 月初的 1,103 增至 10,651，10 倍增长的背后是具身智能开源硬件生态的持续升温——Pollen Robotics（Hugging Face 旗下）把真机 RL、sim2real 与机器人系统软件打包成一个可复现的开源项目，正在成为该赛道的事实参考实现。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 1,103 | 10,651 | +9,548 |
+| 总 Forks | 191 | 1,381 | +1,190 |
+
+**核心变化概要**：
+- Stars 累计 +9,548（1,103 → 10,651），近两月约 10 倍增长
+- 仓库从 microduck_rl 更名为 microduck，升级为完整机器人主仓库
+- 新增 Rust daemon 体系，10 月密集发布 0.17.7/0.17.8 版本
+- Forks 191 → 1,381（+1,190），复现与二开社区爆发
+
+
+---
+
 ## 总结
 
 一个 800 克小机器人踩着轮滑鞋滑进 Trending——但真正值得收藏的是它把 sim2real 从玄学变成可复现工程的全套配方。
 
 ---
 
-*数据来源：GitHub 仓库 (pollen-robotics/microduck_rl)，2026 年 8 月访问*
-*首次分析：2026 年 8 月 | 最近更新：2026 年 9 月 1 日*
+*数据来源：GitHub 仓库 (pollen-robotics/microduck)，2026 年 10 月访问*
+*首次分析：2026 年 8 月 | 最近更新：2026 年 10 月 24 日*

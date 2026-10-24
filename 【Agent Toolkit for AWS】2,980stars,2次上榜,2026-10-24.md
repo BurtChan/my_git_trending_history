@@ -81,12 +81,38 @@ aws-agents-for-devsecops 插件将 AI Agent 的能力深入到安全运维领域
 
 | 指标 | 数值 |
 |---|---|
-| ⭐ Stars | 1,021 |
-| 🍴 Forks | 109 |
+| ⭐ Stars | 2,980 |
+| 🍴 Forks | 392 |
 | 📝 主要语言 | Python |
 | 📅 创建时间 | 2026-04-23 |
-| 🔥 今日趋势 Star | 15 |
+| 🔥 今日趋势 Star | 11 |
 | 📄 许可证 | Apache-2.0 |
+
+---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 10 月 24 日（时隔 4 个月再次登上 Trending）
+**更新原因**：项目时隔 4 个月再次登上 GitHub Trending，Stars 从 1,021 增长至 2,980（+1,959，累计口径），约 3 倍增长。
+
+**最新动态**：
+AWS 官方 Agent 工具包近两个月进入技能（Skills）密集扩张期：10 月 22 日—23 日连续合入 Amazon Bedrock 托管知识库向客户自管知识库迁移指引、analytics 领域新增 managing-data-catalog 与 managing-data-asset-access 两个技能、containers 领域新增 Amazon ECS Gateway 参考，并首次加入 Devin 插件清单与安装说明——官方工具包开始拥抱第三方 Agent 平台。
+
+agent-advisor 知识库同步更新（托管替代方案 BMA provider），显示 AWS 正在把「该用哪个 AWS 服务」的决策知识本身产品化为 Agent 可消费的技能。随着企业 Agent 落地从 PoC 转向生产，官方维护的云服务技能包是确定性受益方向。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 1,021 | 2,980 | +1,959 |
+| 总 Forks | 109 | 392 | +283 |
+
+**核心变化概要**：
+- Stars 4 个月累计 +1,959（1,021 → 2,980），约 3 倍增长
+- 10 月新增 analytics/containers 多个技能与 Bedrock 知识库迁移指引
+- 首次支持 Devin 第三方 Agent 平台插件
+- Forks 109 → 392（+283），企业用户分叉集成活跃
+
 
 ---
 
@@ -96,4 +122,5 @@ Agent Toolkit for AWS 是 AWS 在 AI Agent 时代的关键基础设施布局，�
 
 ---
 
-*数据来源：GitHub 仓库 (aws/agent-toolkit-for-aws)，2026 年 6 月访问*
+*数据来源：GitHub 仓库 (aws/agent-toolkit-for-aws)，2026 年 10 月访问*
+*首次分析：2026 年 6 月 | 最近更新：2026 年 10 月 24 日*
