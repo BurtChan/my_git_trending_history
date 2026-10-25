@@ -1,0 +1,102 @@
+# ThinkRail 项目分析
+
+## 项目名称
+**ThinkRail** — JetBrains 出品的「越用越懂你项目」的 Agentic IDE，围绕 pi 编码代理构建，用活规格（living specs）沉淀项目知识
+- **GitHub**: [JetBrains/thinkrail](https://github.com/JetBrains/thinkrail)
+- **许可证**: Apache-2.0
+- **官网**: [thinkrail.ai](https://thinkrail.ai)
+- **语言**: TypeScript（IDE）/ Rust 生态（pi agent）
+- **Topics**: agentic-ide, spec-driven-coding, ai-coding, vibe-coding, mcp
+
+---
+
+## 项目概述
+
+ThinkRail 是 JetBrains 孵化的 Agentic IDE，核心主张是「每次使用都变得更好」——通过**活规格（living specs）**让代理获得跨会话持久的项目知识，并计划让 IDE 自己创建所需的能力。它不是给现有 IDE 加个 AI 插件，而是围绕 `pi` 编码代理（npm 上的 @earendil-works/pi-coding-agent）从头构建了一套完整的工作台。
+
+与 Cursor/Windsurf 等同类产品相比，ThinkRail 的差异化在于三点：① **隔离工作区**——每个任务从 git 仓库切出独立的 git worktree，代理并行工作互不干扰，合并好的分支留下、其余删除；② **规格即真相**——一组相互连接的 `SPEC.md` 图谱与代码共存，代理通过专用 `spec_*` 工具读写维护，项目意图在会话结束后依然存活；③ **可复用技能与工作流**——直接读取你已有的 Agent Skills，内置项目设置、设计头脑风暴、发布 PR 等工作流。
+
+项目由 JetBrains 官方孵化（带 incubator 徽章），代表这家老牌 IDE 厂商对「AI 原生开发环境」的正面回应。2026 年 7 月创建，10 月 25 日首次登上 GitHub Trending，当前处于早期快速迭代阶段。
+
+---
+
+## 核心功能
+
+| 功能 | 说明 |
+|------|------|
+| 隔离工作区 | 任意 git 仓库切出 worktree 工作区，各自独立分支；完成的与闲置的工作区自动归入项目 shelf，PR 合并后自动归档 |
+| 完整 IDE 工作台 | 可拆分 Monaco 编辑器、带 git 变更标记的文件树、终端、文档，全部随工作区切换作用域 |
+| 并发代理会话 | 每个工作区可跑多个 pi 会话，各自选模型，实时显示 token 与成本；可中途转向、排队后续指令、委派子代理 |
+| 活规格系统 | SPEC.md 图谱作为项目知识底座，代理通过 spec_* 工具读写，意图跨会话存活 |
+| 技能复用 | 就地读取已有的 Agent Skills（与其他编码代理通用） |
+| 结构化评审 | 文件与 diff 上锚定评审评论，作为结构化上下文发给聊天；代理提出 UI 变更时直接渲染前后对比 mockup |
+| MCP 集成 | 接入 pi 的 mcp.json，非只读调用需聊天确认，OAuth 登录在设置内完成 |
+| 自带模型凭据 | 无自有账号体系，用 JetBrains AI 登录或接任意 pi 支持的 provider |
+| 双形态交付 | 原生桌面应用 + thinkrail CLI（浏览器打开同一应用），状态存于 ~/.thinkrail |
+| PR 全流程 | 发布、推送、按模板/提交/代理草稿生成 PR 描述、查看 CI 检查、按仓库惯例方式合并、失败检查交给代理处理 |
+
+---
+
+## 技术栈
+
+| 组件 | 技术 |
+|------|------|
+| 底层代理 | pi coding agent（@earendil-works/pi-coding-agent） |
+| 编辑器 | Monaco Editor |
+| 工作区隔离 | git worktree |
+| 桌面壳 | 原生桌面应用 + CLI/浏览器双形态 |
+| 扩展体系 | 工具调用（web 研究、内联图表、文件预览）+ MCP 服务器 |
+| 规格存储 | SPEC.md 文件图谱（与代码同仓共存） |
+
+---
+
+## 项目亮点
+
+### 规格驱动的持久项目知识
+绝大多数 AI 编码工具的上下文随会话消失，ThinkRail 用连接式 SPEC.md 图谱让代理每次启动都能读到项目的真实意图，并负责维护它——这是「spec-driven development」理念在 IDE 层的落地。
+
+### git worktree 原生的并行代理
+不搞虚拟容器、不改工作流：每个任务就是一个真实 worktree + 分支，代理并行开发天然隔离，人类只在合并点介入。完成的工作区按 PR 状态自动归档、需要时自动回来。
+
+### JetBrains 的 AI 原生转型样本
+带 JetBrains 孵化徽章，说明这家靠 IntelliJ 系列统治 Java IDE 市场的公司正把筹码押在 agentic 开发范式上。对观察 IDE 行业走向的用户，这个仓库本身就是信号。
+
+### 成本透明的多会话设计
+每个会话独立选模型并实时显示 token/成本读数，配合子代理委派和共享计划编辑，把「一个人指挥一支代理团队」的协作模式做成了日常界面。
+
+---
+
+## 应用场景
+
+### 多任务并行的日常开发
+同时推进多个 feature/修复：每个任务切独立工作区交给代理，主工作区保持干净，合并时只看好分支。
+
+### 大型遗留项目的知识沉淀
+接手无文档的历史项目时，让代理边工作边维护 SPEC 图谱，几周后项目意图、模块边界、约定都以规格形式沉淀下来，新人和新会话即插即用。
+
+### 频繁发 PR 的团队工作流
+从计划生成 PR 描述、盯 CI 检查、失败检查自动交回代理修复、按仓库惯例合并——整个 PR 生命周期在 IDE 内闭环。
+
+### 现有 Agent Skills 资产的复用
+已经为 Claude Code 等工具积累的 Skills 无需迁移，ThinkRail 就地读取，可作为统一的多代理开发前端。
+
+---
+
+## Star 数据
+
+| 指标 | 数值 |
+|------|------|
+| 总 Stars | 1,111 |
+| 总 Forks | 81 |
+| 今日新增 Stars | +52 |
+| Open Issues | 197 |
+
+---
+
+## 总结
+
+ThinkRail 是 JetBrains 对「AI 原生 IDE」的正面作答：git worktree 隔离 + 活规格知识底座 + 多代理并发会话的组合拳，让「越用越懂你的开发环境」从营销词变成可验证的架构设计——虽处早期（Forks 仅 81），但代表 IDE 行业下一个十年的方向押注。
+
+---
+
+*数据来源：GitHub 仓库 (JetBrains/thinkrail)，2026 年 10 月访问*
