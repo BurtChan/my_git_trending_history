@@ -13,7 +13,7 @@ AI Design Skills 是一个仍在快速成长的设计技能（skills）合集，
 
 核心 skill `landing-page-design` 把「落地页设计」拆成两大体系：**Part A 策略与结构**（intake 提问清单 → 页面结构 → 布局选型 → 转化规则 → 文案公式 → 构建顺序 → SEO/AEO），**Part B 视觉系统**（字体、间距、圆角、背景、Hero、图标、动效、内容真实感、交互状态、上线检查清单、强制的 tagline reveal 区块）。它不是一个泛泛的「设计建议」，而是一套可直接执行的强约束规则——例如字体只能用 Geist/Manrope/Poppins、禁用 Inter/Roboto、禁用斜体和 900 字重、所有字号必须对齐 Tailwind 字号阶梯、动效必须用 `cubic-bezier(0.22,1,0.36,1)` 曲线且只动画 transform/opacity。
 
-项目创建于 2026 年 7 月底， README 中明确「More on the way」——它是 elayadesign 设计技能生态的入口仓库，姊妹项目 `redesign-skill`（面向存量站点改版）单独成库。三个月内积累 9,000+ stars，单日新增近 1,400，是「AI 工具 + 专业领域方法论」这一赛道（继 awesome-claude-skills 之后）的最新代表。
+项目创建于 2026 年 7 月底， README 中明确「More on the way」——它是 elayadesign 设计技能生态的入口仓库，姊妹项目 `redesign-skill`（面向存量站点改版）单独成库。三个月内积累 10,900+ stars，10 月 29 日单日新增近 1,800，是「AI 工具 + 专业领域方法论」这一赛道（继 awesome-claude-skills 之后）的最新代表。
 
 ---
 
@@ -81,14 +81,36 @@ AI Design Skills 是一个仍在快速成长的设计技能（skills）合集，
 
 | 指标 | 数值 |
 |---|---|
-| 总 Stars | 9,157 |
-| 总 Forks | 660 |
-| 今日新增 | +1,395 stars today |
-| Open Issues | 5 |
+| 总 Stars | 10,933 |
+| 总 Forks | 779 |
+| 今日新增 | +1,776 stars today |
+| Open Issues | 7 |
 | 创建时间 | 2026-07-29 |
 | 许可证 | MIT |
 
 ---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 10 月 29 日（连续第二日在榜）
+
+**更新原因**：次日继续登上 GitHub Trending（第 2 次上榜，连续第二日在榜），Stars 9,157 → 10,933（+1,776，API 精确数据），Forks 660 → 779（+119），总星数突破 1 万。
+
+**最新动态**：技能合集迎来第二个 skill `design-to-motion`——把静态设计转化为像素级精确的动画展示（空状态到加载完成的完整故事循环），导出 X 平台 MP4 与 800×500 GIF；动效规则吸收 emilkowalski/skills、dylantarre/animation-principles 等 MIT 项目。原 `landing-page-design` 的内容真实感与动效思路致谢 Leonxlnx/taste-skill。仓库仅 7 次提交即收获 1 万+ stars，仍是「一份 SKILL.md 即一个专业领域方法论」模式的最新验证。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 9,157 | 10,933 | +1,776 |
+| 总 Forks | 660 | 779 | +119 |
+| Open Issues | 5 | 7 | +2 |
+
+**核心变化概要**：
+
+- 连续第二日在榜，单日 +1,776，总星数突破 1 万
+- 新增 `design-to-motion` skill：静态设计 → 动画展示（MP4/GIF 导出）
+- Forks 单日 +119，开发者 fork 定制自有设计系统的需求旺盛
 
 ## 总结
 
@@ -96,5 +118,5 @@ AI Design Skills 是一个仍在快速成长的设计技能（skills）合集，
 
 ---
 
-*数据来源：GitHub 仓库 (elayadesign/ai-design-skills)，2026 年 10 月 28 日访问*
-*首次分析：2026 年 10 月 28 日 | 最近更新：2026 年 10 月 28 日*
+*数据来源：GitHub 仓库 (elayadesign/ai-design-skills)，2026 年 10 月 29 日访问*
+*首次分析：2026 年 10 月 28 日 | 最近更新：2026 年 10 月 29 日*

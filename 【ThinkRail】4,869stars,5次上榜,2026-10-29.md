@@ -86,16 +86,16 @@ ThinkRail 是 JetBrains 孵化的 Agentic IDE，核心主张是「每次使用�
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 3,711 |
-| 总 Forks | 194 |
-| 今日新增 Stars | +1,217 |
-| Open Issues | 223 |
+| 总 Stars | 4,869 |
+| 总 Forks | 252 |
+| 今日新增 Stars | +1,158 |
+| Open Issues | 238 |
 
 ---
 
 ## 总结
 
-ThinkRail 是 JetBrains 对「AI 原生 IDE」的正面作答：git worktree 隔离 + 活规格知识底座 + 多代理并发会话的组合拳，让「越用越懂你的开发环境」从营销词变成可验证的架构设计——虽处早期（Forks 194），但代表 IDE 行业下一个十年的方向押注。
+ThinkRail 是 JetBrains 对「AI 原生 IDE」的正面作答：git worktree 隔离 + 活规格知识底座 + 多代理并发会话的组合拳，让「越用越懂你的开发环境」从营销词变成可验证的架构设计——虽处早期（Forks 252），但代表 IDE 行业下一个十年的方向押注。
 
 ---
 
@@ -155,8 +155,28 @@ ThinkRail 是 JetBrains 对「AI 原生 IDE」的正面作答：git worktree 隔
 2. 新增日语语言包（#885）与用户自定义主题（~/.thinkrail/themes，#937）
 3. Forks +57 至 194，早期社区扩张延续
 
+### 更新 4 — 2026 年 10 月 29 日（连续第五日登上 Trending）
+
+**更新原因**：连续第五日登上 GitHub Trending（第 5 次上榜），Stars 3,711 → 4,869（+1,158，API 精确数据），Forks 194 → 252（+58），总星数逼近 5K。
+
+**最新动态**：README 明确下一阶段路线「full extension support」——让 ThinkRail 根据开发者实际工作方式自建工具；仓库已出现 pi-extensions / thinkrail-extensions 扩展目录。架构文档披露三层设计（engine host / the wire / UI client），坚持 spec-first 开发（每个模块旁置 SPEC.md）。国际化延续：日语语言包与自定义主题落地后，社区提交量达 604 次。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 3,711 | 4,869 | +1,158 |
+| 总 Forks | 194 | 252 | +58 |
+| Open Issues | 223 | 238 | +15 |
+
+**核心变化概要**：
+
+1. Stars 3,711 → 4,869（+1,158），连续第五日在榜，第 5 次上榜，总星数逼近 5K
+2. 扩展系统成为下一阶段主线（pi-extensions / thinkrail-extensions 目录就位）
+3. 三层架构文档化（Bun.serve host / typed wire 协议 / React 19 UI），spec-first 开发范式完整披露
+
 
 ---
 
 *数据来源：GitHub 仓库 (JetBrains/thinkrail)，2026 年 10 月访问*
-*首次分析：2026 年 10 月 25 日 | 最近更新：2026 年 10 月 28 日*
+*首次分析：2026 年 10 月 25 日 | 最近更新：2026 年 10 月 29 日*
