@@ -1,0 +1,99 @@
+# OpenMausBot 项目分析
+
+## 项目名称
+**OpenMausBot** — 开源 Grok Bot 替代品：聊天应用形态的 AI Agent 团队，每个对话都是一个真实运行的本地 Agent
+- **GitHub**: [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot)
+- **许可证**: Apache-2.0
+
+---
+
+## 项目概述
+
+OpenMausBot 是一个开源的「Grok Bot 替代品」，把 AI Agent 装进了一个 Telegram 风格的聊天应用里：侧边栏里的每一个「联系人」都是一个真实运行的 Agent——底层跑着你本机已安装的 Claude、Codex 或 Grok CLI，每个 Bot 拥有自己的人格设定、模型、计算机环境和已连接的应用。你像发消息一样和它们对话，实时观察它们工作，只在关键节点审批确认。
+
+项目诞生的背景是 2026 年初集中涌现的一批封闭个人 Agent 产品——xAI 的 Grok Bot、Meta 的 Muse、OpenAI 的 dots、Manus 的 Cue、Spear Street 的 Instinct——它们在七周内相继发布，但都把模型、计算机和数据留在厂商一侧。OpenMausBot 保留了这个产品形态（一群 Agent 住在一个消息应用里），但用开源、本地优先的方式重建：Agent 跑在你自己的机器上，复用你已有的 Claude/ChatGPT/Grok 订阅登录，不需要新账号，中间没有代理服务器。
+
+架构上，一个轻量的 harness 服务器运行在 `127.0.0.1`，独占管理所有 Agent 进程；对话记录、密钥和事件全部存在本地 `~/.openmausbot` 目录，不上云。项目创建于 2026 年 8 月，两个多月即突破 7,000 Stars，是近期「本地优先 Agent 编排」赛道上升最快的项目之一。
+
+---
+
+## 核心功能
+
+| 功能 | 说明 |
+|------|------|
+| 自带 Agent（Bring your own agents） | Bot 跑在本机已装的 `claude`/`codex`/`grok` CLI 上，复用现有登录与订阅；可在 Settings → Engines 指向任意自定义 CLI 二进制 |
+| 本地优先 | harness 服务器只监听 127.0.0.1；记录、密钥、事件存 `~/.openmausbot`，不依赖云端 |
+| Agent 有手（Agents with hands） | 每个 Bot 可使用云 Linux 桌面、隔离的本地 VM，或（显式授权后）你自己的电脑；经 Composio 连接 500+ 应用 |
+| 频道（Channels） | 工作、个人、各项目分频道管理，每频道独立转录、共享指令、工作目录与 Bot 名单 |
+| Jev 快速决策 | 配置决策模型后，群聊中未被 @ 的消息由轻量模型在数百毫秒内自动分派给合适的 Bot |
+| 团队一键安装 | 从 BotMRR 浏览 Markdown 格式的完整团队模板，审查后一键创建 Bots、幕僚长、频道与例行任务；格式可移植（YAML frontmatter + 普通 Markdown） |
+| 部门共享 | 把整个「部门」（幕僚长 + Bot 群 + 连接槽位）导出为一个文件分享，自动剥离聊天记录、密钥、模型选择 |
+| 语音对话 | Bot 可朗读回复或直接通话：支持 ElevenLabs、Fish Audio、Grok (xAI) 与本地 Chatterbox 语音 |
+| 触发器 | 定时任务与 Webhook：「每个工作日 9 点总结收件箱」由 Bot 在对话中自动设置，带日历、运行历史与暂停/撤销 |
+| 像联系人一样管理 | 右键 Bot 即可置顶、标未读、编辑人格、复制会话 ID、隐藏或删除 |
+
+---
+
+## 技术栈
+
+| 组件 | 技术 |
+|------|------|
+| 应用框架 | TypeScript (strict) + React 19 + Electron |
+| 桌面平台 | macOS（Apple silicon/Intel，签名公证）、Windows（x64）、Ubuntu 24.04（deb/AppImage，Beta） |
+| Agent 运行时 | 本机 `claude` / `codex` / `grok` CLI（用户自有登录） |
+| 服务架构 | 本地 harness 服务器（127.0.0.1:8799），嵌入式发布 |
+| 应用连接 | Composio（500+ 应用）、Boat 云计算机 |
+| 语音 | ElevenLabs / Fish Audio / Grok (xAI) / macOS 内置 / 本地 Chatterbox |
+| 包管理 | pnpm，Node 24+ |
+
+---
+
+## 项目亮点
+
+### 真正的「本地优先」Agent 编排
+与 Grok Bot、Muse、dots 等封闭产品把 Agent 跑在厂商云上不同，OpenMausBot 的所有 Agent 进程由一个本地 harness 服务器管理，密钥写后不可读（UI 只显示「已配置」标志），数据完全留在用户机器上。对在意数据主权和企业合规的用户，这是目前该产品形态下几乎唯一的选择。
+
+### 复用已有 AI 订阅，零额外成本
+不需要新的模型账号或代理层——Bots 直接调用你机器上已登录的 Claude Code、Codex 或 Grok CLI。你为 Claude/ChatGPT 付的订阅费直接变成 Agent 团队的算力，这也让每个 Bot 可以用不同模型。
+
+### 安全边界做得细致
+Host 控制（Bot 操作你的真实电脑）需要显式 opt-in 且仅限 macOS 和 Ubuntu Xorg；Ubuntu Wayland 因安全闸门问题（issue #345）整体禁用；Linux 打包器只下载 tag 锁定的上游归档并校验 SHA-256 与成员白名单，安装后的应用从不自行下载原生自动化代码。README 明确声明与任何加密货币无关。
+
+### 团队即文件：可移植的组织模板
+整个「部门」可以导出为一个 Markdown 文件（YAML frontmatter 保证机器可靠安装，正文 Markdown 人类可读），导入时连接默认关闭、例行任务默认暂停、技能默认关闭——安全默认值贯穿始终。
+
+---
+
+## 应用场景
+
+### 个人 Agent 团队日常运营
+把「研究助理」「代码审查员」「收件箱管理员」等 Bot 分频道管理，每个用自己的模型和工具集，像管理微信群一样管理你的 Agent 团队，重要操作通过审批卡片确认。
+
+### 定时自动化工作流
+通过自然语言设置定时任务和 Webhook 触发器（如每日晨报、表单响应自动起草），带完整运行历史与高级运行限制，适合把重复性信息工作交给 Bot 隔夜执行，早上听 Bot 语音汇报。
+
+### 开发团队的共享 Agent 资产
+把配置好的「测试部门」「文档部门」导出分享给同事，一人调优全组受益；组织桌面还支持从管理员共享库一键添加模板。
+
+### 隐私敏感环境下的 Agent 使用
+所有转录和密钥留在本地，Agent 进程不经过任何中间代理服务器，适合处理客户数据、内部代码等不能出内网的工作场景。
+
+---
+
+## Star 数据
+
+| 指标 | 数值 |
+|------|------|
+| 总 Stars | 7,001 |
+| 总 Forks | 1,075 |
+| 今日新增 Stars | +1,190（Trending 口径） |
+| 许可证 | Apache-2.0 |
+| 主要语言 | TypeScript |
+| 创建时间 | 2026-08-11 |
+| Open Issues | 510 |
+
+---
+
+## 总结
+
+OpenMausBot 把 2026 年封闭个人 Agent 产品（Grok Bot/Muse/dots/Cue）的产品形态用开源方式完整复刻：聊天应用里住着一支真实运行在你自己电脑上的 Agent 团队，复用你已有的 CLI 登录与订阅，数据不出本机。它不是又一个 Agent 框架，而是给「多 Agent 协作」找到了一个普通人真正会用的新交互范式——像聊天一样指挥一支有手、有声音、有日程的团队。
