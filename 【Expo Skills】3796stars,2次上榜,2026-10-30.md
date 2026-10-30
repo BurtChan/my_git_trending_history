@@ -17,7 +17,7 @@ Expo Skills 是 React Native 开发框架 Expo 官方团队推出的 AI Agent �
 
 技能分为三组：框架组（免费开源，涵盖项目结构、Router 导航、动画、原生 UI、设计系统、数据请求、原生模块、Brownfield 集成、SDK 升级等 16 项）；服务组（围绕付费的 EAS 云服务，涵盖应用商店提交、EAS Hosting、CI/CD Workflow、OTA 更新、崩溃监控、云模拟器等 7 项，每项开头标注费用/套餐限制）；实验组（未定稿 API 的迁移技能）。
 
-该项目是 2025 年底兴起的「Agent Skills」生态在官方框架厂商侧的标杆落地：与 Anthropic 的 Claude Skills、Vercel 的 skills 一样走 SKILL.md 想象力路线，但由框架官方维护意味着知识永远跟随 SDK 版本更新，这是社区技能库难以做到的。上线近一年已获 3,427 stars，本次以单日 +212 stars 登上 Trending。
+该项目是 2025 年底兴起的「Agent Skills」生态在官方框架厂商侧的标杆落地：与 Anthropic 的 Claude Skills、Vercel 的 skills 一样走 SKILL.md 想象力路线，但由框架官方维护意味着知识永远跟随 SDK 版本更新，这是社区技能库难以做到的。上线近一年已获 3,796 stars，再次以单日 +369 stars 登上 Trending。
 
 ---
 
@@ -82,13 +82,37 @@ eas-workflows（CI/CD YAML）、eas-update（OTA 发布与回滚）、eas-observ
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 3,427 |
-| 总 Forks | 219 |
-| 今日新增 | +212 stars |
-| Open Issues | 98 |
+| 总 Stars | 3,796 |
+| 总 Forks | 241 |
+| 今日新增 | +369 stars |
+| Open Issues | 101 |
 | 创建时间 | 2025-11-30 |
 
 ---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 10 月 30 日（再次登上 Trending）
+
+**更新原因**：项目再次登上 GitHub Trending 榜单
+
+**最新动态**：
+
+Expo Skills 连续第二日登上 Trending，Star 从 3,427 增长至 3,796（+369），Fork 从 219 增至 241（+22）。工程侧保持高频迭代：10 月 28 日移除各技能 SKILL.md frontmatter 中的 per-skill version 字段（#266），简化技能元数据维护；eas-observe 技能新增 Expo MCP Server observe 工具文档，并补充 Expo Image 与 Reanimated 集成说明（#249/#252）；插件侧完成 Codex 向 Agent Plugins manifest 的迁移（#139），移除独立的 feedback 技能改由 agent CLI 承接。官方随 SDK 同步维护技能的策略持续兑现，覆盖的技能组与 Agent 平台（Claude Code、Codex 等）兼容面进一步扩大。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 3,427 | 3,796 | +369 |
+| 总 Forks | 219 | 241 | +22 |
+
+**核心变化概要**：
+- Star 从 3,427 增长至 3,796（+369），连续第二日在榜
+- SKILL.md frontmatter 移除 per-skill version 字段，元数据简化（#266）
+- eas-observe 技能补充 Expo MCP Server observe 工具、Expo Image 与 Reanimated 集成文档
+- Codex 插件完成向 Agent Plugins manifest 的迁移，独立 feedback 技能由 agent CLI 替代
+
 
 ## 总结
 
@@ -96,4 +120,6 @@ Expo 官方把框架知识封装成 25+ 个跨 Agent 通用的 AI 技能并随 S
 
 ---
 
-*数据来源：GitHub 仓库 (expo/skills)，2026 年 10 月 29 日访问*
+*数据来源：GitHub 仓库 (expo/skills)，2026 年 10 月 30 日访问*
+
+*首次分析：见文件头部 | 最近更新：2026 年 10 月 30 日*
