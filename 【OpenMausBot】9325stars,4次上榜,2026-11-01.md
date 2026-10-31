@@ -84,13 +84,13 @@ Host 控制（Bot 操作你的真实电脑）需要显式 opt-in 且仅限 macOS
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 8,180 |
-| 总 Forks | 1,171 |
-| 今日新增 Stars | +959（API 口径） |
+| 总 Stars | 9,325 |
+| 总 Forks | 1,284 |
+| 今日新增 Stars | +1,145（API 口径） |
 | 许可证 | Apache-2.0 |
 | 主要语言 | TypeScript |
 | 创建时间 | 2026-08-11 |
-| Open Issues | 587 |
+| Open Issues | 608 |
 
 ---
 
@@ -123,8 +123,8 @@ OpenMausBot 把 2026 年封闭个人 Agent 产品（Grok Bot/Muse/dots/Cue）的
 - 侧边栏固定网页面板 + 仪表盘，产品形态向「Agent 工作台」演进
 
 
-*数据来源：GitHub 仓库 (milind-soni/OpenMausBot)，2026 年 10 月访问*
-*首次分析：2026 年 10 月 29 日 | 最近更新：2026 年 10 月 31 日*
+*数据来源：GitHub 仓库 (milind-soni/OpenMausBot)，2026 年 11 月访问*
+*首次分析：2026 年 10 月 29 日 | 最近更新：2026 年 11 月 1 日*
 
 
 ### 更新 2 — 2026 年 10 月 31 日（连续第二日在榜，第 3 次上榜）
@@ -149,3 +149,22 @@ OpenMausBot 把 2026 年封闭个人 Agent 产品（Grok Bot/Muse/dots/Cue）的
 
 ---
 
+### 更新 3 — 2026 年 11 月 1 日（连续第三日在榜，第 4 次上榜）
+
+**更新原因**：连续第三日登上 GitHub Trending（第 4 次上榜），Stars 8,180 → 9,325（+1,145，API 精确数据），Forks 1,171 → 1,284（+113），Open Issues 587 → 608（+21）。
+
+**最新动态**：自托管部署路径成型：`npx openmausbot serve` 支持三种远程模式——`--tunnel` 托管公网地址、`--tailscale` 私有 tailnet、Docker 栈自有域名；设备用短配对码一次配对。手机端 Web App 可从 Safari/Chrome 安装到主屏作为独立应用。`openmausbot setup` 重配置不重置已有 bot 与会话，模型默认值仅作用于新建 bot。安全文档明示 API 密钥以明文存储于私有 config.json（Unix 下 0600 权限）。企业版目录 enterprise/ 保持独立 source-available 许可，删除即恢复纯开源版。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|---------|---------|------|
+| 总 Stars | 8,180 | 9,325 | +1,145 |
+| 总 Forks | 1,171 | 1,284 | +113 |
+| Open Issues | 587 | 608 | +21 |
+
+**核心变化概要**：
+
+1. Stars 8,180 → 9,325（+1,145），连续第三日在榜，第 4 次上榜，剑指 1 万
+2. VPS/Tailscale/Docker 三种自托管模式 + 手机主屏 App，本地优先体验闭环
+3. Open Issues 587 → 608，社区热度与反馈量同步攀升
