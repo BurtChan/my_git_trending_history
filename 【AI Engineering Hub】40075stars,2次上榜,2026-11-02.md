@@ -55,7 +55,7 @@ AI Engineering Hub 是 GitHub 上最受欢迎的 AI 工程学习资源库之一�
 MCP、A2A、context engineering、eval & observability 等 2026 年热点均有专项示例，仓库持续更新而非一次性内容。
 
 ### 社区验证
-长期占据 GitHub Trending 与 trendshift 榜单，39.7K Stars 与 6.4K Forks 的双高说明既有学习者关注也有大量实际复用。
+长期占据 GitHub Trending 与 trendshift 榜单，40.1K Stars 与 6.5K Forks 的双高说明既有学习者关注也有大量实际复用。
 
 ---
 
@@ -79,13 +79,34 @@ MCP、A2A、context engineering、eval & observability 等 2026 年热点均有�
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ Stars | 39,717 |
-| 🍴 Forks | 6,439 |
-| 📈 今日新增 | 573 stars |
+| ⭐ Stars | 40,075 |
+| 🍴 Forks | 6,471 |
+| 📈 今日新增 | 358 stars |
 | 主要语言 | Python / Jupyter Notebook |
 | 许可证 | MIT |
 
 ---
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 11 月 2 日
+
+**更新原因**：连续第二日登上 GitHub Trending（第 2 次上榜），Stars 39,717 → 40,075（+358，API 精确数据），Forks 6,439 → 6,471（+32）。
+
+**最新动态**：Star 突破 40,000 里程碑；项目库持续扩容至 93+ 个可运行项目（入门 22 / 进阶 48 / 高级 23），覆盖 LLM、RAG、Agent、微调全栈；配套 AI Engineering Roadmap 学习路径与 Daily Dose of Data Science Newsletter 形成学习闭环，巩固「AI 工程项目驱动学习事实标准」的地位。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| ⭐ Stars | 39,717 | 40,075 | +358 |
+| 🍴 Forks | 6,439 | 6,471 | +32 |
+| 📈 今日新增 | 573 | 358 | — |
+
+**核心变化概要**：
+- Star 突破 40,000 里程碑
+- 连续第二日在榜，长青学习资源热度稳定
+- 93+ 项目分级体系（22/48/23）覆盖入门到高级全段位开发者
 
 ## 总结
 
@@ -94,4 +115,4 @@ AI Engineering Hub 用数百个可运行、按难度分级、紧跟 MCP/Agent �
 ---
 
 *数据来源：GitHub 仓库 (patchy631/ai-engineering-hub)，2026 年 11 月访问*
-*首次分析：2026 年 11 月 1 日 | 最近更新：2026 年 11 月 1 日*
+*首次分析：2026 年 11 月 1 日 | 最近更新：2026 年 11 月 2 日*
