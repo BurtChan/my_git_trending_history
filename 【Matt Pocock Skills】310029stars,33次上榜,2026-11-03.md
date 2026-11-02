@@ -81,7 +81,7 @@ Matt Pocock 将多年 TypeScript 咨询和教学经验凝练为这些技能，�
 技能之间可以自由组合，例如先用 `/grill-with-docs` 对齐需求，再用 `/tdd` 编写代码，最后用 `/handoff` 交接——形成完整的工程工作流。
 
 ### 社区影响力巨大
-309K+ Stars，被 Medium、Substack 等平台广泛讨论，成为 AI 编码技能的标杆项目。
+310K+ Stars，被 Medium、Substack 等平台广泛讨论，成为 AI 编码技能的标杆项目。
 
 ---
 
@@ -105,9 +105,9 @@ Matt Pocock 将多年 TypeScript 咨询和教学经验凝练为这些技能，�
 
 | 指标 | 数值 |
 |------|------|
-| **总 Stars** | 309,746 |
-| **总 Forks** | 26,062 |
-| **今日新增 Stars** | +970 |
+| **总 Stars** | 310,029 |
+| **总 Forks** | 26,084 |
+| **今日新增 Stars** | +968 |
 | **许可证** | MIT |
 | **主要语言** | Shell |
 | **Watchers** | 529 |
@@ -807,6 +807,30 @@ Matt Pocock Skills 在 8 月下旬离榜一周后强势回榜，一周内星数�
 | 今日新增 Stars | +688 | +970 | — |
 
 
+---
+
+### 更新 32 — 2026 年 11 月 3 日（连续第五日在榜）
+
+**更新原因**：连续第五日登上 GitHub Trending，今日 +968 stars（parser 口径），Star 309,746 → 310,029（API 口径 +283），Forks 26,062 → 26,084（+22）。
+
+**最新动态**：
+- Star 总量突破 310,000 整数关口，连续第五日在榜，AI 编码技能生态头部地位持续巩固
+- 近期提交聚焦 software-factory glossary skill（工厂设计术语表）、chief-of-staff 共享 wiki 机制与 implement-spec 每 ticket 独立 implementer subagent（10/29-10/31）
+- skills.sh 多平台分发（Claude Code / Codex / Copilot / Gemini CLI）生态渗透持续加速
+
+**核心变化概要**：
+- 连续第五日在榜，总量迈过 310K 里程碑
+- Forks +22，社区贡献平稳
+- 单日增量维持四位数附近高位（+970 → +968，parser 口径）
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 309,746 | 310,029 | +283 |
+| 总 Forks | 26,062 | 26,084 | +22 |
+| 今日新增 Stars | +970 | +968 | — |
+
 ## 总结
 
 Matt Pocock Skills 是**AI 编码技能领域的标杆项目**，307k+ Stars。它由 TypeScript 社区知名教育者 Matt Pocock 创建，包含 20+ 个精心设计的技能，覆盖需求对齐、测试驱动开发、调试、架构改进等全流程，旨在将 AI 编码助手从 "vibe coding" 提升为真正的工程实践。技能可通过 npx 一键安装，支持主流 AI 编码工具。
@@ -818,4 +842,4 @@ Matt Pocock Skills 是**AI 编码技能领域的标杆项目**，307k+ Stars。�
 ---
 
 *数据来源：GitHub 仓库 (mattpocock/skills)，2026 年 11 月访问*
-*首次分析：2026 年 5 月 | 最近更新：2026 年 11 月 2 日*
+*首次分析：2026 年 5 月 | 最近更新：2026 年 11 月 3 日*
