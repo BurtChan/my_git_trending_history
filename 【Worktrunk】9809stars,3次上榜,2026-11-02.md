@@ -67,12 +67,12 @@ Windows 上因与 Windows Terminal 的 `wt` 冲突，默认以 `git-wt` 名称�
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 7,159 |
-| 🍴 总 Forks | 255 |
-| 📈 今日新增 | 159 |
+| ⭐ 总 Stars | 9,809 |
+| 🍴 总 Forks | 349 |
+| 📈 今日新增 | 115 |
 | 创建时间 | 2025-10-17 |
 | 主要语言 | Rust |
-| Open Issues | 39 |
+| Open Issues | 57 |
 
 ## 📋 更新记录
 
@@ -98,10 +98,36 @@ Windows 上因与 Windows Terminal 的 `wt` 冲突，默认以 `git-wt` 名称�
 
 ---
 
+### 更新 2 — 2026 年 11 月 2 日（时隔 50 天再次登上 Trending）
+
+**更新原因**：回榜单日 +115 Stars
+
+**最新动态**：
+
+- **v0.81.0 发布**：hooks 支持交互式前台提示（可接 gum confirm 等）；实验性 `wt switch --path` 支持模板外自定义路径 worktree；`wt merge --branch` 无需切换即可合并其他 worktree 分支
+- **OpenCode 2 worktree 集成**：与 Claude Code 插件对齐，OpenCode 创建/移除 worktree 均走 `wt switch --create`/`wt remove`；批量删除改为每仓库单后台删除进程，大幅提速
+- `wt switch -` 可返回离开前的 worktree；squash 备份打印恢复命令；模板引擎升级 MiniJinja 3（含若干 breaking changes）
+- Star 从 7.2K（9 月中）增至 9.8K，约 +2.6K，多代理并行开发工作流工具需求稳定增长
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|---------|---------|------|
+| 总 Stars | 7,159 | 9,809 | +2,650 |
+| 总 Forks | 255 | 349 | +94 |
+| 今日新增 | — | +115 | — |
+
+**核心变化概要**：
+
+- Claude Code / OpenCode / Codex 三大编码代理的 worktree 集成全部就位，「多代理并行」基础设施定位清晰
+- hooks 交互化与 `wt merge --branch` 降低人机协作摩擦
+- 50 天 +2.6K 增速平稳，属于慢热但长坡型工具
+
+
+---
+
 ## 总结
 Worktrunk 用 Rust 把 Git worktree 的繁琐操作压缩成面向 AI Agent 并行工作流的一等命令，从启动、监控到合并清理的全生命周期覆盖，是「多代理并行编程」时代 Git 工作流重构的代表工具。
 
 ---
 
 *数据来源：GitHub 仓库 (max-sixty/worktrunk)，2026 年 9 月访问*
-*首次分析：见文件头部 | 最近更新：2026 年 9 月 13 日*
+*首次分析：见文件头部 | 最近更新：2026 年 11 月 2 日*
