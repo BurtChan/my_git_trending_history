@@ -77,10 +77,10 @@ brand-kit、product-shots、video-ads、UGC 技能支持非游戏创意垂直领
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 2,109 |
-| 总 Forks | 233 |
-| 今日新增 | +224 |
-| Open Issues | 36 |
+| 总 Stars | 2,302 |
+| 总 Forks | 244 |
+| 今日新增 | +193 |
+| Open Issues | 37 |
 | 语言 | Python |
 | 创建时间 | 2026-08-12 |
 
@@ -90,8 +90,34 @@ brand-kit、product-shots、video-ads、UGC 技能支持非游戏创意垂直领
 
 Scenario Agent Skills 把游戏 AI 生成平台的全部能力封装成 80+ 个符合开放规范的 Agent 技能，配合驱动 ZBrush/Blender/Unity 等本机软件的专家工具，展示了垂类平台在 Agent 时代的全新分发形态。
 
+## 📋 更新记录
+
+### 更新 1 — 2026年11月5日
+
+**更新原因**：Scenario Agent Skills 上榜第二日，Stars 2,109 → 2,302（+193，API 精确数据），Forks 233 → 244（+11），Open Issues 36 → 37。
+
+**最新动态**：
+- scenario-blender-blockout 技能新增自行车 kind 与骑手 recipe（#315，11 月 3 日合入），3D 场景资产生成覆盖面继续扩展
+- 依赖治理常态化：reportlab 依赖下限升级由 Dependabot 驱动，CI 对 Dependabot PR 标题 lint 自动跳过（#362）
+- skills-v0.60.1（10 月 29 日）后保持活跃合入，技能库版本化管理模式运行平稳
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|---------|---------|------|
+| 总 Stars | 2,109 | 2,302 | +193 |
+| 总 Forks | 233 | 244 | +11 |
+| 今日新增 | — | +193 | — |
+| Open Issues | 36 | 37 | +1 |
+
+**核心变化概要**：
+
+1. Star +193（+9.2%），连续两天稳定上榜，增速平稳
+2. 3D 场景类技能（blender-blockout）持续加料，垂类纵深是核心差异化
+3. Forks +11，企业评估型关注与社区贡献并存
+
 ---
 
 *数据来源：GitHub 仓库 (scenario-labs/skills)，2026 年 11 月访问*
 
-*首次分析：2026 年 11 月 4 日*
+*首次分析：2026 年 11 月 4 日 | 最近更新：2026 年 11 月 5 日*
