@@ -69,9 +69,9 @@ kb-retriever 的渐进式检索 + 引用溯源，适合内部文档目录的问�
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 11,273 |
-| 总 Forks | 1,406 |
-| 今日新增 Star | 381 |
+| 总 Stars | 13,959 |
+| 总 Forks | 1,633 |
+| 今日新增 Star | 2,686 |
 
 ## 📋 更新记录
 
@@ -113,6 +113,25 @@ kb-retriever 的渐进式检索 + 引用溯源，适合内部文档目录的问�
 - Forks 同步增长 19，用户实际使用与改造比例健康
 - 单个 Skill 的「小产品」深度仍是其区别于普通 awesome 列表的核心竞争力
 
+### 更新 3 — 2026年11月5日（时隔两个多月再次上榜）
+
+**更新原因**：Garden Skills 再次登上 GitHub Trending，Stars 11,273 → 13,959（+2,686，API 精确数据），Forks 1,406 → 1,633（+227）。
+
+**最新动态**：
+- Skill 合集持续扩容：新增 web-video-presentation（把脚本/文章/课程转成可录屏成片的 16:9 网页视频演示，固定 1920×1080 舞台、23 套内置主题、可插拔 TTS，当前 v1.2.2）与 beautiful-article（任意源 → 精美文章）
+- 安装矩阵扩大：支持 npx skills CLI、Claude Code 插件市场、Gemini CLI、OpenCode 等多个 Agent 宿主，README 新增日文版形成中日英三语文档
+- 作者 ConardLi 为国内头部前端博主（code秘密花园），中文社区渠道（B 站/公众号/小红书）带来持续的自然流量
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 11,273 | 13,959 | +2,686 |
+| 总 Forks | 1,406 | 1,633 | +227 |
+
+**核心变化**：
+- 时隔两个多月 +2,686 Stars，视频演示类 Skill（web-video-presentation）是本轮增长的主要叙事
+- Fork 同步 +227，说明用户在真实改造这些 Skill 而非仅收藏
+- Agent Skills 生态热度持续：同榜的 mattpocock/skills、google/skills、scenario-labs/skills 印证赛道整体升温
+
 ---
 
 ## 总结
@@ -120,5 +139,5 @@ Garden Skills 是国内头部前端博主交出的 Agent Skills 工程化答卷�
 
 ---
 
-*数据来源：GitHub 仓库 (ConardLi/garden-skills)，2026 年 8 月 27 日访问*
-*首次分析：2026 年 8 月 | 最近更新：2026 年 8 月 28 日*
+*数据来源：GitHub 仓库 (ConardLi/garden-skills)，2026 年 11 月 5 日访问*
+*首次分析：2026 年 8 月 | 最近更新：2026 年 11 月 5 日*
