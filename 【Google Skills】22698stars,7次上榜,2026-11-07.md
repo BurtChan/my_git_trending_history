@@ -12,7 +12,7 @@ Google Skills 是 Google 官方维护的 Agent Skills 仓库，为 Google 产品
 
 仓库通过 `npx skills add google/skills` 安装，内含的技能覆盖：Google Cloud 入门（认证、基础搭建、上云引导）、多产品解决方案技能（云架构工作流、跨云数据分析、无边界开放数据湖仓、AI 代理构建部署、数据科学工作流）等，还提供面向 Antigravity CLI 的插件安装方式。
 
-项目创建于 2026 年 3 月底，已积累 16,000 Star，今日 +305 Star 再次登榜。与 Anthropic 的 skills、mattpocock/skills 等并列，是"大厂抢注 Agent Skills 生态"浪潮的代表作之一。
+项目创建于 2026 年 3 月底，已积累 22,698 Star，2026 年 11 月连续多日登榜。与 Anthropic 的 skills、mattpocock/skills 等并列，是"大厂抢注 Agent Skills 生态"浪潮的代表作之一。
 
 ---
 
@@ -68,9 +68,9 @@ Google 亲自维护，技能内容与 GCP 真实产品（认证、数据、Agent
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 22,636 |
-| 🍴 总 Forks | 1,904 |
-| 今日新增 | +532 |
+| ⭐ 总 Stars | 22,698 |
+| 🍴 总 Forks | 1,907 |
+| 今日新增 | +62 |
 
 ---
 
@@ -180,10 +180,34 @@ Google Skills 时隔近两个月再次登上 Trending，总星从 17,139 大幅�
 
 ---
 
+### 更新 6 — 2026年11月7日（连续第三天在榜）
+
+**更新原因**：连续第三天登上 GitHub Trending，Stars 22,636 → 22,698（+62，API 精确数据），Forks 1,904 → 1,907（+3）。
+
+**最新动态**：
+- 新增 api-gateway-troubleshooting 技能（Google Cloud API Gateway 故障排查），google-cloud-developer 技能为 MCP 配置加入 usage attribution，cloud-operator 技能补充上下文共享指引（均为 11-05 提交）
+- 单日增量 +532 → +62，连续两日高增后回落至常规水位，符合 viral 高峰后的衰减曲线
+- 大厂 Agent Skills 生态竞争格局下保持稳定的技能更新节奏
+
+**Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| ⭐ 总 Stars | 22,636 | 22,698 | +62 |
+| 🍴 总 Forks | 1,904 | 1,907 | +3 |
+| 今日新增 | +532 | +62 | — |
+
+**核心变化概要**：
+1. Stars 22,636 → 22,698（+62），连续第三天在榜，增速进入常规区间
+2. 技能库持续滚动更新（API Gateway 排障、usage attribution、上下文共享）
+3. 官方生态卡位价值大于短期 star 增速，月度视角仍处上升通道
+
+---
+
 ## 总结
-Google Skills 是谷歌官方的 Agent Skills 技能库，把 GCP 认证、架构与数据平台的实操能力封装成可安装技能包，16K Star 印证了大厂主导 Agent Skills 生态标准化的大趋势。
+Google Skills 是谷歌官方的 Agent Skills 技能库，把 GCP 认证、架构与数据平台的实操能力封装成可安装技能包，22.7K Star 印证了大厂主导 Agent Skills 生态标准化的大趋势。
 
 ---
 
 *数据来源：GitHub 仓库 (google/skills)，2026 年 11 月访问*
-*首次分析：见文件头部 | 最近更新：2026 年 11 月 6 日*
+*首次分析：见文件头部 | 最近更新：2026 年 11 月 7 日*
