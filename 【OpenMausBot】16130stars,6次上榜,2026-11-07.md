@@ -13,7 +13,7 @@ OpenMausBot 是一个开源的「Grok Bot 替代品」，把 AI Agent 装进了�
 
 项目诞生的背景是 2026 年初集中涌现的一批封闭个人 Agent 产品——xAI 的 Grok Bot、Meta 的 Muse、OpenAI 的 dots、Manus 的 Cue、Spear Street 的 Instinct——它们在七周内相继发布，但都把模型、计算机和数据留在厂商一侧。OpenMausBot 保留了这个产品形态（一群 Agent 住在一个消息应用里），但用开源、本地优先的方式重建：Agent 跑在你自己的机器上，复用你已有的 Claude/ChatGPT/Grok 订阅登录，不需要新账号，中间没有代理服务器。
 
-架构上，一个轻量的 harness 服务器运行在 `127.0.0.1`，独占管理所有 Agent 进程；对话记录、密钥和事件全部存在本地 `~/.openmausbot` 目录，不上云。项目创建于 2026 年 8 月，两个多月即突破 7,000 Stars、如今已破 1 万，是近期「本地优先 Agent 编排」赛道上升最快的项目之一。
+架构上，一个轻量的 harness 服务器运行在 `127.0.0.1`，独占管理所有 Agent 进程；对话记录、密钥和事件全部存在本地 `~/.openmausbot` 目录，不上云。项目创建于 2026 年 8 月，三个多月即突破 1.6 万 Stars，是近期「本地优先 Agent 编排」赛道上升最快的项目之一。
 
 ---
 
@@ -84,13 +84,13 @@ Host 控制（Bot 操作你的真实电脑）需要显式 opt-in 且仅限 macOS
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 10,288 |
-| 总 Forks | 1,423 |
-| 今日新增 Stars | +963（API 口径） |
+| 总 Stars | 16,130 |
+| 总 Forks | 2,283 |
+| 今日新增 Stars | +1,986（Trending 口径） |
 | 许可证 | Apache-2.0 |
 | 主要语言 | TypeScript |
 | 创建时间 | 2026-08-11 |
-| Open Issues | 619 |
+| Open Issues | 816 |
 
 ---
 
@@ -124,7 +124,7 @@ OpenMausBot 把 2026 年封闭个人 Agent 产品（Grok Bot/Muse/dots/Cue）的
 
 
 *数据来源：GitHub 仓库 (milind-soni/OpenMausBot)，2026 年 11 月访问*
-*首次分析：2026 年 10 月 29 日 | 最近更新：2026 年 11 月 2 日*
+*首次分析：2026 年 10 月 29 日 | 最近更新：2026 年 11 月 7 日*
 
 
 ### 更新 2 — 2026 年 10 月 31 日（连续第二日在榜，第 3 次上榜）
@@ -191,3 +191,26 @@ OpenMausBot 把 2026 年封闭个人 Agent 产品（Grok Bot/Muse/dots/Cue）的
 1. Stars 9,325 → 10,288（+963），突破 1 万里程碑，连续第四日在榜，第 5 次上榜
 2. Forks +139（增幅较昨日扩大），本地优先 Agent 编排赛道热度延续
 3. Open Issues 608 → 619，社区反馈量维持高位
+
+---
+
+### 更新 5 — 2026 年 11 月 7 日（时隔 5 天再次登上 Trending，第 6 次上榜）
+
+**更新原因**：时隔 5 天再次登上 GitHub Trending（上次在榜 11 月 2 日），Stars 10,288 → 16,130（+5,842，API 口径），Forks 1,423 → 2,283（+860），Open Issues 619 → 816（+197）。
+
+**最新动态**：
+- 5 天内 Stars 从 1.03 万增至 1.61 万（+57%），增速较上一波明显放大，本次 Trending 当日增量 +1,986
+- 定位持续强化：开源 Grok Bot 替代品——harness 服务器本地管理 Agent 进程，机器人可调用虚拟机执行计算机操作（computer-use），支持 Claude Code/Codex 等后端
+- 企业版目录 enterprise/ 采用独立 source-available 许可，删除该目录即为纯开源版；自托管支持 VPS/Tailscale/Docker 部署
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 10,288 | 16,130 | +5,842 |
+| 总 Forks | 1,423 | 2,283 | +860 |
+| Open Issues | 619 | 816 | +197 |
+
+**核心变化概要**：
+1. Stars 10,288 → 16,130（+5,842），5 天增长 57%，重回 Trending 单日 +1,986
+2. Forks +860，自托管部署生态快速扩张
+3. Open Issues +197，社区反馈量随用户基数放大
+
