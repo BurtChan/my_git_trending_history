@@ -68,9 +68,9 @@ Google 亲自维护，技能内容与 GCP 真实产品（认证、数据、Agent
 ## Star 数据
 | 指标 | 数值 |
 |------|------|
-| ⭐ 总 Stars | 22,698 |
-| 🍴 总 Forks | 1,907 |
-| 今日新增 | +62 |
+| ⭐ 总 Stars | 23,164 |
+| 🍴 总 Forks | 1,943 |
+| 今日新增 | +466 |
 
 ---
 
@@ -202,12 +202,30 @@ Google Skills 时隔近两个月再次登上 Trending，总星从 17,139 大幅�
 2. 技能库持续滚动更新（API Gateway 排障、usage attribution、上下文共享）
 3. 官方生态卡位价值大于短期 star 增速，月度视角仍处上升通道
 
+### 更新 7 — 2026年11月8日（连续第四天在榜）
+
+**更新原因**：连续第四天登上 GitHub Trending（第 8 次上榜），Stars 22,698 → 23,164（+466，API 精确数据），增速较昨日（+62）大幅回升。
+
+**最新动态**：Google Skills 增速回暖，总 Stars 从 22,698 增至 23,164（+466），单日增量较昨日（+62）放大 7.5 倍；Forks 从 1,907 增至 1,943（+36），Open Issues 仅 26 个，维护响应良好。技能矩阵覆盖 GCP onboarding 与解决方案 recipe、Agent Platform（推理/调优/RAG/评估飞轮）、Ads 与 Analytics MCP 等系列，并支持通过 Claude Code、Codex、Antigravity CLI 插件市场一键安装（`npx skills add google/skills`），官方生态卡位价值持续兑现。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| ⭐ 总 Stars | 22,698 | 23,164 | +466 |
+| 🍴 总 Forks | 1,907 | 1,943 | +36 |
+| 今日新增 | +62 | +466 | — |
+
+**核心变化**：
+- 连续第四天在榜，单日增速从 +62 回升至 +466
+- 技能矩阵覆盖云/AI/广告/分析全线，Agent Platform 系列最密集
+- 大厂官方 Agent Skills 生态标准化趋势中的关键卡位
 ---
 
 ## 总结
-Google Skills 是谷歌官方的 Agent Skills 技能库，把 GCP 认证、架构与数据平台的实操能力封装成可安装技能包，22.7K Star 印证了大厂主导 Agent Skills 生态标准化的大趋势。
+Google Skills 是谷歌官方的 Agent Skills 技能库，把 GCP 认证、架构与数据平台的实操能力封装成可安装技能包，23.2K Star 印证了大厂主导 Agent Skills 生态标准化的大趋势。
 
 ---
 
 *数据来源：GitHub 仓库 (google/skills)，2026 年 11 月访问*
-*首次分析：见文件头部 | 最近更新：2026 年 11 月 7 日*
+*首次分析：见文件头部 | 最近更新：2026 年 11 月 8 日*
