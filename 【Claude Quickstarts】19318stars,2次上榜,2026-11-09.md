@@ -83,12 +83,29 @@ Autonomous Coding Agent 的双智能体 + git 持久化模式可用于自动化�
 
 | 指标 | 数值 |
 |------|------|
-| ⭐ Stars | 19,191 |
-| 🍴 Forks | 3,264 |
-| 📈 今日新增 | +28 |
-| ⚠️ Open Issues | 231 |
+| ⭐ Stars | 19,318 |
+| 🍴 Forks | 3,275 |
+| 📈 今日新增 | +127 |
+| ⚠️ Open Issues | 232 |
 | 创建时间 | 2024-08-29 |
 | 许可证 | MIT |
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 11 月 9 日
+
+**更新原因**：连续第二日登上 GitHub Trending（今日 +127 Stars），Managed Agents 生态快速扩张与官方样板持续更新推动关注度延续。
+
+**最新动态**：
+- **Managed Agents 场景继续扩张**：新增 Sentry autofix quickstart（10 月 29 日），OpenShell quickstart 补充 openshell-policy 扩展（#531，11 月 2 日）；
+- **Knowledge wiki 重构为动态工作流**（#534，11 月 6 日）：官方持续演进「可运行的最佳实践」形态；
+- **依赖基线统一**：全仓库 pin 到 anthropic 2.0 / @anthropic-ai/sdk 1.0（10 月 23 日），computer-use-demo 补充读取系统 CA 证书等可靠性修复。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| ⭐ Stars | 19,191 | 19,318 | +127 |
 
 ---
 
@@ -99,4 +116,4 @@ Claude Quickstarts 是 Anthropic 官方的「Claude 应用样板间」，用一�
 ---
 
 *数据来源：GitHub 仓库 (anthropics/claude-quickstarts)，2026 年 11 月访问*
-*首次分析：2026 年 11 月 8 日 | 最近更新：2026 年 11 月 8 日*
+*首次分析：2026 年 11 月 8 日 | 最近更新：2026 年 11 月 9 日*
