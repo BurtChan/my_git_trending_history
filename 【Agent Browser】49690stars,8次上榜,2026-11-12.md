@@ -11,7 +11,7 @@
 
 agent-browser 是 Vercel Labs 推出的浏览器自动化命令行工具，专为 AI Agent（Claude Code、Codex 等）驱动浏览器而设计。核心理念是把「Agent 看网页」变成结构化文本而非截图：工具通过无障碍树（accessibility tree）快照为页面元素分配稳定的 ref 标识，Agent 用文本命令即可完成打开页面、快照、按 ref 点击、按 ref 填表、读取文本等全部操作——无需 Playwright、无需 Node.js 运行时，也无需视觉模型猜测坐标，token 消耗与出错率都大幅降低。
 
-工程实现上，它是原生 Rust CLI（daemon 架构），安装后自动下载 Chrome for Testing，也能自动检测系统中已有的 Chrome/Brave/Playwright/Puppeteer 安装。对元素交互做了大量防呆设计：点击被遮挡（如弹窗遮住目标）时立即失败并报告遮挡元素，元素隐藏/禁用/视口外时报错而非假成功——把浏览器自动化的「静默失败」问题在 CLI 层根治，这对无人值守的 Agent 工作流至关重要。创建于 2026 年 1 月，10 个月内收获 47.4K Stars，是 Vercel 在 Agent 基础设施赛道的旗舰产品之一。
+工程实现上，它是原生 Rust CLI（daemon 架构），安装后自动下载 Chrome for Testing，也能自动检测系统中已有的 Chrome/Brave/Playwright/Puppeteer 安装。对元素交互做了大量防呆设计：点击被遮挡（如弹窗遮住目标）时立即失败并报告遮挡元素，元素隐藏/禁用/视口外时报错而非假成功——把浏览器自动化的「静默失败」问题在 CLI 层根治，这对无人值守的 Agent 工作流至关重要。创建于 2026 年 1 月，10 个月内收获 49.7K Stars，是 Vercel 在 Agent 基础设施赛道的旗舰产品之一。
 
 除本地浏览器外，项目已构建起多云浏览器会话生态：支持 Browser Use Cloud、Kernel（隐身模式 + 持久化 profile）、AWS Bedrock AgentCore（SigV4 认证）等云会话后端，本地与云端命令完全一致；还提供 MCP 支持、Claude 插件（.claude-plugin）与 skills 目录，可直接作为 Agent 的浏览器技能安装。实验性 Obscura 引擎展示了去 Chrome 化的方向（当前有渲染限制）。
 
@@ -53,7 +53,7 @@ agent-browser 是 Vercel Labs 推出的浏览器自动化命令行工具，专�
 点击点被遮挡、元素隐藏/禁用/视口外时立即失败并输出遮挡元素信息，杜绝浏览器自动化最恶心的「假成功」——专为无人值守 Agent 场景设计。
 
 ### Vercel Labs 级工程完成度
-733 次提交、完整文档站（agent-browser.dev）、evals 评测目录、docker 支持、CHANGELOG 规范，10 个月 47.4K Stars 印证了「安装即用」的产品化能力。
+733 次提交、完整文档站（agent-browser.dev）、evals 评测目录、docker 支持、CHANGELOG 规范，10 个月 49.7K Stars 印证了「安装即用」的产品化能力。
 
 ### 本地/云会话统一抽象
 同一套命令在本地 Chrome 与 Browser Use Cloud/Kernel/AWS AgentCore 云会话间无缝切换，stealth 模式、会话超时、profile 持久化均通过环境变量细粒度控制。
@@ -80,10 +80,10 @@ Kernel stealth 模式 + 持久 profile 或 AWS AgentCore 会话，在 CI/定时�
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 49,005 |
-| 总 Forks | 3,429 |
-| 今日新增 | 775 |
-| Open Issues | 556 |
+| 总 Stars | 49,690 |
+| 总 Forks | 3,476 |
+| 今日新增 | +685 |
+| Open Issues | 583 |
 | 主要语言 | Rust |
 | 创建时间 | 2026-01-11 |
 | 许可证 | Apache-2.0 |
@@ -92,7 +92,7 @@ Kernel stealth 模式 + 持久 profile 或 AWS AgentCore 会话，在 CI/定时�
 
 ## 总结
 
-agent-browser 把「Agent 驱动浏览器」从截图猜坐标的脆弱模式升级为无障碍树 + ref 精确交互的工程化范式，配合 Rust 原生性能、防呆失败报告与多云会话生态，10 个月冲到 46.7K Stars，是 Agent 基础设施赛道当前最完整的产品化实现，也是 Vercel 押注 AI Agent 时代的核心落子。
+agent-browser 把「Agent 驱动浏览器」从截图猜坐标的脆弱模式升级为无障碍树 + ref 精确交互的工程化范式，配合 Rust 原生性能、防呆失败报告与多云会话生态，10 个月冲到 49.7K Stars，是 Agent 基础设施赛道当前最完整的产品化实现，也是 Vercel 押注 AI Agent 时代的核心落子。
 ## 📋 更新记录
 
 ### 更新 1 — 2026年11月6日
@@ -212,8 +212,26 @@ agent-browser 把「Agent 驱动浏览器」从截图猜坐标的脆弱模式升
 3. Forks +140，生态稳步增长
 
 
+### 更新 7 — 2026年11月12日（连续第八天在榜）
+
+**更新原因**：连续第八天登上 Trending，Stars 49,005 → 49,690（+685，API 口径），Forks 3,429 → 3,476（+47），Open Issues 556 → 583（+27）。
+
+**最新动态**：v0.42.0（11 月 10 日）发布，主打按平台分发原生二进制包（#2150，安装不再依赖运行时编译）与大页面快照提速（#2509）；11 月 11 日文档侧接入 Modern Web Guidance 指南（#2546）并改进 docs 聊天输入的 field-sizing 与无障碍体验（#2548）。
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|---------|---------|------|
+| 总 Stars | 49,005 | 49,690 | +685 |
+| 总 Forks | 3,429 | 3,476 | +47 |
+| Open Issues | 556 | 583 | +27 |
+| 今日新增 | 775 | +685 | — |
+
+**核心变化概要**：
+1. 连续第八天在榜，Stars 49,005 → 49,690（+685），距 5 万大关仅差 310
+2. v0.42.0 原生二进制按平台分包，安装门槛进一步降低
+3. 文档站接入 Modern Web Guidance 指南，与 Chrome 团队官方 Web 最佳实践形成联动
+
 ---
 
-*数据来源：GitHub 仓库 (vercel-labs/agent-browser)，2026 年 11 月 11 日访问*
+*数据来源：GitHub 仓库 (vercel-labs/agent-browser)，2026 年 11 月 12 日访问*
 
-*首次分析：2026 年 11 月 5 日 | 最近更新：2026 年 11 月 11 日*
+*首次分析：2026 年 11 月 5 日 | 最近更新：2026 年 11 月 12 日*
