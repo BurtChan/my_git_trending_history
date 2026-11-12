@@ -81,13 +81,43 @@ Living Weights 的教学/回滚机制与神经元级 3D 可视化，为「在线
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 1,812 |
-| 总 Forks | 385 |
-| 今日新增 | +58 |
-| Open Issues | 465 |
+| 总 Stars | 1,918 |
+| 总 Forks | 391 |
+| 今日新增 | +94 |
+| Open Issues | 522 |
 | 主要语言 | Zig |
 | 许可证 | Apache-2.0 |
 | 创建时间 | 2026-06-19 |
+
+## 📋 更新记录
+
+### 更新 1 — 2026年11月13日
+
+**更新原因**：再次登上 GitHub Trending（单日 +94 Stars，总量 1,812 → 1,918），项目进入 1.0 时代后社区量化生态与企业版进展显著，值得跟踪。
+
+**最新动态**：
+
+- **v1.0.0 原生正式版落地**：核心已全面转向 Zig 单二进制原生引擎（7,869 commits），Metal/CUDA 内核直接运行，CUDA 内核基于 CUDA 13 构建（要求 R580+ 驱动），Mac 端 Homebrew 一键安装；桌面版（内含本地引擎、模型下载、实时代码 worker 与文档编辑）已放出 Apple Silicon beta 9 DMG。
+- **社区量化生态爆发**：GLM-5.3-Flash 已有 NVFP4、FP4-Local、XSFP4、Jammed XSFP4 等多套社区量化 checkpoint，双 GB10 TP=2 即可服务约 160 GiB 权重的旗舰模型；GLM-5.3 完整版经 EXLR8 可在两台 256GB M5 Ultra 上以 Thunderbolt 5 互联运行，社区贡献者 Bizuayeu 的多次实测已进入官方文档。
+- **Starlight 企业版发布**（独立仓库 ashhart/tf-starlight）：面向组织提供统一 OpenAI/Anthropic 兼容端点，支持 OIDC/SAML + SCIM 身份体系、模型调度与 token 计量，可完全离线运行。
+- **Living Weights 实验推进**：基于 Nemotron 3.5 Lightning 的 --slide 教学模式可在运行中把新事实写入权重，配套 3D 神经元可视化与一键回滚，跨 Mac/GB10 的 checkpoint 互操作已验证。
+- **服务能力增强**：新增上下文压缩（--compact-at，保留近期轮次原文并生成记忆笔记）、--recall 草稿缓存（重复文本验证轮次大幅缩短）、Cortheon 服务端研究模式与 TensorFold Web 本地聊天界面。
+
+**Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|------|------|------|
+| 总 Stars | 1,812 | 1,918 | +106 |
+| 总 Forks | 385 | 391 | +6 |
+| Open Issues | 465 | 522 | +57 |
+| 今日新增 Stars | — | +94 | — |
+
+**核心变化概要**：
+
+- 原生引擎成为唯一主线，1.0 正式版 + 桌面 beta 9，部署门槛进一步降低
+- GLM-5.3 系列多套社区量化方案把旗舰模型压进双卡消费级设备，生态位对标 llama.cpp 的「可验证量化」路线
+- 企业化布局启动：Starlight 离线企业网关补齐组织级身份/策略/计费
+- 实验特性密集：Living Weights 在线学习、上下文压缩、Cortheon 模式持续拉开差异化
 
 ---
 
@@ -98,3 +128,4 @@ TensorFold 用一个 Zig 二进制把本地 LLM 推理的部署门槛压到最�
 ---
 
 *数据来源：GitHub 仓库 (ashhart/TensorFold)，2026 年 11 月访问*
+*首次分析：2026 年 11 月 12 日 | 最近更新：2026 年 11 月 13 日*
