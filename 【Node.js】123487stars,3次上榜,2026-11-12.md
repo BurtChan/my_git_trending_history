@@ -9,7 +9,7 @@
 
 ## 项目概述
 
-Node.js 是基于 V8 引擎的跨平台 JavaScript 运行时，2014 年开源至今已积累 12.2 万 Stars、49,000+ commits，是全球服务器端 JavaScript 与前端工具链的事实标准基础设施。项目由 OpenJS Foundation 支撑，采用开放治理模式（TSC 技术指导委员会），安全发布轮值由 Datadog、HeroDevs、NodeSource、Platformatic、Red Hat/IBM 等公司承担。
+Node.js 是基于 V8 引擎的跨平台 JavaScript 运行时，2014 年开源至今已积累 12.3 万 Stars、49,000+ commits，是全球服务器端 JavaScript 与前端工具链的事实标准基础设施。项目由 OpenJS Foundation 支撑，采用开放治理模式（TSC 技术指导委员会），安全发布轮值由 Datadog、HeroDevs、NodeSource、Platformatic、Red Hat/IBM 等公司承担。
 
 Node.js 遵循语义化版本，维护 Current 与 LTS 双发布线，Nightly 构建每日产出，所有二进制通过 GPG 密钥环可验证。再次登上 Trending（单日 +163）属于成熟巨头的常规波动——通常由新版本发布（如引入新特性或安全更新）触发社区关注。
 
@@ -80,10 +80,10 @@ Webpack/Vite/TypeScript 等全部前端工具链运行于 Node.js，是前端开
 
 | 指标 | 数值 |
 | --- | --- |
-| ⭐ 总 Stars | 122,748 |
-| 🍴 总 Forks | 39,882 |
-| 📈 今日新增 | 163 |
-| Open Issues | 1,264 |
+| ⭐ 总 Stars | 123,487 |
+| 🍴 总 Forks | 38,050 |
+| 📈 今日新增 | +133 |
+| Open Issues | 1,334 |
 | 语言 | JavaScript / C++ |
 | 创建时间 | 2014-11-26 |
 
@@ -121,6 +121,26 @@ Node.js 是运行了 12 年的服务器端 JavaScript 事实标准，本次上�
 - 权限模型 `--allow-fs-vfs` 落地文档化，服务端安全边界持续扩展
 - 单日 +163 未达 500 阈值，因文件尚无更新块（昨日新建）按 >100 阈值收录
 
+### 更新 2 — 2026 年 11 月 12 日
+
+**更新原因**：再次登上 GitHub Trending（第 3 次上榜），API 口径总 Stars 从 122,748 增至 123,487（+739），Forks 从 39,882 增至 38,050（-1,832）。
+
+**最新动态**：
+再次登上 GitHub Trending（第 3 次上榜），API 口径总 Stars 从 122,748 增至 123,487（+739），Open Issues 1,264 → 1,334。11 月 11 日 Node.js 三线同步发布安全版本：v26.13.1「Lithium」（LTS）与 v24.22.3「Krypton」（LTS）同日发布，含 fs/promises readFile/writeFile 错误堆栈恢复、nghttp3 升级至 1.19.0 等更新，多版本齐发的安全维护节奏引发社区关注。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 122,748 | 123,487 | +739 |
+| 总 Forks | 39,882 | 38,050 | -1,832 |
+| Open Issues | 1,264 | 1,334 | +70 |
+
+**核心变化概要**：
+
+1. 总 Stars 122,748 → 123,487（+739），稳居 12 万+ 俱乐部
+2. v26.13.1「Lithium」与 v24.22.3「Krypton」双 LTS 同日发布（11-11）
+3. Open Issues 1,264 → 1,334，issue 队列回归正常水位
 ---
 
-*数据来源：GitHub 仓库 (nodejs/node)，2026 年 10 月访问*
+*数据来源：GitHub 仓库 (nodejs/node)，2026 年 11 月访问*
