@@ -91,8 +91,8 @@ Open Code Review 是阿里巴巴集团开源的 AI 驱动代码审查 CLI 工具
 
 | 指标 | 数值 |
 |------|------|
-| Stars | ⭐ 45,400 |
-| Forks | 🔱 3,276 |
+| Stars | ⭐ 50,112 |
+| Forks | 🔱 3,721 |
 | 核心语言 | Go |
 | 创建时间 | 2026-05-18 |
 | 许可证 | Apache-2.0 |
@@ -109,6 +109,23 @@ Open Code Review 是阿里巴巴集团开源的 AI 驱动代码审查 CLI 工具
 
 
 
+
+### 更新 14 — 2026 年 11 月 13 日（时隔 34 天再次登上 Trending，第 14 次上榜）
+
+**更新原因**：项目时隔 34 天再次登上 GitHub Trending（第 14 次上榜），总 Stars 从 45,400 增至 50,112（+4,712，API 精确数据）。
+
+**最新动态**：离榜一个多月项目仍净增 4,712 Stars，企业采纳持续扩大（Forks 3,276 → 3,721，+445）。产品能力与生态进一步铺开：README 现列出 Claude Code、Codex、Cursor、Kimi Code、OpenCode、QCA Forward 及 Skill 兼容 Agent 等多种接入方式；新增 Delegation Mode（由编码代理自带的 LLM 执行审查，无需 OCR API Key）、Session Viewer（浏览器回放审查会话、标记已修复/忽略）与 OpenTelemetry 遥测；CI/CD 支持扩展至 GitHub Actions、GitLab CI、GitFlic CI 与 Gerrit。
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 45,400 | 50,112 | +4,712 |
+| 总 Forks | 3,276 | 3,721 | +445 |
+
+**核心变化概要**：
+- 时隔 34 天回榜，总 Star 45,400 → 50,112（+4,712），突破 5 万
+- Forks 3,276 → 3,721（+445），企业级采纳持续扩大
+- 新增 Delegation Mode 与 Session Viewer，接入方式覆盖六大编码 Agent
+- CI/CD 集成扩展至 GitFlic CI，OpenTelemetry 可观测性落地
 
 ### 更新 13 — 2026 年 10 月 10 日（连续第二日在榜）
 
@@ -365,8 +382,8 @@ Open Code Review 是阿里巴巴将内部经过两年大规模验证的 AI 代�
 
 ---
 
-*数据来源：GitHub 仓库 (alibaba/open-code-review)，2026 年 10 月访问*
-*首次分析：2026 年 7 月 | 最近更新：2026 年 10 月 10 日*
+*数据来源：GitHub 仓库 (alibaba/open-code-review)，2026 年 11 月访问*
+*首次分析：2026 年 7 月 | 最近更新：2026 年 11 月 13 日*
 
 ---
 
