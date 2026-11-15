@@ -80,8 +80,8 @@ Chrome DevTools MCP 是由 Google Chrome DevTools 团队官方开源的 Model Co
 
 | 指标 | 数据 |
 |------|------|
-| 总 Stars | ⭐ 56,185 |
-| 总 Forks | 🍴 4,695 |
+| 总 Stars | ⭐ 56,804 |
+| 总 Forks | 🍴 4,801 |
 | 主要语言 | TypeScript |
 | 许可证 | Apache License 2.0 |
 | 最新版本 | v1.12.0 |
@@ -216,13 +216,34 @@ Chrome DevTools MCP 是由 Google Chrome DevTools 团队官方开源的 Model Co
 - Forks 4,626 → 4,695（+69）
 - v1.13.0（11 月 11 日）发布：CSS 自定义变量内联解析、工具执行期页面错误列出新能力
 
+### 更新 8 — 2026 年 11 月 16 日（连续第四天在榜，第 9 次上榜）
+
+**更新原因**：项目连续第四天登上 GitHub Trending（第 9 次上榜），总 Stars 从 56,185 增至 56,804（+619，API 精确数据）。
+
+**最新动态**：v1.13.0（11 月 11 日）的三大新能力持续发酵：基于 DevTools BreakpointManager 的 logpoints（#3211）、页面级网络 mock（#3384）与上游 mock 响应支持（#3420），让 AI 代理可以在真实浏览器中完成「打断点观察值 + 拦截伪造网络响应」的深度调试；修复方面解决了配置文件含 UTF-8 BOM 时的解析失败（#3365）与 Error.cause 循环引用链超过 10 层的控制台解析问题（#3338）。Fork 数从 4,695 增至 4,801（+106），官方工具在 AI 编码工具链中的渗透率继续攀升。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 56,185 | 56,804 | +619 |
+| 总 Forks | 4,695 | 4,801 | +106 |
+
+**核心变化概要**：
+
+- 连续第四天在榜，总 Star 56,185 → 56,804（+619）
+- v1.13.0 新增 logpoints、页面级网络 mock、上游 mock 响应三大调试能力
+- 修复 UTF-8 BOM 配置解析与 Error.cause 循环链解析问题
+- Forks 4,695 → 4,801（+106）
+
+
 ---
 
 ## 总结
 
-**Chrome DevTools MCP** 是 Google Chrome DevTools 团队官方推出的 MCP 服务器，通过标准化协议将 Chrome 浏览器完整的调试、自动化和性能分析能力赋予 AI 编码助手。项目以 TypeScript 编写，基于 Puppeteer 和 CDP 实现，提供 20+ 精心设计的工具（涵盖页面交互、网络监控、性能追踪、内存分析、Lighthouse 审计等），并与 Claude Code、Copilot、Cursor、Gemini 等 20+ 主流 AI 客户端无缝集成。凭借官方团队背书、活跃的社区和极低的上手门槛（一行 npx 命令即可启动），该项目已成为 AI 辅助 Web 开发领域最受欢迎的基础设施之一，拥有超过 55,000 Stars 和 4,600 Forks，代表了 AI 编码从"写代码"走向"端到端构建和调试真实网页"的重要趋势。
+**Chrome DevTools MCP** 是 Google Chrome DevTools 团队官方推出的 MCP 服务器，通过标准化协议将 Chrome 浏览器完整的调试、自动化和性能分析能力赋予 AI 编码助手。项目以 TypeScript 编写，基于 Puppeteer 和 CDP 实现，提供 20+ 精心设计的工具（涵盖页面交互、网络监控、性能追踪、内存分析、Lighthouse 审计等），并与 Claude Code、Copilot、Cursor、Gemini 等 20+ 主流 AI 客户端无缝集成。凭借官方团队背书、活跃的社区和极低的上手门槛（一行 npx 命令即可启动），该项目已成为 AI 辅助 Web 开发领域最受欢迎的基础设施之一，拥有超过 56,000 Stars 和 4,800 Forks，代表了 AI 编码从"写代码"走向"端到端构建和调试真实网页"的重要趋势。
 
 ---
 
 *数据来源：GitHub 仓库 (ChromeDevTools/chrome-devtools-mcp)，2026 年 11 月访问*
-*首次分析：2026 年 7 月 | 最近更新：2026 年 11 月 15 日*
+*首次分析：2026 年 7 月 | 最近更新：2026 年 11 月 16 日*
