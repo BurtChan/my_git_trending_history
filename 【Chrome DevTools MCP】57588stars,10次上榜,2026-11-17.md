@@ -80,8 +80,8 @@ Chrome DevTools MCP 是由 Google Chrome DevTools 团队官方开源的 Model Co
 
 | 指标 | 数据 |
 |------|------|
-| 总 Stars | ⭐ 56,804 |
-| 总 Forks | 🍴 4,801 |
+| 总 Stars | ⭐ 57,588 |
+| 总 Forks | 🍴 4,845 |
 | 主要语言 | TypeScript |
 | 许可证 | Apache License 2.0 |
 | 最新版本 | v1.12.0 |
@@ -239,6 +239,27 @@ Chrome DevTools MCP 是由 Google Chrome DevTools 团队官方开源的 Model Co
 
 ---
 
+### 更新 9 — 2026 年 11 月 17 日（连续第五天在榜，第 10 次上榜）
+
+**更新原因**：项目连续第五天登上 GitHub Trending（第 10 次上榜），总 Stars 从 56,804 增至 57,588（+784，API 精确数据）。
+
+**最新动态**：迭代重心转向稳定性与输入体验：修复 CLI daemon 中工具超时不生效的问题（#3443），配置层拒绝缺少 http(s) scheme 的 --browserUrl 取值（#3437），并支持通过文件选择器一次上传多个文件（#3436）；依赖与 DevTools Frontend 同步升级。Fork 数从 4,801 增至 4,845（+44），官方浏览器调试入口在 AI 编码工作流中的地位持续巩固。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| 总 Stars | 56,804 | 57,588 | +784 |
+| 总 Forks | 4,801 | 4,845 | +44 |
+
+**核心变化概要**：
+
+- 连续第五天在榜，自 13 日重回榜单以来五日累计增长 +9,337
+- 修复 CLI daemon 工具超时失效，多文件上传体验改善
+- Forks 4,801 → 4,845（+44）
+
+---
+
 ## 总结
 
 **Chrome DevTools MCP** 是 Google Chrome DevTools 团队官方推出的 MCP 服务器，通过标准化协议将 Chrome 浏览器完整的调试、自动化和性能分析能力赋予 AI 编码助手。项目以 TypeScript 编写，基于 Puppeteer 和 CDP 实现，提供 20+ 精心设计的工具（涵盖页面交互、网络监控、性能追踪、内存分析、Lighthouse 审计等），并与 Claude Code、Copilot、Cursor、Gemini 等 20+ 主流 AI 客户端无缝集成。凭借官方团队背书、活跃的社区和极低的上手门槛（一行 npx 命令即可启动），该项目已成为 AI 辅助 Web 开发领域最受欢迎的基础设施之一，拥有超过 56,000 Stars 和 4,800 Forks，代表了 AI 编码从"写代码"走向"端到端构建和调试真实网页"的重要趋势。
@@ -246,4 +267,4 @@ Chrome DevTools MCP 是由 Google Chrome DevTools 团队官方开源的 Model Co
 ---
 
 *数据来源：GitHub 仓库 (ChromeDevTools/chrome-devtools-mcp)，2026 年 11 月访问*
-*首次分析：2026 年 7 月 | 最近更新：2026 年 11 月 16 日*
+*首次分析：2026 年 7 月 | 最近更新：2026 年 11 月 17 日*
