@@ -1,0 +1,105 @@
+# Ghost-Downloader-3 项目分析
+
+## 项目名称
+**Ghost-Downloader-3** — 「你唯一需要的下载器」：跨平台全协议下载器的集大成者
+- **GitHub**: [XiaoYouChR/Ghost-Downloader-3](https://github.com/XiaoYouChR/Ghost-Downloader-3)
+- **许可证**: GPL-3.0
+- **语言**: Python（PySide6 / Qt6）
+
+---
+
+## 项目概述
+
+Ghost-Downloader-3 自称「The only downloader you need（下载器的集大成者）」，是一个覆盖 Windows/macOS/Linux/Android 四平台的原生下载工具。项目起点是作者帮一位 Bilibili UP 主管理素材的业余项目，如今已发展为支持几乎全部主流下载协议的桌面级应用：HTTP(S)、磁力/BT、FTP、M3U8、MPEG-DASH、eD2k，还能直接下载 YouTube 与 Bilibili 的视频（支持片段选择、任意画质、字幕、播放列表与多 P 剧集），并对 GitHub 与 HuggingFace 下载提供镜像加速。
+
+它的差异化不在「能下」，而在「难下的场景也能下」：智能分块（smart chunking）在下载中动态调整且**无需文件合并**；自动检测带宽调整并发；真实浏览器 TLS 指纹（real-browser TLS fingerprints）让请求对反爬系统不可见，在恶劣网络环境与强反爬站点上保持成功率。这正是作者强调的「每个下载器在好网络上都快，真正的考验是坏网络」。
+
+生态方面，项目提供浏览器扩展实现「看到即可下」——扩展弹窗列出页面上全部媒体资源，点击即由桌面端接管下载，认证状态自动继承；桌面端还暴露 aria2 兼容的 RPC API，可作为第三方下载工具的后端，且支持下载中途修改 URL/请求头/代理而进度不丢失。插件系统（Feature Packs）已可运行，公开插件 API 在路线图上。
+
+---
+
+## 核心功能
+
+| 功能 | 说明 |
+|------|------|
+| 全协议覆盖 | HTTP、磁力/BT、FTP、M3U8、MPEG-DASH、eD2k 一站式支持 |
+| 视频站点直下 | YouTube / Bilibili 片段选择、任意画质与字幕、播放列表与多 P |
+| 智能分块无合并 | 分块动态调整、下载完成即成品，无需额外合并步骤 |
+| 真实浏览器 TLS 指纹 | 基于 wreq 的 TLS 指纹仿真，绕过常见反爬检测 |
+| 浏览器嗅探扩展 | 页面媒体一键嗅探、一键下载，登录态无缝继承 |
+| 镜像加速 | GitHub / HuggingFace 下载自动走镜像提速 |
+| aria2 兼容 RPC | 第三方工具可无缝接入，支持中途修改任务参数 |
+| 多线程引擎 | asyncio（uvloop/winloop）+ 多源并发，带宽自动检测 |
+
+---
+
+## 技术栈
+
+| 组件 | 技术 |
+|------|------|
+| UI 框架 | PySide6 + PyQt-Fluent-Widgets（Fluent Design 原生观感） |
+| 并发引擎 | asyncio + uvloop / winloop |
+| BT 引擎 | libtorrent |
+| eD2k 引擎 | 自研 Kelpie |
+| 流媒体 | N_m3u8DL-RE、m3u8、mpegdash 解析 |
+| 视频站点 | yt-dlp |
+| HTTP/TLS | wreq（TLS 指纹仿真） |
+| JS 引擎 | QuickJS-NG |
+| 打包 | Nuitka 编译发布 |
+| i18n | Crowdin 多语言协作 |
+
+---
+
+## 项目亮点
+
+### 坏网络才是主战场
+作者的产品哲学非常清晰：好网络下所有下载器都快，真正的分水岭是弱网、不稳定连接与反爬严格的站点。智能分块 + 带宽自适应 + 真实 TLS 指纹三件套正是为此设计，这在同类开源下载器中相当少见。
+
+### 一个应用替代五个
+IDM（HTTP）、qBittorrent（BT）、N_m3u8DL-RE（流媒体）、motrix（多协议）、yt-dlp GUI（视频站）的职能被收进一个原生应用，且各协议实现大多直接复用该领域最强的开源引擎（libtorrent、N_m3u8DL-RE、yt-dlp、Kelpie），集大成而非重复造轮子。
+
+### 四平台原生体验
+Windows 10+、macOS 13+、Linux（glibc 2.35+）、Android 11+ 全覆盖，均提供 x86_64/arm64 架构；Qt6 Fluent Design 让各平台观感接近原生应用，甚至提供了 Arch Linux AUR 社区包。
+
+### 面向自动化的开放接口
+aria2 兼容 RPC API 意味着它可以嵌入现有工具链（如 NAS 脚本、爬虫管线），配合「下载中途可改 URL/代理且进度不丢」的能力，成为可编程的下载基础设施而不仅是一个桌面软件。
+
+---
+
+## 应用场景
+
+### 视频创作者素材采集
+从 Bilibili/YouTube 批量下载参考资料与素材，支持选片段、选画质、带字幕下载多 P 教程，GitHub/HuggingFace 模型与数据集下载走镜像加速。
+
+### 弱网与不稳定环境的大文件下载
+海外节点不稳定、校园网/公司网络限速场景下，智能分块与断点续传保持高完成率，BT/eD2k 老资源也能一个应用搞定。
+
+### 流媒体课程与直播回放存档
+M3U8/DASH 直链或页面嗅探即可下载加密流并自动处理，适合保存付费课程、会议回放等时效性内容。
+
+### NAS / 自动化下载管线
+通过 aria2 兼容 RPC 接入 Home Assistant、爬虫或媒体库自动化脚本，作为统一下载后端统一管理全部下载任务。
+
+---
+
+## Star 数据
+
+| 指标 | 数值 |
+|------|------|
+| 总 Stars | 12,309 |
+| 总 Forks | 778 |
+| 今日新增 Stars | 432 |
+| 创建时间 | 2023-08-16 |
+| 主要语言 | Python |
+| Open Issues | 92 |
+| 许可证 | GPL-3.0 |
+
+---
+
+## 总结
+
+Ghost-Downloader-3 用「复用各协议最强引擎 + 坏网络优化 + 四平台原生 UI」的组合拳，把 IDM、qBittorrent、N_m3u8DL-RE、yt-dlp 图形壳等多个工具的职能收进一个开源应用，配合浏览器嗅探扩展与 aria2 兼容 RPC，是当前中文开源圈完成度最高的全协议下载器。
+
+---
+
+*数据来源：GitHub 仓库 (XiaoYouChR/Ghost-Downloader-3)，2026 年 11 月访问*
