@@ -81,13 +81,37 @@ App Store Compliance Playbook 的目标一句话概括：**让「被应用商店
 
 | 指标 | 数值 |
 |------|------|
-| 总 Stars | 1,515 |
-| 总 Forks | 115 |
-| 今日新增 Stars | 542 |
+| 总 Stars | 1,695 |
+| 总 Forks | 122 |
+| 今日新增 Stars | 180 |
 | 创建时间 | 2026-06-06 |
 | 主要语言 | Shell / Python |
-| Open Issues | 27 |
+| Open Issues | 32 |
 | 许可证 | OpenRoots Agent License 2.3 |
+
+## 📋 更新记录
+
+### 更新 1 — 2026 年 11 月 20 日（第 2 次上榜）
+
+**更新原因**：再次登上 GitHub Trending（第 2 次上榜），总 Stars 从 1,515 增至 1,695（+180，API 精确数据）。
+
+**最新动态**：11 月 14-15 日密集发布 v2.3.0（deadline provenance 与 November sweep）与 v2.4.0（upload paths、iOS 13 最低版本、IPv6、debuggable 与 64-bit ABI 检查），并补入亚太区监管截止日期；Forks 115 → 122（+7）；Open Issues 27 → 32（+5）。
+
+**最新 Star 数据**：
+
+| 指标 | 上次记录 | 最新数据 | 变化 |
+|------|----------|----------|------|
+| Stars | 1,515 | 1,695 | +180 |
+| Forks | 115 | 122 | +7 |
+| 今日新增 | 542 | 180 | — |
+| Open Issues | 27 | 32 | +5 |
+
+**核心变化概要**：
+
+1. 两日连发 v2.3.0 与 v2.4.0，检查项扩展至上传路径、IPv6 与 ABI 层面
+2. Stars 1,515 → 1,695（+180），连续两天在榜
+3. 监管截止日期库完成 November sweep，新增 6 个已验证截止日期
+
 
 ---
 
@@ -98,3 +122,4 @@ App Store Compliance Playbook 把应用商店审核从「碰运气」变成可�
 ---
 
 *数据来源：GitHub 仓库 (mjmirza/app-store-compliance)，2026 年 11 月访问*
+*首次分析：2026 年 11 月 | 最近更新：2026 年 11 月 20 日*
